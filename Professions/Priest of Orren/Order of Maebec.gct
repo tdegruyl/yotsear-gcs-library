@@ -1,0 +1,835 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "e0015c10-4c6c-4554-890a-df4f929666d8",
+	"traits": [
+		{
+			"id": "2b7b52d8-aa96-4670-9298-d1afff1f8ab7",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "9cad2697-b13f-44d8-813e-f8b8c0b1252c",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "05724a18-008a-41c2-b439-4e1e76171fb2",
+							"type": "trait",
+							"name": "Clerical Investment",
+							"reference": "B43",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"base_points": 5,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from members of your religion and those who respect your faith",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "ea1631d4-964b-41ce-89b5-10288006ce54",
+							"type": "trait",
+							"name": "Empathy",
+							"reference": "B51,P48",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "15130107-a6e2-4b7f-9092-477a1428f637",
+									"type": "modifier",
+									"name": "Remote",
+									"reference": "P48",
+									"cost": 50,
+									"disabled": true
+								}
+							],
+							"base_points": 15,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "detect lies"
+									},
+									"amount": 3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fortune-telling"
+									},
+									"amount": 3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "psychology"
+									},
+									"amount": 3
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "eca8f669-23f7-494e-ab7d-2c1de0dcea25",
+							"type": "trait",
+							"name": "Status",
+							"reference": "B28",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"levels": 1,
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"name": "Advantages",
+					"calc": {
+						"points": 25
+					}
+				},
+				{
+					"id": "357d954a-9160-41b1-8b15-488dbac1a8f6",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "1faf1e1b-9095-41bc-842c-9292501910be",
+							"type": "trait",
+							"name": "Increased Health",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "0c7ffb12-129c-48c6-abd0-aa107979abba",
+							"type": "trait",
+							"name": "Increased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"levels": 2,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 40
+							}
+						},
+						{
+							"id": "b54db629-770a-4591-8258-4da1a2dd797e",
+							"type": "trait",
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "8be52939-4e37-4301-a014-9e06c6e4a960",
+							"type": "trait",
+							"name": "Increased Strength",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "fc2b398f-467b-4c36-857b-98087975f0c4",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "89e24b12-233b-4ad9-a77a-934e7bc640f7",
+									"type": "modifier",
+									"name": "Size",
+									"reference": "B15",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "4f3a7bdb-ed81-4735-87e8-d9eaeb4856c7",
+									"type": "modifier",
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost": 300,
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"name": "Attributes",
+					"calc": {
+						"points": 65
+					}
+				},
+				{
+					"id": "d1c6466d-5e8f-4ff1-ae26-8ce802cf76ed",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "6cff6ecf-943f-4f45-aa73-c9f5ea0c4ca5",
+							"type": "trait",
+							"name": "Disciplines of Faith (Monasticism)",
+							"reference": "B132",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "c0146adb-0a04-47c7-9caa-2a3d622a1ab4",
+							"type": "trait",
+							"name": "Vow (Chastity)",
+							"reference": "B161",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "b86c5f36-bb6b-44b9-80c2-7ec8d2946da6",
+									"type": "modifier",
+									"name": "Minor",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points"
+								},
+								{
+									"id": "9140caed-80fb-42d8-bd78-4dd02a1d5503",
+									"type": "modifier",
+									"name": "Major",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "41f6d00c-96f0-4d02-930d-8d793808461b",
+									"type": "modifier",
+									"name": "Great",
+									"reference": "B161",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						}
+					],
+					"name": "DIsadvantages",
+					"calc": {
+						"points": -15
+					}
+				}
+			],
+			"name": "Order of Maebec",
+			"calc": {
+				"points": 75
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "73712628-5fd0-4c8b-b9d6-f8ac2572fc02",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "fa8b3741-2380-433a-959b-e2c81c496534",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "77c39142-984d-48be-ac4f-53ee93d1c6da",
+							"type": "skill",
+							"name": "Diagnosis",
+							"reference": "B187",
+							"tags": [
+								"Medical"
+							],
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "First Aid",
+									"modifier": -8
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							]
+						},
+						{
+							"id": "20acd003-f2c6-4d06-83e3-ebca76341fa6",
+							"type": "skill",
+							"name": "First Aid",
+							"reference": "B195",
+							"tags": [
+								"Everyman",
+								"Medical"
+							],
+							"tech_level": "",
+							"difficulty": "iq/e",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Esoteric Medicine"
+								},
+								{
+									"type": "skill",
+									"name": "Physician"
+								},
+								{
+									"type": "skill",
+									"name": "Veterinary",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "24d55063-404b-4e12-8c8d-4fb409bbf450",
+							"type": "skill",
+							"name": "Naturalist",
+							"reference": "B211",
+							"tags": [
+								"Animal",
+								"Exploration",
+								"Natural Science",
+								"Outdoor",
+								"Plant"
+							],
+							"specialization": "Earthlike",
+							"difficulty": "iq/h",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Biology",
+									"modifier": -3
+								}
+							]
+						},
+						{
+							"id": "24ab2e73-8706-4450-8535-69bda498cc9b",
+							"type": "skill",
+							"name": "Pharmacy",
+							"reference": "B213",
+							"tags": [
+								"Design",
+								"Invention",
+								"Medical",
+								"Plant"
+							],
+							"specialization": "Herbal",
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Biology",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Herb Lore",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -5
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "naturalist"
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "a6d47767-c214-4034-b272-ea94a4733dce",
+							"type": "skill",
+							"name": "Physiology",
+							"reference": "B213",
+							"tags": [
+								"Medical",
+								"Natural Science"
+							],
+							"specialization": "Human",
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Diagnosis",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Surgery",
+									"modifier": -5
+								}
+							]
+						},
+						{
+							"id": "c361cb3d-39ab-420d-8e2b-a0d379a688a3",
+							"type": "skill",
+							"name": "Religious Ritual",
+							"reference": "B217",
+							"tags": [
+								"Magical",
+								"Occult"
+							],
+							"specialization": "@Specialty@",
+							"difficulty": "iq/h",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Ritual Magic",
+									"specialization": "@Specialty@",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Theology",
+									"specialization": "@Specialty@",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "3744a5fc-a419-4163-9b90-baa7dba0ceb3",
+							"type": "skill",
+							"name": "Theology",
+							"reference": "B226",
+							"tags": [
+								"Humanities",
+								"Social Sciences"
+							],
+							"specialization": "Church of Orren",
+							"difficulty": "iq/h",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Religious Ritual",
+									"specialization": "@Specialty@",
+									"modifier": -4
+								}
+							]
+						}
+					],
+					"name": "1. Primary Skills"
+				},
+				{
+					"id": "1a2bc25e-6712-4fad-ac64-eea5c7e74087",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "330294f6-c95d-490e-838b-fab625d13d34",
+							"type": "skill",
+							"name": "Body Language",
+							"reference": "B181",
+							"tags": [
+								"Police",
+								"Social",
+								"Spy"
+							],
+							"difficulty": "per/a",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Detect Lies",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Psychology",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "743fbc7e-8889-4b10-980e-570997a653fa",
+							"type": "skill",
+							"name": "Detect Lies",
+							"reference": "B187",
+							"tags": [
+								"Police",
+								"Social",
+								"Spy"
+							],
+							"difficulty": "per/h",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "per",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Body Language",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Psychology",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "f511f75b-95ab-4daa-ac2a-db89e0a0a7fd",
+							"type": "skill",
+							"name": "Surgery",
+							"reference": "B223",
+							"tags": [
+								"Medical"
+							],
+							"tech_level": "",
+							"difficulty": "iq/vh",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "First Aid",
+									"modifier": -12
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Physiology",
+									"modifier": -8
+								},
+								{
+									"type": "skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "first aid"
+										}
+									},
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "physician"
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "210077aa-a5de-4337-8ebc-a9c340d6a41b",
+							"type": "skill",
+							"name": "Veterinary",
+							"reference": "B228",
+							"tags": [
+								"Animal",
+								"Medical"
+							],
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Animal Handling",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Surgery",
+									"modifier": -5
+								}
+							]
+						}
+					],
+					"name": "2. Secondary Skills"
+				},
+				{
+					"id": "bdd19fda-916f-45ed-af9e-1f696b57f423",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "0a3f2749-4c18-40c5-88a7-b3834a9eb51d",
+							"type": "skill",
+							"name": "Knife",
+							"reference": "B208",
+							"tags": [
+								"Combat",
+								"Melee Combat",
+								"Weapon"
+							],
+							"difficulty": "dx/e",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "c5a691e6-5a4d-46cf-88a3-a25323215de5",
+							"type": "skill",
+							"name": "Poisons",
+							"reference": "B214",
+							"tags": [
+								"Criminal",
+								"Medical",
+								"Spy",
+								"Street"
+							],
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Chemistry",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Pharmacy",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -3
+								}
+							]
+						},
+						{
+							"id": "babddca2-ba8b-43dd-9e7f-6bcbbd643c89",
+							"type": "skill",
+							"name": "Psychology",
+							"reference": "B216",
+							"tags": [
+								"Humanities",
+								"Social Sciences"
+							],
+							"difficulty": "iq/h",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Sociology",
+									"modifier": -4
+								}
+							]
+						}
+					],
+					"name": "3. Background Skills"
+				},
+				{
+					"id": "05d14c2e-2bed-438f-b8e9-1e4698e87109",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "dd2f24af-7bc1-4923-9860-61177bc90a69",
+							"type": "skill_container",
+							"open": true,
+							"name": "4 points in any melee or ranged weapon skill"
+						}
+					],
+					"name": "4. Adventuring Skills"
+				}
+			],
+			"name": "Order of Maebec"
+		}
+	]
+}

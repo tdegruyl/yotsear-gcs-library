@@ -1,0 +1,443 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "c9d01fca-3f14-4b8c-8035-321f1129e8a1",
+	"traits": [
+		{
+			"id": "2fd329d7-73d3-4a94-a7a1-310af0ede273",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "6bd69ece-498e-47e1-aea0-5f180e4bf254",
+					"type": "trait",
+					"name": "Attribute modifiers: Perception +2",
+					"tags": [
+						"Physical"
+					],
+					"base_points": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "perception",
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "998f0973-902e-4a4b-a877-f3e81827907a",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "4fa28550-f181-4c93-8944-58779f538a1c",
+							"type": "trait",
+							"name": "Cannot speak or write a falsehood",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "19d2b5df-f6ee-431f-9fb6-1a5a9d97454b",
+							"type": "trait",
+							"name": "Dependency (Mana)",
+							"reference": "B130",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "f849e04f-1966-4b9d-bb0f-35dbf9db3b35",
+									"type": "modifier",
+									"name": "Rarity: Rare",
+									"reference": "B130",
+									"cost": -30,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "fa208f7c-81bb-417e-9c56-421202480c15",
+									"type": "modifier",
+									"name": "Rarity: Occasional",
+									"reference": "B130",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "603f18de-52f5-4b83-9dc6-8948b99f025b",
+									"type": "modifier",
+									"name": "Rarity: Common",
+									"reference": "B130",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5b91ebe6-caa5-4cca-b63d-bf4362e9c6ba",
+									"type": "modifier",
+									"name": "Rarity: Very Common",
+									"reference": "B130",
+									"cost": -5,
+									"cost_type": "points"
+								},
+								{
+									"id": "4bfd3ca1-2a30-4cea-9371-f259025393c1",
+									"type": "modifier",
+									"name": "Illegal",
+									"reference": "B130",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "070e26ec-771e-4792-ab4d-1a3ce0bbcb19",
+									"type": "modifier",
+									"name": "Frequency: Constantly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per minute without it",
+									"cost": 5,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "7ab04e74-b301-4da4-b959-2f8af066f423",
+									"type": "modifier",
+									"name": "Frequency: Hourly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per 10 minutes after missing a hourly dose",
+									"cost": 4,
+									"cost_type": "multiplier"
+								},
+								{
+									"id": "e358e3af-156a-4aba-b096-725360bddeee",
+									"type": "modifier",
+									"name": "Frequency: Daily",
+									"reference": "B130",
+									"notes": "Lose 1 HP per hour after missing a daily dose",
+									"cost": 3,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "68a69af8-ee10-49dd-a14b-264c84881cd1",
+									"type": "modifier",
+									"name": "Frequency: Weekly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per six hours after missing a weekly dose",
+									"cost": 2,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "9c026469-392b-4344-8411-022a0d6c1057",
+									"type": "modifier",
+									"name": "Frequency: Monthly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per day after missing a monthly dose",
+									"cost": 1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "c6529cbc-963b-484f-a0df-a4eb0e187d29",
+									"type": "modifier",
+									"name": "Frequency: Seasonally",
+									"reference": "B130",
+									"notes": "Lose 1 HP per 3 days after missing a seasonal dose",
+									"cost": 0.3333,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "230e68e5-cd69-4527-a45f-55a38fa09f86",
+									"type": "modifier",
+									"name": "Frequency: Yearly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per 2 weeks after missing a yearly dose",
+									"cost": 0.1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "da0960ba-5b44-4f8d-9554-e3d7a9c0098c",
+									"type": "modifier",
+									"name": "Aging",
+									"reference": "B130",
+									"notes": "Age 2 years for each HP lost due to this dependency",
+									"cost": 30,
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -20
+							}
+						},
+						{
+							"id": "22e582a1-3322-423f-b133-e355003c7aa9",
+							"type": "trait",
+							"name": "Extended Lifespan",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"levels": 3,
+							"points_per_level": 2,
+							"can_level": true,
+							"calc": {
+								"points": 6
+							}
+						},
+						{
+							"id": "1240dba0-d32d-483e-ac82-7a5ee4460fbf",
+							"type": "trait",
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "e9f4f060-4920-4cc8-90fc-ad5511264a60",
+									"type": "modifier",
+									"name": "Dance",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "5ce5cb4a-7374-4292-bb44-a2d583aa1773",
+									"type": "modifier",
+									"name": "Dark-Aspected",
+									"cost": -50,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "d3912606-25c8-4631-ac20-f47ac6fa71c8",
+									"type": "modifier",
+									"name": "Day-Aspected",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "66554765-6d27-4b84-8b98-92de7db881c1",
+									"type": "modifier",
+									"name": "Musical",
+									"cost": -50,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "013120ac-74a1-4dfd-bc5c-20b490021070",
+									"type": "modifier",
+									"name": "Night-Aspected",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "c717162c-2a38-4f97-8a70-91fb42149810",
+									"type": "modifier",
+									"name": "One College",
+									"notes": "@College@",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "9b3df016-cae2-42e0-ba2c-cf10d110c3b9",
+									"type": "modifier",
+									"name": "Solitary",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "4a98e37a-879f-4942-916e-01c59f288596",
+									"type": "modifier",
+									"name": "Song",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "3b6b22a2-1048-4acd-bd06-b1395ba75cf9",
+							"type": "trait",
+							"name": "Vulnerability",
+							"reference": "B161",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "2f741d71-29d1-4c87-b3f3-4df2857575da",
+									"type": "modifier",
+									"name": "meteoric iron",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points"
+								},
+								{
+									"id": "f875d3ce-e4cc-4578-89f7-203d642b4c80",
+									"type": "modifier",
+									"name": "@Occasional attack@",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "02f6d07c-7cb9-4d13-8ee7-8f43530aa5b3",
+									"type": "modifier",
+									"name": "@Common attack@",
+									"reference": "B161",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3e15637b-02e8-43fc-b6dd-3eb504ffdab9",
+									"type": "modifier",
+									"name": "@Very common attack@",
+									"reference": "B161",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6f51c201-b7b2-43cf-92b0-3c878bfd42ef",
+									"type": "modifier",
+									"name": "Wounding x2",
+									"reference": "B161",
+									"cost": 2,
+									"cost_type": "multiplier"
+								},
+								{
+									"id": "28ba1a34-dd57-4b21-a041-e8fb3b298099",
+									"type": "modifier",
+									"name": "Wounding x3",
+									"reference": "B161",
+									"cost": 3,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "2a7bacde-7905-4fee-890d-98acdc723e01",
+									"type": "modifier",
+									"name": "Wounding x4",
+									"reference": "B161",
+									"cost": 4,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "050c0582-dfd1-443e-bb45-70c00462417d",
+									"type": "modifier",
+									"name": "Fatigue Only",
+									"reference": "B161",
+									"cost": -50,
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"name": "Fae Ancestry",
+					"container_type": "meta_trait",
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "d379cadf-a98b-43f2-9500-ff78e6d44f4f",
+					"type": "trait",
+					"name": "Magic Resistance",
+					"reference": "B67",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "e13aaac3-6951-44d8-a00b-79f3d5766c21",
+							"type": "modifier",
+							"name": "Improved",
+							"reference": "B67",
+							"cost": 150
+						}
+					],
+					"levels": 3,
+					"points_per_level": 2,
+					"can_level": true,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "056e896e-3b5b-44d0-b6d3-a28035bedea0",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "B71",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 6,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 6
+					}
+				}
+			],
+			"name": "Fán",
+			"reference": "B316",
+			"container_type": "race",
+			"calc": {
+				"points": 11
+			}
+		}
+	]
+}

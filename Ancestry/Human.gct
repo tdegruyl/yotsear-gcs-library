@@ -1,0 +1,16 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "41408314-5255-46d9-ad8e-9967ddb13624",
+	"traits": [
+		{
+			"id": "92d1a36a-8114-4b47-8964-193ef2d4d389",
+			"type": "trait_container",
+			"open": true,
+			"name": "Human",
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,190 @@
+{
+	"type": "template",
+	"version": 2,
+	"id": "86925be7-7381-4b38-a070-cc1d58cdd118",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"id": "61c1f338-4221-4114-a65f-41e1d643b441",
+			"container_type": "race",
+			"name": "Moranian",
+			"calc": {
+				"points": 5
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"id": "8b4c2ea9-1d41-407b-9803-dcb7b7613cb2",
+					"container_type": "race",
+					"name": "Alfarnian",
+					"calc": {
+						"points": 0
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"id": "3c66ac50-fbde-4fed-a93a-f41d54bcaa56",
+							"name": "Cultural Familiarity (Alfarnian)",
+							"mental": true,
+							"base_points": 1,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"id": "5858b71a-64e9-450a-acea-975b860278e0",
+									"disabled": true,
+									"name": "Alien",
+									"cost_type": "points",
+									"cost": 1,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"id": "df7127c0-d411-48d2-a787-7dd6914c62ba",
+									"name": "Native",
+									"cost_type": "points",
+									"cost": -1,
+									"affects": "total"
+								}
+							],
+							"reference": "B23",
+							"calc": {
+								"points": 0
+							},
+							"categories": [
+								"Advantage"
+							]
+						},
+						{
+							"type": "advantage",
+							"id": "e3db0a6e-eb3e-45e1-a51a-deb6a0a660ee",
+							"name": "Language: Alfarnian",
+							"mental": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"id": "325bfc39-d8ad-4ba8-a668-8dd14e8f66d0",
+									"name": "Native",
+									"reference": "B23",
+									"cost_type": "points",
+									"cost": -6,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"id": "15ef9119-5fe1-495e-a12e-8f925ba27baa",
+									"disabled": true,
+									"name": "Spoken",
+									"reference": "B24",
+									"cost_type": "points",
+									"cost": 0,
+									"affects": "total",
+									"notes": "None"
+								},
+								{
+									"type": "modifier",
+									"id": "5ded424b-0f9a-427a-b30f-daa03cddafbd",
+									"disabled": true,
+									"name": "Spoken",
+									"reference": "B24",
+									"cost_type": "points",
+									"cost": 1,
+									"affects": "total",
+									"notes": "Broken"
+								},
+								{
+									"type": "modifier",
+									"id": "3983c741-5749-4764-b202-6434cb7b2c0d",
+									"disabled": true,
+									"name": "Spoken",
+									"reference": "B24",
+									"cost_type": "points",
+									"cost": 2,
+									"affects": "total",
+									"notes": "Accented"
+								},
+								{
+									"type": "modifier",
+									"id": "30f0a467-05c4-4b61-9f3d-9709d592bef9",
+									"name": "Spoken",
+									"reference": "B24",
+									"cost_type": "points",
+									"cost": 3,
+									"affects": "total",
+									"notes": "Native"
+								},
+								{
+									"type": "modifier",
+									"id": "41d22309-d5fb-4f40-a805-d09a5a98adc7",
+									"disabled": true,
+									"name": "Written",
+									"reference": "B24",
+									"cost_type": "points",
+									"cost": 0,
+									"affects": "total",
+									"notes": "None"
+								},
+								{
+									"type": "modifier",
+									"id": "df3ba92a-fb64-420c-b81f-17ad9cf86ad2",
+									"disabled": true,
+									"name": "Written",
+									"reference": "B24",
+									"cost_type": "points",
+									"cost": 1,
+									"affects": "total",
+									"notes": "Broken"
+								},
+								{
+									"type": "modifier",
+									"id": "67b020ff-3709-46c5-9dfd-5c531a9d161c",
+									"disabled": true,
+									"name": "Written",
+									"reference": "B24",
+									"cost_type": "points",
+									"cost": 2,
+									"affects": "total",
+									"notes": "Accented"
+								},
+								{
+									"type": "modifier",
+									"id": "907832b0-8802-44cc-accb-855f11e7974a",
+									"name": "Written",
+									"reference": "B24",
+									"cost_type": "points",
+									"cost": 3,
+									"affects": "total",
+									"notes": "Native"
+								}
+							],
+							"reference": "B24",
+							"calc": {
+								"points": 0
+							},
+							"categories": [
+								"Advantage",
+								"Language"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "9897a096-9a6f-4b08-89cf-65ac97f1f5b2",
+					"name": "High TL",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B23",
+					"calc": {
+						"points": 5
+					},
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		}
+	]
+}

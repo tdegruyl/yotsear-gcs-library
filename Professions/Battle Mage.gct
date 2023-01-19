@@ -1,0 +1,1866 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "616f50cb-644a-4b65-8f75-e818a4115a11",
+	"traits": [
+		{
+			"id": "55967f85-51e6-4aec-b21d-4a50f0b38dea",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "33cb5b7d-2e79-47f9-892f-f9ce9c400c4d",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "c6164e3e-e7e2-40ab-a54a-76e2d8c45533",
+							"type": "trait",
+							"name": "Charitable",
+							"reference": "B125",
+							"notes": "Make a self-control roll in any situation where you could render aid or are specifically asked for help, but should resist the urge",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"cr": 12,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "b0eb945d-8174-4104-b6f0-919635395b70",
+							"type": "trait",
+							"name": "Chronic Pain",
+							"reference": "B126",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "d91248c9-1b15-4ca2-9086-a955b35f0671",
+									"type": "modifier",
+									"name": "1 hour interval",
+									"reference": "B126",
+									"cost": 0.5,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "90c10398-4a43-4c00-8a35-f3ad8a7d5587",
+									"type": "modifier",
+									"name": "2 hour interval",
+									"reference": "B126",
+									"cost": 1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "4f0475ab-7585-41c2-bb6a-55697255ec06",
+									"type": "modifier",
+									"name": "4 hour interval",
+									"reference": "B126",
+									"cost": 1.5,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "52382709-62d2-4b29-acbb-981c544572cf",
+									"type": "modifier",
+									"name": "8 hour interval",
+									"reference": "B126",
+									"cost": 2,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "3306be3c-32b1-4a9d-a1d6-b5da48a27984",
+									"type": "modifier",
+									"name": "FR: 6",
+									"cost": 0.5,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "6bacf261-4c9f-48f0-8bac-a997500f6a31",
+									"type": "modifier",
+									"name": "FR: 9",
+									"cost": 1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "f9b7d3ec-bd50-45f8-9bdc-0a22049c8b8c",
+									"type": "modifier",
+									"name": "FR: 12",
+									"cost": 2,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "0705a2b4-722d-4e22-bf7f-b838faba0723",
+									"type": "modifier",
+									"name": "FR: 15",
+									"cost": 3,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "6016fdac-c5ae-45b5-9885-09aac3c1c418",
+									"type": "modifier",
+									"name": "Mild",
+									"reference": "B126",
+									"notes": "-2 to DX, IQ, and self-control rolls",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "39db4b82-481e-48b3-a721-4818cb747661",
+									"type": "modifier",
+									"name": "Severe",
+									"reference": "B126",
+									"notes": "-4 to DX, IQ, and self-control rolls",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "137345ad-aaaa-44ca-9aa4-85521beb0839",
+									"type": "modifier",
+									"name": "Agonizing",
+									"reference": "B126",
+									"notes": "-6 to DX, IQ, and self-control rolls",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "4282fe75-156e-428e-822f-ffaa42090377",
+							"type": "trait",
+							"name": "Code of Honor",
+							"reference": "B163,MA53",
+							"notes": "@Subject@",
+							"tags": [
+								"Mental",
+								"Quirk"
+							],
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "57cf5f88-7732-4fd9-a2da-5fe38d65d26b",
+							"type": "trait",
+							"name": "Honesty",
+							"reference": "B138",
+							"notes": "Make a self-control roll when faced with the “need” to break unreasonable laws; if you fail, you must obey the law, whatever the consequences. If you manage to resist your urges and break the law, make a second self-control roll afterward. If you fail, you must turn yourself in to the authorities!",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"cr": 12,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "850d3730-1e2c-446a-b3f7-dc1f6c562248",
+							"type": "trait",
+							"name": "Light Sleeper",
+							"reference": "B142",
+							"notes": "Whenever you must sleep in an uncomfortable place, or whenever there is more than the slightest noise, you must make a HT roll in order to fall asleep. On a failure, you can try again after one hour, but you will suffer all the usual effects of one hour of missed sleep.",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "f8c0b5c2-f4a7-45b8-b8d9-833d06dacc83",
+							"type": "trait",
+							"name": "Loner",
+							"reference": "B142",
+							"notes": "Make a self-control roll whenever anyone lingers nearby, watches over your shoulder, etc. If you fail, you lash out at that person just as if you had Bad Temper.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"cr": 12,
+							"cr_adj": "reaction_penalty",
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "ad9f872d-d84c-44e6-b260-6f84ae24103f",
+							"type": "trait",
+							"name": "Overconfidence",
+							"reference": "B148",
+							"notes": "You must make a self-control roll any time the GM feels you show an unreasonable degree of caution. If you fail, you must go ahead as though you were able to handle the situation!",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from young or naive individuals who believe you are as good as you say you are",
+									"amount": 2
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from experienced NPCs",
+									"amount": -2
+								}
+							],
+							"cr": 12,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "ef42c229-f86a-48aa-82be-987020003cd2",
+							"type": "trait",
+							"name": "Pacifism: Cannot Harm Innocents",
+							"reference": "B148",
+							"notes": "You may fight – you may even start fights – but you may only use deadly force on a foe that is attempting to do you serious harm. Capture is not “serious harm” unless you are already under penalty of death or have a Code of Honor that would require suicide if captured. You never intentionally do anything that causes, or even threatens to cause, injury to the uninvolved – particularly if they are “ordinary folks.”",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "74354ea8-96ba-4eee-9027-9f746e9bd941",
+									"type": "modifier",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "222b292c-131c-4f2d-9108-c1d3557285d0",
+							"type": "trait",
+							"name": "Pacifism: Cannot Kill",
+							"reference": "B148",
+							"notes": "You may fight – you may even start fights – but you may never do anything that seems likely to kill another. This includes abandoning a wounded foe to die “on his own”! You must do your best to keep your companions from killing, too. If you do kill someone (or feel responsible for a death), you immediately suffer a nervous breakdown. Roll 3d and be totally morose and useless for that many days. During this time, you must make a Will roll to offer any sort of violence toward anyone, for any reason.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "90acca03-6b28-4979-a04f-b2f75d4d1fa9",
+									"type": "modifier",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "c6798086-40f9-4dfe-a12e-7239cfe26cbf",
+							"type": "trait",
+							"name": "Post-Combat Shakes",
+							"reference": "B150",
+							"notes": "Make a self-control roll at the end of any battle. If you fail, roll 3d, add the amount by which you failed your self-control roll, and look up the result on the Fright Check Table.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"cr": 12,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "793b43f0-9316-4f48-b7c5-6e92f851998b",
+							"type": "trait",
+							"name": "Truthfulness",
+							"reference": "B159",
+							"notes": "Make a self-control roll whenever you must keep silent about an uncomfortable truth (lying by omission). Roll at -5 if you actually have to tell a falsehood! If you fail, you blurt out the truth, or stumble so much that your lie is obvious.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fast talk"
+									},
+									"amount": -5
+								}
+							],
+							"cr": 12,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "bf0c622a-2729-4094-8652-96c2922b91ff",
+							"type": "trait",
+							"name": "Vow",
+							"reference": "B161",
+							"notes": "@Subject@",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "b86c5f36-bb6b-44b9-80c2-7ec8d2946da6",
+									"type": "modifier",
+									"name": "Minor",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "9140caed-80fb-42d8-bd78-4dd02a1d5503",
+									"type": "modifier",
+									"name": "Major",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "41f6d00c-96f0-4d02-930d-8d793808461b",
+									"type": "modifier",
+									"name": "Great",
+									"reference": "B161",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"name": "-30 from",
+					"calc": {
+						"points": -76
+					}
+				},
+				{
+					"id": "46595fe0-2d58-4193-9d7b-1f839ce6c4ad",
+					"type": "trait",
+					"name": "Disciplines of Faith (Asceticism)",
+					"reference": "B132",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "c850d48e-ff84-4177-9059-0ef7e0c7e081",
+					"type": "trait",
+					"name": "Increased Dexterity",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "26b39aca-fc45-404a-9dbd-be0e55323b67",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"levels": 3,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 60
+					}
+				},
+				{
+					"id": "c499a8c8-cae4-4cb0-bf9e-8b61fad2af12",
+					"type": "trait",
+					"name": "Increased Health",
+					"reference": "B14",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "8d77573e-60f1-4e0a-8280-c3bc523c933a",
+					"type": "trait",
+					"name": "Increased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental"
+					],
+					"levels": 2,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "2d82b28e-6c7c-4793-a3e9-97c398207ed9",
+					"type": "trait",
+					"name": "Magery",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "10b7c609-d742-473c-a229-fd39e10a948f",
+							"type": "modifier",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "8cffcc39-a19c-4aa2-8a65-f270534b6ad7",
+							"type": "modifier",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "9a43b6eb-5fca-4b3b-9475-9c8922652001",
+							"type": "modifier",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "1db3c1d2-12b8-4d9f-aaec-8a1f58f99922",
+							"type": "modifier",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "7ef63d35-934c-4046-8b55-22208f7a99b6",
+							"type": "modifier",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "0f92e868-30bd-4a88-8dd7-d1929eb47c0e",
+							"type": "modifier",
+							"name": "One College",
+							"notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "7a67c4c3-2454-43a0-acd4-aac1265bd79a",
+							"type": "modifier",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "162576be-563f-43f2-9bd3-91db2defc569",
+							"type": "modifier",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "all_colleges",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "1c026c6d-1a48-4c8b-bf01-a682abd27f0d",
+					"type": "trait",
+					"name": "Magical Style Familiarity (Way of the Flower)",
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "b72083ca-993e-4376-9362-ee63b763355e",
+					"type": "trait",
+					"name": "Martial Arts Style Familiarity (Way of the Flower)",
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "2705e7f9-3851-4933-a93f-491228d32606",
+					"type": "trait",
+					"name": "Poor",
+					"reference": "B25",
+					"notes": "Starting wealth is 1/5 normal",
+					"tags": [
+						"Disadvantage",
+						"Social",
+						"Wealth"
+					],
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "38947d4e-e1ad-49bb-b507-e067cd0d42df",
+					"type": "trait",
+					"name": "Trained by a Master",
+					"reference": "B93,MA48",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "73e69b8e-41f1-4ccf-b67f-8434034dfdb9",
+							"type": "modifier",
+							"name": "Unarmed only",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"base_points": 30,
+					"calc": {
+						"points": 30
+					}
+				}
+			],
+			"name": "Battle Mage",
+			"calc": {
+				"points": 51
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "bce3bcc8-1773-4a59-8016-09c8ac1a226d",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "00c128f6-4c46-4568-9a20-624b7e5d4f86",
+					"type": "skill",
+					"name": "Acrobatics",
+					"reference": "B174,MA54",
+					"tags": [
+						"Athletic"
+					],
+					"difficulty": "dx/h",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Aerobatics",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Aquabatics",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "21b33eaa-690c-4af8-9c92-03afa7d0b07b",
+					"type": "skill",
+					"name": "Body Sense",
+					"reference": "B181",
+					"tags": [
+						"Athletic"
+					],
+					"difficulty": "dx/h",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Acrobatics",
+							"modifier": -3
+						}
+					]
+				},
+				{
+					"id": "d444aa50-45f4-4027-9cd2-60630e062672",
+					"type": "skill",
+					"name": "Breath Control",
+					"reference": "B182",
+					"tags": [
+						"Athletic"
+					],
+					"difficulty": "ht/h",
+					"points": 1
+				},
+				{
+					"id": "9cbd5abe-4487-4c6c-93b8-ae2c16a742f3",
+					"type": "skill",
+					"name": "Broadsword",
+					"reference": "B208",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/a",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Rapier",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Saber",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Sword",
+							"modifier": -4
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "f02f5c78-98c7-4a16-b3f7-f1115abf2557",
+					"type": "skill",
+					"name": "Broadsword Art",
+					"reference": "B208",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Rapier",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Saber",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Sword",
+							"modifier": -4
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "df9c7760-c22a-433e-ad60-6fdff97e4c28",
+					"type": "skill",
+					"name": "Judo",
+					"reference": "B203,MA57",
+					"notes": "Allows parrying two different attacks per turn, one with each hand.",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"points": 4,
+					"encumbrance_penalty_multiplier": 1
+				},
+				{
+					"id": "9be764b7-8572-47f9-be22-bdcf1a8212fb",
+					"type": "skill",
+					"name": "Judo Art",
+					"reference": "B203,MA57",
+					"notes": "Allows parrying two different attacks per turn, one with each hand.",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"points": 1,
+					"encumbrance_penalty_multiplier": 1
+				},
+				{
+					"id": "7c995b7c-2aac-4d2c-bc03-769448e41793",
+					"type": "skill",
+					"name": "Karate",
+					"reference": "B203,MA57",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"points": 4,
+					"encumbrance_penalty_multiplier": 1,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					]
+				},
+				{
+					"id": "433c98ce-e520-4aba-8e55-5ea0549f6a16",
+					"type": "skill",
+					"name": "Karate Art",
+					"reference": "B203,MA57",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"points": 1,
+					"encumbrance_penalty_multiplier": 1,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"level": {
+								"compare": "at_least"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Karate"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					]
+				},
+				{
+					"id": "7b1026c6-121e-4e6d-8922-510442baf7e1",
+					"type": "skill",
+					"name": "Kiai",
+					"reference": "B203,MA58",
+					"tags": [
+						"Esoteric"
+					],
+					"difficulty": "ht/h",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "weapon master"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "trained by a master"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "3f9e0b59-7255-4a76-a8c5-5b59642680d3",
+					"type": "skill",
+					"name": "Meditation",
+					"reference": "B207",
+					"tags": [
+						"Esoteric"
+					],
+					"difficulty": "will/h",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "will",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Autohypnosis",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "78e60e19-a684-4ea0-9b62-d13bc6d06c88",
+					"type": "skill",
+					"name": "Mental Strength",
+					"reference": "B209",
+					"tags": [
+						"Esoteric"
+					],
+					"difficulty": "will/e",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "weapon master"
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "trained by a master"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "96412269-f18d-4f5c-8611-94c8038a7461",
+					"type": "skill",
+					"name": "Parry Missile-Weapons",
+					"reference": "B212",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/h",
+					"points": 1
+				},
+				{
+					"id": "a7cd96ee-fb27-4bf0-924d-588b29a19d25",
+					"type": "skill",
+					"name": "Stealth",
+					"reference": "B222",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "dx/a",
+					"points": 1,
+					"encumbrance_penalty_multiplier": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "6f49656f-de19-4ef4-9665-15f7e39573b2",
+					"type": "skill",
+					"name": "Two-Handed Sword",
+					"reference": "B209",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/a",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Broadsword",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -4
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					]
+				}
+			],
+			"name": "Battle Mage"
+		}
+	],
+	"spells": [
+		{
+			"id": "1bddc827-c979-4558-ae2e-d93f8596f87d",
+			"type": "spell_container",
+			"open": true,
+			"children": [
+				{
+					"id": "34da2b69-6710-4760-afba-7ba7bfe93724",
+					"type": "spell",
+					"name": "Pain",
+					"reference": "M36",
+					"tags": [
+						"Body Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Body Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "HT",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "2 sec",
+					"duration": "1 sec",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "spasm"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "8b750254-f373-4580-abde-2606b7eda97c",
+					"type": "spell",
+					"name": "Apportation",
+					"reference": "M142",
+					"tags": [
+						"Movement"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Movement"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "Will",
+					"casting_cost": "Varies",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (movement)"
+										}
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "44a806e0-08d9-42c5-a518-b362889ca360",
+					"type": "spell",
+					"name": "Choke",
+					"reference": "M40",
+					"tags": [
+						"Body Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Body Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "30 sec",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (body control)"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "college",
+								"has": true,
+								"qualifier": {
+									"compare": "contains",
+									"qualifier": "Body Control"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 5
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "spasm"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "2c57c0bc-3e97-4e3c-a945-180b28f9191c",
+					"type": "spell",
+					"name": "Climbing",
+					"reference": "M35",
+					"tags": [
+						"Body Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Body Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-3",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1
+				},
+				{
+					"id": "79847f2c-8208-4ba4-96ac-51e2225e00fc",
+					"type": "spell",
+					"name": "Great Haste",
+					"reference": "M146",
+					"tags": [
+						"Movement"
+					],
+					"difficulty": "iq/vh",
+					"college": [
+						"Movement"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "5",
+					"maintenance_cost": "-",
+					"casting_time": "3 sec",
+					"duration": "10 sec",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "haste"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 12
+								},
+								"which": "iq"
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (movement)"
+										}
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "31fe3cda-2f97-44a5-8482-fdb5a8c34fdf",
+					"type": "spell",
+					"name": "Haste",
+					"reference": "M142",
+					"tags": [
+						"Movement"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Movement"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2/pt",
+					"maintenance_cost": "Half",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"points": 1
+				},
+				{
+					"id": "f09e0ae3-1d9f-4168-b342-0320d1f0ef7d",
+					"type": "spell",
+					"name": "Itch",
+					"reference": "M35",
+					"tags": [
+						"Body Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Body Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "HT",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Until scratched",
+					"points": 1
+				},
+				{
+					"id": "e1576b58-5d61-4737-a5f9-98011281c95c",
+					"type": "spell",
+					"name": "Jump",
+					"reference": "M143",
+					"tags": [
+						"Movement"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Movement"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-3",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "apportation"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "746a3ff5-c9d4-4851-9d20-6bc91909577c",
+					"type": "spell",
+					"name": "Lend Energy",
+					"reference": "M89",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1/pt",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (healing)"
+										}
+									}
+								]
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "empathy"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "82942a98-790f-404c-b8c3-513dda5f3199",
+					"type": "spell",
+					"name": "Lend Vitality",
+					"reference": "M89",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1/pt",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "1 hour",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "lend energy"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "807c8548-de1c-4465-a89d-229ce45557b0",
+					"type": "spell",
+					"name": "Major Healing",
+					"reference": "M91",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/vh",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-4",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (healing)"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "minor healing"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "3601c1aa-510b-4402-8fe7-a4c21994c274",
+					"type": "spell",
+					"name": "Minor Healing",
+					"reference": "M91",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-3",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Permanent",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "lend vitality"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "b0d79767-428f-4df9-892c-99f58b0bb7ae",
+					"type": "spell",
+					"name": "Recover Energy",
+					"reference": "M89",
+					"tags": [
+						"Healing"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Healing"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Special",
+					"casting_cost": "0",
+					"maintenance_cost": "0",
+					"casting_time": "1 sec",
+					"duration": "Special",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (healing)"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "lend energy"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "9b42fb53-de2e-4d93-9302-f683f1de492e",
+					"type": "spell",
+					"name": "Sense Foes",
+					"reference": "M44",
+					"tags": [
+						"Communication \u0026 Empathy"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Communication \u0026 Empathy"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Info/Area",
+					"casting_cost": "1/area, min 2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1
+				},
+				{
+					"id": "f99b6b27-ec24-4065-a572-7aa40bcd4465",
+					"type": "spell",
+					"name": "Spasm",
+					"reference": "M35",
+					"tags": [
+						"Body Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Body Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "HT",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "itch"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "8d87e0d3-3bd5-437a-9102-c08250873bc1",
+					"type": "spell",
+					"name": "Stun",
+					"reference": "M37",
+					"tags": [
+						"Body Control"
+					],
+					"difficulty": "iq/h",
+					"college": [
+						"Body Control"
+					],
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"resist": "HT",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"sub_type": "name",
+								"has": true,
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "pain"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				}
+			],
+			"name": "Battle Mage"
+		}
+	]
+}

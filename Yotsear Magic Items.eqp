@@ -1,0 +1,3616 @@
+{
+	"type": "equipment_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "d7a967e9-6c6f-4f78-86c5-42e6990c68ee",
+			"type": "equipment_container",
+			"children": [
+				{
+					"id": "b122cae3-8b3e-4119-8ecc-bec69628c2cd",
+					"type": "equipment",
+					"description": "Ointment: Sleep",
+					"reference": "M218",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 120,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 120,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "010574f7-6b4a-4642-aeab-31788ad0bf5e",
+					"type": "equipment",
+					"description": "Ointment: Healing",
+					"reference": "M217",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 120,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 120,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "17ba6832-e4a5-411e-9524-45f89d5c8726",
+					"type": "equipment",
+					"description": "Ointment: Madness",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 200,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 200,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "9e07fcb9-9167-4c2f-9fa2-039e64d6beb9",
+					"type": "equipment",
+					"description": "Ointment: Fear",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 224,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 224,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "5c70677d-c86b-4dd0-861c-4e73f8d268db",
+					"type": "equipment",
+					"description": "Ointment: Horsemanship",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 256,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 256,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "272fbf63-a146-4723-9064-6a6272cc9514",
+					"type": "equipment",
+					"description": "Ointment: Strength",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 256,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 256,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "ad4beef4-aa79-44e9-b77b-3d4f96c25f81",
+					"type": "equipment",
+					"description": "Ointment: Hearing",
+					"reference": "M219",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "aa9e4775-a6ae-4aa0-98ff-ff20609b431c",
+					"type": "equipment",
+					"description": "Ointment: Fetching and Carrying",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "a9c3b6ce-3cbe-40dc-8406-f9c0f5f518ad",
+					"type": "equipment",
+					"description": "Ointment: Music",
+					"reference": "M219",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "5ab7898d-6134-491c-bb73-f4bccdce99a9",
+					"type": "equipment",
+					"description": "Ointment: Hatred",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "7dd5a273-2ed3-4cf7-8868-05b136b79335",
+					"type": "equipment",
+					"description": "Ointment: Charisma",
+					"reference": "M218",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 352,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 352,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "081a1b1d-ba93-41c2-a481-42ae43f7f029",
+					"type": "equipment",
+					"description": "Ointment: Battle",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 352,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 352,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "29970773-2edb-44e2-a4bd-455e3aff62f4",
+					"type": "equipment",
+					"description": "Ointment: Jealousy",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 384,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 384,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "eaf226ee-8b76-4d74-a226-b3d453adb322",
+					"type": "equipment",
+					"description": "Ointment: Weakness",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 384,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 384,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "2ce92148-56bc-47cd-9c1a-459c0b8add36",
+					"type": "equipment",
+					"description": "Ointment: Alchemical Antidote",
+					"reference": "M217",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 384,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 384,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "c0950562-491a-42bd-9b35-c353b3becd0e",
+					"type": "equipment",
+					"description": "Ointment: Keen Sight",
+					"reference": "M219",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 384,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 384,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "cc5f492f-5bc5-4759-8ab8-f9fd774f1572",
+					"type": "equipment",
+					"description": "Ointment: Stealth",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "ffec6d63-48a9-45fa-a599-b1f0034210b6",
+					"type": "equipment",
+					"description": "Ointment: Fire Risistance",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "acd9a9f8-60b3-4a36-9ae3-b12e7af1fc30",
+					"type": "equipment",
+					"description": "Ointment: Death",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "c828d63d-925d-4e6c-b5d9-703e785635ad",
+					"type": "equipment",
+					"description": "Ointment: Lecherousness",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "30029d2d-495b-4712-8475-11edd90a1d74",
+					"type": "equipment",
+					"description": "Ointment: Gullibility",
+					"reference": "M219",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "973550bb-1850-4f66-9a3f-947d7a27e5f1",
+					"type": "equipment",
+					"description": "Ointment: Foolishness",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "91a9aeba-6c68-4883-a547-29a8f9e181f5",
+					"type": "equipment",
+					"description": "Ointment: Tranquility",
+					"reference": "M218",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "ad95ac29-754f-42ed-a5cc-6421777ade66",
+					"type": "equipment",
+					"description": "Ointment: Awakening",
+					"reference": "M217",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "3ed7c14d-e58c-4f70-b290-eb91d198f23c",
+					"type": "equipment",
+					"description": "Ointment: Friendship",
+					"reference": "M219",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 560,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 560,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "ea2e5312-06a5-4d21-8337-9794ce8a9e4b",
+					"type": "equipment",
+					"description": "Ointment: Bird Control",
+					"reference": "M213",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 560,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 560,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "89eb7f49-ab29-4b38-b460-7fb0aacd65d7",
+					"type": "equipment",
+					"description": "Ointment: True Sight",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 560,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 560,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "6678debd-bd6c-4520-865f-404a4f12859c",
+					"type": "equipment",
+					"description": "Ointment: Speed",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 560,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 560,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "ae5efb54-58aa-4af5-a7d0-0f2110bfc8e7",
+					"type": "equipment",
+					"description": "Ointment: Attractiveness",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "3a40a1f6-37b6-49d5-a4ea-fddd636bf146",
+					"type": "equipment",
+					"description": "Ointment: Pain Resistance",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "f5379af0-ca16-4bad-84c4-988bdfa3e0a6",
+					"type": "equipment",
+					"description": "Ointment: Fustration",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 656,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 656,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "be730df0-6b3c-4176-be18-a66223a427b2",
+					"type": "equipment",
+					"description": "Ointment: Water-Walking",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 704,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 704,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "a1b67c6e-8b03-41a7-9098-dad3fc511497",
+					"type": "equipment",
+					"description": "Ointment: Self-Love",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 768,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 768,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "2d351cff-3d82-4cec-b7af-eeb50452168a",
+					"type": "equipment",
+					"description": "Ointment: Aging",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 832,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 832,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "6193f7e2-64c7-4dc9-bad8-b7240d47a9da",
+					"type": "equipment",
+					"description": "Ointment: Beast-Speech",
+					"reference": "M213",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 848,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 848,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "f2eb808a-d54e-4aa6-8f5f-bbcfd99afe89",
+					"type": "equipment",
+					"description": "Ointment: Odium",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "375420db-d539-4b8b-bab9-ebb9f493459f",
+					"type": "equipment",
+					"description": "Ointment: Craftsmanship",
+					"reference": "M219",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1136,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1136,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "e06f87b1-3b29-4525-bed7-b4bcb91d97ab",
+					"type": "equipment",
+					"description": "Ointment: Truth",
+					"reference": "M219",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1136,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1136,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "39185953-30a0-49a0-8338-e68340a0e868",
+					"type": "equipment",
+					"description": "Ointment: Luck",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1312,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1312,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "2db3dc9b-d878-4679-82fa-7a1af03f5413",
+					"type": "equipment",
+					"description": "Ointment: Endurance",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1408,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1408,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "8452a39e-75ec-4e52-a822-8a6621ed9dd8",
+					"type": "equipment",
+					"description": "Ointment: Memory",
+					"reference": "M219",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1536,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1536,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "e8bf5418-c4fd-4c33-931e-584b119a6e80",
+					"type": "equipment",
+					"description": "Ointment: Magic Resistance",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1600,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1600,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "ce67e1b0-c7f8-4141-827f-12aeefd2bc24",
+					"type": "equipment",
+					"description": "Ointment: Unluckiness",
+					"reference": "M215",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1600,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1600,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "a358b837-294a-4fe6-8c4b-f0c3ae127bd2",
+					"type": "equipment",
+					"description": "Ointment: Leadership",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1664,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1664,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "272105e5-7334-4652-adfd-b9a267676c70",
+					"type": "equipment",
+					"description": "Ointment: Foresight",
+					"reference": "M218",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 1984,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 1984,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "601d0a34-c3b7-4609-adb9-65bf5428cb49",
+					"type": "equipment",
+					"description": "Ointment: Invulnerability",
+					"reference": "M214",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 2112,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 2112,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "0c755c1d-7667-46e5-881c-735b6cb17f68",
+					"type": "equipment",
+					"description": "Ointment: Transformation",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "c69970f5-b15f-4462-830d-855b58d23609",
+					"type": "equipment",
+					"description": "Ointment: Flight",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "42eace2f-814c-4e41-8f11-26ab75833133",
+					"type": "equipment",
+					"description": "Ointment: Invisibility",
+					"reference": "M216",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "bd7983b2-0f17-4b11-9e43-afdacf66cd3a",
+					"type": "equipment",
+					"description": "Ointment: Eternal Rest",
+					"reference": "M217",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 4096,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 4096,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "21c26cb8-398c-4a79-bd14-10d9898ae98a",
+					"type": "equipment",
+					"description": "Ointment: Reanimation",
+					"reference": "M217",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 4096,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 4096,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "1e42abad-2c69-4a30-afe4-2a8734989c76",
+					"type": "equipment",
+					"description": "Ointment: Regeneration",
+					"reference": "M218",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 4992,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 4992,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "918959d7-7fbd-420f-b98a-c2f61284b4f2",
+					"type": "equipment",
+					"description": "Ointment: Fertility",
+					"reference": "M217",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 6016,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 6016,
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "e56f42aa-96fd-4b9c-a20b-e4a87be46160",
+					"type": "equipment",
+					"description": "Ointment: Long Slumber",
+					"reference": "M217",
+					"tags": [
+						"Ointment"
+					],
+					"quantity": 1,
+					"value": 9024,
+					"weight": "0.2 lb",
+					"calc": {
+						"extended_value": 9024,
+						"extended_weight": "0.2 lb"
+					}
+				}
+			],
+			"description": "Ointments",
+			"quantity": 1,
+			"calc": {
+				"extended_value": 69752,
+				"extended_weight": "10.8 lb"
+			}
+		},
+		{
+			"id": "2ac6d150-2d7a-459c-8c6c-ab1afecff18c",
+			"type": "equipment_container",
+			"children": [
+				{
+					"id": "f6d54769-c216-4982-893c-4e0e46c1e66d",
+					"type": "equipment",
+					"description": "Pastille: Sleep",
+					"reference": "M218",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 240,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 240,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "df632da0-c0a5-4a81-ab12-42a26f81afc2",
+					"type": "equipment",
+					"description": "Pastille: Madness",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 384,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 384,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "1cde323b-31f6-47aa-b5df-3d4a804675b9",
+					"type": "equipment",
+					"description": "Pastille: Fear",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 450,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 450,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "b76862e8-3be6-4310-bbb7-42e88274dc8d",
+					"type": "equipment",
+					"description": "Pastille: Music",
+					"reference": "M219",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "e106bf98-eac6-4279-9728-282038a0715f",
+					"type": "equipment",
+					"description": "Pastille: Fetching and Carrying",
+					"reference": "M214",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "47637459-a5c4-41f6-9f97-9ece941ab598",
+					"type": "equipment",
+					"description": "Pastille: Hatred",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "31f53eb2-b186-41dc-ad2d-671ec9c751bd",
+					"type": "equipment",
+					"description": "Pastille: Jealousy",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 800,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 800,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "11bd7241-3e10-443b-ada2-081b603ffc8d",
+					"type": "equipment",
+					"description": "Pastille: Weakness",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 800,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 800,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "30d483af-0930-4b0b-9691-d28c152bb2ec",
+					"type": "equipment",
+					"description": "Pastille: Death",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "88ba6f99-4f74-47b2-b07f-6f94d646fb94",
+					"type": "equipment",
+					"description": "Pastille: Foolishness",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "9de778ec-9216-40b1-bda8-cc646b9cb92e",
+					"type": "equipment",
+					"description": "Pastille: Tranquility",
+					"reference": "M218",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "77413a98-9af7-4a42-a16f-ff2cef1e11d5",
+					"type": "equipment",
+					"description": "Pastille: Stealth",
+					"reference": "M214",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "69f0a3e1-cd2d-4642-8cee-8f8d57c74277",
+					"type": "equipment",
+					"description": "Pastille: Lecherousness",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "13304ac1-3b92-47b1-92dc-38012f3d8bf3",
+					"type": "equipment",
+					"description": "Pastille: Awakening",
+					"reference": "M217",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "45784abc-ce9a-49a3-88ff-0693a1a37bf2",
+					"type": "equipment",
+					"description": "Pastille: Friendship",
+					"reference": "M219",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1104,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1104,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "96f3b50e-a2d3-4a80-9ba5-0acb436728e5",
+					"type": "equipment",
+					"description": "Pastille: Fustration",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1312,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1312,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "33f56dd8-1392-4dae-bd81-f0417770c314",
+					"type": "equipment",
+					"description": "Pastille: Self-Love",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1504,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1504,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "f134ec42-3393-4d68-979a-ad1c5dd66b6e",
+					"type": "equipment",
+					"description": "Pastille: Aging",
+					"reference": "M214",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1664,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1664,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "57ab6501-a96e-4ece-bb88-ba546215f50b",
+					"type": "equipment",
+					"description": "Pastille: Odium",
+					"reference": "M215",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 1984,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 1984,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "0692790a-8f97-41c2-901d-c20f9b7478ce",
+					"type": "equipment",
+					"description": "Pastille: Craftsmanship",
+					"reference": "M219",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 2240,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 2240,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "38f8f1f4-4f66-4163-b235-d58a397ad722",
+					"type": "equipment",
+					"description": "Pastille: Truth",
+					"reference": "M219",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 2240,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 2240,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "10e9d5db-f928-4a47-83a7-189d803037bf",
+					"type": "equipment",
+					"description": "Pastille: Dragonslaying",
+					"reference": "M213",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 2608,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 2608,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "5c7b208e-9e09-450a-8c2e-f718d11255ca",
+					"type": "equipment",
+					"description": "Pastille: Luck",
+					"reference": "M216",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 2608,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 2608,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "59b6bd9f-7bbd-43e5-9b01-06d28e750d60",
+					"type": "equipment",
+					"description": "Pastille: Endurance",
+					"reference": "M214",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 2816,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 2816,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "38c1df12-df8f-4e02-9250-2c45393d2570",
+					"type": "equipment",
+					"description": "Pastille: Memory",
+					"reference": "M219",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "4b7bf90a-4e0d-4192-a237-7ef1fa177307",
+					"type": "equipment",
+					"description": "Pastille: Magic Resistance",
+					"reference": "M216",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 3200,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 3200,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "bcc5aeee-caa8-421a-a6f6-76029959cba3",
+					"type": "equipment",
+					"description": "Pastille: Leadership",
+					"reference": "M214",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 3328,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 3328,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "1550d749-7d8d-42e9-a314-37d610512b45",
+					"type": "equipment",
+					"description": "Pastille: Foresight",
+					"reference": "M218",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 4032,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 4032,
+						"extended_weight": "0.075 lb"
+					}
+				},
+				{
+					"id": "0e8013a2-4c50-485b-818a-c12fd2c8ea33",
+					"type": "equipment",
+					"description": "Pastille: Long Slumber",
+					"reference": "M217",
+					"tags": [
+						"Pastille"
+					],
+					"quantity": 1,
+					"value": 18048,
+					"weight": "0.075 lb",
+					"calc": {
+						"extended_value": 18048,
+						"extended_weight": "0.075 lb"
+					}
+				}
+			],
+			"description": "Pastilles",
+			"quantity": 1,
+			"calc": {
+				"extended_value": 62338,
+				"extended_weight": "2.175 lb"
+			}
+		},
+		{
+			"id": "b8fab9e8-d92f-4603-aa64-b1d09fb9b55c",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
+				{
+					"id": "513516cb-f520-42c0-a46a-93ee4421d5c8",
+					"type": "equipment",
+					"description": "Potion: Lichdom",
+					"reference": "M160",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "363d77e3-9a39-4228-803d-f7377e7b3297",
+					"type": "equipment",
+					"description": "Potion: Healing",
+					"reference": "M217",
+					"vtt_notes": "[1d! Heal] or [1d! FP restore]",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 120,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 120,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "48d96546-887c-42e0-bc70-6316356fd308",
+					"type": "equipment",
+					"description": "Potion: Sleep",
+					"reference": "M218",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 120,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 120,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "cc94faf2-5784-4003-ae88-5b409449b0af",
+					"type": "equipment",
+					"description": "Potion: Madness",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 200,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 200,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "9a0fef92-0886-4a68-a2b7-569361e6fa71",
+					"type": "equipment",
+					"description": "Potion: Fear",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 224,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 224,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "6b7618b7-6a14-4512-a010-b871bfade967",
+					"type": "equipment",
+					"description": "Potion: Strength",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 256,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 256,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "bba468fd-333d-4159-987c-62fd738b7df4",
+					"type": "equipment",
+					"description": "Potion: Fetching and Carrying",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "6ad4103f-631f-4fc4-acb2-69d6e0b3e4c5",
+					"type": "equipment",
+					"description": "Potion: Hatred",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "d0c3cb3c-5253-425e-b73b-ce03ce8109d1",
+					"type": "equipment",
+					"description": "Potion: Music",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "17c3e865-4534-4bbf-b84b-cc4135db46e6",
+					"type": "equipment",
+					"description": "Potion: Charisma",
+					"reference": "M218",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 352,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 352,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "64996179-af5c-4b5a-8aae-4c4fd170100c",
+					"type": "equipment",
+					"description": "Potion: Battle",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 352,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 352,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "9ed52a53-a081-4640-857b-3a06c3defac3",
+					"type": "equipment",
+					"description": "Potion: Jealousy",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 400,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "b0f0c882-4fc6-471c-a4bb-4e5db5abbe54",
+					"type": "equipment",
+					"description": "Potion: Weakness",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 400,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "73209613-a6d6-4329-af6c-c34ee0d799b4",
+					"type": "equipment",
+					"description": "Potion: Alchemical Antidote",
+					"reference": "M217",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 400,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "b78fa9e1-37f4-4d3d-8bf2-c19498474a48",
+					"type": "equipment",
+					"description": "Potion: Tranquility",
+					"reference": "M218",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "5dc0ddd1-cdfe-4149-bdec-50f842441dda",
+					"type": "equipment",
+					"description": "Potion: Fire Risistance",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "a81da02e-1c80-43a1-843c-d2014b383de6",
+					"type": "equipment",
+					"description": "Potion: Death",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "5708ee07-19ef-493e-9ca2-ba3bbf712a1a",
+					"type": "equipment",
+					"description": "Potion: Foolishness",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "c87991ed-b5fd-4b4a-99dd-070d18d5cfdf",
+					"type": "equipment",
+					"description": "Potion: Lecherousness",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "24f4b402-8c03-4d31-9935-f2bebff5106a",
+					"type": "equipment",
+					"description": "Potion: Stealth",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "6be48a62-05bc-4103-a67f-0d0b7314fed3",
+					"type": "equipment",
+					"description": "Potion: Gullibility",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "d387e980-02de-4995-a58a-fcb7f12b06f9",
+					"type": "equipment",
+					"description": "Potion: Awakening",
+					"reference": "M217",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "e93d112b-e6ba-4619-8039-18425ed80cbc",
+					"type": "equipment",
+					"description": "Potion: Hardheartedness",
+					"reference": "M218",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "bebafa40-cfc2-4eef-8915-fc4a07dca150",
+					"type": "equipment",
+					"description": "Potion: Speed",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 552,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 552,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "4712bb3f-8b9a-40c9-ae9a-5b5c434f99b9",
+					"type": "equipment",
+					"description": "Potion: Bird Control",
+					"reference": "M213",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 552,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 552,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "93de8970-7897-44b4-85c7-6428909c03c7",
+					"type": "equipment",
+					"description": "Potion: True Sight",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 552,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 552,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "f8116e80-432e-4591-8d13-cb9314e66fad",
+					"type": "equipment",
+					"description": "Potion: Friendship",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 552,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 552,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "04a1abba-e56c-47f1-8d8f-020fd1dd9646",
+					"type": "equipment",
+					"description": "Potion: Pain Resistance",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "a8076397-158e-4f67-a0c4-0bbb9b1e8782",
+					"type": "equipment",
+					"description": "Potion: Attractiveness",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "90ac0b1f-f9ab-4ee6-93c1-974c476a1c69",
+					"type": "equipment",
+					"description": "Potion: Water Breathing",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "c17106b4-108b-4e2d-9127-de34ffd281af",
+					"type": "equipment",
+					"description": "Potion: Fustration",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 640,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 640,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "abbb64bd-f72c-4737-aeb6-eb6a5eec90aa",
+					"type": "equipment",
+					"description": "Potion: Water-Walking",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 704,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 704,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "c047aaca-dc9e-4aee-bd87-119206ae6ef4",
+					"type": "equipment",
+					"description": "Potion: Forgetfulness",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 704,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 704,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "01362d29-553a-4771-81bc-a0ad98e92c36",
+					"type": "equipment",
+					"description": "Potion: Self-Love",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 768,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 768,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "fc1c9215-1b35-4eb4-b9d0-75ff6d7fe3f2",
+					"type": "equipment",
+					"description": "Potion: Universal Antidote",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 768,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 768,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "c56f57d9-2fd0-4ee4-b81c-0b9f424e9ce5",
+					"type": "equipment",
+					"description": "Potion: Health",
+					"reference": "M217",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 768,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 768,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "5f2dac0e-7d57-4113-9bdd-a302f1de3fe2",
+					"type": "equipment",
+					"description": "Potion: Aging",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 832,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 832,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "5c6b3c7e-b1a5-41f7-89d2-9a9d7e1c6dcb",
+					"type": "equipment",
+					"description": "Potion: Beast-Speech",
+					"reference": "M213",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 848,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 848,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "43c9a42d-32c0-4345-bbbe-736d19b79991",
+					"type": "equipment",
+					"description": "Potion: Gambling",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 896,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 896,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "985b4906-b10e-40b2-9cea-1af8b7f32dd2",
+					"type": "equipment",
+					"description": "Potion: Odium",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "5d0dfbad-d5cc-48b0-bea3-dd46d84bf6bd",
+					"type": "equipment",
+					"description": "Potion: Truth",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1104,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1104,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "913927de-5eac-40d5-84ae-87b272658147",
+					"type": "equipment",
+					"description": "Potion: Craftsmanship",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1104,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1104,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "f88f82ac-66b1-44e9-8a0f-2c728ad9e38b",
+					"type": "equipment",
+					"description": "Potion: Luck",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1312,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1312,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "f8efef43-0c59-4b61-9a11-900d49ba9f44",
+					"type": "equipment",
+					"description": "Potion: Endurance",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1408,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1408,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "9c2bccea-1875-4c98-b3d9-6a6b96a760e2",
+					"type": "equipment",
+					"description": "Potion: Wisdom",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1504,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1504,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "78bcaa7d-f4e2-4104-87ca-3ece4b0a5850",
+					"type": "equipment",
+					"description": "Potion: Memory",
+					"reference": "M219",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1504,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1504,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "708a6fa3-8fda-475a-aee9-5bc11a52594e",
+					"type": "equipment",
+					"description": "Potion: Magic Resistance",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1600,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1600,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "342917b2-46dd-4dbe-a6a4-753919b5e52d",
+					"type": "equipment",
+					"description": "Potion: Unluckiness",
+					"reference": "M215",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1600,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1600,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "8646384a-2056-4059-9fb6-62c14ebee342",
+					"type": "equipment",
+					"description": "Potion: Leadership",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1664,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1664,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "3b8daf1a-6d10-4460-8c23-d5551195773d",
+					"type": "equipment",
+					"description": "Potion: Foresight",
+					"reference": "M218",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 1984,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 1984,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "e0e43e5e-cfbe-426e-9cc9-75f13a1f7205",
+					"type": "equipment",
+					"description": "Potion: Invulnerability",
+					"reference": "M214",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 2112,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 2112,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "8918817e-a8b1-423c-8910-0f793eda37a6",
+					"type": "equipment",
+					"description": "Potion: Hybridization",
+					"reference": "M217",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 2240,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 2240,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "9c6b5052-aa93-42ca-86e4-f22b655f97a6",
+					"type": "equipment",
+					"description": "Potion: Transformation",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "e4978672-03bd-4c10-b13c-e66d7ae9eb03",
+					"type": "equipment",
+					"description": "Potion: Invisibility",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "065c2f33-a96b-4079-8b40-786bd7ef88a5",
+					"type": "equipment",
+					"description": "Potion: Flight",
+					"reference": "M216",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "27aa896f-587c-4903-8954-690d9164c75d",
+					"type": "equipment",
+					"description": "Potion: Eternal Rest",
+					"reference": "M217",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 4096,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 4096,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "f04dc696-8cda-4f1c-a47d-3362f94629c9",
+					"type": "equipment",
+					"description": "Potion: Fertility",
+					"reference": "M217",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 6016,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 6016,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "2e5c5b00-f39d-415f-9723-da4e158152da",
+					"type": "equipment",
+					"description": "Potion: Long Slumber",
+					"reference": "M217",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 8960,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 8960,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "4dc23cc0-05f8-45bc-a042-0e3ec404a5f5",
+					"type": "equipment",
+					"description": "Potion: Resurrection",
+					"reference": "M218",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 25088,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 25088,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "976453f3-64e5-454a-9271-51e7d8d23469",
+					"type": "equipment",
+					"description": "Potion: Youth",
+					"reference": "M218",
+					"tags": [
+						"Potion"
+					],
+					"quantity": 1,
+					"value": 25088,
+					"weight": "0.25 lb",
+					"calc": {
+						"extended_value": 25088,
+						"extended_weight": "0.25 lb"
+					}
+				}
+			],
+			"description": "Potions",
+			"quantity": 1,
+			"calc": {
+				"extended_value": 117736,
+				"extended_weight": "15 lb"
+			}
+		},
+		{
+			"id": "f1b28f2b-b14d-44dc-a1d9-881a39d4fed3",
+			"type": "equipment_container",
+			"children": [
+				{
+					"id": "99f7bacb-9f75-45bd-a9a5-e345310d12a3",
+					"type": "equipment",
+					"description": "Powder: Healing",
+					"reference": "M217",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 120,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 120,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "35ca971b-a585-4e4d-900c-7c10338314fd",
+					"type": "equipment",
+					"description": "Powder: Sleep",
+					"reference": "M218",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 120,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 120,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "1042de23-7104-409d-ad81-428ca2030826",
+					"type": "equipment",
+					"description": "Powder: Drunkenness",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 130,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 130,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "84a61b8c-c9e2-45ee-b6a4-62e4fc05b5ac",
+					"type": "equipment",
+					"description": "Powder: Madness",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 200,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 200,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "2e52710b-2a7c-4936-8697-26efffe0ea21",
+					"type": "equipment",
+					"description": "Powder: Fear",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 224,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 224,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "c2658a93-e2b3-4feb-bfb8-b3e897a78419",
+					"type": "equipment",
+					"description": "Powder: Strength",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 256,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 256,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "da1ec423-3beb-417d-9959-7ed42a85149d",
+					"type": "equipment",
+					"description": "Powder: Fetching and Carrying",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "e76b4590-2577-4e6d-8830-cc795b133ced",
+					"type": "equipment",
+					"description": "Powder: Hatred",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "35d26f47-5fbb-4a29-bc1f-f1187afd96e1",
+					"type": "equipment",
+					"description": "Powder: Music",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 304,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 304,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "76c4eb51-f146-45c2-9c0f-614f77396fe3",
+					"type": "equipment",
+					"description": "Powder: Charisma",
+					"reference": "M218",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 352,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 352,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "d4d5bc4e-91c8-4ca1-a686-a2a2f713a2ba",
+					"type": "equipment",
+					"description": "Powder: Battle",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 352,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 352,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "ffb76ce9-18be-43a3-bf53-dc256311e0b4",
+					"type": "equipment",
+					"description": "Powder: Jealousy",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 400,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "eae74c0a-923b-4450-8bce-080196d2f953",
+					"type": "equipment",
+					"description": "Powder: Weakness",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 400,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "b0400917-6e5a-4524-940a-df8f3f976ebc",
+					"type": "equipment",
+					"description": "Powder: Alchemical Antidote",
+					"reference": "M217",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 400,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 400,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "6c5acde5-7f1f-4fcd-b2e7-dd6640c8e042",
+					"type": "equipment",
+					"description": "Powder: Tranquility",
+					"reference": "M218",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "5c6b968f-4d88-4340-853c-9527b0a75537",
+					"type": "equipment",
+					"description": "Powder: Fire Risistance",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "4633d64a-454d-429a-9a5b-1e71db665690",
+					"type": "equipment",
+					"description": "Powder: Death",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "cb7692dd-eb07-4d7f-ab8d-716a9429b386",
+					"type": "equipment",
+					"description": "Powder: Foolishness",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "4177e187-4687-4b95-b20a-682c6a13f446",
+					"type": "equipment",
+					"description": "Powder: Lecherousness",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "9cdf5453-3059-4ab2-b4ea-2a755b99590a",
+					"type": "equipment",
+					"description": "Powder: Stealth",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "4a5541bf-49f2-4302-97cf-93adad88c213",
+					"type": "equipment",
+					"description": "Powder: Gullibility",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "b869966c-17fa-4b73-b98d-c16da88f9fc8",
+					"type": "equipment",
+					"description": "Powder: Awakening",
+					"reference": "M217",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 512,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 512,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "2ffc2ea6-4143-4a63-8445-daacdb6c308d",
+					"type": "equipment",
+					"description": "Powder: Speed",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 552,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 552,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "e91525ca-d06a-4eb3-b6b8-fe2b83a0c509",
+					"type": "equipment",
+					"description": "Powder: True Sight",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 552,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 552,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "b707a0c0-f6ac-444b-87f4-c0f81f8975c5",
+					"type": "equipment",
+					"description": "Powder: Bird Control",
+					"reference": "M213",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 552,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 552,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "f37c44b4-74a6-4ede-b682-d0fcdadb1d5e",
+					"type": "equipment",
+					"description": "Powder: Friendship",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 552,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 552,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "9940e08c-695e-4dd7-870a-5c0c5f2fef7c",
+					"type": "equipment",
+					"description": "Powder: Attractiveness",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "2f4ef4ea-b813-44b5-bb0a-aa38c70107f3",
+					"type": "equipment",
+					"description": "Powder: Pain Resistance",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 608,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 608,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "8c8a47fe-d064-4593-9f1c-2276625e4396",
+					"type": "equipment",
+					"description": "Powder: Fustration",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 640,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 640,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "c0797a2f-e20c-45ca-a448-71064964deb2",
+					"type": "equipment",
+					"description": "Powder: Water-Walking",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 704,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 704,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "3dfab2d0-d564-4701-a182-b710b380940b",
+					"type": "equipment",
+					"description": "Powder: Universal Antidote",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 768,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 768,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "c43a053a-e0fe-4a2a-919b-47816b3b11d5",
+					"type": "equipment",
+					"description": "Powder: Self-Love",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 768,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 768,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "e295c3a2-50c8-4c4d-92d5-497d87b0811f",
+					"type": "equipment",
+					"description": "Powder: Aging",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 832,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 832,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "f49e8c84-36d1-47b4-b123-ba90afe7c43f",
+					"type": "equipment",
+					"description": "Powder: Beast-Speech",
+					"reference": "M213",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 848,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 848,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "62e6714f-3eaf-4606-af98-c0285c839a5d",
+					"type": "equipment",
+					"description": "Powder: Gambling",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 896,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 896,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "e1be2b3c-6add-47de-a336-47416b4a43bc",
+					"type": "equipment",
+					"description": "Powder: Odium",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "c19b4b91-97cb-48c3-a249-a469e9f2c429",
+					"type": "equipment",
+					"description": "Powder: Craftsmanship",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1104,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1104,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "874b1fdc-27cb-4909-bab6-819634433769",
+					"type": "equipment",
+					"description": "Powder: Truth",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1104,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1104,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "5ec82631-d9ea-44d5-ac6d-46db39ac7344",
+					"type": "equipment",
+					"description": "Powder: Luck",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1312,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1312,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "cf9e5a2f-a1ff-4263-9966-e29ef677d294",
+					"type": "equipment",
+					"description": "Powder: Endurance",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1408,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1408,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "4ea2d553-3f65-460f-b9fa-fc4df61a3d2a",
+					"type": "equipment",
+					"description": "Powder: Memory",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1504,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1504,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "fc7ee39e-4cf0-42ac-8585-c927cf14be21",
+					"type": "equipment",
+					"description": "Powder: Wisdom",
+					"reference": "M219",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1504,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1504,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "58c4dac8-eadd-419d-aaa1-0fa3fb14dedb",
+					"type": "equipment",
+					"description": "Powder: Magic Resistance",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1600,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1600,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "9c8b05e4-7aad-4888-b29f-5bb391ae5464",
+					"type": "equipment",
+					"description": "Powder: Unluckiness",
+					"reference": "M215",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1600,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1600,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "ad40c786-086d-4785-9a45-8185e4876d20",
+					"type": "equipment",
+					"description": "Powder: Leadership",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1664,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1664,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "aec7d4bf-c4c9-422c-9c45-a68b34748907",
+					"type": "equipment",
+					"description": "Powder: Foresight",
+					"reference": "M218",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 1984,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 1984,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "0b124d8a-c78f-4b98-b27b-9a400ea65e1f",
+					"type": "equipment",
+					"description": "Powder: Invulnerability",
+					"reference": "M214",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 2112,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 2112,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "fa340708-3f61-4dd0-9bed-40037799261c",
+					"type": "equipment",
+					"description": "Powder: Hybridization",
+					"reference": "M217",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 2240,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 2240,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "cbc6a3f2-9053-4e8b-a3fd-2a07e420fb6e",
+					"type": "equipment",
+					"description": "Powder: Transformation",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "3efbf86c-0e7a-4a93-ad5d-e44cc821f923",
+					"type": "equipment",
+					"description": "Powder: Flight",
+					"reference": "M216",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 3008,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 3008,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "f81fc0f6-f7e9-47e8-a604-3c343d958e25",
+					"type": "equipment",
+					"description": "Powder: Fertility",
+					"reference": "M217",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 6016,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 6016,
+						"extended_weight": "0.025 lb"
+					}
+				},
+				{
+					"id": "44fba51d-38ea-4b2a-9fe7-dd335f10e725",
+					"type": "equipment",
+					"description": "Powder: Long Slumber",
+					"reference": "M217",
+					"tags": [
+						"Powder"
+					],
+					"quantity": 1,
+					"value": 8960,
+					"weight": "0.025 lb",
+					"calc": {
+						"extended_value": 8960,
+						"extended_weight": "0.025 lb"
+					}
+				}
+			],
+			"description": "Powders",
+			"quantity": 1,
+			"calc": {
+				"extended_value": 57994,
+				"extended_weight": "1.3 lb"
+			}
+		},
+		{
+			"id": "a5bf5822-35a5-46b7-b3e7-3ce8e3ef06a1",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
+				{
+					"id": "263dbd75-ac5a-482d-971a-5ec087a61616",
+					"type": "equipment",
+					"description": "1 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 72,
+					"weight": "0.001 lb",
+					"max_uses": 1,
+					"uses": 1,
+					"calc": {
+						"extended_value": 72,
+						"extended_weight": "0.001 lb"
+					}
+				},
+				{
+					"id": "043a929d-6b31-41ae-9f39-e5c71ca9a63b",
+					"type": "equipment",
+					"description": "2 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 168,
+					"weight": "0.001 lb",
+					"max_uses": 2,
+					"uses": 2,
+					"calc": {
+						"extended_value": 168,
+						"extended_weight": "0.001 lb"
+					}
+				},
+				{
+					"id": "812a16e7-9f5d-44c3-bd63-2d280f38e275",
+					"type": "equipment",
+					"description": "3 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 288,
+					"weight": "0.001 lb",
+					"max_uses": 3,
+					"uses": 3,
+					"calc": {
+						"extended_value": 288,
+						"extended_weight": "0.001 lb"
+					}
+				},
+				{
+					"id": "13aefa2c-d31f-4fac-bdf1-951ade12be31",
+					"type": "equipment",
+					"description": "4 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 448,
+					"weight": "0.002 lb",
+					"max_uses": 4,
+					"uses": 4,
+					"calc": {
+						"extended_value": 448,
+						"extended_weight": "0.002 lb"
+					}
+				},
+				{
+					"id": "13a06b66-032b-4cad-a1c4-ec7c5e2a72bc",
+					"type": "equipment",
+					"description": "5 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 592,
+					"weight": "0.002 lb",
+					"max_uses": 5,
+					"uses": 5,
+					"calc": {
+						"extended_value": 592,
+						"extended_weight": "0.002 lb"
+					}
+				},
+				{
+					"id": "ddb1415e-077e-4ed4-8f67-49893aa14088",
+					"type": "equipment",
+					"description": "6 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 800,
+					"weight": "0.002 lb",
+					"max_uses": 6,
+					"uses": 6,
+					"calc": {
+						"extended_value": 800,
+						"extended_weight": "0.002 lb"
+					}
+				},
+				{
+					"id": "6f52ec97-d61d-4042-9d38-9f5d16d1624e",
+					"type": "equipment",
+					"description": "7 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 1024,
+					"weight": "0.003 lb",
+					"max_uses": 7,
+					"uses": 7,
+					"calc": {
+						"extended_value": 1024,
+						"extended_weight": "0.003 lb"
+					}
+				},
+				{
+					"id": "e1573db5-ba76-447c-a767-177cd34deab5",
+					"type": "equipment",
+					"description": "8 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 1312,
+					"weight": "0.003 lb",
+					"max_uses": 8,
+					"uses": 8,
+					"calc": {
+						"extended_value": 1312,
+						"extended_weight": "0.003 lb"
+					}
+				},
+				{
+					"id": "6713788e-5c68-4585-8bfd-42532a436d67",
+					"type": "equipment",
+					"description": "9 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 1552,
+					"weight": "0.004 lb",
+					"max_uses": 9,
+					"uses": 9,
+					"calc": {
+						"extended_value": 1552,
+						"extended_weight": "0.004 lb"
+					}
+				},
+				{
+					"id": "ad0aa6c3-dc9a-4dd5-b94c-f0ec8c43025f",
+					"type": "equipment",
+					"description": "10 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 1920,
+					"weight": "0.004 lb",
+					"max_uses": 10,
+					"uses": 10,
+					"calc": {
+						"extended_value": 1920,
+						"extended_weight": "0.004 lb"
+					}
+				},
+				{
+					"id": "a61acd5e-6612-438f-9d7d-0fbcfb4e69f5",
+					"type": "equipment",
+					"description": "11 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 2240,
+					"weight": "0.004 lb",
+					"max_uses": 11,
+					"uses": 11,
+					"calc": {
+						"extended_value": 2240,
+						"extended_weight": "0.004 lb"
+					}
+				},
+				{
+					"id": "fe4b6cb0-85a4-4944-9040-26db6abd7e25",
+					"type": "equipment",
+					"description": "12 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 2688,
+					"weight": "0.005 lb",
+					"max_uses": 12,
+					"uses": 12,
+					"calc": {
+						"extended_value": 2688,
+						"extended_weight": "0.005 lb"
+					}
+				},
+				{
+					"id": "da213973-95f8-400e-963d-601bec37d341",
+					"type": "equipment",
+					"description": "13 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 3072,
+					"weight": "0.005 lb",
+					"max_uses": 13,
+					"uses": 13,
+					"calc": {
+						"extended_value": 3072,
+						"extended_weight": "0.005 lb"
+					}
+				},
+				{
+					"id": "68b06c4b-4b0c-4fe3-a339-5ccbc43cc831",
+					"type": "equipment",
+					"description": "14 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 3584,
+					"weight": "0.006 lb",
+					"max_uses": 14,
+					"uses": 14,
+					"calc": {
+						"extended_value": 3584,
+						"extended_weight": "0.006 lb"
+					}
+				},
+				{
+					"id": "c0752fef-9eb5-4852-912a-6504ece6c5f7",
+					"type": "equipment",
+					"description": "15 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 4032,
+					"weight": "0.006 lb",
+					"max_uses": 15,
+					"uses": 15,
+					"calc": {
+						"extended_value": 4032,
+						"extended_weight": "0.006 lb"
+					}
+				},
+				{
+					"id": "4aff7ee2-09a6-406c-8467-0b3d4e16e232",
+					"type": "equipment",
+					"description": "16 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 4608,
+					"weight": "0.006 lb",
+					"max_uses": 16,
+					"uses": 16,
+					"calc": {
+						"extended_value": 4608,
+						"extended_weight": "0.006 lb"
+					}
+				},
+				{
+					"id": "63fbf8a9-213c-4d87-bc68-4795df2dc8a7",
+					"type": "equipment",
+					"description": "17 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 5248,
+					"weight": "0.007 lb",
+					"max_uses": 17,
+					"uses": 17,
+					"calc": {
+						"extended_value": 5248,
+						"extended_weight": "0.007 lb"
+					}
+				},
+				{
+					"id": "6b04d622-5994-4b75-b9c1-7dad8e1ce6d4",
+					"type": "equipment",
+					"description": "18 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 5888,
+					"weight": "0.007 lb",
+					"max_uses": 18,
+					"uses": 18,
+					"calc": {
+						"extended_value": 5888,
+						"extended_weight": "0.007 lb"
+					}
+				},
+				{
+					"id": "eb873b41-21c7-4998-bc00-b621a37a1535",
+					"type": "equipment",
+					"description": "19 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 6592,
+					"weight": "0.008 lb",
+					"max_uses": 19,
+					"uses": 19,
+					"calc": {
+						"extended_value": 6592,
+						"extended_weight": "0.008 lb"
+					}
+				},
+				{
+					"id": "64c6a5e8-9981-4387-b818-86cbc2614bdb",
+					"type": "equipment",
+					"description": "20 pt Powerstone",
+					"reference": "M20",
+					"tags": [
+						"Powerstone"
+					],
+					"quantity": 1,
+					"value": 7360,
+					"weight": "0.008 lb",
+					"max_uses": 20,
+					"uses": 20,
+					"calc": {
+						"extended_value": 7360,
+						"extended_weight": "0.008 lb"
+					}
+				}
+			],
+			"description": "Powerstones",
+			"quantity": 1,
+			"calc": {
+				"extended_value": 53488,
+				"extended_weight": "0.085 lb"
+			}
+		},
+		{
+			"id": "4a631fa5-ec28-47fd-b73b-9afa0b23dddf",
+			"type": "equipment",
+			"description": "Goblin fruit, coupnettle",
+			"notes": "heals 1d+1 fp of faerie who eats it. very bitter. may be steeped into tea.",
+			"tech_level": "0",
+			"tags": [
+				"Faerie Items"
+			],
+			"quantity": 1,
+			"value": 384,
+			"weight": "0.25 lb",
+			"calc": {
+				"extended_value": 384,
+				"extended_weight": "0.25 lb"
+			}
+		},
+		{
+			"id": "2a9510c3-f455-437a-bfc0-768923bafff0",
+			"type": "equipment",
+			"description": "Goblin fruit, amaranthine",
+			"notes": "heals 1d+1 hp of faerie who eats it. sweet fruit.",
+			"tech_level": "0",
+			"tags": [
+				"Faerie Items"
+			],
+			"quantity": 1,
+			"value": 512,
+			"weight": "0.25 lb",
+			"calc": {
+				"extended_value": 512,
+				"extended_weight": "0.25 lb"
+			}
+		},
+		{
+			"id": "c6964c49-1def-4068-90e5-bd2623e87136",
+			"type": "equipment",
+			"description": "Goblin fruit, nightcap",
+			"notes": "anyone who ingests sleeps for 1d hours, resist with HT, may be made into tea",
+			"tech_level": "0",
+			"tags": [
+				"Faerie Items"
+			],
+			"quantity": 1,
+			"value": 512,
+			"weight": "0.25 lb",
+			"calc": {
+				"extended_value": 512,
+				"extended_weight": "0.25 lb"
+			}
+		},
+		{
+			"id": "2c85be07-1e14-47bd-8832-a5b04ce12f7f",
+			"type": "equipment",
+			"description": "Bangles of Lifeforce Stealing",
+			"notes": "two parts. The master is worn by a mage who may cast Steal Energy , Steal Vitality, or Steal Youth instantly on the wearer of the other bangle at any distance, even while using that energy to fuel another spell. The subject bangle may not be removed while the master bangle is being worn except by the mage who wears the master bangle. Damage to the subject bangle transfers to damage to the wearer until the wearer is destroyed.",
+			"tech_level": "3",
+			"tags": [
+				"magic"
+			],
+			"quantity": 1,
+			"value": 800000,
+			"weight": "0.02 lb",
+			"calc": {
+				"extended_value": 800000,
+				"extended_weight": "0.02 lb"
+			}
+		}
+	]
+}

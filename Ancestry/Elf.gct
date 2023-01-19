@@ -1,0 +1,713 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "1178ad81-2e78-41c1-99ac-a33e1ec9c5ea",
+	"traits": [
+		{
+			"id": "d05d1187-5edf-4096-bef9-beb1fe3b1f82",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "68b44fa6-7a8e-4234-b609-2db64c4c556d",
+					"type": "trait",
+					"name": "Attractive",
+					"reference": "B21",
+					"tags": [
+						"Physical"
+					],
+					"base_points": 4,
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "512d0f2d-9617-44ba-94f3-d2492a12f4b7",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "3c760669-5f1d-49ba-8ea9-7bd90ee3d337",
+							"type": "trait",
+							"name": "Cannot speak or write a falsehood",
+							"base_points": -1,
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "246ac374-dc10-4e10-bc7a-e2d8a3edfd01",
+							"type": "trait",
+							"name": "Dependency (Mana)",
+							"reference": "B130",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "f849e04f-1966-4b9d-bb0f-35dbf9db3b35",
+									"type": "modifier",
+									"name": "Rarity: Rare",
+									"reference": "B130",
+									"cost": -30,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "fa208f7c-81bb-417e-9c56-421202480c15",
+									"type": "modifier",
+									"name": "Rarity: Occasional",
+									"reference": "B130",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "603f18de-52f5-4b83-9dc6-8948b99f025b",
+									"type": "modifier",
+									"name": "Rarity: Common",
+									"reference": "B130",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5b91ebe6-caa5-4cca-b63d-bf4362e9c6ba",
+									"type": "modifier",
+									"name": "Rarity: Very Common",
+									"reference": "B130",
+									"cost": -5,
+									"cost_type": "points"
+								},
+								{
+									"id": "4bfd3ca1-2a30-4cea-9371-f259025393c1",
+									"type": "modifier",
+									"name": "Illegal",
+									"reference": "B130",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "070e26ec-771e-4792-ab4d-1a3ce0bbcb19",
+									"type": "modifier",
+									"name": "Frequency: Constantly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per minute without it",
+									"cost": 5,
+									"cost_type": "multiplier"
+								},
+								{
+									"id": "7ab04e74-b301-4da4-b959-2f8af066f423",
+									"type": "modifier",
+									"name": "Frequency: Hourly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per 10 minutes after missing a hourly dose",
+									"cost": 4,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "e358e3af-156a-4aba-b096-725360bddeee",
+									"type": "modifier",
+									"name": "Frequency: Daily",
+									"reference": "B130",
+									"notes": "Lose 1 HP per hour after missing a daily dose",
+									"cost": 3,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "68a69af8-ee10-49dd-a14b-264c84881cd1",
+									"type": "modifier",
+									"name": "Frequency: Weekly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per six hours after missing a weekly dose",
+									"cost": 2,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "9c026469-392b-4344-8411-022a0d6c1057",
+									"type": "modifier",
+									"name": "Frequency: Monthly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per day after missing a monthly dose",
+									"cost": 1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "c6529cbc-963b-484f-a0df-a4eb0e187d29",
+									"type": "modifier",
+									"name": "Frequency: Seasonally",
+									"reference": "B130",
+									"notes": "Lose 1 HP per 3 days after missing a seasonal dose",
+									"cost": 0.3333,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "230e68e5-cd69-4527-a45f-55a38fa09f86",
+									"type": "modifier",
+									"name": "Frequency: Yearly",
+									"reference": "B130",
+									"notes": "Lose 1 HP per 2 weeks after missing a yearly dose",
+									"cost": 0.1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "da0960ba-5b44-4f8d-9554-e3d7a9c0098c",
+									"type": "modifier",
+									"name": "Aging",
+									"reference": "B130",
+									"notes": "Age 2 years for each HP lost due to this dependency",
+									"cost": 30,
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -25
+							}
+						},
+						{
+							"id": "316b6e78-3264-4f00-9422-66703238dfb1",
+							"type": "trait",
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "e9f4f060-4920-4cc8-90fc-ad5511264a60",
+									"type": "modifier",
+									"name": "Dance",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "5ce5cb4a-7374-4292-bb44-a2d583aa1773",
+									"type": "modifier",
+									"name": "Dark-Aspected",
+									"cost": -50,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "d3912606-25c8-4631-ac20-f47ac6fa71c8",
+									"type": "modifier",
+									"name": "Day-Aspected",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "66554765-6d27-4b84-8b98-92de7db881c1",
+									"type": "modifier",
+									"name": "Musical",
+									"cost": -50,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "013120ac-74a1-4dfd-bc5c-20b490021070",
+									"type": "modifier",
+									"name": "Night-Aspected",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "c717162c-2a38-4f97-8a70-91fb42149810",
+									"type": "modifier",
+									"name": "One College",
+									"notes": "@College@",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "9b3df016-cae2-42e0-ba2c-cf10d110c3b9",
+									"type": "modifier",
+									"name": "Solitary",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "4a98e37a-879f-4942-916e-01c59f288596",
+									"type": "modifier",
+									"name": "Song",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "3f26e0cc-d9d7-4b55-a6f8-26f0c84dbce6",
+							"type": "trait",
+							"name": "Unaging",
+							"reference": "B95",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "05b03fe3-e805-45d6-8b8d-e1b4958c70f3",
+									"type": "modifier",
+									"name": "Age Control",
+									"reference": "B95",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "e05bc882-9e33-49a3-9b1e-d4e5e179cb54",
+									"type": "modifier",
+									"name": "IQ Only",
+									"reference": "RSWL24",
+									"cost": -75,
+									"disabled": true
+								},
+								{
+									"id": "121a0f74-58c9-400c-aa29-37f3379e0bb6",
+									"type": "modifier",
+									"name": "Halt Aging, Weekly",
+									"reference": "PSI18",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "fa9ef73f-abc5-4afd-9631-fcfa803a8d11",
+									"type": "modifier",
+									"name": "Halt Aging, Monthly",
+									"reference": "PSI18",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "14cee344-c829-4569-ae0c-6459de22c991",
+									"type": "modifier",
+									"name": "Halt Aging, Yearly",
+									"reference": "PSI18",
+									"cost": 130,
+									"disabled": true
+								},
+								{
+									"id": "e70ceaac-1b43-4e90-9d80-5aa7c697005d",
+									"type": "modifier",
+									"name": "Life Extension",
+									"reference": "PSI18",
+									"cost": -30,
+									"disabled": true
+								}
+							],
+							"base_points": 15,
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "f174741a-2b36-4dd4-92e0-09c9aebb96ff",
+							"type": "trait",
+							"name": "Vulnerability",
+							"reference": "B161",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "2f741d71-29d1-4c87-b3f3-4df2857575da",
+									"type": "modifier",
+									"name": "meteoric iron",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points"
+								},
+								{
+									"id": "f875d3ce-e4cc-4578-89f7-203d642b4c80",
+									"type": "modifier",
+									"name": "@Occasional attack@",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "02f6d07c-7cb9-4d13-8ee7-8f43530aa5b3",
+									"type": "modifier",
+									"name": "@Common attack@",
+									"reference": "B161",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3e15637b-02e8-43fc-b6dd-3eb504ffdab9",
+									"type": "modifier",
+									"name": "@Very common attack@",
+									"reference": "B161",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6f51c201-b7b2-43cf-92b0-3c878bfd42ef",
+									"type": "modifier",
+									"name": "Wounding x2",
+									"reference": "B161",
+									"cost": 2,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "28ba1a34-dd57-4b21-a041-e8fb3b298099",
+									"type": "modifier",
+									"name": "Wounding x3",
+									"reference": "B161",
+									"cost": 3,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "2a7bacde-7905-4fee-890d-98acdc723e01",
+									"type": "modifier",
+									"name": "Wounding x4",
+									"reference": "B161",
+									"cost": 4,
+									"cost_type": "multiplier"
+								},
+								{
+									"id": "050c0582-dfd1-443e-bb45-70c00462417d",
+									"type": "modifier",
+									"name": "Fatigue Only",
+									"reference": "B161",
+									"cost": -50,
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -20
+							}
+						},
+						{
+							"id": "399b24b6-e5d5-4768-8d10-90653a5d8750",
+							"type": "trait",
+							"name": "Weakness",
+							"reference": "B161",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "8c63515d-2593-403b-ab0e-f27f1017d4a4",
+									"type": "modifier",
+									"name": "1d damage per minute",
+									"reference": "B161",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "db9ea0f4-2a68-40a7-9ffc-2d9ce421d143",
+									"type": "modifier",
+									"name": "1d damage per 5 minutes",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points"
+								},
+								{
+									"id": "a095592a-ef01-4086-9697-7db91f1c4e55",
+									"type": "modifier",
+									"name": "1d damage per 30 minutes",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "41a95f97-c157-4cc5-9168-3843a3a6afe1",
+									"type": "modifier",
+									"name": "meteoric iron",
+									"reference": "B161",
+									"cost": 0.5,
+									"cost_type": "multiplier"
+								},
+								{
+									"id": "062db4af-4553-44be-a629-33c1eb27cbde",
+									"type": "modifier",
+									"name": "@Occasional Substance@",
+									"reference": "B161",
+									"cost": 1,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "b2ead806-b113-418c-8854-c1781c890d0a",
+									"type": "modifier",
+									"name": "@Common Substance@",
+									"reference": "B161",
+									"cost": 2,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "0c92af55-568b-4b10-a726-961b76695484",
+									"type": "modifier",
+									"name": "@Very Common Substance@",
+									"reference": "B161",
+									"cost": 3,
+									"cost_type": "multiplier",
+									"disabled": true
+								},
+								{
+									"id": "057d1939-6c96-4ad0-b7e2-b13d3f0a0b9e",
+									"type": "modifier",
+									"name": "Fatigue Only",
+									"reference": "B161",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "2b8246c5-2564-4633-9579-70fcb5fe348e",
+									"type": "modifier",
+									"name": "Variable",
+									"reference": "B161",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						}
+					],
+					"name": "Fae",
+					"container_type": "meta_trait",
+					"calc": {
+						"points": -31
+					}
+				},
+				{
+					"id": "560a3e10-50a6-45ad-8fb3-895964b2d047",
+					"type": "trait",
+					"name": "Magic Resistance",
+					"reference": "B67",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "1b0098f6-34ca-47b3-83a9-0ce1a177b5d1",
+							"type": "modifier",
+							"name": "Improved",
+							"reference": "B67",
+							"cost": 150
+						},
+						{
+							"id": "cb2e520e-4b6f-4b4e-864b-ac818ef08fab",
+							"type": "modifier",
+							"name": "vs. mind control",
+							"cost": -200
+						}
+					],
+					"levels": 15,
+					"points_per_level": 2,
+					"can_level": true,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "53492249-64b3-407a-abb3-cdeb1073f3ae",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "B71",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 6,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "b37f1486-b190-4ef9-b8e8-35b97f4b88c7",
+					"type": "trait",
+					"name": "Perfect Balance",
+					"reference": "B74",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "piloting"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "acrobatics"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "climbing"
+							},
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "b8b201ad-4aff-42df-a2dc-3d3952035eaa",
+					"type": "trait",
+					"name": "Voice",
+					"reference": "B97",
+					"tags": [
+						"Physical"
+					],
+					"base_points": 10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "diplomacy"
+							},
+							"amount": 2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fast-talk"
+							},
+							"amount": 2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "mimicry"
+							},
+							"amount": 2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "performance"
+							},
+							"amount": 2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "politics"
+							},
+							"amount": 2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "public speaking"
+							},
+							"amount": 2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sex appeal"
+							},
+							"amount": 2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "singing"
+							},
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"name": "Elf",
+			"container_type": "race",
+			"calc": {
+				"points": 19
+			}
+		}
+	]
+}
