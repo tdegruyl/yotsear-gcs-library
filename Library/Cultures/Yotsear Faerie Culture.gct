@@ -142,6 +142,19 @@
 					}
 				},
 				{
+					"id": "9e385e4c-d32d-4f84-9482-625afc8a0e51",
+					"type": "trait",
+					"name": "Unusual Training (Invisibility Art; only in natural settings)",
+					"reference": "PU2:21",
+					"tags": [
+						"Perk"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
 					"id": "4c1d5016-3485-40b2-a65f-12b31687d681",
 					"type": "trait",
 					"name": "Language: Faerie",
@@ -242,91 +255,6 @@
 					}
 				},
 				{
-					"id": "8613d0f4-fca2-434c-bce5-bb728070effc",
-					"type": "trait",
-					"name": "Obscure (sight)",
-					"reference": "B72,P64,PSI16",
-					"tags": [
-						"Advantage",
-						"Exotic",
-						"Physical"
-					],
-					"modifiers": [
-						{
-							"id": "6bcd1d67-4bec-45c5-8e53-afcf2af34415",
-							"type": "modifier",
-							"name": "Defensive",
-							"reference": "B72",
-							"cost": 50,
-							"disabled": true
-						},
-						{
-							"id": "2cc1e79d-54bb-4e39-9b05-a6ec10b60b94",
-							"type": "modifier",
-							"name": "Extended",
-							"reference": "B72",
-							"notes": "@Sense@",
-							"cost": 20,
-							"disabled": true
-						},
-						{
-							"id": "d1ae6617-1d6b-47e6-a392-826bd1eeea0d",
-							"type": "modifier",
-							"name": "Ranged",
-							"reference": "B72",
-							"cost": 50,
-							"disabled": true
-						},
-						{
-							"id": "a7936ef4-b7e5-4d81-9efb-37d49050530c",
-							"type": "modifier",
-							"name": "Stealthy",
-							"reference": "B72",
-							"cost": 100
-						},
-						{
-							"id": "2fa9a36c-0cb6-4e3c-ba52-47f404f91cb1",
-							"type": "modifier",
-							"name": "Always On",
-							"reference": "B72",
-							"cost": -50,
-							"disabled": true
-						},
-						{
-							"id": "7779354f-7658-4c57-8861-eb03382a92f7",
-							"type": "modifier",
-							"name": "Limited",
-							"reference": "P65",
-							"notes": "@Source@",
-							"cost": -20,
-							"disabled": true
-						},
-						{
-							"id": "e2eea33e-e7d3-46af-b926-5f6dd0e066f5",
-							"type": "modifier",
-							"name": "Limited",
-							"reference": "P65",
-							"notes": "@Power@",
-							"cost": -40,
-							"disabled": true
-						},
-						{
-							"id": "a367fc81-3857-46e0-ae56-eaf3d4769c97",
-							"type": "modifier",
-							"name": "Anti-Targeting",
-							"reference": "PSI16",
-							"cost": -20,
-							"disabled": true
-						}
-					],
-					"levels": 3,
-					"points_per_level": 2,
-					"can_level": true,
-					"calc": {
-						"points": 12
-					}
-				},
-				{
 					"id": "fcea67ed-f473-45b1-aa21-a27487943ae8",
 					"type": "trait",
 					"name": "Sense of Duty",
@@ -397,7 +325,113 @@
 			],
 			"name": "Yotsear Faerie Culture",
 			"calc": {
-				"points": 3
+				"points": -8
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "fd7dd0ad-746d-4f55-b8c7-486720c4f9fc",
+			"type": "skill_container",
+			"open": true,
+			"name": "Yotsear Fairy Culture"
+		},
+		{
+			"id": "c0efad32-ddbf-4c2d-b1b8-f007ea70515a",
+			"type": "skill",
+			"name": "Camouflage",
+			"reference": "B183",
+			"tags": [
+				"Exploration",
+				"Military",
+				"Outdoor"
+			],
+			"difficulty": "iq/e",
+			"points": 2,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"modifier": -2
+				}
+			]
+		},
+		{
+			"id": "1cb0830e-bea1-4c3e-b02d-8f8a9fcd7ab8",
+			"type": "skill",
+			"name": "Stealth",
+			"reference": "B222",
+			"tags": [
+				"Criminal",
+				"Police",
+				"Spy",
+				"Street"
+			],
+			"difficulty": "dx/a",
+			"points": 8,
+			"encumbrance_penalty_multiplier": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "40625ab3-45aa-43b9-803e-37054e41b25e",
+			"type": "skill",
+			"name": "Invisibility Art",
+			"reference": "B202",
+			"tags": [
+				"Esoteric"
+			],
+			"difficulty": "iq/vh",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "stealth"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "hypnotism"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "trained by a master"
+						}
+					}
+				]
 			}
 		}
 	]
