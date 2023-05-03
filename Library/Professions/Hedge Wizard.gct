@@ -84,6 +84,253 @@
 					"open": true,
 					"children": [
 						{
+							"id": "f184dd81-86e3-40f9-8334-e9956a2e03d3",
+							"type": "trait",
+							"name": "Magery (Ritual Path)",
+							"reference": "TRPM5",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"base_points": 5,
+							"levels": 3,
+							"points_per_level": 10,
+							"can_level": true,
+							"calc": {
+								"points": 35
+							}
+						},
+						{
+							"id": "be5f5733-7a65-4190-96f5-bda2d63a5cb4",
+							"type": "trait_container",
+							"open": true,
+							"children": [
+								{
+									"id": "9843ca33-0b66-4cba-a794-8e54ec50ca09",
+									"type": "trait",
+									"name": "Language: Faerie",
+									"reference": "B24",
+									"tags": [
+										"Advantage",
+										"Language",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+											"type": "modifier",
+											"name": "Native",
+											"reference": "B23",
+											"cost": -6,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points"
+										},
+										{
+											"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points"
+										},
+										{
+											"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": 4
+									}
+								},
+								{
+									"id": "6c12bb07-43e5-40bf-bbea-a70f8df8d47e",
+									"type": "trait",
+									"name": "Language: Old Celatiern",
+									"reference": "B24",
+									"tags": [
+										"Advantage",
+										"Language",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+											"type": "modifier",
+											"name": "Native",
+											"reference": "B23",
+											"cost": -6,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points"
+										},
+										{
+											"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points"
+										},
+										{
+											"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": 4
+									}
+								}
+							],
+							"name": "Magical Language",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							},
+							"calc": {
+								"points": 8
+							}
+						},
+						{
+							"id": "2fc027c5-6eee-4a0c-b5cf-8afc11deb830",
+							"type": "trait",
+							"name": "Magical Style Familiarity (Path of the Wise)",
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
 							"id": "55194c7a-5ddb-4fa6-ac28-45038f20f4df",
 							"type": "trait_container",
 							"open": true,
@@ -621,249 +868,16 @@
 									}
 								}
 							],
-							"name": "40 points chosen from:",
+							"name": "Other Advantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 40
+								}
+							},
 							"calc": {
 								"points": 75
-							}
-						},
-						{
-							"id": "be5f5733-7a65-4190-96f5-bda2d63a5cb4",
-							"type": "trait_container",
-							"open": true,
-							"children": [
-								{
-									"id": "9843ca33-0b66-4cba-a794-8e54ec50ca09",
-									"type": "trait",
-									"name": "Language: Faerie",
-									"reference": "B24",
-									"tags": [
-										"Advantage",
-										"Language",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "ff972d9a-b925-4895-a489-f3d14999074d",
-											"type": "modifier",
-											"name": "Native",
-											"reference": "B23",
-											"cost": -6,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
-											"type": "modifier",
-											"name": "Spoken",
-											"reference": "B24",
-											"notes": "None",
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
-											"type": "modifier",
-											"name": "Spoken",
-											"reference": "B24",
-											"notes": "Broken",
-											"cost": 1,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
-											"type": "modifier",
-											"name": "Spoken",
-											"reference": "B24",
-											"notes": "Accented",
-											"cost": 2,
-											"cost_type": "points"
-										},
-										{
-											"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
-											"type": "modifier",
-											"name": "Spoken",
-											"reference": "B24",
-											"notes": "Native",
-											"cost": 3,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
-											"type": "modifier",
-											"name": "Written",
-											"reference": "B24",
-											"notes": "None",
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
-											"type": "modifier",
-											"name": "Written",
-											"reference": "B24",
-											"notes": "Broken",
-											"cost": 1,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
-											"type": "modifier",
-											"name": "Written",
-											"reference": "B24",
-											"notes": "Accented",
-											"cost": 2,
-											"cost_type": "points"
-										},
-										{
-											"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
-											"type": "modifier",
-											"name": "Written",
-											"reference": "B24",
-											"notes": "Native",
-											"cost": 3,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 4
-									}
-								},
-								{
-									"id": "6c12bb07-43e5-40bf-bbea-a70f8df8d47e",
-									"type": "trait",
-									"name": "Language: Old Celatiern",
-									"reference": "B24",
-									"tags": [
-										"Advantage",
-										"Language",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "ff972d9a-b925-4895-a489-f3d14999074d",
-											"type": "modifier",
-											"name": "Native",
-											"reference": "B23",
-											"cost": -6,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
-											"type": "modifier",
-											"name": "Spoken",
-											"reference": "B24",
-											"notes": "None",
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
-											"type": "modifier",
-											"name": "Spoken",
-											"reference": "B24",
-											"notes": "Broken",
-											"cost": 1,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
-											"type": "modifier",
-											"name": "Spoken",
-											"reference": "B24",
-											"notes": "Accented",
-											"cost": 2,
-											"cost_type": "points"
-										},
-										{
-											"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
-											"type": "modifier",
-											"name": "Spoken",
-											"reference": "B24",
-											"notes": "Native",
-											"cost": 3,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
-											"type": "modifier",
-											"name": "Written",
-											"reference": "B24",
-											"notes": "None",
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
-											"type": "modifier",
-											"name": "Written",
-											"reference": "B24",
-											"notes": "Broken",
-											"cost": 1,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
-											"type": "modifier",
-											"name": "Written",
-											"reference": "B24",
-											"notes": "Accented",
-											"cost": 2,
-											"cost_type": "points"
-										},
-										{
-											"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
-											"type": "modifier",
-											"name": "Written",
-											"reference": "B24",
-											"notes": "Native",
-											"cost": 3,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 4
-									}
-								}
-							],
-							"name": "Either",
-							"calc": {
-								"points": 8
-							}
-						},
-						{
-							"id": "f184dd81-86e3-40f9-8334-e9956a2e03d3",
-							"type": "trait",
-							"name": "Magery (Ritual Path)",
-							"reference": "TRPM5",
-							"tags": [
-								"Advantage",
-								"Mental",
-								"Supernatural"
-							],
-							"base_points": 5,
-							"levels": 3,
-							"points_per_level": 10,
-							"can_level": true,
-							"calc": {
-								"points": 35
-							}
-						},
-						{
-							"id": "2fc027c5-6eee-4a0c-b5cf-8afc11deb830",
-							"type": "trait",
-							"name": "Magical Style Familiarity (Path of the Wise)",
-							"base_points": 1,
-							"calc": {
-								"points": 1
 							}
 						}
 					],
@@ -1043,7 +1057,14 @@
 									}
 								}
 							],
-							"name": "-20 chosen from:",
+							"name": "Other Disadvantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": -20
+								}
+							},
 							"calc": {
 								"points": -40
 							}
@@ -1211,7 +1232,14 @@
 									]
 								}
 							],
-							"name": "Either"
+							"name": "Area Knowledge",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						},
 						{
 							"id": "48f1e314-dd9f-4875-82be-7355ebe2efd4",
@@ -1658,43 +1686,75 @@
 					"open": true,
 					"children": [
 						{
+							"id": "bcd794d0-4c8f-45c1-8464-7fe81ccb17d8",
+							"type": "skill",
+							"name": "First Aid",
+							"reference": "B195",
+							"tags": [
+								"Everyman",
+								"Medical"
+							],
+							"tech_level": "",
+							"difficulty": "iq/e",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Esoteric Medicine"
+								},
+								{
+									"type": "skill",
+									"name": "Physician"
+								},
+								{
+									"type": "skill",
+									"name": "Veterinary",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "0c0c498c-a1dc-4a3c-9606-7dacfdf52e36",
+							"type": "skill",
+							"name": "Diagnosis",
+							"reference": "B187",
+							"tags": [
+								"Medical"
+							],
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "First Aid",
+									"modifier": -8
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Veterinary",
+									"modifier": -5
+								}
+							]
+						},
+						{
 							"id": "2dc77fee-01bb-4400-8b7e-9df5e318de2f",
 							"type": "skill_container",
 							"open": true,
 							"children": [
-								{
-									"id": "0c0c498c-a1dc-4a3c-9606-7dacfdf52e36",
-									"type": "skill",
-									"name": "Diagnosis",
-									"reference": "B187",
-									"tags": [
-										"Medical"
-									],
-									"tech_level": "",
-									"difficulty": "iq/h",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "First Aid",
-											"modifier": -8
-										},
-										{
-											"type": "skill",
-											"name": "Physician",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Veterinary",
-											"modifier": -5
-										}
-									]
-								},
 								{
 									"id": "8c260a49-6204-4de4-9a9a-869364277c5b",
 									"type": "skill",
@@ -1772,59 +1832,34 @@
 											}
 										]
 									}
-								}
-							],
-							"name": "And 1 of:"
-						},
-						{
-							"id": "bcd794d0-4c8f-45c1-8464-7fe81ccb17d8",
-							"type": "skill",
-							"name": "First Aid",
-							"reference": "B195",
-							"tags": [
-								"Everyman",
-								"Medical"
-							],
-							"tech_level": "",
-							"difficulty": "iq/e",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -4
 								},
 								{
+									"id": "896f4655-dbf2-4692-8a1e-d81f75d236ec",
 									"type": "skill",
-									"name": "Esoteric Medicine"
-								},
-								{
-									"type": "skill",
-									"name": "Physician"
-								},
-								{
-									"type": "skill",
-									"name": "Veterinary",
-									"modifier": -4
+									"name": "Professional Skill",
+									"reference": "B215",
+									"tags": [
+										"Knowledge"
+									],
+									"specialization": "Midwife",
+									"difficulty": "iq/a",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									]
 								}
-							]
-						},
-						{
-							"id": "896f4655-dbf2-4692-8a1e-d81f75d236ec",
-							"type": "skill",
-							"name": "Professional Skill",
-							"reference": "B215",
-							"tags": [
-								"Knowledge"
 							],
-							"specialization": "Midwife",
-							"difficulty": "iq/a",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -5
+							"name": "Other Skill",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
 								}
-							]
+							}
 						}
 					],
 					"name": "Secondary Skill"

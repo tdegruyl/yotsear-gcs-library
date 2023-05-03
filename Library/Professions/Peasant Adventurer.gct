@@ -162,6 +162,21 @@
 					"open": true,
 					"children": [
 						{
+							"id": "f87974ff-6758-4614-8681-84936a95b534",
+							"type": "trait",
+							"name": "Fit",
+							"reference": "B55",
+							"notes": "+1 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
 							"id": "c9fbc59f-3d94-49a0-820a-fc8d3ce26a07",
 							"type": "trait_container",
 							"open": true,
@@ -846,24 +861,16 @@
 									}
 								}
 							],
-							"name": "15 Points From:",
+							"name": "Other Advantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 15
+								}
+							},
 							"calc": {
 								"points": 109
-							}
-						},
-						{
-							"id": "f87974ff-6758-4614-8681-84936a95b534",
-							"type": "trait",
-							"name": "Fit",
-							"reference": "B55",
-							"notes": "+1 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
-							"tags": [
-								"Advantage",
-								"Physical"
-							],
-							"base_points": 5,
-							"calc": {
-								"points": 5
 							}
 						}
 					],
@@ -877,6 +884,15 @@
 					"type": "trait_container",
 					"open": true,
 					"children": [
+						{
+							"id": "680420ba-a842-453c-9481-c1d3b031fcbf",
+							"type": "trait_container",
+							"open": true,
+							"name": "Change native language to (native/none)",
+							"calc": {
+								"points": 0
+							}
+						},
 						{
 							"id": "51607af2-0818-4525-9146-4cc92a84fbb3",
 							"type": "trait_container",
@@ -1496,18 +1512,16 @@
 									}
 								}
 							],
-							"name": "-15 Chosen From:",
+							"name": "Other Disadvantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": -15
+								}
+							},
 							"calc": {
 								"points": -135
-							}
-						},
-						{
-							"id": "680420ba-a842-453c-9481-c1d3b031fcbf",
-							"type": "trait_container",
-							"open": true,
-							"name": "Change native language to (native/none)",
-							"calc": {
-								"points": 0
 							}
 						},
 						{
@@ -1818,7 +1832,14 @@
 									]
 								}
 							],
-							"name": "One of:"
+							"name": "Primary Melee Weapon",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						}
 					],
 					"name": "1. Primary Skill"
@@ -1880,72 +1901,6 @@
 							]
 						},
 						{
-							"id": "de08ee99-6820-4d76-9457-baee1fc50313",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "70c9d34a-c078-46db-93e7-376c26b6151d",
-									"type": "skill",
-									"name": "Bow",
-									"reference": "B182",
-									"tags": [
-										"Combat",
-										"Ranged Combat",
-										"Weapon"
-									],
-									"difficulty": "dx/a",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "eef6f35c-e80b-4ad5-9818-0d0070dd2324",
-									"type": "skill",
-									"name": "Sling",
-									"reference": "B221",
-									"tags": [
-										"Combat",
-										"Ranged Combat",
-										"Weapon"
-									],
-									"difficulty": "dx/h",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -6
-										}
-									]
-								},
-								{
-									"id": "5093d671-ba9e-4088-b83d-2f3d87955806",
-									"type": "skill",
-									"name": "Thrown Weapon",
-									"reference": "B226",
-									"tags": [
-										"Combat",
-										"Ranged Combat",
-										"Weapon"
-									],
-									"specialization": "Axe/Mace",
-									"difficulty": "dx/e",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										}
-									]
-								}
-							],
-							"name": "One of:"
-						},
-						{
 							"id": "8233daf8-fb3c-4015-ab37-e3384b2f1a7b",
 							"type": "skill_container",
 							"open": true,
@@ -1983,24 +1938,6 @@
 									"type": "skill_container",
 									"open": true,
 									"children": [
-										{
-											"id": "3a815970-9838-46be-8a9f-5bf4934d2a7e",
-											"type": "skill",
-											"name": "Fishing",
-											"reference": "B195",
-											"tags": [
-												"Exploration",
-												"Outdoor"
-											],
-											"difficulty": "per/e",
-											"points": 2,
-											"defaults": [
-												{
-													"type": "per",
-													"modifier": -4
-												}
-											]
-										},
 										{
 											"id": "731a04bb-950a-486d-a9c3-716540f56e3a",
 											"type": "skill_container",
@@ -2089,13 +2026,118 @@
 													]
 												}
 											],
-											"name": "One of"
+											"name": "Boat Type",
+											"template_picker": {
+												"type": "count",
+												"qualifier": {
+													"compare": "is",
+													"qualifier": 1
+												}
+											}
+										},
+										{
+											"id": "3a815970-9838-46be-8a9f-5bf4934d2a7e",
+											"type": "skill",
+											"name": "Fishing",
+											"reference": "B195",
+											"tags": [
+												"Exploration",
+												"Outdoor"
+											],
+											"difficulty": "per/e",
+											"points": 2,
+											"defaults": [
+												{
+													"type": "per",
+													"modifier": -4
+												}
+											]
 										}
 									],
 									"name": "Fisherman"
 								}
 							],
-							"name": "One of:"
+							"name": "Professional Background",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
+						{
+							"id": "de08ee99-6820-4d76-9457-baee1fc50313",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "70c9d34a-c078-46db-93e7-376c26b6151d",
+									"type": "skill",
+									"name": "Bow",
+									"reference": "B182",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"id": "eef6f35c-e80b-4ad5-9818-0d0070dd2324",
+									"type": "skill",
+									"name": "Sling",
+									"reference": "B221",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/h",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -6
+										}
+									]
+								},
+								{
+									"id": "5093d671-ba9e-4088-b83d-2f3d87955806",
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"reference": "B226",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"specialization": "Axe/Mace",
+									"difficulty": "dx/e",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"name": "Ranged Weapon",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						},
 						{
 							"id": "ddcc7766-14f1-45d1-bde7-4c9fd6eedc99",
@@ -2204,6 +2246,156 @@
 					"open": true,
 					"children": [
 						{
+							"id": "8522191d-c76d-4cd9-b6f4-8ac894b9d1d2",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "3c2a85a5-5ee9-4c59-90fc-74a64c30515d",
+									"type": "skill",
+									"name": "Carpentry",
+									"reference": "B183",
+									"tags": [
+										"Craft"
+									],
+									"difficulty": "iq/e",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"id": "b259ca36-01da-427a-ade9-9d6a940f650d",
+									"type": "skill",
+									"name": "Leatherworking",
+									"reference": "B205",
+									"tags": [
+										"Craft"
+									],
+									"difficulty": "dx/e",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"id": "49aed4e1-0466-40e0-8fdc-da04360e3bd4",
+									"type": "skill",
+									"name": "Masonry",
+									"reference": "B207",
+									"tags": [
+										"Craft"
+									],
+									"difficulty": "iq/e",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"name": "Crafts",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
+						{
+							"id": "21bc82e4-8072-4c77-85ee-bd6f9f013170",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "9399609b-d7bb-4a35-906a-5d737f26fc4e",
+									"type": "skill",
+									"name": "Meteorology",
+									"reference": "B209",
+									"tags": [
+										"Natural Science"
+									],
+									"specialization": "Earthlike",
+									"tech_level": "",
+									"difficulty": "iq/a",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"id": "017ad9b6-3c55-47db-95ce-4bc0a4b7e0ac",
+									"type": "skill",
+									"name": "Naturalist",
+									"reference": "B211",
+									"tags": [
+										"Animal",
+										"Exploration",
+										"Natural Science",
+										"Outdoor",
+										"Plant"
+									],
+									"specialization": "Earthlike",
+									"difficulty": "iq/h",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Biology",
+											"modifier": -3
+										}
+									]
+								},
+								{
+									"id": "793618f1-dcdc-4803-b2e3-422c160d32d0",
+									"type": "skill",
+									"name": "Tracking",
+									"reference": "B226",
+									"tags": [
+										"Exploration",
+										"Outdoor"
+									],
+									"difficulty": "per/a",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "per",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Naturalist",
+											"modifier": -5
+										}
+									]
+								}
+							],
+							"name": "Knowledge",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
+						{
 							"id": "f5381f5c-0d06-40c6-9115-0532037bde8f",
 							"type": "skill_container",
 							"open": true,
@@ -2282,143 +2474,14 @@
 									]
 								}
 							],
-							"name": "One of:"
-						},
-						{
-							"id": "8522191d-c76d-4cd9-b6f4-8ac894b9d1d2",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "3c2a85a5-5ee9-4c59-90fc-74a64c30515d",
-									"type": "skill",
-									"name": "Carpentry",
-									"reference": "B183",
-									"tags": [
-										"Craft"
-									],
-									"difficulty": "iq/e",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "b259ca36-01da-427a-ade9-9d6a940f650d",
-									"type": "skill",
-									"name": "Leatherworking",
-									"reference": "B205",
-									"tags": [
-										"Craft"
-									],
-									"difficulty": "dx/e",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "49aed4e1-0466-40e0-8fdc-da04360e3bd4",
-									"type": "skill",
-									"name": "Masonry",
-									"reference": "B207",
-									"tags": [
-										"Craft"
-									],
-									"difficulty": "iq/e",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										}
-									]
+							"name": "Other Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
 								}
-							],
-							"name": "One of:"
-						},
-						{
-							"id": "21bc82e4-8072-4c77-85ee-bd6f9f013170",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "9399609b-d7bb-4a35-906a-5d737f26fc4e",
-									"type": "skill",
-									"name": "Meteorology",
-									"reference": "B209",
-									"tags": [
-										"Natural Science"
-									],
-									"specialization": "Earthlike",
-									"tech_level": "",
-									"difficulty": "iq/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "017ad9b6-3c55-47db-95ce-4bc0a4b7e0ac",
-									"type": "skill",
-									"name": "Naturalist",
-									"reference": "B211",
-									"tags": [
-										"Animal",
-										"Exploration",
-										"Natural Science",
-										"Outdoor",
-										"Plant"
-									],
-									"specialization": "Earthlike",
-									"difficulty": "iq/h",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Biology",
-											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "793618f1-dcdc-4803-b2e3-422c160d32d0",
-									"type": "skill",
-									"name": "Tracking",
-									"reference": "B226",
-									"tags": [
-										"Exploration",
-										"Outdoor"
-									],
-									"difficulty": "per/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "per",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Naturalist",
-											"modifier": -5
-										}
-									]
-								}
-							],
-							"name": "One of:"
+							}
 						}
 					],
 					"name": "3. Background Skill"

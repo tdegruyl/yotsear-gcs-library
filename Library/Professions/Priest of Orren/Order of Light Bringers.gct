@@ -304,7 +304,14 @@
 									}
 								}
 							],
-							"name": "-15 points from",
+							"name": "Other Disadvantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": -15
+								}
+							},
 							"calc": {
 								"points": -55
 							}

@@ -366,9 +366,34 @@
 									}
 								}
 							],
-							"name": "20 points chosen from:",
+							"name": "Other Advantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 20
+								}
+							},
 							"calc": {
 								"points": 28
+							}
+						},
+						{
+							"id": "fbde9d7e-69ab-4b10-ba24-c7e5428184b9",
+							"type": "trait",
+							"name": "Status",
+							"reference": "B28",
+							"notes": "+1 from Wealth",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"base_points": -5,
+							"levels": 2,
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 5
 							}
 						},
 						{
@@ -376,6 +401,99 @@
 							"type": "trait_container",
 							"open": true,
 							"children": [
+								{
+									"id": "91387606-c6a6-4c1f-bc23-26b0bf403eb5",
+									"type": "trait",
+									"name": "Wealth",
+									"reference": "B25",
+									"tags": [
+										"Advantage",
+										"Disadvantage",
+										"Social"
+									],
+									"modifiers": [
+										{
+											"id": "90613439-39cb-4ae7-9277-941a11cfd5b7",
+											"type": "modifier",
+											"name": "Dead Broke",
+											"reference": "B25",
+											"notes": "Starting wealth is $0",
+											"cost": -25,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "eba9d568-351d-4f3a-9ab5-822b211f7549",
+											"type": "modifier",
+											"name": "Poor",
+											"reference": "B25",
+											"notes": "Starting wealth is 1/5 average",
+											"cost": -15,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "107f38d1-78e9-4c1f-9e3a-2f38dcb358bd",
+											"type": "modifier",
+											"name": "Struggling",
+											"reference": "B25",
+											"notes": "Starting wealth is 1/2 average",
+											"cost": -10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "026ee1a9-bc86-4f78-8e1b-b7a984e6f50b",
+											"type": "modifier",
+											"name": "Average",
+											"reference": "B25",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "979687e4-a608-4133-8b07-edbcf585512e",
+											"type": "modifier",
+											"name": "Comfortable",
+											"reference": "B25",
+											"notes": "Starting wealth is 2x average",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "1ff4856e-2b8b-4324-9057-06308403097b",
+											"type": "modifier",
+											"name": "Wealthy",
+											"reference": "B25",
+											"notes": "Starting wealth is 5x average",
+											"cost": 20,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "cf130a20-4015-4f44-b4cb-ccbddcf2de2e",
+											"type": "modifier",
+											"name": "Very Wealthy",
+											"reference": "B25",
+											"notes": "Starting wealth is 20x average",
+											"cost": 30,
+											"cost_type": "points"
+										},
+										{
+											"id": "ea77ce57-2835-4087-9988-5b074b6162e9",
+											"type": "modifier",
+											"name": "Filthy Rich",
+											"reference": "B25",
+											"notes": "Starting wealth is 100x average",
+											"cost": 50,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": 30
+									}
+								},
 								{
 									"id": "c028ceba-33af-4c17-bf6d-24fd0b541372",
 									"type": "trait_container",
@@ -492,126 +610,22 @@
 											}
 										}
 									],
-									"name": "Or:",
-									"calc": {
-										"points": 30
-									}
-								},
-								{
-									"id": "91387606-c6a6-4c1f-bc23-26b0bf403eb5",
-									"type": "trait",
-									"name": "Wealth",
-									"reference": "B25",
-									"tags": [
-										"Advantage",
-										"Disadvantage",
-										"Social"
-									],
-									"modifiers": [
-										{
-											"id": "90613439-39cb-4ae7-9277-941a11cfd5b7",
-											"type": "modifier",
-											"name": "Dead Broke",
-											"reference": "B25",
-											"notes": "Starting wealth is $0",
-											"cost": -25,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "eba9d568-351d-4f3a-9ab5-822b211f7549",
-											"type": "modifier",
-											"name": "Poor",
-											"reference": "B25",
-											"notes": "Starting wealth is 1/5 average",
-											"cost": -15,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "107f38d1-78e9-4c1f-9e3a-2f38dcb358bd",
-											"type": "modifier",
-											"name": "Struggling",
-											"reference": "B25",
-											"notes": "Starting wealth is 1/2 average",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "026ee1a9-bc86-4f78-8e1b-b7a984e6f50b",
-											"type": "modifier",
-											"name": "Average",
-											"reference": "B25",
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "979687e4-a608-4133-8b07-edbcf585512e",
-											"type": "modifier",
-											"name": "Comfortable",
-											"reference": "B25",
-											"notes": "Starting wealth is 2x average",
-											"cost": 10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "1ff4856e-2b8b-4324-9057-06308403097b",
-											"type": "modifier",
-											"name": "Wealthy",
-											"reference": "B25",
-											"notes": "Starting wealth is 5x average",
-											"cost": 20,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "cf130a20-4015-4f44-b4cb-ccbddcf2de2e",
-											"type": "modifier",
-											"name": "Very Wealthy",
-											"reference": "B25",
-											"notes": "Starting wealth is 20x average",
-											"cost": 30,
-											"cost_type": "points"
-										},
-										{
-											"id": "ea77ce57-2835-4087-9988-5b074b6162e9",
-											"type": "modifier",
-											"name": "Filthy Rich",
-											"reference": "B25",
-											"notes": "Starting wealth is 100x average",
-											"cost": 50,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
+									"name": "Wealthy + Signature Gear",
 									"calc": {
 										"points": 30
 									}
 								}
 							],
-							"name": "One of:",
+							"name": "Wealth Level",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							},
 							"calc": {
 								"points": 60
-							}
-						},
-						{
-							"id": "fbde9d7e-69ab-4b10-ba24-c7e5428184b9",
-							"type": "trait",
-							"name": "Status",
-							"reference": "B28",
-							"notes": "+1 from Wealth",
-							"tags": [
-								"Advantage",
-								"Social"
-							],
-							"base_points": -5,
-							"levels": 2,
-							"points_per_level": 5,
-							"can_level": true,
-							"calc": {
-								"points": 5
 							}
 						},
 						{
@@ -641,6 +655,20 @@
 					"type": "trait_container",
 					"open": true,
 					"children": [
+						{
+							"id": "d566047f-7c81-4030-a0fa-264068289b4a",
+							"type": "trait",
+							"name": "Code of Honor (Chivalry)",
+							"reference": "B127",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
 						{
 							"id": "85a12975-af01-43bf-85f9-04690fdc39d8",
 							"type": "trait_container",
@@ -1137,23 +1165,16 @@
 									}
 								}
 							],
-							"name": "-15 points chosen from:",
+							"name": "Other Disadvantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": -15
+								}
+							},
 							"calc": {
 								"points": -76
-							}
-						},
-						{
-							"id": "d566047f-7c81-4030-a0fa-264068289b4a",
-							"type": "trait",
-							"name": "Code of Honor (Chivalry)",
-							"reference": "B127",
-							"tags": [
-								"Disadvantage",
-								"Mental"
-							],
-							"base_points": -15,
-							"calc": {
-								"points": -15
 							}
 						}
 					],
@@ -1347,9 +1368,38 @@
 											"modifier": -5
 										}
 									]
+								},
+								{
+									"id": "b833510f-9c2c-4d69-bff2-7d5d0b4f8c62",
+									"type": "skill",
+									"name": "Two-Handed Sword",
+									"reference": "B209",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Broadsword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "dx",
+											"modifier": -5
+										}
+									]
 								}
 							],
-							"name": "Choose one:"
+							"name": "Melee Weapon"
 						},
 						{
 							"id": "e8b6b3a8-83d0-4af3-a053-d008ec51ece3",
@@ -1479,39 +1529,6 @@
 								{
 									"type": "iq",
 									"modifier": -5
-								}
-							]
-						},
-						{
-							"id": "527c1b2d-0e57-450a-9080-62352f1e96b7",
-							"type": "skill",
-							"name": "Strategy",
-							"reference": "B222",
-							"tags": [
-								"Military"
-							],
-							"specialization": "Land",
-							"difficulty": "iq/h",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -6
-								},
-								{
-									"type": "skill",
-									"name": "Intelligence Analysis",
-									"modifier": -6
-								},
-								{
-									"type": "skill",
-									"name": "Tactics",
-									"modifier": -6
-								},
-								{
-									"type": "skill",
-									"name": "Strategy",
-									"modifier": -4
 								}
 							]
 						},
@@ -1730,7 +1747,47 @@
 									]
 								}
 							],
-							"name": "Two of:"
+							"name": "Other Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 2
+								}
+							}
+						},
+						{
+							"id": "527c1b2d-0e57-450a-9080-62352f1e96b7",
+							"type": "skill",
+							"name": "Strategy",
+							"reference": "B222",
+							"tags": [
+								"Military"
+							],
+							"specialization": "Land",
+							"difficulty": "iq/h",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Intelligence Analysis",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Tactics",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Strategy",
+									"modifier": -4
+								}
+							]
 						}
 					],
 					"name": "3. Background Skill"

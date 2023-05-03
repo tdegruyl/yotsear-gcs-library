@@ -370,7 +370,14 @@
 							}
 						}
 					],
-					"name": "-30 from",
+					"name": "Disadvantages",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": -30
+						}
+					},
 					"calc": {
 						"points": -76
 					}

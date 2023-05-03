@@ -861,7 +861,14 @@
 									}
 								}
 							],
-							"name": "15 points from",
+							"name": "Other Advantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 15
+								}
+							},
 							"calc": {
 								"points": 72
 							}
@@ -877,31 +884,6 @@
 					"type": "trait_container",
 					"open": true,
 					"children": [
-						{
-							"id": "e3c5e9c4-13ae-4543-814e-519fe4250579",
-							"type": "trait",
-							"name": "Increased Intelligence",
-							"reference": "B15",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Mental"
-							],
-							"levels": 3,
-							"points_per_level": 20,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "iq",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 60
-							}
-						},
 						{
 							"id": "d07893b8-563e-4171-b952-8e70556b762b",
 							"type": "trait",
@@ -925,6 +907,31 @@
 							"can_level": true,
 							"calc": {
 								"points": 10
+							}
+						},
+						{
+							"id": "e3c5e9c4-13ae-4543-814e-519fe4250579",
+							"type": "trait",
+							"name": "Increased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"levels": 3,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 60
 							}
 						}
 					],
@@ -1092,66 +1099,6 @@
 							"open": true,
 							"children": [
 								{
-									"id": "1bdd2cf1-71c6-4126-8c46-ef62b0ea3f21",
-									"type": "skill_container",
-									"open": true,
-									"children": [
-										{
-											"id": "3f8f7a4d-c03c-4c3d-a410-b492a7637ea9",
-											"type": "skill",
-											"name": "Persuade",
-											"reference": "B191",
-											"tags": [
-												"Esoteric"
-											],
-											"difficulty": "will/h",
-											"points": 4,
-											"prereqs": {
-												"type": "prereq_list",
-												"all": true,
-												"prereqs": [
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "charisma"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 1
-														}
-													},
-													{
-														"type": "skill_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "public speaking"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 12
-														}
-													}
-												]
-											}
-										},
-										{
-											"id": "0bad5907-13b5-416b-ad25-76cc63264b27",
-											"type": "skill",
-											"name": "Sway Emotions",
-											"reference": "B192",
-											"tags": [
-												"Social"
-											],
-											"difficulty": "will/h",
-											"points": 4
-										}
-									],
-									"name": "and"
-								},
-								{
 									"id": "7b3c71fb-1416-416a-a83b-1d9e39c43796",
 									"type": "skill",
 									"name": "Detect Lies",
@@ -1226,9 +1173,76 @@
 											}
 										]
 									}
+								},
+								{
+									"id": "1bdd2cf1-71c6-4126-8c46-ef62b0ea3f21",
+									"type": "skill_container",
+									"open": true,
+									"children": [
+										{
+											"id": "3f8f7a4d-c03c-4c3d-a410-b492a7637ea9",
+											"type": "skill",
+											"name": "Persuade",
+											"reference": "B191",
+											"tags": [
+												"Esoteric"
+											],
+											"difficulty": "will/h",
+											"points": 4,
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "charisma"
+														},
+														"level": {
+															"compare": "at_least",
+															"qualifier": 1
+														}
+													},
+													{
+														"type": "skill_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "public speaking"
+														},
+														"level": {
+															"compare": "at_least",
+															"qualifier": 12
+														}
+													}
+												]
+											}
+										},
+										{
+											"id": "0bad5907-13b5-416b-ad25-76cc63264b27",
+											"type": "skill",
+											"name": "Sway Emotions",
+											"reference": "B192",
+											"tags": [
+												"Social"
+											],
+											"difficulty": "will/h",
+											"points": 4
+										}
+									],
+									"name": "Supernatural Persuasion"
 								}
 							],
-							"name": "One of"
+							"name": "Other Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						},
 						{
 							"id": "1a4a0439-0ba0-4c9c-b98b-05326db49895",
@@ -1407,7 +1421,14 @@
 									]
 								}
 							],
-							"name": "One of"
+							"name": "Knowledge",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						},
 						{
 							"id": "3471c072-7d5b-4f34-a04b-2ef30b2d279f",
@@ -1502,7 +1523,14 @@
 									]
 								}
 							],
-							"name": "One of"
+							"name": "Professional Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						},
 						{
 							"id": "fe1884d6-3c29-4611-8ed1-ee726e253c3c",

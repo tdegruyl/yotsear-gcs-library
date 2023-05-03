@@ -765,7 +765,14 @@
 							}
 						}
 					],
-					"name": "20 points from",
+					"name": "Advantages",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 20
+						}
+					},
 					"calc": {
 						"points": 73
 					}
@@ -1157,7 +1164,14 @@
 							}
 						}
 					],
-					"name": "-20 points from",
+					"name": "Disadvantages",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": -30
+						}
+					},
 					"calc": {
 						"points": -45
 					}
@@ -1592,13 +1606,188 @@
 							]
 						}
 					],
-					"name": "4 points from "
+					"name": "Background Skills",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 4
+						}
+					}
 				},
 				{
-					"id": "3c761ec1-fa12-46a6-848d-3ae3bc19e19b",
+					"id": "b31995e0-615d-40bd-9870-7a6cdc3c14b1",
 					"type": "skill_container",
 					"open": true,
-					"name": "4 points in one Melee Weapon Skill"
+					"children": [
+						{
+							"id": "3c761ec1-fa12-46a6-848d-3ae3bc19e19b",
+							"type": "skill_container",
+							"open": true,
+							"name": "4 points in one Melee Weapon Skill"
+						},
+						{
+							"id": "4689c49f-88d7-4a1a-8369-371cd4e6fc7d",
+							"type": "skill",
+							"name": "Brawling",
+							"reference": "B182,MA55",
+							"tags": [
+								"Combat",
+								"Melee Combat",
+								"Weapon"
+							],
+							"difficulty": "dx/e",
+							"points": 4,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Brawling"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 2
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							]
+						},
+						{
+							"id": "e08ff57a-b4ba-4f39-a8f7-bd1ce2b8d0af",
+							"type": "skill",
+							"name": "Fast-Talk",
+							"reference": "B195",
+							"tags": [
+								"Criminal",
+								"Social",
+								"Spy",
+								"Street"
+							],
+							"difficulty": "iq/a",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Acting",
+									"modifier": -5
+								}
+							]
+						},
+						{
+							"id": "803bf012-4843-47d0-b728-a897443adb48",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "76c8023d-54be-4e72-b960-5a2278739c6f",
+									"type": "skill",
+									"name": "Bow",
+									"reference": "B182",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"id": "4d7ff0f5-cfc0-4e83-a527-3b4d4ce250ab",
+									"type": "skill",
+									"name": "Crossbow",
+									"reference": "B186",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/e",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"name": "Ranged Weapon",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
+						{
+							"id": "983fe94c-35f2-4561-964e-5c7be2cbfbb0",
+							"type": "skill",
+							"name": "Shadowing",
+							"reference": "B219",
+							"tags": [
+								"Criminal",
+								"Police",
+								"Spy",
+								"Street"
+							],
+							"difficulty": "iq/a",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Observation",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Stealth",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "0b99771a-7bbb-415e-b57a-6775c0a252a2",
+							"type": "skill",
+							"name": "Tracking",
+							"reference": "B226",
+							"tags": [
+								"Exploration",
+								"Outdoor"
+							],
+							"difficulty": "per/a",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "per",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -5
+								}
+							]
+						}
+					],
+					"name": "Primary Skills"
 				},
 				{
 					"id": "ed6f555e-295b-4695-846b-bba51c36d5e8",
@@ -1811,160 +2000,14 @@
 							]
 						}
 					],
-					"name": "12 points from"
-				},
-				{
-					"id": "4689c49f-88d7-4a1a-8369-371cd4e6fc7d",
-					"type": "skill",
-					"name": "Brawling",
-					"reference": "B182,MA55",
-					"tags": [
-						"Combat",
-						"Melee Combat",
-						"Weapon"
-					],
-					"difficulty": "dx/e",
-					"points": 4,
-					"features": [
-						{
-							"type": "weapon_bonus",
-							"selection_type": "weapons_with_required_skill",
-							"name": {
-								"compare": "is",
-								"qualifier": "Brawling"
-							},
-							"level": {
-								"compare": "at_least",
-								"qualifier": 2
-							},
-							"amount": 1,
-							"per_level": true
+					"name": "Secondary Skills",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 12
 						}
-					]
-				},
-				{
-					"id": "803bf012-4843-47d0-b728-a897443adb48",
-					"type": "skill_container",
-					"open": true,
-					"children": [
-						{
-							"id": "76c8023d-54be-4e72-b960-5a2278739c6f",
-							"type": "skill",
-							"name": "Bow",
-							"reference": "B182",
-							"tags": [
-								"Combat",
-								"Ranged Combat",
-								"Weapon"
-							],
-							"difficulty": "dx/a",
-							"points": 4,
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								}
-							]
-						},
-						{
-							"id": "4d7ff0f5-cfc0-4e83-a527-3b4d4ce250ab",
-							"type": "skill",
-							"name": "Crossbow",
-							"reference": "B186",
-							"tags": [
-								"Combat",
-								"Ranged Combat",
-								"Weapon"
-							],
-							"difficulty": "dx/e",
-							"points": 4,
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -4
-								}
-							]
-						}
-					],
-					"name": "Either"
-				},
-				{
-					"id": "e08ff57a-b4ba-4f39-a8f7-bd1ce2b8d0af",
-					"type": "skill",
-					"name": "Fast-Talk",
-					"reference": "B195",
-					"tags": [
-						"Criminal",
-						"Social",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "iq/a",
-					"points": 4,
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Acting",
-							"modifier": -5
-						}
-					]
-				},
-				{
-					"id": "983fe94c-35f2-4561-964e-5c7be2cbfbb0",
-					"type": "skill",
-					"name": "Shadowing",
-					"reference": "B219",
-					"tags": [
-						"Criminal",
-						"Police",
-						"Spy",
-						"Street"
-					],
-					"difficulty": "iq/a",
-					"points": 4,
-					"defaults": [
-						{
-							"type": "iq",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Observation",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Stealth",
-							"modifier": -4
-						}
-					]
-				},
-				{
-					"id": "0b99771a-7bbb-415e-b57a-6775c0a252a2",
-					"type": "skill",
-					"name": "Tracking",
-					"reference": "B226",
-					"tags": [
-						"Exploration",
-						"Outdoor"
-					],
-					"difficulty": "per/a",
-					"points": 4,
-					"defaults": [
-						{
-							"type": "per",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Naturalist",
-							"modifier": -5
-						}
-					]
+					}
 				}
 			],
 			"name": "Bounty Hunter"

@@ -485,7 +485,7 @@
 							}
 						}
 					],
-					"name": "30 points from",
+					"name": "Adavantages",
 					"template_picker": {
 						"type": "points",
 						"qualifier": {
@@ -495,6 +495,144 @@
 					},
 					"calc": {
 						"points": 109
+					}
+				},
+				{
+					"id": "5a459e14-e90c-431d-9555-03bd5d30d723",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "1c6622c1-fc1b-4296-a56d-c57beb277d16",
+							"type": "trait",
+							"name": "Heroic Archer",
+							"reference": "MA45",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "705df474-6c83-4eff-93aa-9bb95fc9d3d2",
+							"type": "trait",
+							"name": "Talent (Outdoorsman)",
+							"reference": "B90,PU3:14",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Talent"
+							],
+							"modifiers": [
+								{
+									"id": "254be33f-2141-4378-b967-c5d751c27942",
+									"type": "modifier",
+									"name": "Alternate Benefit",
+									"notes": "Bonus to HT rolls to avoid harm from failure of covered skills",
+									"disabled": true
+								},
+								{
+									"id": "2d095bbd-0918-4dfc-975e-de2ff3901fb2",
+									"type": "modifier",
+									"name": "Alternative Cost",
+									"cost": -3,
+									"affects": "levels_only",
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Camouflage"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Fishing"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Mimicry"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Naturalist"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Navigation"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Survival"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Tracking"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from explorers and nature lovers",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"name": "Class Advantage",
+					"calc": {
+						"points": 30
 					}
 				},
 				{
@@ -885,7 +1023,7 @@
 							}
 						}
 					],
-					"name": "-20 points from",
+					"name": "Disadvantages",
 					"template_picker": {
 						"type": "points",
 						"qualifier": {
@@ -895,144 +1033,6 @@
 					},
 					"calc": {
 						"points": -80
-					}
-				},
-				{
-					"id": "5a459e14-e90c-431d-9555-03bd5d30d723",
-					"type": "trait_container",
-					"open": true,
-					"children": [
-						{
-							"id": "1c6622c1-fc1b-4296-a56d-c57beb277d16",
-							"type": "trait",
-							"name": "Heroic Archer",
-							"reference": "MA45",
-							"tags": [
-								"Advantage",
-								"Physical"
-							],
-							"base_points": 20,
-							"calc": {
-								"points": 20
-							}
-						},
-						{
-							"id": "705df474-6c83-4eff-93aa-9bb95fc9d3d2",
-							"type": "trait",
-							"name": "Talent (Outdoorsman)",
-							"reference": "B90,PU3:14",
-							"tags": [
-								"Advantage",
-								"Mental",
-								"Talent"
-							],
-							"modifiers": [
-								{
-									"id": "254be33f-2141-4378-b967-c5d751c27942",
-									"type": "modifier",
-									"name": "Alternate Benefit",
-									"notes": "Bonus to HT rolls to avoid harm from failure of covered skills",
-									"disabled": true
-								},
-								{
-									"id": "2d095bbd-0918-4dfc-975e-de2ff3901fb2",
-									"type": "modifier",
-									"name": "Alternative Cost",
-									"cost": -3,
-									"affects": "levels_only",
-									"cost_type": "points",
-									"disabled": true
-								}
-							],
-							"levels": 1,
-							"points_per_level": 10,
-							"features": [
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "Camouflage"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "Fishing"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "Mimicry"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "Naturalist"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "Navigation"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "Survival"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "Tracking"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "reaction_bonus",
-									"situation": "from explorers and nature lovers",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 10
-							}
-						}
-					],
-					"name": "Class Advantage",
-					"calc": {
-						"points": 30
 					}
 				},
 				{
@@ -1317,7 +1317,7 @@
 									]
 								}
 							],
-							"name": "One of",
+							"name": "Perception",
 							"template_picker": {
 								"type": "count",
 								"qualifier": {
@@ -1377,7 +1377,7 @@
 									]
 								}
 							],
-							"name": "One of",
+							"name": "Specialization",
 							"template_picker": {
 								"type": "count",
 								"qualifier": {
@@ -1461,229 +1461,152 @@
 					"open": true,
 					"children": [
 						{
-							"id": "a5fb8de6-a635-443d-b714-fb89241a7ac9",
+							"id": "c4e7d0a3-c27f-4aa5-95cb-7e31d0cf8809",
 							"type": "skill_container",
+							"open": true,
 							"children": [
 								{
-									"id": "92fd5aee-8ba6-43e7-8e9a-28d10d36cdca",
-									"type": "skill_container",
-									"children": [
-										{
-											"id": "07279b71-f42f-457f-b1f9-341cecc60c66",
-											"type": "skill",
-											"name": "Sling",
-											"reference": "B221",
-											"tags": [
-												"Combat",
-												"Ranged Combat",
-												"Weapon"
-											],
-											"difficulty": "dx/h",
-											"points": 12,
-											"defaults": [
-												{
-													"type": "dx",
-													"modifier": -6
-												}
-											]
-										}
+									"id": "530c3a89-f420-4f4e-a3cc-df5aa69ed342",
+									"type": "skill",
+									"name": "Bow",
+									"reference": "B182",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
 									],
-									"name": "3."
+									"difficulty": "dx/a",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										}
+									]
 								},
 								{
-									"id": "c4e7d0a3-c27f-4aa5-95cb-7e31d0cf8809",
-									"type": "skill_container",
-									"children": [
-										{
-											"id": "530c3a89-f420-4f4e-a3cc-df5aa69ed342",
-											"type": "skill",
-											"name": "Bow",
-											"reference": "B182",
-											"tags": [
-												"Combat",
-												"Ranged Combat",
-												"Weapon"
-											],
-											"difficulty": "dx/a",
-											"points": 8,
-											"defaults": [
-												{
-													"type": "dx",
-													"modifier": -5
-												}
-											]
-										},
-										{
-											"id": "b0fa8804-d901-47a5-9fd9-21940b0cc435",
-											"type": "skill",
-											"name": "Fast-Draw",
-											"reference": "B194",
-											"tags": [
-												"Combat",
-												"Ranged Combat",
-												"Weapon"
-											],
-											"specialization": "Arrow",
-											"difficulty": "dx/e",
-											"points": 4
-										}
+									"id": "b0fa8804-d901-47a5-9fd9-21940b0cc435",
+									"type": "skill",
+									"name": "Fast-Draw",
+									"reference": "B194",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
 									],
-									"name": "1."
-								},
-								{
-									"id": "d6495fae-f5c0-46e7-8746-a927f0f45536",
-									"type": "skill_container",
-									"children": [
-										{
-											"id": "f0f67137-13c0-4aa0-ab8c-d86ae760db17",
-											"type": "skill",
-											"name": "Crossbow",
-											"reference": "B186",
-											"tags": [
-												"Combat",
-												"Ranged Combat",
-												"Weapon"
-											],
-											"difficulty": "dx/e",
-											"points": 8,
-											"defaults": [
-												{
-													"type": "dx",
-													"modifier": -4
-												}
-											]
-										},
-										{
-											"id": "3254de3e-f68e-4717-8554-28039f82137c",
-											"type": "skill",
-											"name": "Fast-Draw",
-											"reference": "B194",
-											"tags": [
-												"Combat",
-												"Ranged Combat",
-												"Weapon"
-											],
-											"specialization": "Arrow",
-											"difficulty": "dx/e",
-											"points": 4
-										}
-									],
-									"name": "2."
-								},
-								{
-									"id": "52847afe-7433-4dbd-a2d1-84be39f65094",
-									"type": "skill_container",
-									"children": [
-										{
-											"id": "13892f56-8518-4335-a5cf-9ae648271393",
-											"type": "skill",
-											"name": "Thrown Weapon",
-											"reference": "B226",
-											"tags": [
-												"Combat",
-												"Ranged Combat",
-												"Weapon"
-											],
-											"specialization": "Spear",
-											"difficulty": "dx/e",
-											"points": 12,
-											"defaults": [
-												{
-													"type": "dx",
-													"modifier": -4
-												},
-												{
-													"type": "skill",
-													"name": "Spear Thrower",
-													"modifier": -4
-												},
-												{
-													"type": "skill",
-													"name": "Thrown Weapon",
-													"specialization": "Harpoon",
-													"modifier": -2
-												}
-											]
-										}
-									],
-									"name": "4."
+									"specialization": "Arrow",
+									"difficulty": "dx/e",
+									"points": 4
 								}
 							],
-							"name": "One 12 point package from following",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
+							"name": "Bow"
+						},
+						{
+							"id": "d6495fae-f5c0-46e7-8746-a927f0f45536",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "f0f67137-13c0-4aa0-ab8c-d86ae760db17",
+									"type": "skill",
+									"name": "Crossbow",
+									"reference": "B186",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/e",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"id": "3254de3e-f68e-4717-8554-28039f82137c",
+									"type": "skill",
+									"name": "Fast-Draw",
+									"reference": "B194",
+									"tags": [
+										"Combat",
+										"Ranged Combat",
+										"Weapon"
+									],
+									"specialization": "Arrow",
+									"difficulty": "dx/e",
+									"points": 4
 								}
-							}
+							],
+							"name": "Crossbow"
+						},
+						{
+							"id": "07279b71-f42f-457f-b1f9-341cecc60c66",
+							"type": "skill",
+							"name": "Sling",
+							"reference": "B221",
+							"tags": [
+								"Combat",
+								"Ranged Combat",
+								"Weapon"
+							],
+							"difficulty": "dx/h",
+							"points": 12,
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -6
+								}
+							]
+						},
+						{
+							"id": "13892f56-8518-4335-a5cf-9ae648271393",
+							"type": "skill",
+							"name": "Thrown Weapon",
+							"reference": "B226",
+							"tags": [
+								"Combat",
+								"Ranged Combat",
+								"Weapon"
+							],
+							"specialization": "Spear",
+							"difficulty": "dx/e",
+							"points": 12,
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Spear Thrower",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Harpoon",
+									"modifier": -2
+								}
+							]
 						}
 					],
-					"name": "Primary Skill"
+					"name": "Primary Skill",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					}
 				},
 				{
 					"id": "5b017bd4-494a-4913-adf9-357a2d6febfc",
 					"type": "skill_container",
 					"open": true,
 					"children": [
-						{
-							"id": "c28ac818-e1c8-46c1-b047-5a7d91f94a2f",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "b8e61a3c-cfb6-4146-a2b2-bfb61a4665a1",
-									"type": "skill",
-									"name": "Hiking",
-									"reference": "B200",
-									"tags": [
-										"Athletic",
-										"Exploration",
-										"Outdoor"
-									],
-									"difficulty": "ht/a",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "ht",
-											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "5c170438-acba-4454-a6bf-4d627ec022c2",
-									"type": "skill",
-									"name": "Riding",
-									"reference": "B217",
-									"tags": [
-										"Animal"
-									],
-									"specialization": "Equines",
-									"difficulty": "dx/a",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Animal Handling",
-											"specialization": "Equines",
-											"modifier": -3
-										}
-									]
-								}
-							],
-							"name": "One of",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							}
-						},
 						{
 							"id": "4ef4f66c-88c8-4fd3-a1df-211aa5f65909",
 							"type": "skill_container",
@@ -1724,8 +1647,63 @@
 									]
 								},
 								{
+									"id": "8d25644d-af52-4b64-b184-2242ff58f2c2",
+									"type": "skill",
+									"name": "Shortsword",
+									"reference": "B209",
+									"tags": [
+										"Combat",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/a",
+									"points": 2,
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Broadsword",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Force Sword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Jitte/Sai",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Knife",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Saber",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Smallsword",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Tonfa",
+											"modifier": -3
+										},
+										{
+											"type": "dx",
+											"modifier": -5
+										}
+									]
+								},
+								{
 									"id": "63beeb6a-8bce-4256-b838-3aecd1f7a2fc",
 									"type": "skill_container",
+									"open": true,
 									"children": [
 										{
 											"id": "dbe01ba5-812c-460d-9e5b-3d7d5022002e",
@@ -1802,61 +1780,7 @@
 											]
 										}
 									],
-									"name": "Or"
-								},
-								{
-									"id": "8d25644d-af52-4b64-b184-2242ff58f2c2",
-									"type": "skill",
-									"name": "Shortsword",
-									"reference": "B209",
-									"tags": [
-										"Combat",
-										"Melee Combat",
-										"Weapon"
-									],
-									"difficulty": "dx/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Broadsword",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Force Sword",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Jitte/Sai",
-											"modifier": -3
-										},
-										{
-											"type": "skill",
-											"name": "Knife",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Saber",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Smallsword",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Tonfa",
-											"modifier": -3
-										},
-										{
-											"type": "dx",
-											"modifier": -5
-										}
-									]
+									"name": "Shortsword and Shield"
 								},
 								{
 									"id": "b5a2f3fa-0880-49d4-932c-17f1c75905c7",
@@ -1898,7 +1822,65 @@
 									]
 								}
 							],
-							"name": "One of",
+							"name": "Melee Weapon",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
+						{
+							"id": "c28ac818-e1c8-46c1-b047-5a7d91f94a2f",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "b8e61a3c-cfb6-4146-a2b2-bfb61a4665a1",
+									"type": "skill",
+									"name": "Hiking",
+									"reference": "B200",
+									"tags": [
+										"Athletic",
+										"Exploration",
+										"Outdoor"
+									],
+									"difficulty": "ht/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "ht",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"id": "5c170438-acba-4454-a6bf-4d627ec022c2",
+									"type": "skill",
+									"name": "Riding",
+									"reference": "B217",
+									"tags": [
+										"Animal"
+									],
+									"specialization": "Equines",
+									"difficulty": "dx/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Animal Handling",
+											"specialization": "Equines",
+											"modifier": -3
+										}
+									]
+								}
+							],
+							"name": "Movement",
 							"template_picker": {
 								"type": "count",
 								"qualifier": {

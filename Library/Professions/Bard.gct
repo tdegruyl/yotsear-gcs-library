@@ -738,7 +738,14 @@
 									}
 								}
 							],
-							"name": "15 Points Chosen From:",
+							"name": "Advantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 15
+								}
+							},
 							"calc": {
 								"points": 86
 							}
@@ -864,108 +871,6 @@
 							],
 							"calc": {
 								"points": 15
-							}
-						},
-						{
-							"id": "2b811bf5-a4e3-4d58-b763-5fd1224a53da",
-							"type": "trait",
-							"name": "Magery",
-							"reference": "B66",
-							"tags": [
-								"Advantage",
-								"Mental",
-								"Supernatural"
-							],
-							"modifiers": [
-								{
-									"id": "10b7c609-d742-473c-a229-fd39e10a948f",
-									"type": "modifier",
-									"name": "Dance",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "8cffcc39-a19c-4aa2-8a65-f270534b6ad7",
-									"type": "modifier",
-									"name": "Dark-Aspected",
-									"cost": -50,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "9a43b6eb-5fca-4b3b-9475-9c8922652001",
-									"type": "modifier",
-									"name": "Day-Aspected",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "1db3c1d2-12b8-4d9f-aaec-8a1f58f99922",
-									"type": "modifier",
-									"name": "Musical",
-									"cost": -50,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "7ef63d35-934c-4046-8b55-22208f7a99b6",
-									"type": "modifier",
-									"name": "Night-Aspected",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "0f92e868-30bd-4a88-8dd7-d1929eb47c0e",
-									"type": "modifier",
-									"name": "One College",
-									"notes": "@College@",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "7a67c4c3-2454-43a0-acd4-aac1265bd79a",
-									"type": "modifier",
-									"name": "Solitary",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "162576be-563f-43f2-9bd3-91db2defc569",
-									"type": "modifier",
-									"name": "Song",
-									"cost": -40,
-									"affects": "levels_only"
-								}
-							],
-							"base_points": 5,
-							"levels": 3,
-							"points_per_level": 10,
-							"features": [
-								{
-									"type": "spell_bonus",
-									"match": "all_colleges",
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "thaumatology"
-									},
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 23
 							}
 						},
 						{
@@ -1150,9 +1055,118 @@
 									}
 								}
 							],
-							"name": "One of:",
+							"name": "Instrument",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							},
 							"calc": {
 								"points": 20
+							}
+						},
+						{
+							"id": "2b811bf5-a4e3-4d58-b763-5fd1224a53da",
+							"type": "trait",
+							"name": "Magery",
+							"reference": "B66",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "10b7c609-d742-473c-a229-fd39e10a948f",
+									"type": "modifier",
+									"name": "Dance",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "8cffcc39-a19c-4aa2-8a65-f270534b6ad7",
+									"type": "modifier",
+									"name": "Dark-Aspected",
+									"cost": -50,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "9a43b6eb-5fca-4b3b-9475-9c8922652001",
+									"type": "modifier",
+									"name": "Day-Aspected",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "1db3c1d2-12b8-4d9f-aaec-8a1f58f99922",
+									"type": "modifier",
+									"name": "Musical",
+									"cost": -50,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "7ef63d35-934c-4046-8b55-22208f7a99b6",
+									"type": "modifier",
+									"name": "Night-Aspected",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "0f92e868-30bd-4a88-8dd7-d1929eb47c0e",
+									"type": "modifier",
+									"name": "One College",
+									"notes": "@College@",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "7a67c4c3-2454-43a0-acd4-aac1265bd79a",
+									"type": "modifier",
+									"name": "Solitary",
+									"cost": -40,
+									"affects": "levels_only",
+									"disabled": true
+								},
+								{
+									"id": "162576be-563f-43f2-9bd3-91db2defc569",
+									"type": "modifier",
+									"name": "Song",
+									"cost": -40,
+									"affects": "levels_only"
+								}
+							],
+							"base_points": 5,
+							"levels": 3,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "spell_bonus",
+									"match": "all_colleges",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "thaumatology"
+									},
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 23
 							}
 						},
 						{
@@ -1340,7 +1354,14 @@
 									}
 								}
 							],
-							"name": "-30 points from:",
+							"name": "Disadvantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": -30
+								}
+							},
 							"calc": {
 								"points": -85
 							}
@@ -1480,19 +1501,6 @@
 					"open": true,
 					"children": [
 						{
-							"id": "cb8f62d7-847c-49c5-9cdd-6062744bc040",
-							"type": "skill",
-							"name": "Musical Instrument",
-							"reference": "B211",
-							"tags": [
-								"Arts",
-								"Entertainment"
-							],
-							"specialization": "@Specialty@",
-							"difficulty": "iq/h",
-							"points": 2
-						},
-						{
 							"id": "2183abe6-af6c-47da-b746-d400a4e89450",
 							"type": "skill_container",
 							"open": true,
@@ -1523,7 +1531,27 @@
 									"points": 2
 								}
 							],
-							"name": "One of:"
+							"name": "Knowledge",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
+						{
+							"id": "cb8f62d7-847c-49c5-9cdd-6062744bc040",
+							"type": "skill",
+							"name": "Musical Instrument",
+							"reference": "B211",
+							"tags": [
+								"Arts",
+								"Entertainment"
+							],
+							"specialization": "@Specialty@",
+							"difficulty": "iq/h",
+							"points": 2
 						}
 					],
 					"name": "2. Secondary Skill"
@@ -1533,93 +1561,6 @@
 					"type": "skill_container",
 					"open": true,
 					"children": [
-						{
-							"id": "dfae42b3-61ad-47d3-a60a-83231afd502d",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "d293b5d3-efc5-4589-8f2a-c5dbdd94a2c1",
-									"type": "skill",
-									"name": "Carousing",
-									"reference": "B183",
-									"tags": [
-										"Criminal",
-										"Social",
-										"Street"
-									],
-									"difficulty": "ht/e",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "ht",
-											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "ad013321-9cb5-454e-9914-9062f21c9c66",
-									"type": "skill",
-									"name": "Public Speaking",
-									"reference": "B216",
-									"tags": [
-										"Business",
-										"Scholarly",
-										"Social"
-									],
-									"difficulty": "iq/a",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Acting",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Performance",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Politics",
-											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "49fc4e54-f632-4ecd-a9a5-e66e8d81eae6",
-									"type": "skill",
-									"name": "Savoir-Faire",
-									"reference": "B218",
-									"tags": [
-										"Business",
-										"Knowledge",
-										"Social"
-									],
-									"specialization": "High Society",
-									"difficulty": "iq/e",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Savoir-Faire",
-											"specialization": "Servant",
-											"modifier": -2
-										}
-									]
-								}
-							],
-							"name": "One of:"
-						},
 						{
 							"id": "24f54dc6-092b-441e-b561-9fc3dff46288",
 							"type": "skill_container",
@@ -1911,7 +1852,108 @@
 									]
 								}
 							],
-							"name": "Three of:"
+							"name": "Background Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 3
+								}
+							}
+						},
+						{
+							"id": "dfae42b3-61ad-47d3-a60a-83231afd502d",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "d293b5d3-efc5-4589-8f2a-c5dbdd94a2c1",
+									"type": "skill",
+									"name": "Carousing",
+									"reference": "B183",
+									"tags": [
+										"Criminal",
+										"Social",
+										"Street"
+									],
+									"difficulty": "ht/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "ht",
+											"modifier": -4
+										}
+									]
+								},
+								{
+									"id": "ad013321-9cb5-454e-9914-9062f21c9c66",
+									"type": "skill",
+									"name": "Public Speaking",
+									"reference": "B216",
+									"tags": [
+										"Business",
+										"Scholarly",
+										"Social"
+									],
+									"difficulty": "iq/a",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Acting",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Performance",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Politics",
+											"modifier": -5
+										}
+									]
+								},
+								{
+									"id": "49fc4e54-f632-4ecd-a9a5-e66e8d81eae6",
+									"type": "skill",
+									"name": "Savoir-Faire",
+									"reference": "B218",
+									"tags": [
+										"Business",
+										"Knowledge",
+										"Social"
+									],
+									"specialization": "High Society",
+									"difficulty": "iq/e",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Savoir-Faire",
+											"specialization": "Servant",
+											"modifier": -2
+										}
+									]
+								}
+							],
+							"name": "Social Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						}
 					],
 					"name": "3. Background Skill"

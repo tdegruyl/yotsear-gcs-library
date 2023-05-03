@@ -9,10 +9,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 1,
-			"weight": "0.004 lb",
+			"weight": "0.008 lb",
 			"calc": {
 				"extended_value": 1,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.008 lb"
 			}
 		},
 		{
@@ -22,10 +22,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 1,
-			"weight": "0.004 lb",
+			"weight": "0.008 lb",
 			"calc": {
 				"extended_value": 1,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.008 lb"
 			}
 		},
 		{
@@ -35,10 +35,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 1,
-			"weight": "0.004 lb",
+			"weight": "0.008 lb",
 			"calc": {
 				"extended_value": 1,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.008 lb"
 			}
 		},
 		{
@@ -48,10 +48,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 1,
-			"weight": "0.004 lb",
+			"weight": "0.008 lb",
 			"calc": {
 				"extended_value": 1,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.008 lb"
 			}
 		},
 		{
@@ -61,10 +61,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 1,
-			"weight": "0.004 lb",
+			"weight": "0.008 lb",
 			"calc": {
 				"extended_value": 1,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.008 lb"
 			}
 		},
 		{
@@ -74,10 +74,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 256,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 256,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -87,10 +87,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 256,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 256,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -100,10 +100,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 256,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 256,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -113,10 +113,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 256,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 256,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -126,10 +126,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 256,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 256,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -139,10 +139,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 16,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 16,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -152,10 +152,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 16,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 16,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -165,10 +165,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 16,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 16,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -178,10 +178,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 16,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 16,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		},
 		{
@@ -191,10 +191,10 @@
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 16,
-			"weight": "0.004 lb",
+			"weight": "0.03 lb",
 			"calc": {
 				"extended_value": 16,
-				"extended_weight": "0.004 lb"
+				"extended_weight": "0.03 lb"
 			}
 		}
 	]

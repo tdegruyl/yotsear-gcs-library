@@ -48,6 +48,57 @@
 							}
 						},
 						{
+							"id": "1ab5996d-8fed-41af-b7ae-19dcdecaa89f",
+							"type": "trait",
+							"name": "Increased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"levels": 1,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "62896a60-e9ae-4321-ae05-70f18341ce09",
+							"type": "trait",
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
 							"id": "76187bfa-ec7e-4275-8dd4-f2cf4fcd86dd",
 							"type": "trait",
 							"name": "Increased Strength",
@@ -97,57 +148,6 @@
 							"can_level": true,
 							"calc": {
 								"points": 10
-							}
-						},
-						{
-							"id": "1ab5996d-8fed-41af-b7ae-19dcdecaa89f",
-							"type": "trait",
-							"name": "Increased Intelligence",
-							"reference": "B15",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Mental"
-							],
-							"levels": 1,
-							"points_per_level": 20,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "iq",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 20
-							}
-						},
-						{
-							"id": "62896a60-e9ae-4321-ae05-70f18341ce09",
-							"type": "trait",
-							"name": "Increased Perception",
-							"reference": "B16",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Mental",
-								"Physical"
-							],
-							"levels": 1,
-							"points_per_level": 5,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "per",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 5
 							}
 						}
 					],
@@ -906,7 +906,14 @@
 							}
 						}
 					],
-					"name": "Class Advantage (20 Points Chosen)",
+					"name": "Class Advantages",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 20
+						}
+					},
 					"calc": {
 						"points": 53
 					}
@@ -916,56 +923,6 @@
 					"type": "trait_container",
 					"open": true,
 					"children": [
-						{
-							"id": "9cd0db99-33f3-4fcf-b7ad-9b78ff5d8814",
-							"type": "trait",
-							"name": "Secret ()",
-							"reference": "B152",
-							"tags": [
-								"Disadvantage",
-								"Social"
-							],
-							"modifiers": [
-								{
-									"id": "d0470c3c-9761-4434-8c79-e12c3d0ac9f9",
-									"type": "modifier",
-									"name": "Serious Embarrassment",
-									"reference": "B152",
-									"cost": -5,
-									"cost_type": "points",
-									"disabled": true
-								},
-								{
-									"id": "03fabb51-4f9b-4575-8bcc-8644124177a8",
-									"type": "modifier",
-									"name": "Utter Rejection",
-									"reference": "B152",
-									"cost": -10,
-									"cost_type": "points",
-									"disabled": true
-								},
-								{
-									"id": "6345d7c9-87b6-489f-b342-1162c7eaaf11",
-									"type": "modifier",
-									"name": "Imprisonment",
-									"reference": "B152",
-									"cost": -20,
-									"cost_type": "points"
-								},
-								{
-									"id": "294157c2-41fb-459b-bc15-12582f3e72f8",
-									"type": "modifier",
-									"name": "Possible Death",
-									"reference": "B152",
-									"cost": -30,
-									"cost_type": "points",
-									"disabled": true
-								}
-							],
-							"calc": {
-								"points": -20
-							}
-						},
 						{
 							"id": "a204587b-1209-4887-8ab8-0b7b8db49959",
 							"type": "trait_container",
@@ -1151,9 +1108,66 @@
 									}
 								}
 							],
-							"name": "-20 Chosen from:",
+							"name": "Other Disadvantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": -20
+								}
+							},
 							"calc": {
 								"points": -75
+							}
+						},
+						{
+							"id": "9cd0db99-33f3-4fcf-b7ad-9b78ff5d8814",
+							"type": "trait",
+							"name": "Secret (@Secret@)",
+							"reference": "B152",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"modifiers": [
+								{
+									"id": "d0470c3c-9761-4434-8c79-e12c3d0ac9f9",
+									"type": "modifier",
+									"name": "Serious Embarrassment",
+									"reference": "B152",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "03fabb51-4f9b-4575-8bcc-8644124177a8",
+									"type": "modifier",
+									"name": "Utter Rejection",
+									"reference": "B152",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6345d7c9-87b6-489f-b342-1162c7eaaf11",
+									"type": "modifier",
+									"name": "Imprisonment",
+									"reference": "B152",
+									"cost": -20,
+									"cost_type": "points"
+								},
+								{
+									"id": "294157c2-41fb-459b-bc15-12582f3e72f8",
+									"type": "modifier",
+									"name": "Possible Death",
+									"reference": "B152",
+									"cost": -30,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -20
 							}
 						}
 					],
@@ -1202,6 +1216,29 @@
 								{
 									"type": "skill",
 									"name": "Shadowing",
+									"modifier": -5
+								}
+							]
+						},
+						{
+							"id": "68429b67-0963-460b-86a7-7502deb72928",
+							"type": "skill",
+							"name": "Search",
+							"reference": "B219",
+							"tags": [
+								"Police",
+								"Spy"
+							],
+							"difficulty": "per/a",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "per",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Criminology",
 									"modifier": -5
 								}
 							]
@@ -1258,7 +1295,14 @@
 													]
 												}
 											],
-											"name": "And one of:"
+											"name": "Break-in",
+											"template_picker": {
+												"type": "count",
+												"qualifier": {
+													"compare": "is",
+													"qualifier": 1
+												}
+											}
 										},
 										{
 											"id": "8cd98b18-9840-4ebc-b61e-fdc556f46d81",
@@ -1358,7 +1402,14 @@
 													]
 												}
 											],
-											"name": "And one of:"
+											"name": "Method",
+											"template_picker": {
+												"type": "count",
+												"qualifier": {
+													"compare": "is",
+													"qualifier": 1
+												}
+											}
 										},
 										{
 											"id": "32c3594d-2eb0-432c-8c45-90b43e1b0d7f",
@@ -1455,30 +1506,14 @@
 									"name": "Shoplifter"
 								}
 							],
-							"name": "One of"
-						},
-						{
-							"id": "68429b67-0963-460b-86a7-7502deb72928",
-							"type": "skill",
-							"name": "Search",
-							"reference": "B219",
-							"tags": [
-								"Police",
-								"Spy"
-							],
-							"difficulty": "per/a",
-							"points": 8,
-							"defaults": [
-								{
-									"type": "per",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Criminology",
-									"modifier": -5
+							"name": "Specialization",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
 								}
-							]
+							}
 						}
 					],
 					"name": "1. Primary Skill"
@@ -1488,6 +1523,31 @@
 					"type": "skill_container",
 					"open": true,
 					"children": [
+						{
+							"id": "04eefae0-ae44-4d85-a092-739c75b86174",
+							"type": "skill",
+							"name": "Fast-Talk",
+							"reference": "B195",
+							"tags": [
+								"Criminal",
+								"Social",
+								"Spy",
+								"Street"
+							],
+							"difficulty": "iq/a",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Acting",
+									"modifier": -5
+								}
+							]
+						},
 						{
 							"id": "ae5a9b76-48f6-43c9-ad07-14cbded55e47",
 							"type": "skill_container",
@@ -1536,32 +1596,14 @@
 									]
 								}
 							],
-							"name": "And one of"
-						},
-						{
-							"id": "04eefae0-ae44-4d85-a092-739c75b86174",
-							"type": "skill",
-							"name": "Fast-Talk",
-							"reference": "B195",
-							"tags": [
-								"Criminal",
-								"Social",
-								"Spy",
-								"Street"
-							],
-							"difficulty": "iq/a",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Acting",
-									"modifier": -5
+							"name": "Get Away Skill",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
 								}
-							]
+							}
 						},
 						{
 							"id": "553f226e-19b8-48ac-91c1-bb38e8c7b169",
@@ -1698,7 +1740,14 @@
 									]
 								}
 							],
-							"name": "One of"
+							"name": "Melee Skill",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						},
 						{
 							"id": "0a9575b3-ec08-4fd9-8afc-8ed565a177fb",
@@ -1906,7 +1955,14 @@
 									]
 								}
 							],
-							"name": "Two of"
+							"name": "Other Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 2
+								}
+							}
 						}
 					],
 					"name": "3. Background Skill"

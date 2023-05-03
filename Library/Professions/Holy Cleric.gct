@@ -136,6 +136,91 @@
 					"open": true,
 					"children": [
 						{
+							"id": "4673a3b3-af44-49da-9cac-b9c5c4fe7483",
+							"type": "trait",
+							"name": "Blessed",
+							"reference": "B40",
+							"tags": [
+								"Advantage",
+								"Mental",
+								"Supernatural"
+							],
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "48a4728b-4f7b-46c6-8a58-82bdede10f72",
+							"type": "trait",
+							"name": "Charisma",
+							"reference": "B41",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"levels": 2,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "fortune-telling"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "leadership"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "panhandling"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "public speaking"
+									},
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from sapient being with whom you actively interact (converse, lecture, etc.)",
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "to Influence rolls",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
 							"id": "0f7f21ca-4e9c-47b3-bde1-a2efb7222f1d",
 							"type": "trait_container",
 							"open": true,
@@ -627,94 +712,16 @@
 									}
 								}
 							],
-							"name": "15 Points Chosen From:",
+							"name": "Other Advantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 15
+								}
+							},
 							"calc": {
 								"points": 82
-							}
-						},
-						{
-							"id": "4673a3b3-af44-49da-9cac-b9c5c4fe7483",
-							"type": "trait",
-							"name": "Blessed",
-							"reference": "B40",
-							"tags": [
-								"Advantage",
-								"Mental",
-								"Supernatural"
-							],
-							"base_points": 10,
-							"calc": {
-								"points": 10
-							}
-						},
-						{
-							"id": "48a4728b-4f7b-46c6-8a58-82bdede10f72",
-							"type": "trait",
-							"name": "Charisma",
-							"reference": "B41",
-							"tags": [
-								"Advantage",
-								"Mental"
-							],
-							"levels": 2,
-							"points_per_level": 5,
-							"features": [
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "fortune-telling"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "leadership"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "panhandling"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "public speaking"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "reaction_bonus",
-									"situation": "from sapient being with whom you actively interact (converse, lecture, etc.)",
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "reaction_bonus",
-									"situation": "to Influence rolls",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 10
 							}
 						},
 						{
@@ -758,357 +765,353 @@
 					"open": true,
 					"children": [
 						{
-							"id": "f5e6d934-8f42-4d79-9c6c-e64e1bea9e9c",
-							"type": "trait_container",
-							"open": true,
-							"children": [
+							"id": "82c653c5-2ee7-4fff-956a-40db57e9f384",
+							"type": "trait",
+							"name": "Charitable",
+							"reference": "B125",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"cr": 12,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "771c3abb-1516-422b-bf25-f2a66e7d6d52",
+							"type": "trait",
+							"name": "Disciplines of Faith (Mysticism)",
+							"reference": "B132",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "fa303536-f6d4-4088-81da-199d805504fe",
+							"type": "trait",
+							"name": "Disciplines of Faith (Ritualism)",
+							"reference": "B132",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "83aaf390-66f1-4981-bece-a88a6c86bc1d",
+							"type": "trait",
+							"name": "Fanaticism",
+							"reference": "B136",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
 								{
-									"id": "82c653c5-2ee7-4fff-956a-40db57e9f384",
-									"type": "trait",
-									"name": "Charitable",
-									"reference": "B125",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -15,
-									"cr": 12,
-									"calc": {
-										"points": -15
-									}
-								},
-								{
-									"id": "771c3abb-1516-422b-bf25-f2a66e7d6d52",
-									"type": "trait",
-									"name": "Disciplines of Faith (Mysticism)",
-									"reference": "B132",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -10,
-									"calc": {
-										"points": -10
-									}
-								},
-								{
-									"id": "fa303536-f6d4-4088-81da-199d805504fe",
-									"type": "trait",
-									"name": "Disciplines of Faith (Ritualism)",
-									"reference": "B132",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -5,
-									"calc": {
-										"points": -5
-									}
-								},
-								{
-									"id": "83aaf390-66f1-4981-bece-a88a6c86bc1d",
-									"type": "trait",
-									"name": "Fanaticism",
+									"id": "8024e49f-3dc9-4051-8f34-1bd9fe8ecc0d",
+									"type": "modifier",
+									"name": "Extreme",
 									"reference": "B136",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "8024e49f-3dc9-4051-8f34-1bd9fe8ecc0d",
-											"type": "modifier",
-											"name": "Extreme",
-											"reference": "B136",
-											"disabled": true
-										}
-									],
-									"base_points": -15,
-									"calc": {
-										"points": -15
-									}
-								},
-								{
-									"id": "11210b4d-22d3-40a4-b5e0-7153d2d45242",
-									"type": "trait",
-									"name": "Pacifism: Cannot Harm Innocents",
-									"reference": "B148",
-									"notes": "You may fight – you may even start fights – but you may only use deadly force on a foe that is attempting to do you serious harm. Capture is not “serious harm” unless you are already under penalty of death or have a Code of Honor that would require suicide if captured. You never intentionally do anything that causes, or even threatens to cause, injury to the uninvolved – particularly if they are “ordinary folks.”",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "74354ea8-96ba-4eee-9027-9f746e9bd941",
-											"type": "modifier",
-											"name": "Species-Specific",
-											"reference": "UT32",
-											"cost": -80,
-											"disabled": true
-										}
-									],
-									"base_points": -10,
-									"calc": {
-										"points": -10
-									}
-								},
-								{
-									"id": "9aaae556-feaa-4384-824a-8f63aaf6f477",
-									"type": "trait",
-									"name": "Pacifism: Cannot Kill",
-									"reference": "B148",
-									"notes": "You may fight – you may even start fights – but you may never do anything that seems likely to kill another. This includes abandoning a wounded foe to die “on his own”! You must do your best to keep your companions from killing, too. If you do kill someone (or feel responsible for a death), you immediately suffer a nervous breakdown. Roll 3d and be totally morose and useless for that many days. During this time, you must make a Will roll to offer any sort of violence toward anyone, for any reason.",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "90acca03-6b28-4979-a04f-b2f75d4d1fa9",
-											"type": "modifier",
-											"name": "Species-Specific",
-											"reference": "UT32",
-											"cost": -80,
-											"disabled": true
-										}
-									],
-									"base_points": -15,
-									"calc": {
-										"points": -15
-									}
-								},
-								{
-									"id": "a962a615-f839-494d-98eb-32bccb90a0b7",
-									"type": "trait",
-									"name": "Pacifism: Reluctant Killer",
-									"reference": "B148",
-									"notes": "You are psychologically unprepared to kill people. Whenever you make a deadly attack (e.g., with a knife or a gun) against an obvious person whose face is visible to you, you are at -4 to hit and may not Aim. If you cannot see the foe’s face (due to a mask, darkness, or distance, or because you attacked from behind), the penalty is only -2, save in close combat. You have no penalty to attack a vehicle (even an occupied one), an opponent you do not believe is a person (including things with Horrific or Monstrous appearance), or a target you can’t actually see (e.g., a set of map coordinates or a blip on a radar screen). If you kill a recognizable person, the effect on you is the same as for Pacifism: Cannot Kill. You have no problem with your allies killing; you may even supply ammo, loaded weapons, and encouragement! You just can’t do the killing yourself.",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "6d3031de-32e5-4203-a9ad-f1ff23f723fd",
-											"type": "modifier",
-											"name": "Species-Specific",
-											"reference": "UT32",
-											"cost": -80,
-											"disabled": true
-										}
-									],
-									"base_points": -5,
-									"calc": {
-										"points": -5
-									}
-								},
-								{
-									"id": "e53407b6-b166-4ea1-a1af-38b9b07be9c5",
-									"type": "trait",
-									"name": "Pacifism: Self-Defense Only",
-									"reference": "B148",
-									"notes": "You only fight to defend yourself or those in your care, using only as much force as necessary (no pre-emptive strikes allowed!). You must do your best to discourage others from starting fights.",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "49522b66-fa2d-4daa-8672-487ba857cc9f",
-											"type": "modifier",
-											"name": "Species-Specific",
-											"reference": "UT32",
-											"cost": -80,
-											"disabled": true
-										}
-									],
-									"base_points": -15,
-									"calc": {
-										"points": -15
-									}
-								},
-								{
-									"id": "ff13579a-3ff8-465e-9187-332f596a53b3",
-									"type": "trait",
-									"name": "Pacifism: Total Nonviolence",
-									"reference": "B148",
-									"notes": "You will not lift a hand against another intelligent creature, for any reason. You must do your nonviolent best to discourage violent behavior in others, too. You are free to defend yourself against attacks by animals, mosquitoes, etc.",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "d80be636-1a32-4d36-af97-04d6e459d119",
-											"type": "modifier",
-											"name": "Species-Specific",
-											"reference": "UT32",
-											"cost": -80,
-											"disabled": true
-										}
-									],
-									"base_points": -30,
-									"calc": {
-										"points": -30
-									}
-								},
-								{
-									"id": "cbac7ad2-71d9-4738-8f6b-c1eedbd54330",
-									"type": "trait",
-									"name": "Sense of Duty",
-									"reference": "B153",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "de47158b-455d-4448-8055-86065b81d6d1",
-											"type": "modifier",
-											"name": "Friends and Companions",
-											"reference": "B153",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "8fde1c7b-7271-4b9b-9032-8551dde325a8",
-											"type": "modifier",
-											"name": "@Small Group@",
-											"reference": "B153",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "89ec98d8-237b-4ab6-82e5-f9767592c065",
-											"type": "modifier",
-											"name": "@Individual@",
-											"reference": "B153",
-											"cost": -2,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "0daad494-07fe-4b61-a1fe-ab5e198b6411",
-											"type": "modifier",
-											"name": "@Large Group@",
-											"reference": "B153",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "103f5c35-d3d6-4f0f-9336-447062d5c050",
-											"type": "modifier",
-											"name": "@Entire Race@",
-											"reference": "B153",
-											"cost": -15,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "721ee069-0e87-46c8-9638-0f2dee3142e6",
-											"type": "modifier",
-											"name": "Every Living Being",
-											"reference": "B153",
-											"cost": -20,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 0
-									}
-								},
-								{
-									"id": "e5865a57-240b-445d-9fe0-93bbc842a74d",
-									"type": "trait",
-									"name": "Social Stigma (Excommunicated)",
-									"reference": "B155",
-									"tags": [
-										"Disadvantage",
-										"Social"
-									],
-									"base_points": -5,
-									"features": [
-										{
-											"type": "reaction_bonus",
-											"situation": "from others",
-											"amount": -3
-										}
-									],
-									"calc": {
-										"points": -5
-									}
-								},
-								{
-									"id": "af9d276f-bb4a-45ee-866e-0926b5cb4ff9",
-									"type": "trait",
-									"name": "Vow",
-									"reference": "B161",
-									"notes": "@Subject@",
-									"tags": [
-										"Disadvantage",
-										"Physical"
-									],
-									"modifiers": [
-										{
-											"id": "b86c5f36-bb6b-44b9-80c2-7ec8d2946da6",
-											"type": "modifier",
-											"name": "Minor",
-											"reference": "B161",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "9140caed-80fb-42d8-bd78-4dd02a1d5503",
-											"type": "modifier",
-											"name": "Major",
-											"reference": "B161",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "41f6d00c-96f0-4d02-930d-8d793808461b",
-											"type": "modifier",
-											"name": "Great",
-											"reference": "B161",
-											"cost": -15,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 0
-									}
-								},
-								{
-									"id": "862dfa6b-e39f-42ae-9df5-5115fe3770c2",
-									"type": "trait",
-									"name": "Honesty",
-									"reference": "B138",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -10,
-									"cr": 12,
-									"calc": {
-										"points": -10
-									}
+									"disabled": true
 								}
 							],
-							"name": "-30 Points chosen from:",
+							"base_points": -15,
 							"calc": {
-								"points": -135
+								"points": -15
+							}
+						},
+						{
+							"id": "862dfa6b-e39f-42ae-9df5-5115fe3770c2",
+							"type": "trait",
+							"name": "Honesty",
+							"reference": "B138",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"cr": 12,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "11210b4d-22d3-40a4-b5e0-7153d2d45242",
+							"type": "trait",
+							"name": "Pacifism: Cannot Harm Innocents",
+							"reference": "B148",
+							"notes": "You may fight – you may even start fights – but you may only use deadly force on a foe that is attempting to do you serious harm. Capture is not “serious harm” unless you are already under penalty of death or have a Code of Honor that would require suicide if captured. You never intentionally do anything that causes, or even threatens to cause, injury to the uninvolved – particularly if they are “ordinary folks.”",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "74354ea8-96ba-4eee-9027-9f746e9bd941",
+									"type": "modifier",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "9aaae556-feaa-4384-824a-8f63aaf6f477",
+							"type": "trait",
+							"name": "Pacifism: Cannot Kill",
+							"reference": "B148",
+							"notes": "You may fight – you may even start fights – but you may never do anything that seems likely to kill another. This includes abandoning a wounded foe to die “on his own”! You must do your best to keep your companions from killing, too. If you do kill someone (or feel responsible for a death), you immediately suffer a nervous breakdown. Roll 3d and be totally morose and useless for that many days. During this time, you must make a Will roll to offer any sort of violence toward anyone, for any reason.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "90acca03-6b28-4979-a04f-b2f75d4d1fa9",
+									"type": "modifier",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "a962a615-f839-494d-98eb-32bccb90a0b7",
+							"type": "trait",
+							"name": "Pacifism: Reluctant Killer",
+							"reference": "B148",
+							"notes": "You are psychologically unprepared to kill people. Whenever you make a deadly attack (e.g., with a knife or a gun) against an obvious person whose face is visible to you, you are at -4 to hit and may not Aim. If you cannot see the foe’s face (due to a mask, darkness, or distance, or because you attacked from behind), the penalty is only -2, save in close combat. You have no penalty to attack a vehicle (even an occupied one), an opponent you do not believe is a person (including things with Horrific or Monstrous appearance), or a target you can’t actually see (e.g., a set of map coordinates or a blip on a radar screen). If you kill a recognizable person, the effect on you is the same as for Pacifism: Cannot Kill. You have no problem with your allies killing; you may even supply ammo, loaded weapons, and encouragement! You just can’t do the killing yourself.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "6d3031de-32e5-4203-a9ad-f1ff23f723fd",
+									"type": "modifier",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "e53407b6-b166-4ea1-a1af-38b9b07be9c5",
+							"type": "trait",
+							"name": "Pacifism: Self-Defense Only",
+							"reference": "B148",
+							"notes": "You only fight to defend yourself or those in your care, using only as much force as necessary (no pre-emptive strikes allowed!). You must do your best to discourage others from starting fights.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "49522b66-fa2d-4daa-8672-487ba857cc9f",
+									"type": "modifier",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "ff13579a-3ff8-465e-9187-332f596a53b3",
+							"type": "trait",
+							"name": "Pacifism: Total Nonviolence",
+							"reference": "B148",
+							"notes": "You will not lift a hand against another intelligent creature, for any reason. You must do your nonviolent best to discourage violent behavior in others, too. You are free to defend yourself against attacks by animals, mosquitoes, etc.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "d80be636-1a32-4d36-af97-04d6e459d119",
+									"type": "modifier",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -30,
+							"calc": {
+								"points": -30
+							}
+						},
+						{
+							"id": "cbac7ad2-71d9-4738-8f6b-c1eedbd54330",
+							"type": "trait",
+							"name": "Sense of Duty",
+							"reference": "B153",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "de47158b-455d-4448-8055-86065b81d6d1",
+									"type": "modifier",
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "8fde1c7b-7271-4b9b-9032-8551dde325a8",
+									"type": "modifier",
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "89ec98d8-237b-4ab6-82e5-f9767592c065",
+									"type": "modifier",
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost": -2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "0daad494-07fe-4b61-a1fe-ab5e198b6411",
+									"type": "modifier",
+									"name": "@Large Group@",
+									"reference": "B153",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "103f5c35-d3d6-4f0f-9336-447062d5c050",
+									"type": "modifier",
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "721ee069-0e87-46c8-9638-0f2dee3142e6",
+									"type": "modifier",
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "e5865a57-240b-445d-9fe0-93bbc842a74d",
+							"type": "trait",
+							"name": "Social Stigma (Excommunicated)",
+							"reference": "B155",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"base_points": -5,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -3
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "af9d276f-bb4a-45ee-866e-0926b5cb4ff9",
+							"type": "trait",
+							"name": "Vow",
+							"reference": "B161",
+							"notes": "@Subject@",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "b86c5f36-bb6b-44b9-80c2-7ec8d2946da6",
+									"type": "modifier",
+									"name": "Minor",
+									"reference": "B161",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "9140caed-80fb-42d8-bd78-4dd02a1d5503",
+									"type": "modifier",
+									"name": "Major",
+									"reference": "B161",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "41f6d00c-96f0-4d02-930d-8d793808461b",
+									"type": "modifier",
+									"name": "Great",
+									"reference": "B161",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 0
 							}
 						}
 					],
 					"name": "Class Disadvantages",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": -30
+						}
+					},
 					"calc": {
 						"points": -135
 					}
@@ -1204,66 +1207,6 @@
 									"name": "2 Divinely Granted spells at [2]"
 								},
 								{
-									"id": "61656fe1-efb8-4d9f-bbc9-c252d586b9ac",
-									"type": "skill_container",
-									"open": true,
-									"children": [
-										{
-											"id": "c34a3280-68b5-4715-bd23-801f7d63616c",
-											"type": "skill",
-											"name": "Persuade",
-											"reference": "B191",
-											"tags": [
-												"Esoteric"
-											],
-											"difficulty": "will/h",
-											"points": 2,
-											"prereqs": {
-												"type": "prereq_list",
-												"all": true,
-												"prereqs": [
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "charisma"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 1
-														}
-													},
-													{
-														"type": "skill_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "public speaking"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 12
-														}
-													}
-												]
-											}
-										},
-										{
-											"id": "1822679d-b8bf-43fa-b351-b56cf78e79e3",
-											"type": "skill",
-											"name": "Sway Emotions",
-											"reference": "B192",
-											"tags": [
-												"Social"
-											],
-											"difficulty": "will/h",
-											"points": 2
-										}
-									],
-									"name": "and"
-								},
-								{
 									"id": "a46f6a3a-69ab-4696-aa65-08b0e93c6f8f",
 									"type": "skill",
 									"name": "Detect Lies",
@@ -1338,9 +1281,76 @@
 											}
 										]
 									}
+								},
+								{
+									"id": "61656fe1-efb8-4d9f-bbc9-c252d586b9ac",
+									"type": "skill_container",
+									"open": true,
+									"children": [
+										{
+											"id": "c34a3280-68b5-4715-bd23-801f7d63616c",
+											"type": "skill",
+											"name": "Persuade",
+											"reference": "B191",
+											"tags": [
+												"Esoteric"
+											],
+											"difficulty": "will/h",
+											"points": 2,
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "charisma"
+														},
+														"level": {
+															"compare": "at_least",
+															"qualifier": 1
+														}
+													},
+													{
+														"type": "skill_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "public speaking"
+														},
+														"level": {
+															"compare": "at_least",
+															"qualifier": 12
+														}
+													}
+												]
+											}
+										},
+										{
+											"id": "1822679d-b8bf-43fa-b351-b56cf78e79e3",
+											"type": "skill",
+											"name": "Sway Emotions",
+											"reference": "B192",
+											"tags": [
+												"Social"
+											],
+											"difficulty": "will/h",
+											"points": 2
+										}
+									],
+									"name": "Supernatural Persuasion"
 								}
 							],
-							"name": "One of"
+							"name": "Other Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						},
 						{
 							"id": "7fac55c8-f2c7-4be8-8bed-b77b43a4b61c",
@@ -1397,6 +1407,108 @@
 					"type": "skill_container",
 					"open": true,
 					"children": [
+						{
+							"id": "a65d0617-c08e-4e61-b28a-67951caa41bc",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "48d6679e-5527-4743-b798-901adab5a564",
+									"type": "skill",
+									"name": "Dreaming",
+									"reference": "B188",
+									"tags": [
+										"Esoteric"
+									],
+									"difficulty": "will/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "will",
+											"modifier": -6
+										}
+									]
+								},
+								{
+									"id": "42588913-0798-4857-a9b6-41103a01608c",
+									"type": "skill",
+									"name": "Exorcism",
+									"reference": "B193",
+									"tags": [
+										"Magical",
+										"Occult"
+									],
+									"difficulty": "will/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "will",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Religious Ritual",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Ritual Magic",
+											"modifier": -3
+										},
+										{
+											"type": "skill",
+											"name": "Theology",
+											"modifier": -3
+										}
+									]
+								},
+								{
+									"id": "3488a142-5427-48ed-8938-c868f7a8bc99",
+									"type": "skill",
+									"name": "Expert Skill",
+									"reference": "B193,MA56",
+									"tags": [
+										"Humanities",
+										"Knowledge",
+										"Scholarly",
+										"Social Sciences"
+									],
+									"specialization": "Thantology",
+									"difficulty": "iq/h",
+									"points": 1
+								},
+								{
+									"id": "eed3981b-3314-46fb-8f68-ce2538a34e69",
+									"type": "skill",
+									"name": "Meditation",
+									"reference": "B207",
+									"tags": [
+										"Esoteric"
+									],
+									"difficulty": "will/h",
+									"points": 1,
+									"defaults": [
+										{
+											"type": "will",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Autohypnosis",
+											"modifier": -4
+										}
+									]
+								}
+							],
+							"name": "Divine Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
 						{
 							"id": "66e80f2c-175a-48cb-95dc-de24b6abcfa4",
 							"type": "skill_container",
@@ -1542,102 +1654,14 @@
 									]
 								}
 							],
-							"name": "One of"
-						},
-						{
-							"id": "a65d0617-c08e-4e61-b28a-67951caa41bc",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "48d6679e-5527-4743-b798-901adab5a564",
-									"type": "skill",
-									"name": "Dreaming",
-									"reference": "B188",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										}
-									]
-								},
-								{
-									"id": "42588913-0798-4857-a9b6-41103a01608c",
-									"type": "skill",
-									"name": "Exorcism",
-									"reference": "B193",
-									"tags": [
-										"Magical",
-										"Occult"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Religious Ritual",
-											"modifier": -3
-										},
-										{
-											"type": "skill",
-											"name": "Ritual Magic",
-											"modifier": -3
-										},
-										{
-											"type": "skill",
-											"name": "Theology",
-											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "3488a142-5427-48ed-8938-c868f7a8bc99",
-									"type": "skill",
-									"name": "Expert Skill",
-									"reference": "B193,MA56",
-									"tags": [
-										"Humanities",
-										"Knowledge",
-										"Scholarly",
-										"Social Sciences"
-									],
-									"specialization": "Thantology",
-									"difficulty": "iq/h",
-									"points": 1
-								},
-								{
-									"id": "eed3981b-3314-46fb-8f68-ce2538a34e69",
-									"type": "skill",
-									"name": "Meditation",
-									"reference": "B207",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Autohypnosis",
-											"modifier": -4
-										}
-									]
+							"name": "Other Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
 								}
-							],
-							"name": "One of"
+							}
 						}
 					],
 					"name": "3. Background Skills"
@@ -2369,7 +2393,14 @@
 							"name": "Cleric of Yalond"
 						}
 					],
-					"name": "One of"
+					"name": "Deity",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					}
 				},
 				{
 					"id": "578c415d-a5bd-4b8d-aa57-a57a894453d8",

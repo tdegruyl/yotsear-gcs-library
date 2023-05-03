@@ -379,7 +379,14 @@
 									}
 								}
 							],
-							"name": "Two of:",
+							"name": "Other Advantages",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 2
+								}
+							},
 							"calc": {
 								"points": 30
 							}
@@ -396,755 +403,751 @@
 					"open": true,
 					"children": [
 						{
-							"id": "78666cf7-3706-46c8-af4e-9853d57d8d59",
-							"type": "trait_container",
-							"open": true,
-							"children": [
+							"id": "ed9d4b51-2555-4b37-bd24-750aeefca3e3",
+							"type": "trait",
+							"name": "Absent-Mindedness",
+							"reference": "B122",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "3332105e-8a15-4776-8d87-5442e8d758ca",
+							"type": "trait",
+							"name": "Bad Temper",
+							"reference": "B124",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"cr": 12,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "d7354abd-3a3f-4b69-985e-fc984451b1d8",
+							"type": "trait",
+							"name": "Curious",
+							"reference": "B129",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"cr": 12,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "2b789069-8508-408d-a154-15ea04014cf8",
+							"type": "trait",
+							"name": "Duty (@Duty@)",
+							"reference": "B133",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"modifiers": [
 								{
-									"id": "ed9d4b51-2555-4b37-bd24-750aeefca3e3",
-									"type": "trait",
-									"name": "Absent-Mindedness",
-									"reference": "B122",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -15,
-									"calc": {
-										"points": -15
-									}
+									"id": "5367a796-da2b-4508-8fda-785c06873805",
+									"type": "modifier",
+									"name": "FR: 6",
+									"cost": -2,
+									"cost_type": "points",
+									"disabled": true
 								},
 								{
-									"id": "3332105e-8a15-4776-8d87-5442e8d758ca",
-									"type": "trait",
-									"name": "Bad Temper",
-									"reference": "B124",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -10,
-									"cr": 12,
-									"calc": {
-										"points": -10
-									}
+									"id": "dcb05458-b991-4ebe-bfef-b3a3b10e774f",
+									"type": "modifier",
+									"name": "FR: 9",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
 								},
 								{
-									"id": "d7354abd-3a3f-4b69-985e-fc984451b1d8",
-									"type": "trait",
-									"name": "Curious",
-									"reference": "B129",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -5,
-									"cr": 12,
-									"calc": {
-										"points": -5
-									}
+									"id": "cd8b6889-ee2d-4d26-80a1-bea0c1f4714e",
+									"type": "modifier",
+									"name": "FR: 12",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
 								},
 								{
-									"id": "2b789069-8508-408d-a154-15ea04014cf8",
-									"type": "trait",
-									"name": "Duty (@Duty@)",
-									"reference": "B133",
-									"tags": [
-										"Disadvantage",
-										"Social"
-									],
-									"modifiers": [
-										{
-											"id": "5367a796-da2b-4508-8fda-785c06873805",
-											"type": "modifier",
-											"name": "FR: 6",
-											"cost": -2,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "dcb05458-b991-4ebe-bfef-b3a3b10e774f",
-											"type": "modifier",
-											"name": "FR: 9",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "cd8b6889-ee2d-4d26-80a1-bea0c1f4714e",
-											"type": "modifier",
-											"name": "FR: 12",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "d09f54de-69c3-4b7a-9da5-a9daa5bd16e4",
-											"type": "modifier",
-											"name": "FR: 15",
-											"cost": -15,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "39c18dd8-5989-4fe9-a8b1-4fdddd0a3082",
-											"type": "modifier",
-											"name": "Extremely Hazardous",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "24a5927e-64c0-421a-a606-ef7e16918191",
-											"type": "modifier",
-											"name": "Involuntary",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "fb7d2ee6-714b-4d97-8abf-4c7c028cdec8",
-											"type": "modifier",
-											"name": "Nonhazardous",
-											"cost": 5,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 0
-									}
+									"id": "d09f54de-69c3-4b7a-9da5-a9daa5bd16e4",
+									"type": "modifier",
+									"name": "FR: 15",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
 								},
 								{
-									"id": "da176a54-9dba-49fb-8229-28360fbbe915",
-									"type": "trait",
-									"name": "Gluttony",
-									"reference": "B137",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -5,
-									"cr": 12,
-									"calc": {
-										"points": -5
-									}
+									"id": "39c18dd8-5989-4fe9-a8b1-4fdddd0a3082",
+									"type": "modifier",
+									"name": "Extremely Hazardous",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
 								},
 								{
-									"id": "bdd3e3b8-005d-4825-bf41-792150b89575",
-									"type": "trait",
-									"name": "Obsession",
-									"reference": "B146",
-									"notes": "@Goal@",
-									"tags": [
-										"Disadvantage",
-										"Physical"
-									],
-									"modifiers": [
-										{
-											"id": "a2fbc28d-32ea-4d6b-8d37-46320cb22706",
-											"type": "modifier",
-											"name": "Short term",
-											"reference": "B146",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "5c0c2045-f74e-4734-903a-8464167253f7",
-											"type": "modifier",
-											"name": "Long term",
-											"reference": "B146",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 0
-									}
+									"id": "24a5927e-64c0-421a-a606-ef7e16918191",
+									"type": "modifier",
+									"name": "Involuntary",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
 								},
 								{
-									"id": "e3f4f92d-e16f-4984-b92c-afd0c11f094b",
-									"type": "trait",
-									"name": "Secret (@Secret@)",
-									"reference": "B152",
-									"tags": [
-										"Disadvantage",
-										"Social"
-									],
-									"modifiers": [
-										{
-											"id": "2b1ddf47-2580-4cac-8ffd-f3204c5f97ee",
-											"type": "modifier",
-											"name": "Serious Embarrassment",
-											"reference": "B152",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "852629cc-a2b1-491a-9990-608cdd185888",
-											"type": "modifier",
-											"name": "Utter Rejection",
-											"reference": "B152",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "e6ca6d62-3966-497b-a692-e50efd0769bb",
-											"type": "modifier",
-											"name": "Imprisonment",
-											"reference": "B152",
-											"cost": -20,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "cc7f9faf-7ab1-41a3-acda-1d0a25220e9c",
-											"type": "modifier",
-											"name": "Possible Death",
-											"reference": "B152",
-											"cost": -30,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 0
-									}
-								},
-								{
-									"id": "0db28668-e073-4fea-9f54-24726bdd9789",
-									"type": "trait",
-									"name": "Sense of Duty",
-									"reference": "B153",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "e9801649-9a89-46de-a0f9-7ef795e9a09c",
-											"type": "modifier",
-											"name": "Friends and Companions",
-											"reference": "B153",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "ef7ee42e-d565-4dc5-964d-d1ce51988c0a",
-											"type": "modifier",
-											"name": "@Small Group@",
-											"reference": "B153",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "687d33fb-f1d0-4eac-8b39-2b1013256210",
-											"type": "modifier",
-											"name": "@Individual@",
-											"reference": "B153",
-											"cost": -2,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "c812bca1-9a59-44c9-bd29-3860dfbb2219",
-											"type": "modifier",
-											"name": "@Large Group@",
-											"reference": "B153",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "d5b4aa25-0346-402e-ae44-cf1180724fe2",
-											"type": "modifier",
-											"name": "@Entire Race@",
-											"reference": "B153",
-											"cost": -15,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "46cd31d5-a40d-4545-9923-250359251425",
-											"type": "modifier",
-											"name": "Every Living Being",
-											"reference": "B153",
-											"cost": -20,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 0
-									}
-								},
-								{
-									"id": "c7952031-9f5b-43eb-8a05-218289a5a544",
-									"type": "trait",
-									"name": "Shyness",
-									"reference": "B154",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "8ad923c6-f265-4455-b2c0-4157cfac928f",
-											"type": "modifier",
-											"name": "Mild",
-											"reference": "B154",
-											"cost": -5,
-											"cost_type": "points",
-											"disabled": true,
-											"features": [
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "acting"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "carousing"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "diplomacy"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "fast-talk"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "intimidation"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "leadership"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "merchant"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "panhandling"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "performance"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "politics"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "public speaking"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "contains",
-														"qualifier": "savoir-faire"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "sex appeal"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "streetwise"
-													},
-													"amount": -1
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "teaching"
-													},
-													"amount": -1
-												}
-											]
-										},
-										{
-											"id": "b217b77e-1218-458c-8ce4-7cbd11f97e01",
-											"type": "modifier",
-											"name": "Severe",
-											"reference": "B154",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true,
-											"features": [
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "acting"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "carousing"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "diplomacy"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "fast-talk"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "intimidation"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "leadership"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "merchant"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "panhandling"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "performance"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "politics"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "public speaking"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "contains",
-														"qualifier": "savoir-faire"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "sex appeal"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "streetwise"
-													},
-													"amount": -2
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "teaching"
-													},
-													"amount": -2
-												}
-											]
-										},
-										{
-											"id": "e2315c26-a47b-4b2f-a06e-41c119c66625",
-											"type": "modifier",
-											"name": "Crippling",
-											"reference": "B154",
-											"cost": -20,
-											"cost_type": "points",
-											"disabled": true,
-											"features": [
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "acting"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "carousing"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "diplomacy"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "fast-talk"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "intimidation"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "leadership"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "merchant"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "panhandling"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "performance"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "politics"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "public speaking"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "contains",
-														"qualifier": "savoir-faire"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "sex appeal"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "streetwise"
-													},
-													"amount": -4
-												},
-												{
-													"type": "skill_bonus",
-													"selection_type": "skills_with_name",
-													"name": {
-														"compare": "is",
-														"qualifier": "teaching"
-													},
-													"amount": -4
-												}
-											]
-										}
-									],
-									"calc": {
-										"points": 0
-									}
+									"id": "fb7d2ee6-714b-4d97-8abf-4c7c028cdec8",
+									"type": "modifier",
+									"name": "Nonhazardous",
+									"cost": 5,
+									"cost_type": "points",
+									"disabled": true
 								}
 							],
-							"name": "-15 points chosen from:",
 							"calc": {
-								"points": -35
+								"points": 0
+							}
+						},
+						{
+							"id": "da176a54-9dba-49fb-8229-28360fbbe915",
+							"type": "trait",
+							"name": "Gluttony",
+							"reference": "B137",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"cr": 12,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "bdd3e3b8-005d-4825-bf41-792150b89575",
+							"type": "trait",
+							"name": "Obsession",
+							"reference": "B146",
+							"notes": "@Goal@",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "a2fbc28d-32ea-4d6b-8d37-46320cb22706",
+									"type": "modifier",
+									"name": "Short term",
+									"reference": "B146",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5c0c2045-f74e-4734-903a-8464167253f7",
+									"type": "modifier",
+									"name": "Long term",
+									"reference": "B146",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "e3f4f92d-e16f-4984-b92c-afd0c11f094b",
+							"type": "trait",
+							"name": "Secret (@Secret@)",
+							"reference": "B152",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"modifiers": [
+								{
+									"id": "2b1ddf47-2580-4cac-8ffd-f3204c5f97ee",
+									"type": "modifier",
+									"name": "Serious Embarrassment",
+									"reference": "B152",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "852629cc-a2b1-491a-9990-608cdd185888",
+									"type": "modifier",
+									"name": "Utter Rejection",
+									"reference": "B152",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e6ca6d62-3966-497b-a692-e50efd0769bb",
+									"type": "modifier",
+									"name": "Imprisonment",
+									"reference": "B152",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "cc7f9faf-7ab1-41a3-acda-1d0a25220e9c",
+									"type": "modifier",
+									"name": "Possible Death",
+									"reference": "B152",
+									"cost": -30,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "0db28668-e073-4fea-9f54-24726bdd9789",
+							"type": "trait",
+							"name": "Sense of Duty",
+							"reference": "B153",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "e9801649-9a89-46de-a0f9-7ef795e9a09c",
+									"type": "modifier",
+									"name": "Friends and Companions",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ef7ee42e-d565-4dc5-964d-d1ce51988c0a",
+									"type": "modifier",
+									"name": "@Small Group@",
+									"reference": "B153",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "687d33fb-f1d0-4eac-8b39-2b1013256210",
+									"type": "modifier",
+									"name": "@Individual@",
+									"reference": "B153",
+									"cost": -2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "c812bca1-9a59-44c9-bd29-3860dfbb2219",
+									"type": "modifier",
+									"name": "@Large Group@",
+									"reference": "B153",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "d5b4aa25-0346-402e-ae44-cf1180724fe2",
+									"type": "modifier",
+									"name": "@Entire Race@",
+									"reference": "B153",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "46cd31d5-a40d-4545-9923-250359251425",
+									"type": "modifier",
+									"name": "Every Living Being",
+									"reference": "B153",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "c7952031-9f5b-43eb-8a05-218289a5a544",
+							"type": "trait",
+							"name": "Shyness",
+							"reference": "B154",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "8ad923c6-f265-4455-b2c0-4157cfac928f",
+									"type": "modifier",
+									"name": "Mild",
+									"reference": "B154",
+									"cost": -5,
+									"cost_type": "points",
+									"disabled": true,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "acting"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "carousing"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "diplomacy"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fast-talk"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "intimidation"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leadership"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "merchant"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "panhandling"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "performance"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "politics"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "public speaking"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "savoir-faire"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sex appeal"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "streetwise"
+											},
+											"amount": -1
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "teaching"
+											},
+											"amount": -1
+										}
+									]
+								},
+								{
+									"id": "b217b77e-1218-458c-8ce4-7cbd11f97e01",
+									"type": "modifier",
+									"name": "Severe",
+									"reference": "B154",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "acting"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "carousing"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "diplomacy"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fast-talk"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "intimidation"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leadership"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "merchant"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "panhandling"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "performance"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "politics"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "public speaking"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "savoir-faire"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sex appeal"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "streetwise"
+											},
+											"amount": -2
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "teaching"
+											},
+											"amount": -2
+										}
+									]
+								},
+								{
+									"id": "e2315c26-a47b-4b2f-a06e-41c119c66625",
+									"type": "modifier",
+									"name": "Crippling",
+									"reference": "B154",
+									"cost": -20,
+									"cost_type": "points",
+									"disabled": true,
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "acting"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "carousing"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "diplomacy"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fast-talk"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "intimidation"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leadership"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "merchant"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "panhandling"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "performance"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "politics"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "public speaking"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "contains",
+												"qualifier": "savoir-faire"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "sex appeal"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "streetwise"
+											},
+											"amount": -4
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "teaching"
+											},
+											"amount": -4
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 0
 							}
 						}
 					],
 					"name": "Class Disadvantage",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": -15
+						}
+					},
 					"calc": {
 						"points": -35
 					}
@@ -1213,339 +1216,338 @@
 					"open": true,
 					"children": [
 						{
-							"id": "be1fe481-fdef-4d00-9116-7c956e91db93",
-							"type": "skill_container",
-							"open": true,
-							"children": [
+							"id": "7d3b47a5-a89e-4cde-bf31-4c3afc6ad4ea",
+							"type": "skill",
+							"name": "Alchemy",
+							"reference": "B174",
+							"tags": [
+								"Magical",
+								"Natural Science",
+								"Occult"
+							],
+							"tech_level": "",
+							"difficulty": "iq/vh",
+							"points": 4
+						},
+						{
+							"id": "ec222e75-c997-4da9-bd6e-9c00139ce4d3",
+							"type": "skill",
+							"name": "Astronomy",
+							"reference": "B179",
+							"tags": [
+								"Natural Science"
+							],
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 4,
+							"defaults": [
 								{
-									"id": "7d3b47a5-a89e-4cde-bf31-4c3afc6ad4ea",
+									"type": "iq",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "mathematics"
+										},
+										"specialization": {
+											"compare": "is",
+											"qualifier": "applied"
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "e0674a5b-79b8-46b1-b141-bed0f86d471e",
+							"type": "skill",
+							"name": "Cryptography",
+							"reference": "B186",
+							"tags": [
+								"Military",
+								"Spy"
+							],
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 4,
+							"defaults": [
+								{
 									"type": "skill",
-									"name": "Alchemy",
-									"reference": "B174",
-									"tags": [
-										"Magical",
-										"Natural Science",
-										"Occult"
-									],
-									"tech_level": "",
-									"difficulty": "iq/vh",
-									"points": 4
+									"name": "Mathematics",
+									"specialization": "Cryptology",
+									"modifier": -5
+								}
+							]
+						},
+						{
+							"id": "9192b2ea-b60b-4f0d-b78d-f63af6ce3b6e",
+							"type": "skill",
+							"name": "Dreaming",
+							"reference": "B188",
+							"tags": [
+								"Esoteric"
+							],
+							"difficulty": "will/h",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "will",
+									"modifier": -6
+								}
+							]
+						},
+						{
+							"id": "d31cf280-d253-49f8-9659-51a22fe154b4",
+							"type": "skill",
+							"name": "Expert Skill",
+							"reference": "B193",
+							"tags": [
+								"Knowledge",
+								"Natural Science",
+								"Scholarly"
+							],
+							"specialization": "@Specialty@",
+							"difficulty": "iq/h",
+							"points": 4
+						},
+						{
+							"id": "cb7c0ab3-9ddd-4275-9840-a5c04b84b7a0",
+							"type": "skill",
+							"name": "Games",
+							"reference": "B197",
+							"tags": [
+								"Knowledge"
+							],
+							"specialization": "Magical Challenges",
+							"difficulty": "iq/e",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "6fb14fa5-4496-4160-93a8-64a486256a48",
+							"type": "skill",
+							"name": "Hidden Lore",
+							"reference": "B199",
+							"tags": [
+								"Knowledge"
+							],
+							"specialization": "@Subject@",
+							"difficulty": "iq/a",
+							"points": 4
+						},
+						{
+							"id": "07e0b900-88ed-46b6-b8b8-2a2eb2827cc6",
+							"type": "skill",
+							"name": "Mathematics",
+							"reference": "B207",
+							"tags": [
+								"Natural Science"
+							],
+							"specialization": "@Specialty@",
+							"tech_level": "",
+							"difficulty": "iq/h",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
 								},
 								{
-									"id": "ec222e75-c997-4da9-bd6e-9c00139ce4d3",
 									"type": "skill",
-									"name": "Astronomy",
-									"reference": "B179",
-									"tags": [
-										"Natural Science"
-									],
-									"tech_level": "",
-									"difficulty": "iq/h",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										}
-									],
-									"prereqs": {
+									"name": "Physics",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Engineer",
+									"modifier": -5
+								}
+							]
+						},
+						{
+							"id": "224a704f-e037-49c7-8e23-b609c5591fe5",
+							"type": "skill",
+							"name": "Meditation",
+							"reference": "B207",
+							"tags": [
+								"Esoteric"
+							],
+							"difficulty": "will/h",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "will",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Autohypnosis",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "b6c7fd3e-aa3b-4406-86f8-d7f3deb59ade",
+							"type": "skill",
+							"name": "Naturalist",
+							"reference": "B211",
+							"tags": [
+								"Animal",
+								"Exploration",
+								"Natural Science",
+								"Outdoor",
+								"Plant"
+							],
+							"difficulty": "iq/h",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Biology",
+									"modifier": -3
+								}
+							]
+						},
+						{
+							"id": "36b750b2-8907-4045-83bc-63bb6b33e5ae",
+							"type": "skill",
+							"name": "Research",
+							"reference": "B217",
+							"tags": [
+								"Scholarly",
+								"Spy"
+							],
+							"tech_level": "",
+							"difficulty": "iq/a",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Writing",
+									"modifier": -3
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
 										"type": "prereq_list",
 										"all": true,
+										"when_tl": {
+											"compare": "at_least",
+											"qualifier": 8
+										},
 										"prereqs": [
 											{
 												"type": "skill_prereq",
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "mathematics"
+													"qualifier": "Computer Operation"
+												}
+											}
+										]
+									},
+									{
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
 												},
-												"specialization": {
-													"compare": "is",
-													"qualifier": "applied"
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Native"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Accented)"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Language"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Written (Broken)"
 												}
 											}
 										]
 									}
-								},
-								{
-									"id": "e0674a5b-79b8-46b1-b141-bed0f86d471e",
-									"type": "skill",
-									"name": "Cryptography",
-									"reference": "B186",
-									"tags": [
-										"Military",
-										"Spy"
-									],
-									"tech_level": "",
-									"difficulty": "iq/h",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Mathematics",
-											"specialization": "Cryptology",
-											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "9192b2ea-b60b-4f0d-b78d-f63af6ce3b6e",
-									"type": "skill",
-									"name": "Dreaming",
-									"reference": "B188",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/h",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										}
-									]
-								},
-								{
-									"id": "d31cf280-d253-49f8-9659-51a22fe154b4",
-									"type": "skill",
-									"name": "Expert Skill",
-									"reference": "B193",
-									"tags": [
-										"Knowledge",
-										"Natural Science",
-										"Scholarly"
-									],
-									"specialization": "@Specialty@",
-									"difficulty": "iq/h",
-									"points": 4
-								},
-								{
-									"id": "cb7c0ab3-9ddd-4275-9840-a5c04b84b7a0",
-									"type": "skill",
-									"name": "Games",
-									"reference": "B197",
-									"tags": [
-										"Knowledge"
-									],
-									"specialization": "Magical Challenges",
-									"difficulty": "iq/e",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "6fb14fa5-4496-4160-93a8-64a486256a48",
-									"type": "skill",
-									"name": "Hidden Lore",
-									"reference": "B199",
-									"tags": [
-										"Knowledge"
-									],
-									"specialization": "@Subject@",
-									"difficulty": "iq/a",
-									"points": 4
-								},
-								{
-									"id": "07e0b900-88ed-46b6-b8b8-2a2eb2827cc6",
-									"type": "skill",
-									"name": "Mathematics",
-									"reference": "B207",
-									"tags": [
-										"Natural Science"
-									],
-									"specialization": "@Specialty@",
-									"tech_level": "",
-									"difficulty": "iq/h",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Physics",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Engineer",
-											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "224a704f-e037-49c7-8e23-b609c5591fe5",
-									"type": "skill",
-									"name": "Meditation",
-									"reference": "B207",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/h",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Autohypnosis",
-											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "b6c7fd3e-aa3b-4406-86f8-d7f3deb59ade",
-									"type": "skill",
-									"name": "Naturalist",
-									"reference": "B211",
-									"tags": [
-										"Animal",
-										"Exploration",
-										"Natural Science",
-										"Outdoor",
-										"Plant"
-									],
-									"difficulty": "iq/h",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Biology",
-											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "36b750b2-8907-4045-83bc-63bb6b33e5ae",
-									"type": "skill",
-									"name": "Research",
-									"reference": "B217",
-									"tags": [
-										"Scholarly",
-										"Spy"
-									],
-									"tech_level": "",
-									"difficulty": "iq/a",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Writing",
-											"modifier": -3
-										}
-									],
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "prereq_list",
-												"all": true,
-												"when_tl": {
-													"compare": "at_least",
-													"qualifier": 8
-												},
-												"prereqs": [
-													{
-														"type": "skill_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "Computer Operation"
-														}
-													}
-												]
-											},
-											{
-												"type": "prereq_list",
-												"all": false,
-												"prereqs": [
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "starts_with",
-															"qualifier": "Language"
-														},
-														"notes": {
-															"compare": "contains",
-															"qualifier": "Written (Native"
-														}
-													},
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "starts_with",
-															"qualifier": "Language"
-														},
-														"notes": {
-															"compare": "contains",
-															"qualifier": "Written (Accented)"
-														}
-													},
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "starts_with",
-															"qualifier": "Language"
-														},
-														"notes": {
-															"compare": "contains",
-															"qualifier": "Written (Broken)"
-														}
-													}
-												]
-											}
-										]
-									}
-								},
-								{
-									"id": "a8cc3421-ef76-42cd-8c3c-196ee707286e",
-									"type": "skill",
-									"name": "Theology",
-									"reference": "B226",
-									"tags": [
-										"Humanities",
-										"Social Sciences"
-									],
-									"specialization": "@Specialty@",
-									"difficulty": "iq/h",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Religious Ritual",
-											"specialization": "@Specialty@",
-											"modifier": -4
-										}
-									]
-								}
+								]
+							}
+						},
+						{
+							"id": "a8cc3421-ef76-42cd-8c3c-196ee707286e",
+							"type": "skill",
+							"name": "Theology",
+							"reference": "B226",
+							"tags": [
+								"Humanities",
+								"Social Sciences"
 							],
-							"name": "Three of:"
+							"specialization": "@Specialty@",
+							"difficulty": "iq/h",
+							"points": 4,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -6
+								},
+								{
+									"type": "skill",
+									"name": "Religious Ritual",
+									"specialization": "@Specialty@",
+									"modifier": -4
+								}
+							]
 						}
 					],
-					"name": "2. Secondary Skill"
+					"name": "2. Secondary Skill",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 3
+						}
+					}
 				},
 				{
 					"id": "271c8424-44fc-40b9-b8c4-5fa16746baa0",
@@ -1581,30 +1583,6 @@
 									"type": "skill",
 									"name": "Veterinary",
 									"modifier": -4
-								}
-							]
-						},
-						{
-							"id": "adbf4fb5-ccf0-4b60-aa91-0c003fbcedb6",
-							"type": "skill",
-							"name": "Riding",
-							"reference": "B217",
-							"tags": [
-								"Animal"
-							],
-							"specialization": "Equines",
-							"difficulty": "dx/a",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Animal Handling",
-									"specialization": "Equines",
-									"modifier": -3
 								}
 							]
 						},
@@ -1731,7 +1709,38 @@
 									]
 								}
 							],
-							"name": "One of:"
+							"name": "Melee Weapon",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
+						{
+							"id": "adbf4fb5-ccf0-4b60-aa91-0c003fbcedb6",
+							"type": "skill",
+							"name": "Riding",
+							"reference": "B217",
+							"tags": [
+								"Animal"
+							],
+							"specialization": "Equines",
+							"difficulty": "dx/a",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Animal Handling",
+									"specialization": "Equines",
+									"modifier": -3
+								}
+							]
 						},
 						{
 							"id": "42425abc-d26a-44c8-a566-881013593493",
@@ -1789,7 +1798,14 @@
 									]
 								}
 							],
-							"name": "One of:"
+							"name": "Social",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						}
 					],
 					"name": "3. Background Skill"
@@ -1941,6 +1957,12 @@
 							"type": "spell_container",
 							"open": true,
 							"children": [
+								{
+									"id": "530900b5-88a6-4997-8d34-87c2d8ffeb02",
+									"type": "spell_container",
+									"open": true,
+									"name": "Choose foiur spells and raise them to 4 points."
+								},
 								{
 									"id": "10b2c4f2-4d2f-4cdc-bb33-19e2323fe882",
 									"type": "spell",
@@ -2336,21 +2358,469 @@
 											}
 										]
 									}
-								},
-								{
-									"id": "530900b5-88a6-4997-8d34-87c2d8ffeb02",
-									"type": "spell_container",
-									"open": true,
-									"name": "Choose foiur spells and raise them to 4 points."
 								}
 							],
 							"name": "Elementalist"
+						},
+						{
+							"id": "218a6730-3939-442e-8cb4-421752b7ce2b",
+							"type": "spell_container",
+							"open": true,
+							"children": [
+								{
+									"id": "9e1104ac-19b1-4466-8156-16388f93aa7f",
+									"type": "spell",
+									"name": "Blur",
+									"reference": "M113",
+									"tags": [
+										"Light"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Light \u0026 Darkness"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Regular",
+									"casting_cost": "1-5",
+									"maintenance_cost": "Same",
+									"casting_time": "2 sec",
+									"duration": "1 min",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "darkness"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											},
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "gloom"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "d7cc63d4-b243-4893-a4ba-e65a637356d7",
+									"type": "spell_container",
+									"open": true,
+									"name": "Choose four spells and raise them to 4 points."
+								},
+								{
+									"id": "3b38c02f-bde6-4a6f-a2ae-563e8f8e8f19",
+									"type": "spell",
+									"name": "Complex Illusion",
+									"reference": "M96",
+									"tags": [
+										"Illusion \u0026 Creation"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Illusion \u0026 Creation"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Area",
+									"casting_cost": "2",
+									"maintenance_cost": "Half",
+									"casting_time": "1 sec",
+									"duration": "1 min",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "sound"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											},
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "simple illusion"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "43e1c8d5-1772-40d8-a1e3-b78139acbb97",
+									"type": "spell",
+									"name": "Continual Light",
+									"reference": "M110",
+									"tags": [
+										"Light"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Light \u0026 Darkness"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Regular",
+									"casting_cost": "2 moon, 4 torch, 6 day",
+									"maintenance_cost": "-",
+									"casting_time": "1 sec",
+									"duration": "2d days",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "light"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "32f4f6f3-7321-40f2-8ffb-74016312a6bb",
+									"type": "spell",
+									"name": "Darkness",
+									"reference": "M111",
+									"tags": [
+										"Light"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Light \u0026 Darkness"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Area",
+									"casting_cost": "2",
+									"maintenance_cost": "1",
+									"casting_time": "1 sec",
+									"duration": "1 min",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "continual light"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "0767aa3b-3c8f-40fa-ba3e-493f06b31e1d",
+									"type": "spell",
+									"name": "Hide",
+									"reference": "M113",
+									"tags": [
+										"Light"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Light \u0026 Darkness"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Regular",
+									"casting_cost": "1-5",
+									"maintenance_cost": "Same",
+									"casting_time": "5 secs",
+									"duration": "1 hour",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "blur"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											},
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "forgetfulness"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "37415525-e759-4e83-9863-6df08dbddb20",
+									"type": "spell",
+									"name": "Illusion Disguise",
+									"reference": "M96",
+									"tags": [
+										"Illusion \u0026 Creation"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Illusion \u0026 Creation"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Regular",
+									"casting_cost": "3",
+									"maintenance_cost": "-",
+									"casting_time": "1 sec",
+									"duration": "Until illusion ends",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "simple illusion"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "f5b19a82-e0a4-4c53-afa1-405cda2b247a",
+									"type": "spell",
+									"name": "Illusion Shell",
+									"reference": "M96",
+									"tags": [
+										"Illusion \u0026 Creation"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Illusion \u0026 Creation"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Regular",
+									"casting_cost": "1 or 2",
+									"maintenance_cost": "Half",
+									"casting_time": "1 sec",
+									"duration": "1 min",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "simple illusion"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "cf426edd-caa0-4759-ac57-1b9214cb3e6d",
+									"type": "spell",
+									"name": "Light",
+									"reference": "M110",
+									"tags": [
+										"Light"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Light \u0026 Darkness"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Regular",
+									"casting_cost": "1",
+									"maintenance_cost": "1",
+									"casting_time": "1 sec",
+									"duration": "1 min",
+									"points": 1
+								},
+								{
+									"id": "3964cf22-5f8a-4767-92cf-cfd4c6622833",
+									"type": "spell",
+									"name": "Silence",
+									"reference": "M171",
+									"tags": [
+										"Sound"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Sound"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Area",
+									"casting_cost": "2",
+									"maintenance_cost": "Half",
+									"casting_time": "1 sec",
+									"duration": "1 min",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "sound"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "cccc4316-03b9-4a77-bea8-c23cb3423393",
+									"type": "spell",
+									"name": "Simple Illusion",
+									"reference": "M95",
+									"tags": [
+										"Illusion \u0026 Creation"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Illusion \u0026 Creation"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Area",
+									"casting_cost": "1",
+									"maintenance_cost": "Half",
+									"casting_time": "1 sec",
+									"duration": "1 min",
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": false,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "blind"
+												}
+											},
+											{
+												"type": "attribute_prereq",
+												"has": true,
+												"qualifier": {
+													"compare": "at_least",
+													"qualifier": 11
+												},
+												"which": "iq"
+											}
+										]
+									}
+								},
+								{
+									"id": "d924bfaa-e434-4f90-9501-4678fdb50153",
+									"type": "spell",
+									"name": "Sound",
+									"reference": "M171",
+									"tags": [
+										"Sound"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Sound"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Regular",
+									"casting_cost": "Varies",
+									"maintenance_cost": "1/ min",
+									"casting_time": "1 sec",
+									"duration": "Varies",
+									"points": 1
+								}
+							],
+							"name": "Illusionist"
 						},
 						{
 							"id": "7bdd89b0-0eb9-45cd-b2ea-13405a277d0a",
 							"type": "spell_container",
 							"open": true,
 							"children": [
+								{
+									"id": "0e55ce33-593b-4016-bf9b-7bd328c25328",
+									"type": "spell_container",
+									"open": true,
+									"name": "Choose four spells and raise them to 4 points."
+								},
 								{
 									"id": "a54238bd-f5fa-48f4-a43a-cd8e2e911f64",
 									"type": "spell",
@@ -2828,466 +3298,19 @@
 											}
 										]
 									}
-								},
-								{
-									"id": "0e55ce33-593b-4016-bf9b-7bd328c25328",
-									"type": "spell_container",
-									"open": true,
-									"name": "Choose four spells and raise them to 4 points."
 								}
 							],
 							"name": "Mentalist"
-						},
-						{
-							"id": "218a6730-3939-442e-8cb4-421752b7ce2b",
-							"type": "spell_container",
-							"open": true,
-							"children": [
-								{
-									"id": "9e1104ac-19b1-4466-8156-16388f93aa7f",
-									"type": "spell",
-									"name": "Blur",
-									"reference": "M113",
-									"tags": [
-										"Light"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Light \u0026 Darkness"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Regular",
-									"casting_cost": "1-5",
-									"maintenance_cost": "Same",
-									"casting_time": "2 sec",
-									"duration": "1 min",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": false,
-										"prereqs": [
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "darkness"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											},
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "gloom"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "3b38c02f-bde6-4a6f-a2ae-563e8f8e8f19",
-									"type": "spell",
-									"name": "Complex Illusion",
-									"reference": "M96",
-									"tags": [
-										"Illusion \u0026 Creation"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Illusion \u0026 Creation"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Area",
-									"casting_cost": "2",
-									"maintenance_cost": "Half",
-									"casting_time": "1 sec",
-									"duration": "1 min",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "sound"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											},
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "simple illusion"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "43e1c8d5-1772-40d8-a1e3-b78139acbb97",
-									"type": "spell",
-									"name": "Continual Light",
-									"reference": "M110",
-									"tags": [
-										"Light"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Light \u0026 Darkness"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Regular",
-									"casting_cost": "2 moon, 4 torch, 6 day",
-									"maintenance_cost": "-",
-									"casting_time": "1 sec",
-									"duration": "2d days",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "light"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "32f4f6f3-7321-40f2-8ffb-74016312a6bb",
-									"type": "spell",
-									"name": "Darkness",
-									"reference": "M111",
-									"tags": [
-										"Light"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Light \u0026 Darkness"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Area",
-									"casting_cost": "2",
-									"maintenance_cost": "1",
-									"casting_time": "1 sec",
-									"duration": "1 min",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "continual light"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "0767aa3b-3c8f-40fa-ba3e-493f06b31e1d",
-									"type": "spell",
-									"name": "Hide",
-									"reference": "M113",
-									"tags": [
-										"Light"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Light \u0026 Darkness"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Regular",
-									"casting_cost": "1-5",
-									"maintenance_cost": "Same",
-									"casting_time": "5 secs",
-									"duration": "1 hour",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": false,
-										"prereqs": [
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "blur"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											},
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "forgetfulness"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "37415525-e759-4e83-9863-6df08dbddb20",
-									"type": "spell",
-									"name": "Illusion Disguise",
-									"reference": "M96",
-									"tags": [
-										"Illusion \u0026 Creation"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Illusion \u0026 Creation"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Regular",
-									"casting_cost": "3",
-									"maintenance_cost": "-",
-									"casting_time": "1 sec",
-									"duration": "Until illusion ends",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "simple illusion"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "f5b19a82-e0a4-4c53-afa1-405cda2b247a",
-									"type": "spell",
-									"name": "Illusion Shell",
-									"reference": "M96",
-									"tags": [
-										"Illusion \u0026 Creation"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Illusion \u0026 Creation"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Regular",
-									"casting_cost": "1 or 2",
-									"maintenance_cost": "Half",
-									"casting_time": "1 sec",
-									"duration": "1 min",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "simple illusion"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "cf426edd-caa0-4759-ac57-1b9214cb3e6d",
-									"type": "spell",
-									"name": "Light",
-									"reference": "M110",
-									"tags": [
-										"Light"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Light \u0026 Darkness"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Regular",
-									"casting_cost": "1",
-									"maintenance_cost": "1",
-									"casting_time": "1 sec",
-									"duration": "1 min",
-									"points": 1
-								},
-								{
-									"id": "cccc4316-03b9-4a77-bea8-c23cb3423393",
-									"type": "spell",
-									"name": "Simple Illusion",
-									"reference": "M95",
-									"tags": [
-										"Illusion \u0026 Creation"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Illusion \u0026 Creation"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Area",
-									"casting_cost": "1",
-									"maintenance_cost": "Half",
-									"casting_time": "1 sec",
-									"duration": "1 min",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "trait_prereq",
-												"has": false,
-												"name": {
-													"compare": "starts_with",
-													"qualifier": "blind"
-												}
-											},
-											{
-												"type": "attribute_prereq",
-												"has": true,
-												"qualifier": {
-													"compare": "at_least",
-													"qualifier": 11
-												},
-												"which": "iq"
-											}
-										]
-									}
-								},
-								{
-									"id": "3964cf22-5f8a-4767-92cf-cfd4c6622833",
-									"type": "spell",
-									"name": "Silence",
-									"reference": "M171",
-									"tags": [
-										"Sound"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Sound"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Area",
-									"casting_cost": "2",
-									"maintenance_cost": "Half",
-									"casting_time": "1 sec",
-									"duration": "1 min",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "spell_prereq",
-												"sub_type": "name",
-												"has": true,
-												"qualifier": {
-													"compare": "is",
-													"qualifier": "sound"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 1
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "d924bfaa-e434-4f90-9501-4678fdb50153",
-									"type": "spell",
-									"name": "Sound",
-									"reference": "M171",
-									"tags": [
-										"Sound"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Sound"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Regular",
-									"casting_cost": "Varies",
-									"maintenance_cost": "1/ min",
-									"casting_time": "1 sec",
-									"duration": "Varies",
-									"points": 1
-								},
-								{
-									"id": "d7cc63d4-b243-4893-a4ba-e65a637356d7",
-									"type": "spell_container",
-									"open": true,
-									"name": "Choose four spells and raise them to 4 points."
-								}
-							],
-							"name": "Illusionist"
 						}
 					],
-					"name": "Choose One:"
+					"name": "Specialization",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					}
 				}
 			],
 			"name": "Spellcaster",

@@ -1278,7 +1278,14 @@
 									}
 								}
 							],
-							"name": "20 Points Chosen From:",
+							"name": "Advantages",
+							"template_picker": {
+								"type": "points",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 20
+								}
+							},
 							"calc": {
 								"points": 74
 							}
@@ -1412,227 +1419,223 @@
 					"open": true,
 					"children": [
 						{
-							"id": "bbec86d8-65e3-4cfd-acf0-17c9821c6547",
-							"type": "trait_container",
-							"open": true,
-							"children": [
+							"id": "0f77db91-2d77-4a57-af7f-6902ebf25073",
+							"type": "trait",
+							"name": "Absent-Mindedness",
+							"reference": "B122",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "77b11878-30f1-4964-81f3-24bcda1f62a7",
+							"type": "trait",
+							"name": "Code of Honor (Professional)",
+							"reference": "B127",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "e3bc6e1d-cace-45d0-bb91-c5e64a0c723a",
+							"type": "trait",
+							"name": "Combat Paralysis",
+							"reference": "B127",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "4c2c5d39-7d64-4295-bd9b-e23c707f07c1",
+							"type": "trait",
+							"name": "Curious",
+							"reference": "B129",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"cr": 12,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "9f048d59-7dbd-4c4f-a1ee-e7a3d4453b71",
+							"type": "trait",
+							"name": "Greed",
+							"reference": "B137",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"cr": 12,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "771a58fe-b967-4496-9d56-11dd26ee8bbd",
+							"type": "trait",
+							"name": "Loner",
+							"reference": "B142",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"cr": 12,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "00ac7b55-508d-4fec-8d88-865f18ecc199",
+							"type": "trait",
+							"name": "Miserliness",
+							"reference": "B144",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"cr": 12,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "ad2d9d19-3837-42b7-a832-46212f6d62a1",
+							"type": "trait",
+							"name": "Wealth",
+							"reference": "B25",
+							"tags": [
+								"Advantage",
+								"Disadvantage",
+								"Social"
+							],
+							"modifiers": [
 								{
-									"id": "0f77db91-2d77-4a57-af7f-6902ebf25073",
-									"type": "trait",
-									"name": "Absent-Mindedness",
-									"reference": "B122",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -15,
-									"calc": {
-										"points": -15
-									}
-								},
-								{
-									"id": "77b11878-30f1-4964-81f3-24bcda1f62a7",
-									"type": "trait",
-									"name": "Code of Honor (Professional)",
-									"reference": "B127",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -5,
-									"calc": {
-										"points": -5
-									}
-								},
-								{
-									"id": "e3bc6e1d-cace-45d0-bb91-c5e64a0c723a",
-									"type": "trait",
-									"name": "Combat Paralysis",
-									"reference": "B127",
-									"tags": [
-										"Disadvantage",
-										"Physical"
-									],
-									"base_points": -15,
-									"calc": {
-										"points": -15
-									}
-								},
-								{
-									"id": "4c2c5d39-7d64-4295-bd9b-e23c707f07c1",
-									"type": "trait",
-									"name": "Curious",
-									"reference": "B129",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -5,
-									"cr": 12,
-									"calc": {
-										"points": -5
-									}
-								},
-								{
-									"id": "9f048d59-7dbd-4c4f-a1ee-e7a3d4453b71",
-									"type": "trait",
-									"name": "Greed",
-									"reference": "B137",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -15,
-									"cr": 12,
-									"calc": {
-										"points": -15
-									}
-								},
-								{
-									"id": "771a58fe-b967-4496-9d56-11dd26ee8bbd",
-									"type": "trait",
-									"name": "Loner",
-									"reference": "B142",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -5,
-									"cr": 12,
-									"calc": {
-										"points": -5
-									}
-								},
-								{
-									"id": "00ac7b55-508d-4fec-8d88-865f18ecc199",
-									"type": "trait",
-									"name": "Miserliness",
-									"reference": "B144",
-									"tags": [
-										"Disadvantage",
-										"Mental"
-									],
-									"base_points": -10,
-									"cr": 12,
-									"calc": {
-										"points": -10
-									}
-								},
-								{
-									"id": "ad2d9d19-3837-42b7-a832-46212f6d62a1",
-									"type": "trait",
-									"name": "Wealth",
+									"id": "61a5203a-20a6-4223-aa01-7566c8e3a94f",
+									"type": "modifier",
+									"name": "Dead Broke",
 									"reference": "B25",
-									"tags": [
-										"Advantage",
-										"Disadvantage",
-										"Social"
-									],
-									"modifiers": [
-										{
-											"id": "61a5203a-20a6-4223-aa01-7566c8e3a94f",
-											"type": "modifier",
-											"name": "Dead Broke",
-											"reference": "B25",
-											"notes": "Starting wealth is $0",
-											"cost": -25,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "524d52d5-379b-4bb7-9e96-09619ef148ba",
-											"type": "modifier",
-											"name": "Poor",
-											"reference": "B25",
-											"notes": "Starting wealth is 1/5 average",
-											"cost": -15,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "de25787a-d18d-47ef-a24e-20ad225f59d3",
-											"type": "modifier",
-											"name": "Struggling",
-											"reference": "B25",
-											"notes": "Starting wealth is 1/2 average",
-											"cost": -10,
-											"cost_type": "points"
-										},
-										{
-											"id": "7eedab9c-83f6-44da-bca4-9e4d790958aa",
-											"type": "modifier",
-											"name": "Average",
-											"reference": "B25",
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "fdb7a4ea-0a4b-4b0b-8864-a0e1c943b9c3",
-											"type": "modifier",
-											"name": "Comfortable",
-											"reference": "B25",
-											"notes": "Starting wealth is 2x average",
-											"cost": 10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "ceb62bd6-732f-4494-8531-816a77acbe8f",
-											"type": "modifier",
-											"name": "Wealthy",
-											"reference": "B25",
-											"notes": "Starting wealth is 5x average",
-											"cost": 20,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "6cd4008a-2628-4b29-a905-159bb24f6240",
-											"type": "modifier",
-											"name": "Very Wealthy",
-											"reference": "B25",
-											"notes": "Starting wealth is 20x average",
-											"cost": 30,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "5858956e-b530-4940-a9e7-70a257371a72",
-											"type": "modifier",
-											"name": "Filthy Rich",
-											"reference": "B25",
-											"notes": "Starting wealth is 100x average",
-											"cost": 50,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": -10
-									}
+									"notes": "Starting wealth is $0",
+									"cost": -25,
+									"cost_type": "points",
+									"disabled": true
 								},
 								{
-									"id": "3be55f8f-26c5-4d02-b6f2-a62971fff44a",
-									"type": "trait",
-									"name": "Workaholic",
-									"reference": "B162",
-									"tags": [
-										"Disadvantage",
-										"Physical"
-									],
-									"base_points": -5,
-									"calc": {
-										"points": -5
-									}
+									"id": "524d52d5-379b-4bb7-9e96-09619ef148ba",
+									"type": "modifier",
+									"name": "Poor",
+									"reference": "B25",
+									"notes": "Starting wealth is 1/5 average",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "de25787a-d18d-47ef-a24e-20ad225f59d3",
+									"type": "modifier",
+									"name": "Struggling",
+									"reference": "B25",
+									"notes": "Starting wealth is 1/2 average",
+									"cost": -10,
+									"cost_type": "points"
+								},
+								{
+									"id": "7eedab9c-83f6-44da-bca4-9e4d790958aa",
+									"type": "modifier",
+									"name": "Average",
+									"reference": "B25",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "fdb7a4ea-0a4b-4b0b-8864-a0e1c943b9c3",
+									"type": "modifier",
+									"name": "Comfortable",
+									"reference": "B25",
+									"notes": "Starting wealth is 2x average",
+									"cost": 10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ceb62bd6-732f-4494-8531-816a77acbe8f",
+									"type": "modifier",
+									"name": "Wealthy",
+									"reference": "B25",
+									"notes": "Starting wealth is 5x average",
+									"cost": 20,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6cd4008a-2628-4b29-a905-159bb24f6240",
+									"type": "modifier",
+									"name": "Very Wealthy",
+									"reference": "B25",
+									"notes": "Starting wealth is 20x average",
+									"cost": 30,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5858956e-b530-4940-a9e7-70a257371a72",
+									"type": "modifier",
+									"name": "Filthy Rich",
+									"reference": "B25",
+									"notes": "Starting wealth is 100x average",
+									"cost": 50,
+									"cost_type": "points",
+									"disabled": true
 								}
 							],
-							"name": "-30 chosen points from:",
 							"calc": {
-								"points": -85
+								"points": -10
+							}
+						},
+						{
+							"id": "3be55f8f-26c5-4d02-b6f2-a62971fff44a",
+							"type": "trait",
+							"name": "Workaholic",
+							"reference": "B162",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -5,
+							"calc": {
+								"points": -5
 							}
 						}
 					],
 					"name": "Class Disadvantage",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": -30
+						}
+					},
 					"calc": {
 						"points": -85
 					}
@@ -1913,7 +1916,14 @@
 							"name": "One of:"
 						}
 					],
-					"name": "Primary Skill"
+					"name": "Primary Skill",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					}
 				},
 				{
 					"id": "cbc91976-a133-453e-9606-bff7c4acb405",
@@ -2332,7 +2342,14 @@
 									]
 								}
 							],
-							"name": "Three of:"
+							"name": "Secondary Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 3
+								}
+							}
 						}
 					],
 					"name": "Secondary Skill"
@@ -2448,98 +2465,6 @@
 							}
 						]
 					}
-				},
-				{
-					"id": "374040bf-248d-427b-bcb1-d97b9edfebb7",
-					"type": "spell_container",
-					"open": true,
-					"children": [
-						{
-							"id": "d619142a-c778-4f2f-af13-7df6941968bf",
-							"type": "spell",
-							"name": "Deflect",
-							"reference": "M67",
-							"tags": [
-								"Armor Enchantment"
-							],
-							"difficulty": "iq/h",
-							"college": [
-								"Armor Enchantment"
-							],
-							"power_source": "Arcane",
-							"spell_class": "Enchantment",
-							"casting_cost": "Varies",
-							"maintenance_cost": "-",
-							"casting_time": "-",
-							"duration": "Permanent",
-							"points": 2,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "spell_prereq",
-										"sub_type": "name",
-										"has": true,
-										"qualifier": {
-											"compare": "is",
-											"qualifier": "enchant"
-										},
-										"quantity": {
-											"compare": "at_least",
-											"qualifier": 1
-										}
-									}
-								]
-							}
-						},
-						{
-							"id": "096ddfc6-ffee-4de2-8c81-8ea9540ec725",
-							"type": "spell",
-							"name": "Fortify",
-							"reference": "M66",
-							"tags": [
-								"Armor Enchantment"
-							],
-							"difficulty": "iq/h",
-							"college": [
-								"Armor Enchantment"
-							],
-							"power_source": "Arcane",
-							"spell_class": "Enchantment",
-							"casting_cost": "Varies",
-							"maintenance_cost": "-",
-							"casting_time": "-",
-							"duration": "Permanent",
-							"points": 2,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "spell_prereq",
-										"sub_type": "name",
-										"has": true,
-										"qualifier": {
-											"compare": "is",
-											"qualifier": "enchant"
-										},
-										"quantity": {
-											"compare": "at_least",
-											"qualifier": 1
-										}
-									}
-								]
-							}
-						},
-						{
-							"id": "b6b43809-1872-45da-b96a-7b217e14bb37",
-							"type": "spell_container",
-							"open": true,
-							"name": "Raise one of these two to 4 points"
-						}
-					],
-					"name": "Armor Maker"
 				},
 				{
 					"id": "7bcccf05-2f80-4c3c-95c7-6ab332588fd4",
@@ -2820,59 +2745,6 @@
 					"points": 1
 				},
 				{
-					"id": "74250a07-36a2-4fad-bcd6-abe32861326a",
-					"type": "spell_container",
-					"open": true,
-					"children": [
-						{
-							"id": "45f35c69-8b6c-4225-8c0e-4f44f6dfd06d",
-							"type": "spell_container",
-							"open": true,
-							"name": "Raise Enchant to 8"
-						},
-						{
-							"id": "e07ce2b1-1433-4d15-a959-57b0f28f1eba",
-							"type": "spell",
-							"name": "Staff",
-							"reference": "M70",
-							"tags": [
-								"Enchantment"
-							],
-							"difficulty": "iq/h",
-							"college": [
-								"Enchantment"
-							],
-							"power_source": "Arcane",
-							"spell_class": "Enchantment",
-							"casting_cost": "30",
-							"maintenance_cost": "-",
-							"casting_time": "-",
-							"duration": "Permanent",
-							"points": 2,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "spell_prereq",
-										"sub_type": "name",
-										"has": true,
-										"qualifier": {
-											"compare": "is",
-											"qualifier": "enchant"
-										},
-										"quantity": {
-											"compare": "at_least",
-											"qualifier": 1
-										}
-									}
-								]
-							}
-						}
-					],
-					"name": "Magical Device Maker"
-				},
-				{
 					"id": "f483adef-8f93-4ab4-be9e-d35c3aad8350",
 					"type": "spell",
 					"name": "Purify Air",
@@ -3050,140 +2922,300 @@
 					"points": 1
 				},
 				{
-					"id": "abc6edf2-c662-472e-bcd0-3137491e82fa",
+					"id": "4df9acf7-2654-4c3f-be1f-5e0eeac51c68",
 					"type": "spell_container",
 					"open": true,
 					"children": [
 						{
-							"id": "c4790139-8845-4304-901c-de084486064c",
+							"id": "374040bf-248d-427b-bcb1-d97b9edfebb7",
 							"type": "spell_container",
 							"open": true,
 							"children": [
 								{
-									"id": "4b96f259-3539-4688-9b18-105ddf6410bd",
-									"type": "spell_container",
-									"open": true,
-									"children": [
-										{
-											"id": "52ea76b4-1f99-400d-ace3-11fc847293a3",
-											"type": "spell",
-											"name": "Accuracy",
-											"reference": "M65",
-											"tags": [
-												"Weapon Enchantment"
-											],
-											"difficulty": "iq/h",
-											"college": [
-												"Enchantment"
-											],
-											"power_source": "Arcane",
-											"spell_class": "Enchantment",
-											"casting_cost": "Varies",
-											"maintenance_cost": "-",
-											"casting_time": "-",
-											"duration": "Permanent",
-											"points": 2,
-											"prereqs": {
-												"type": "prereq_list",
-												"all": true,
-												"prereqs": [
-													{
-														"type": "spell_prereq",
-														"sub_type": "name",
-														"has": true,
-														"qualifier": {
-															"compare": "is",
-															"qualifier": "enchant"
-														},
-														"quantity": {
-															"compare": "at_least",
-															"qualifier": 1
-														}
-													},
-													{
-														"type": "spell_prereq",
-														"sub_type": "college",
-														"has": true,
-														"qualifier": {
-															"compare": "contains",
-															"qualifier": "Air"
-														},
-														"quantity": {
-															"compare": "at_least",
-															"qualifier": 5
-														}
-													}
-												]
-											}
-										}
+									"id": "d619142a-c778-4f2f-af13-7df6941968bf",
+									"type": "spell",
+									"name": "Deflect",
+									"reference": "M67",
+									"tags": [
+										"Armor Enchantment"
 									],
-									"name": "And 4 Air spells at 1 point"
+									"difficulty": "iq/h",
+									"college": [
+										"Armor Enchantment"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Enchantment",
+									"casting_cost": "Varies",
+									"maintenance_cost": "-",
+									"casting_time": "-",
+									"duration": "Permanent",
+									"points": 2,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "enchant"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
 								},
 								{
-									"id": "f51f5601-3403-476a-a2df-1233d3f6aad6",
+									"id": "096ddfc6-ffee-4de2-8c81-8ea9540ec725",
+									"type": "spell",
+									"name": "Fortify",
+									"reference": "M66",
+									"tags": [
+										"Armor Enchantment"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Armor Enchantment"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Enchantment",
+									"casting_cost": "Varies",
+									"maintenance_cost": "-",
+									"casting_time": "-",
+									"duration": "Permanent",
+									"points": 2,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "enchant"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								},
+								{
+									"id": "b6b43809-1872-45da-b96a-7b217e14bb37",
+									"type": "spell_container",
+									"open": true,
+									"name": "Raise one of these two to 4 points"
+								}
+							],
+							"name": "Armor Maker"
+						},
+						{
+							"id": "74250a07-36a2-4fad-bcd6-abe32861326a",
+							"type": "spell_container",
+							"open": true,
+							"children": [
+								{
+									"id": "45f35c69-8b6c-4225-8c0e-4f44f6dfd06d",
+									"type": "spell_container",
+									"open": true,
+									"name": "Raise Enchant to 8"
+								},
+								{
+									"id": "e07ce2b1-1433-4d15-a959-57b0f28f1eba",
+									"type": "spell",
+									"name": "Staff",
+									"reference": "M70",
+									"tags": [
+										"Enchantment"
+									],
+									"difficulty": "iq/h",
+									"college": [
+										"Enchantment"
+									],
+									"power_source": "Arcane",
+									"spell_class": "Enchantment",
+									"casting_cost": "30",
+									"maintenance_cost": "-",
+									"casting_time": "-",
+									"duration": "Permanent",
+									"points": 2,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "spell_prereq",
+												"sub_type": "name",
+												"has": true,
+												"qualifier": {
+													"compare": "is",
+													"qualifier": "enchant"
+												},
+												"quantity": {
+													"compare": "at_least",
+													"qualifier": 1
+												}
+											}
+										]
+									}
+								}
+							],
+							"name": "Magical Device Maker"
+						},
+						{
+							"id": "abc6edf2-c662-472e-bcd0-3137491e82fa",
+							"type": "spell_container",
+							"open": true,
+							"children": [
+								{
+									"id": "c4790139-8845-4304-901c-de084486064c",
 									"type": "spell_container",
 									"open": true,
 									"children": [
 										{
-											"id": "1bc9618c-7130-4e1e-8ee0-6285c6a6ade9",
-											"type": "spell",
-											"name": "Puissance",
-											"reference": "M65",
-											"tags": [
-												"Weapon Enchantment"
-											],
-											"difficulty": "iq/h",
-											"college": [
-												"Enchantment"
-											],
-											"power_source": "Arcane",
-											"spell_class": "Enchantment",
-											"casting_cost": "Varies",
-											"maintenance_cost": "-",
-											"casting_time": "-",
-											"duration": "Permanent",
-											"points": 2,
-											"prereqs": {
-												"type": "prereq_list",
-												"all": true,
-												"prereqs": [
-													{
-														"type": "spell_prereq",
-														"sub_type": "college",
-														"has": true,
-														"qualifier": {
-															"compare": "contains",
-															"qualifier": "Earth"
-														},
-														"quantity": {
-															"compare": "at_least",
-															"qualifier": 5
-														}
-													},
-													{
-														"type": "spell_prereq",
-														"sub_type": "name",
-														"has": true,
-														"qualifier": {
-															"compare": "is",
-															"qualifier": "enchant"
-														},
-														"quantity": {
-															"compare": "at_least",
-															"qualifier": 1
-														}
+											"id": "4b96f259-3539-4688-9b18-105ddf6410bd",
+											"type": "spell_container",
+											"open": true,
+											"children": [
+												{
+													"id": "52ea76b4-1f99-400d-ace3-11fc847293a3",
+													"type": "spell",
+													"name": "Accuracy",
+													"reference": "M65",
+													"tags": [
+														"Weapon Enchantment"
+													],
+													"difficulty": "iq/h",
+													"college": [
+														"Enchantment"
+													],
+													"power_source": "Arcane",
+													"spell_class": "Enchantment",
+													"casting_cost": "Varies",
+													"maintenance_cost": "-",
+													"casting_time": "-",
+													"duration": "Permanent",
+													"points": 2,
+													"prereqs": {
+														"type": "prereq_list",
+														"all": true,
+														"prereqs": [
+															{
+																"type": "spell_prereq",
+																"sub_type": "name",
+																"has": true,
+																"qualifier": {
+																	"compare": "is",
+																	"qualifier": "enchant"
+																},
+																"quantity": {
+																	"compare": "at_least",
+																	"qualifier": 1
+																}
+															},
+															{
+																"type": "spell_prereq",
+																"sub_type": "college",
+																"has": true,
+																"qualifier": {
+																	"compare": "contains",
+																	"qualifier": "Air"
+																},
+																"quantity": {
+																	"compare": "at_least",
+																	"qualifier": 5
+																}
+															}
+														]
 													}
-												]
-											}
+												}
+											],
+											"name": "And 4 Air spells at 1 point"
+										},
+										{
+											"id": "f51f5601-3403-476a-a2df-1233d3f6aad6",
+											"type": "spell_container",
+											"open": true,
+											"children": [
+												{
+													"id": "1bc9618c-7130-4e1e-8ee0-6285c6a6ade9",
+													"type": "spell",
+													"name": "Puissance",
+													"reference": "M65",
+													"tags": [
+														"Weapon Enchantment"
+													],
+													"difficulty": "iq/h",
+													"college": [
+														"Enchantment"
+													],
+													"power_source": "Arcane",
+													"spell_class": "Enchantment",
+													"casting_cost": "Varies",
+													"maintenance_cost": "-",
+													"casting_time": "-",
+													"duration": "Permanent",
+													"points": 2,
+													"prereqs": {
+														"type": "prereq_list",
+														"all": true,
+														"prereqs": [
+															{
+																"type": "spell_prereq",
+																"sub_type": "college",
+																"has": true,
+																"qualifier": {
+																	"compare": "contains",
+																	"qualifier": "Earth"
+																},
+																"quantity": {
+																	"compare": "at_least",
+																	"qualifier": 5
+																}
+															},
+															{
+																"type": "spell_prereq",
+																"sub_type": "name",
+																"has": true,
+																"qualifier": {
+																	"compare": "is",
+																	"qualifier": "enchant"
+																},
+																"quantity": {
+																	"compare": "at_least",
+																	"qualifier": 1
+																}
+															}
+														]
+													}
+												}
+											],
+											"name": "And 4 Earth spells at 1 point"
 										}
 									],
-									"name": "And 4 Earth spells at 1 point"
+									"name": "Either:"
 								}
 							],
-							"name": "Either:"
+							"name": "Weapon Maker"
 						}
 					],
-					"name": "Weapon Maker"
+					"name": "Specialization",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					}
 				}
 			],
 			"name": "Enhanter"

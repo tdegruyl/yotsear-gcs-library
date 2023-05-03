@@ -936,7 +936,7 @@
 									}
 								}
 							],
-							"name": "25 Points",
+							"name": "Advantages",
 							"template_picker": {
 								"type": "points",
 								"qualifier": {
@@ -1198,7 +1198,7 @@
 									}
 								}
 							],
-							"name": "-10 From",
+							"name": "Disadvantages",
 							"template_picker": {
 								"type": "points",
 								"qualifier": {
@@ -1264,7 +1264,7 @@
 									}
 								}
 							],
-							"name": "One of",
+							"name": "Ethics",
 							"template_picker": {
 								"type": "count",
 								"qualifier": {
@@ -1450,6 +1450,30 @@
 									"type": "skill",
 									"name": "Veterinary",
 									"modifier": -4
+								}
+							]
+						},
+						{
+							"id": "93b47414-aef3-4841-a472-a26e93d14792",
+							"type": "skill",
+							"name": "Riding",
+							"reference": "B217",
+							"tags": [
+								"Animal"
+							],
+							"specialization": "Equines",
+							"difficulty": "dx/a",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Animal Handling",
+									"specialization": "Equines",
+									"modifier": -3
 								}
 							]
 						},
@@ -1659,7 +1683,7 @@
 									]
 								}
 							],
-							"name": "Four of",
+							"name": "Useful Skills",
 							"template_picker": {
 								"type": "count",
 								"qualifier": {
@@ -1667,30 +1691,6 @@
 									"qualifier": 4
 								}
 							}
-						},
-						{
-							"id": "93b47414-aef3-4841-a472-a26e93d14792",
-							"type": "skill",
-							"name": "Riding",
-							"reference": "B217",
-							"tags": [
-								"Animal"
-							],
-							"specialization": "Equines",
-							"difficulty": "dx/a",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "dx",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Animal Handling",
-									"specialization": "Equines",
-									"modifier": -3
-								}
-							]
 						}
 					],
 					"name": "Background Skill"
@@ -1701,28 +1701,74 @@
 					"open": true,
 					"children": [
 						{
-							"id": "6e155713-c91d-4ef0-b914-6f5fc6c47a95",
-							"type": "skill",
-							"name": "Holdout",
-							"reference": "B200",
-							"tags": [
-								"Criminal",
-								"Spy",
-								"Street"
-							],
-							"difficulty": "iq/a",
-							"points": 8,
-							"defaults": [
+							"id": "57a2f0ea-d0d6-4faf-ad7e-1b9800c60faa",
+							"type": "skill_container",
+							"open": true,
+							"children": [
 								{
-									"type": "iq",
-									"modifier": -5
+									"id": "0fa8ad22-0083-4be0-a589-39f590d71402",
+									"type": "skill",
+									"name": "Shadowing",
+									"reference": "B219",
+									"tags": [
+										"Criminal",
+										"Police",
+										"Spy",
+										"Street"
+									],
+									"difficulty": "iq/a",
+									"points": 8,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Observation",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Stealth",
+											"modifier": -4
+										}
+									]
 								},
 								{
+									"id": "4042c924-0c86-48f3-bc84-1dfa669e28cd",
 									"type": "skill",
-									"name": "Sleight of Hand",
-									"modifier": -3
+									"name": "Stealth",
+									"reference": "B222",
+									"tags": [
+										"Criminal",
+										"Police",
+										"Spy",
+										"Street"
+									],
+									"difficulty": "dx/a",
+									"points": 8,
+									"encumbrance_penalty_multiplier": 1,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "dx",
+											"modifier": -5
+										}
+									]
 								}
-							]
+							],
+							"name": "Assassination Method",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
 						},
 						{
 							"id": "b5b28ad5-7ba9-4b76-9573-700a3f96646a",
@@ -1940,7 +1986,7 @@
 									]
 								}
 							],
-							"name": "One of",
+							"name": "Assassination Weapon",
 							"template_picker": {
 								"type": "count",
 								"qualifier": {
@@ -1950,74 +1996,28 @@
 							}
 						},
 						{
-							"id": "57a2f0ea-d0d6-4faf-ad7e-1b9800c60faa",
-							"type": "skill_container",
-							"open": true,
-							"children": [
+							"id": "6e155713-c91d-4ef0-b914-6f5fc6c47a95",
+							"type": "skill",
+							"name": "Holdout",
+							"reference": "B200",
+							"tags": [
+								"Criminal",
+								"Spy",
+								"Street"
+							],
+							"difficulty": "iq/a",
+							"points": 8,
+							"defaults": [
 								{
-									"id": "0fa8ad22-0083-4be0-a589-39f590d71402",
-									"type": "skill",
-									"name": "Shadowing",
-									"reference": "B219",
-									"tags": [
-										"Criminal",
-										"Police",
-										"Spy",
-										"Street"
-									],
-									"difficulty": "iq/a",
-									"points": 8,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Observation",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Stealth",
-											"modifier": -4
-										}
-									]
+									"type": "iq",
+									"modifier": -5
 								},
 								{
-									"id": "4042c924-0c86-48f3-bc84-1dfa669e28cd",
 									"type": "skill",
-									"name": "Stealth",
-									"reference": "B222",
-									"tags": [
-										"Criminal",
-										"Police",
-										"Spy",
-										"Street"
-									],
-									"difficulty": "dx/a",
-									"points": 8,
-									"encumbrance_penalty_multiplier": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										},
-										{
-											"type": "dx",
-											"modifier": -5
-										}
-									]
+									"name": "Sleight of Hand",
+									"modifier": -3
 								}
-							],
-							"name": "One of",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							}
+							]
 						}
 					],
 					"name": "Primary Skill"
@@ -2054,93 +2054,6 @@
 									"modifier": -5
 								}
 							]
-						},
-						{
-							"id": "60a3e42f-bf5d-48d2-8d54-a7634e8aefef",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "aa856ead-b441-4320-add4-07b9c46525a9",
-									"type": "skill",
-									"name": "Savoir-Faire",
-									"reference": "B218",
-									"tags": [
-										"Business",
-										"Knowledge",
-										"Social"
-									],
-									"specialization": "High Society",
-									"difficulty": "iq/e",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Savoir-Faire",
-											"specialization": "Servant",
-											"modifier": -2
-										}
-									]
-								},
-								{
-									"id": "2a0a6e29-9d16-474a-94ec-fb3794c86f5f",
-									"type": "skill",
-									"name": "Savoir-Faire",
-									"reference": "B218",
-									"tags": [
-										"Everyman",
-										"Knowledge",
-										"Social"
-									],
-									"specialization": "Servant",
-									"difficulty": "iq/e",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Savoir-Faire",
-											"specialization": "High Society",
-											"modifier": -2
-										}
-									]
-								},
-								{
-									"id": "25616957-ddc5-4572-8cf7-b59abd56ae9f",
-									"type": "skill",
-									"name": "Streetwise",
-									"reference": "B223",
-									"tags": [
-										"Criminal",
-										"Police",
-										"Social",
-										"Street"
-									],
-									"difficulty": "iq/a",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										}
-									]
-								}
-							],
-							"name": "One of",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							}
 						},
 						{
 							"id": "f05d928b-b5b5-4586-8b38-b5ca0397fb77",
@@ -2221,7 +2134,94 @@
 									]
 								}
 							],
-							"name": "One of",
+							"name": "Defensive Skills",
+							"template_picker": {
+								"type": "count",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": 1
+								}
+							}
+						},
+						{
+							"id": "60a3e42f-bf5d-48d2-8d54-a7634e8aefef",
+							"type": "skill_container",
+							"open": true,
+							"children": [
+								{
+									"id": "aa856ead-b441-4320-add4-07b9c46525a9",
+									"type": "skill",
+									"name": "Savoir-Faire",
+									"reference": "B218",
+									"tags": [
+										"Business",
+										"Knowledge",
+										"Social"
+									],
+									"specialization": "High Society",
+									"difficulty": "iq/e",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Savoir-Faire",
+											"specialization": "Servant",
+											"modifier": -2
+										}
+									]
+								},
+								{
+									"id": "2a0a6e29-9d16-474a-94ec-fb3794c86f5f",
+									"type": "skill",
+									"name": "Savoir-Faire",
+									"reference": "B218",
+									"tags": [
+										"Everyman",
+										"Knowledge",
+										"Social"
+									],
+									"specialization": "Servant",
+									"difficulty": "iq/e",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Savoir-Faire",
+											"specialization": "High Society",
+											"modifier": -2
+										}
+									]
+								},
+								{
+									"id": "25616957-ddc5-4572-8cf7-b59abd56ae9f",
+									"type": "skill",
+									"name": "Streetwise",
+									"reference": "B223",
+									"tags": [
+										"Criminal",
+										"Police",
+										"Social",
+										"Street"
+									],
+									"difficulty": "iq/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										}
+									]
+								}
+							],
+							"name": "Social Skills",
 							"template_picker": {
 								"type": "count",
 								"qualifier": {
@@ -2324,7 +2324,7 @@
 									]
 								}
 							],
-							"name": "One of",
+							"name": "Technical Skills",
 							"template_picker": {
 								"type": "count",
 								"qualifier": {
