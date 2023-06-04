@@ -136,633 +136,29 @@
 					"open": true,
 					"children": [
 						{
-							"id": "4673a3b3-af44-49da-9cac-b9c5c4fe7483",
+							"id": "33e1c135-d1db-42d5-9150-e9a88c2ffaf2",
 							"type": "trait",
-							"name": "Blessed",
-							"reference": "B40",
+							"name": "Divine Favor",
+							"reference": "PDF4",
 							"tags": [
-								"Advantage",
-								"Mental",
-								"Supernatural"
+								"Physical"
 							],
-							"base_points": 10,
-							"calc": {
-								"points": 10
-							}
-						},
-						{
-							"id": "48a4728b-4f7b-46c6-8a58-82bdede10f72",
-							"type": "trait",
-							"name": "Charisma",
-							"reference": "B41",
-							"tags": [
-								"Advantage",
-								"Mental"
-							],
-							"levels": 2,
-							"points_per_level": 5,
-							"features": [
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "fortune-telling"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "leadership"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "panhandling"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "public speaking"
-									},
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "reaction_bonus",
-									"situation": "from sapient being with whom you actively interact (converse, lecture, etc.)",
-									"amount": 1,
-									"per_level": true
-								},
-								{
-									"type": "reaction_bonus",
-									"situation": "to Influence rolls",
-									"amount": 1,
-									"per_level": true
-								}
-							],
+							"base_points": 70,
+							"levels": 10,
 							"can_level": true,
 							"calc": {
-								"points": 10
-							}
-						},
-						{
-							"id": "0f7f21ca-4e9c-47b3-bde1-a2efb7222f1d",
-							"type": "trait_container",
-							"open": true,
-							"children": [
-								{
-									"id": "26c00ff9-d0d9-4ecc-b913-53a341f96b91",
-									"type": "trait",
-									"name": "Animal Empathy",
-									"reference": "B40",
-									"tags": [
-										"Advantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "5913b236-d5f8-4c02-9285-8aee5149c309",
-											"type": "modifier",
-											"name": "Remote",
-											"reference": "P48",
-											"cost": 50,
-											"disabled": true
-										},
-										{
-											"id": "d17b2604-74c5-4735-bb92-d97bb47507d0",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "B87",
-											"notes": "All aquatic animals",
-											"cost": -40,
-											"disabled": true
-										},
-										{
-											"id": "24cd4659-2be4-4ef2-8e6b-4bd05f83db58",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "B87",
-											"notes": "All land animals",
-											"cost": -40,
-											"disabled": true
-										},
-										{
-											"id": "34d22a92-1900-4129-9c69-9f2b2708da79",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "B87",
-											"notes": "@One class: Mammals, Birds, etc.@",
-											"cost": -50,
-											"disabled": true
-										},
-										{
-											"id": "f67a1e16-c4b8-48f8-86b8-2b846cef04c4",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "B87",
-											"notes": "@One family: Felines, Parrots, etc.@",
-											"cost": -60,
-											"disabled": true
-										},
-										{
-											"id": "c4ec3d9c-f103-4664-8604-7342b8eb2cb1",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "B87",
-											"notes": "@One species: House Cats, Macaws, etc.@",
-											"cost": -80,
-											"disabled": true
-										}
-									],
-									"base_points": 5,
-									"calc": {
-										"points": 5
-									}
-								},
-								{
-									"id": "4663de34-2b42-4f1c-99a5-7ccddd9c0f14",
-									"type": "trait",
-									"name": "Clerical Investment",
-									"reference": "B43",
-									"tags": [
-										"Advantage",
-										"Social"
-									],
-									"base_points": 5,
-									"calc": {
-										"points": 5
-									}
-								},
-								{
-									"id": "1fb3b0e6-da91-41ab-a812-afaf30476470",
-									"type": "trait",
-									"name": "Empathy",
-									"reference": "B51,P48",
-									"tags": [
-										"Advantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "15130107-a6e2-4b7f-9092-477a1428f637",
-											"type": "modifier",
-											"name": "Remote",
-											"reference": "P48",
-											"cost": 50,
-											"disabled": true
-										}
-									],
-									"base_points": 15,
-									"features": [
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "detect lies"
-											},
-											"amount": 3
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "fortune-telling"
-											},
-											"amount": 3
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "psychology"
-											},
-											"amount": 3
-										}
-									],
-									"calc": {
-										"points": 15
-									}
-								},
-								{
-									"id": "57e9f4fa-5f9a-49d3-a3c7-c1c6f0892f32",
-									"type": "trait",
-									"name": "Empathy (Sensitive)",
-									"reference": "B51",
-									"tags": [
-										"Advantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "8c04f995-be36-4786-9763-d0ce15d1ee75",
-											"type": "modifier",
-											"name": "Remote",
-											"reference": "P48",
-											"cost": 50,
-											"disabled": true
-										}
-									],
-									"base_points": 5,
-									"features": [
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "detect lies"
-											},
-											"amount": 1
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "fortune-telling"
-											},
-											"amount": 1
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "psychology"
-											},
-											"amount": 1
-										}
-									],
-									"calc": {
-										"points": 5
-									}
-								},
-								{
-									"id": "d73dba35-1de7-4565-aa68-1b28ae4a5890",
-									"type": "trait",
-									"name": "Hard to Kill",
-									"reference": "B58",
-									"tags": [
-										"Advantage",
-										"Physical"
-									],
-									"levels": 1,
-									"points_per_level": 2,
-									"features": [
-										{
-											"type": "conditional_modifier",
-											"situation": "to HT rolls made for survival at -HP or below, and on any HT roll where failure means instant death. If this bonus makes the difference between success and failure, you collapse, apparently dead (or disabled), but come to in the usual amount of time. A successful Diagnosis roll reveals the truth.",
-											"amount": 1,
-											"per_level": true
-										}
-									],
-									"can_level": true,
-									"calc": {
-										"points": 2
-									}
-								},
-								{
-									"id": "6d667954-5198-4bf9-9d99-2c256f36ae09",
-									"type": "trait",
-									"name": "Higher Purpose",
-									"reference": "B59",
-									"tags": [
-										"Advantage",
-										"Exotic",
-										"Mental"
-									],
-									"base_points": 5,
-									"calc": {
-										"points": 5
-									}
-								},
-								{
-									"id": "6bbe2d8e-caaf-4eb7-963b-1c920ecc75c9",
-									"type": "trait",
-									"name": "Plant Empathy",
-									"reference": "B75,P48",
-									"tags": [
-										"Advantage",
-										"Mental"
-									],
-									"modifiers": [
-										{
-											"id": "f8324b06-889c-4087-9027-14c216ad9995",
-											"type": "modifier",
-											"name": "Remote",
-											"reference": "P48",
-											"cost": 50,
-											"disabled": true
-										},
-										{
-											"id": "989e6863-9863-4c25-b903-f10fa6feed56",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "P77",
-											"notes": "All terrestrial plants",
-											"cost": -40,
-											"disabled": true
-										},
-										{
-											"id": "80b48f0f-ff9c-47be-babd-90ee61b4f007",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "P77",
-											"notes": "All aquatic plants",
-											"cost": -40,
-											"disabled": true
-										},
-										{
-											"id": "0a2dc49c-7f1a-4d5f-bae0-49869798146e",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "P77",
-											"notes": "@Large Subset: Herbs, Trees@",
-											"cost": -50,
-											"disabled": true
-										},
-										{
-											"id": "8bf0092b-9895-4e29-8d23-7cceb777d543",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "P77",
-											"notes": "@Small Subset: Evergreens, Medicinals@",
-											"cost": -60,
-											"disabled": true
-										}
-									],
-									"base_points": 5,
-									"calc": {
-										"points": 5
-									}
-								},
-								{
-									"id": "4d21047d-ac4c-4f95-a4cc-da85b85d5922",
-									"type": "trait",
-									"name": "Religious Rank",
-									"reference": "B29",
-									"tags": [
-										"Advantage",
-										"Social"
-									],
-									"modifiers": [
-										{
-											"id": "f2152f52-b337-4072-ab43-d66afcbc319e",
-											"type": "modifier",
-											"name": "Replaces Status",
-											"reference": "B29",
-											"cost": 5,
-											"affects": "levels_only",
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "42caab58-9f7b-4911-9ef0-a47a92e63801",
-											"type": "modifier",
-											"name": "Courtesy",
-											"reference": "B29",
-											"cost": -4,
-											"affects": "levels_only",
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"levels": 1,
-									"points_per_level": 5,
-									"can_level": true,
-									"calc": {
-										"points": 5
-									}
-								},
-								{
-									"id": "d14d81e4-aeb1-4d14-bc2e-4be81efcddfb",
-									"type": "trait",
-									"name": "Spirit Empathy",
-									"reference": "B88,P48",
-									"tags": [
-										"Advantage",
-										"Mental",
-										"Supernatural"
-									],
-									"modifiers": [
-										{
-											"id": "110046ca-f474-4b43-877e-bd18510acdab",
-											"type": "modifier",
-											"name": "Specialized",
-											"reference": "B87",
-											"notes": "@Type: Angels, Demons, Elementals, Faerie, Ghosts, etc.@",
-											"cost": -50,
-											"disabled": true
-										},
-										{
-											"id": "05a618e6-ef79-49a6-9009-b2d3e13a12bb",
-											"type": "modifier",
-											"name": "Remote",
-											"reference": "P48",
-											"cost": 50,
-											"disabled": true
-										}
-									],
-									"base_points": 10,
-									"calc": {
-										"points": 10
-									}
-								},
-								{
-									"id": "d65bb30d-5ce2-434d-b53b-bc66b58d5f56",
-									"type": "trait",
-									"name": "True Faith",
-									"reference": "B94,P84",
-									"tags": [
-										"Advantage",
-										"Mental",
-										"Supernatural"
-									],
-									"modifiers": [
-										{
-											"id": "ca3afde0-4e16-4370-96b4-06f654841cb6",
-											"type": "modifier",
-											"name": "Chosen",
-											"reference": "P84",
-											"notes": "@Deity@",
-											"disabled": true
-										},
-										{
-											"id": "32701344-c513-4fdb-9337-c3261e231622",
-											"type": "modifier",
-											"name": "Turning",
-											"reference": "P84",
-											"cost": 65,
-											"disabled": true
-										}
-									],
-									"base_points": 15,
-									"calc": {
-										"points": 15
-									}
-								},
-								{
-									"id": "6c57ac76-e0ab-4257-849b-089a2f09d47d",
-									"type": "trait",
-									"name": "Voice",
-									"reference": "B97",
-									"tags": [
-										"Advantage",
-										"Physical"
-									],
-									"base_points": 10,
-									"features": [
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "diplomacy"
-											},
-											"amount": 2
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "fast-talk"
-											},
-											"amount": 2
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "starts_with",
-												"qualifier": "mimicry"
-											},
-											"amount": 2
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "performance"
-											},
-											"amount": 2
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "politics"
-											},
-											"amount": 2
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "public speaking"
-											},
-											"amount": 2
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "sex appeal"
-											},
-											"amount": 2
-										},
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "is",
-												"qualifier": "singing"
-											},
-											"amount": 2
-										},
-										{
-											"type": "reaction_bonus",
-											"situation": "from others who can hear your voice",
-											"amount": 2
-										}
-									],
-									"calc": {
-										"points": 10
-									}
-								}
-							],
-							"name": "Other Advantages",
-							"template_picker": {
-								"type": "points",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 15
-								}
-							},
-							"calc": {
-								"points": 82
-							}
-						},
-						{
-							"id": "d775cae7-aa24-4e1f-8fa8-0db220ef0a63",
-							"type": "trait",
-							"name": "Power Investiture",
-							"reference": "B77",
-							"tags": [
-								"Advantage",
-								"Mental",
-								"Supernatural"
-							],
-							"levels": 1,
-							"points_per_level": 10,
-							"features": [
-								{
-									"type": "spell_bonus",
-									"match": "college_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "Clerical"
-									},
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 10
+								"points": 70
 							}
 						}
 					],
 					"name": "Class Advantages",
 					"calc": {
-						"points": 112
+						"points": 70
 					}
 				},
 				{
 					"id": "f192ffe9-ee8d-4589-bb6e-637bd2129abd",
 					"type": "trait_container",
-					"open": true,
 					"children": [
 						{
 							"id": "82c653c5-2ee7-4fff-956a-40db57e9f384",
@@ -1109,18 +505,2101 @@
 						"type": "points",
 						"qualifier": {
 							"compare": "is",
-							"qualifier": -30
+							"qualifier": -45
 						}
 					},
 					"calc": {
 						"points": -135
+					}
+				},
+				{
+					"id": "583957fa-9c2b-4128-a445-17f7baee9350",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "c566ec8f-570d-445e-928b-0dbb68b32b2e",
+							"type": "trait_container",
+							"children": [
+								{
+									"id": "b9be5e8f-6ee4-4b78-9064-085b05058fae",
+									"type": "trait",
+									"name": "Confidence",
+									"reference": "PDF8",
+									"notes": "Extraordinary Luck",
+									"tags": [
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "3383b148-39f6-4791-b1a9-d2860c2e9392",
+											"type": "modifier",
+											"name": "Active",
+											"cost": -40
+										},
+										{
+											"id": "6a57bdf0-0503-46bd-bf0b-dff5b7a99450",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "0c8af702-4d53-4f64-93f9-06e844070dfc",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 30,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 4
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 3
+									}
+								},
+								{
+									"id": "92a1fad1-d285-459e-90f5-5fa425b65e5f",
+									"type": "trait",
+									"name": "Feed the Masses",
+									"reference": "PDF8",
+									"notes": "Create Food/Drink",
+									"tags": [
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "1035a77a-8036-465c-a2e7-d805a1b32ecc",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "f8d8e61f-e6b2-4097-b0e7-7602963901ee",
+											"type": "modifier",
+											"name": "Limited Use, 3/Day",
+											"cost": -20
+										},
+										{
+											"id": "e57a5292-036a-4f40-b1dc-9fc7b12ed3b8",
+											"type": "modifier",
+											"name": "Reduced Fatigue Cost",
+											"cost": 40
+										},
+										{
+											"id": "29ebcac2-670c-4270-89a8-6df64c3303d6",
+											"type": "modifier",
+											"name": "Takes Extra Time 1",
+											"cost": -10
+										},
+										{
+											"id": "e833bdbb-9af9-467d-9b2a-1ed4eb8b7688",
+											"type": "modifier",
+											"name": "Trigger, Food",
+											"cost": -10
+										},
+										{
+											"id": "4628c773-c534-4de0-9ee2-76a0b855a792",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 20,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 5
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 4
+									}
+								},
+								{
+									"id": "045384cb-6df4-4605-9678-b81db488b4dc",
+									"type": "trait",
+									"name": "Holy Touch",
+									"reference": "PDF8",
+									"notes": "Blessed (Font)",
+									"tags": [
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "4602d841-e768-4250-91a2-499ace32620e",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 10,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 4
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 2
+									}
+								},
+								{
+									"id": "08f55eff-95c2-4c62-b45f-975a79415cc4",
+									"type": "trait",
+									"name": "Traveler's Blessing",
+									"reference": "PDF10",
+									"notes": "Serendipity",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "5a157e8f-bde4-4547-be49-179028c30701",
+											"type": "modifier",
+											"name": "Wishing",
+											"reference": "P73",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "c61150e0-079c-4379-9212-5a4e026d5f6b",
+											"type": "modifier",
+											"name": "Wishing",
+											"reference": "P73",
+											"notes": "For others only",
+											"disabled": true
+										},
+										{
+											"id": "08562c88-76a9-43bb-a5cd-39a407da636d",
+											"type": "modifier",
+											"name": "Aspected, Surviving travel-related accidents",
+											"cost": -20
+										},
+										{
+											"id": "a1223ee3-fff6-441e-bf60-5342cee3e04f",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "149c0c2e-7c49-4588-9d0e-142a422cdf0e",
+											"type": "modifier",
+											"name": "Wishing",
+											"cost": 100
+										},
+										{
+											"id": "01a07506-6fdf-41d5-a36f-b8ef321ce0d4",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"levels": 1,
+									"points_per_level": 15,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 7
+												}
+											}
+										]
+									},
+									"can_level": true,
+									"calc": {
+										"points": 6
+									}
+								}
+							],
+							"name": "Arra",
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "dc5a228e-16de-4c4d-a4bf-6b60fde4ae18",
+							"type": "trait_container",
+							"children": [
+								{
+									"id": "4b8f0d82-4b97-4b13-8b55-f80f5950862c",
+									"type": "trait",
+									"name": "Final Rest",
+									"reference": "PDF8",
+									"notes": "Blessed (Last Rites)",
+									"tags": [
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "395c641d-9447-49b9-b1eb-7034c457c243",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 5,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 4
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 1
+									}
+								},
+								{
+									"id": "85022e9e-639a-463e-a242-eaf1d354a51c",
+									"type": "trait_container",
+									"children": [
+										{
+											"id": "4125f2f2-15f5-412b-9211-a9b69438f42d",
+											"type": "trait",
+											"name": "Control (Weather)",
+											"reference": "P90",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "3bb268f3-778b-451e-a762-17bff38bba84",
+													"type": "modifier",
+													"name": "Collective",
+													"reference": "P92",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "3eed6073-29de-4601-b605-f96a15772615",
+													"type": "modifier",
+													"name": "Common",
+													"reference": "P90",
+													"cost": 4,
+													"cost_type": "multiplier"
+												},
+												{
+													"id": "e6ac0611-ea80-4c34-a23f-31d099645b3b",
+													"type": "modifier",
+													"name": "Cosmetic",
+													"reference": "P92",
+													"cost": -80,
+													"disabled": true
+												},
+												{
+													"id": "37a02eea-5804-4e46-80f4-36e2dc55ff65",
+													"type": "modifier",
+													"name": "Natural Phenomena",
+													"reference": "P92",
+													"cost": 100
+												},
+												{
+													"id": "a6b0691e-3906-45a7-a404-52132d59de3c",
+													"type": "modifier",
+													"name": "Occasional",
+													"reference": "P90",
+													"cost": 3,
+													"cost_type": "multiplier",
+													"disabled": true
+												},
+												{
+													"id": "79bb14d4-a9e8-48c1-878c-218b189e893f",
+													"type": "modifier",
+													"name": "Persistent",
+													"reference": "P91",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "5cb0171f-1180-47e9-9b71-cca90b9a5a70",
+													"type": "modifier",
+													"name": "Ranged",
+													"reference": "P91",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "1f511a46-d2fe-4fa2-8f0b-70643bcf298d",
+													"type": "modifier",
+													"name": "Rare",
+													"reference": "P90",
+													"cost": 2,
+													"cost_type": "multiplier",
+													"disabled": true
+												},
+												{
+													"id": "b61b7963-daf9-49b1-a9f7-172f7e1bc5af",
+													"type": "modifier",
+													"name": "Super-Effort",
+													"reference": "SU26",
+													"cost": 400,
+													"disabled": true
+												},
+												{
+													"id": "575af74b-364d-4edf-81c0-4e30e162d2d4",
+													"type": "modifier",
+													"name": "Divine",
+													"cost": -10
+												},
+												{
+													"id": "d4599e57-c0c5-490c-8934-21a3d60eddfc",
+													"type": "modifier",
+													"name": "Emanation",
+													"cost": -20
+												},
+												{
+													"id": "01e0fe0f-5e46-47d4-b728-951c8fc0b5a4",
+													"type": "modifier",
+													"name": "Hard to Use 1",
+													"cost": -5
+												},
+												{
+													"id": "ad97a5b7-4099-43ad-bab8-f7d1ebf79873",
+													"type": "modifier",
+													"name": "Immediate Preparation Required, 1 hour",
+													"cost": -75
+												},
+												{
+													"id": "540c71a4-7011-4d51-96ea-225b9b2be65a",
+													"type": "modifier",
+													"name": "Only to increase the area of effect",
+													"cost": -50
+												}
+											],
+											"base_points": -1,
+											"levels": 2,
+											"points_per_level": 5,
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Divine Favor"
+														},
+														"level": {
+															"compare": "at_least",
+															"qualifier": 10
+														}
+													}
+												]
+											},
+											"can_level": true,
+											"calc": {
+												"points": 3
+											}
+										},
+										{
+											"id": "95512774-dff2-4683-a4a7-fcad2ac017f7",
+											"type": "trait",
+											"name": "Control (Weather)",
+											"reference": "P90",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "e228a4c2-6d5c-4eb2-a29f-609838f6b674",
+													"type": "modifier",
+													"name": "Collective",
+													"reference": "P92",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "ff6dac30-9ac5-4efa-97de-5cd673b5f706",
+													"type": "modifier",
+													"name": "Common",
+													"reference": "P90",
+													"cost": 4,
+													"cost_type": "multiplier"
+												},
+												{
+													"id": "9151b4b7-1085-4891-9812-ff0270196355",
+													"type": "modifier",
+													"name": "Cosmetic",
+													"reference": "P92",
+													"cost": -80,
+													"disabled": true
+												},
+												{
+													"id": "cda610d9-f94d-4e9e-8cae-2ccd59f3ab6f",
+													"type": "modifier",
+													"name": "Natural Phenomena",
+													"reference": "P92",
+													"cost": 100
+												},
+												{
+													"id": "7a62abc6-f554-40b9-94cf-045657ce1f14",
+													"type": "modifier",
+													"name": "Occasional",
+													"reference": "P90",
+													"cost": 3,
+													"cost_type": "multiplier",
+													"disabled": true
+												},
+												{
+													"id": "ef4a8684-00f4-4313-8dd1-fc5df8612332",
+													"type": "modifier",
+													"name": "Persistent",
+													"reference": "P91",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "f2584fd7-4ffd-46c2-9fb3-670ac44f53f7",
+													"type": "modifier",
+													"name": "Ranged",
+													"reference": "P91",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "49cd23e0-55b0-4d5c-bb35-cd6481635766",
+													"type": "modifier",
+													"name": "Rare",
+													"reference": "P90",
+													"cost": 2,
+													"cost_type": "multiplier",
+													"disabled": true
+												},
+												{
+													"id": "bf15ff40-50d1-4d1d-8979-6b4706a7f0cd",
+													"type": "modifier",
+													"name": "Super-Effort",
+													"reference": "SU26",
+													"cost": 400,
+													"disabled": true
+												},
+												{
+													"id": "8eaf592e-3ef9-4015-af37-4dc9a8c54179",
+													"type": "modifier",
+													"name": "Divine",
+													"cost": -10
+												},
+												{
+													"id": "51944406-0669-4374-9600-899eb3bc648e",
+													"type": "modifier",
+													"name": "Emanation",
+													"cost": -20
+												},
+												{
+													"id": "3a604107-c184-4629-8bf5-e33faa77219c",
+													"type": "modifier",
+													"name": "Hard to Use 1",
+													"cost": -5
+												},
+												{
+													"id": "6924c4ec-22ac-47eb-be9a-5900c5308f08",
+													"type": "modifier",
+													"name": "Immediate Preparation Required, 1 hour",
+													"cost": -75
+												}
+											],
+											"levels": 3,
+											"points_per_level": 5,
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Divine Favor"
+														},
+														"level": {
+															"compare": "at_least",
+															"qualifier": 10
+														}
+													}
+												]
+											},
+											"can_level": true,
+											"calc": {
+												"points": 11
+											}
+										}
+									],
+									"name": "Rainmaker",
+									"reference": "PDF13",
+									"notes": "Feature: Religious Ritual skill replaces IQ roll",
+									"modifiers": [
+										{
+											"id": "66a71d47-2dd3-4527-a6b2-7ac12df56e6c",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"calc": {
+										"points": 14
+									}
+								}
+							],
+							"name": "Helmek",
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "6f3492db-6465-4cc4-8ff8-ed3135c195d3",
+							"type": "trait_container",
+							"children": [
+								{
+									"id": "ae55bee9-b086-4c3d-b52e-7f9fe8cb0ab3",
+									"type": "trait_container",
+									"children": [
+										{
+											"id": "7fe613da-c320-486a-a045-8a2f891110d8",
+											"type": "trait",
+											"name": "Doesn't Breathe",
+											"reference": "B49",
+											"tags": [
+												"Advantage",
+												"Exotic",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "0849b988-0fc4-4f94-b2f4-0bd1ca03f9ad",
+													"type": "modifier",
+													"name": "Oxygen Combustion",
+													"reference": "B49",
+													"cost": -50
+												},
+												{
+													"id": "ffb1522a-4506-46c0-8338-02bc58372335",
+													"type": "modifier",
+													"name": "Divine",
+													"cost": -10
+												}
+											],
+											"base_points": 20,
+											"calc": {
+												"points": 2
+											}
+										},
+										{
+											"id": "ec59ca67-1432-4b36-b680-18869d9cffa9",
+											"type": "trait",
+											"name": "Fireproof",
+											"reference": "PDF11",
+											"notes": "Damage Resistance",
+											"tags": [
+												"Advantage",
+												"Exotic",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "0ac8d75d-e449-42e7-a7de-dbb5277d16c6",
+													"type": "modifier",
+													"name": "Force Field",
+													"reference": "B47",
+													"cost": 20
+												},
+												{
+													"id": "0c6fd639-7c73-4931-95bc-c90a29fd0095",
+													"type": "modifier",
+													"name": "Limited",
+													"reference": "B46",
+													"notes": "@Common Attack Form@",
+													"cost": -40
+												},
+												{
+													"id": "635de842-662d-4b7e-b2b7-5f6b91b6c217",
+													"type": "modifier",
+													"name": "Divine",
+													"cost": -10
+												},
+												{
+													"id": "33ce81d4-6b84-4325-9058-44ddd48357ba",
+													"type": "modifier",
+													"name": "Learned Prayer",
+													"cost": 0.2,
+													"cost_type": "multiplier",
+													"disabled": true
+												}
+											],
+											"levels": 10,
+											"points_per_level": 5,
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Divine Favor"
+														},
+														"level": {
+															"compare": "at_least",
+															"qualifier": 8
+														}
+													}
+												]
+											},
+											"features": [
+												{
+													"type": "dr_bonus",
+													"location": "eye",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "skull",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "face",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "neck",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "torso",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "vitals",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "groin",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "arm",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "hand",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "leg",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "foot",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "tail",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "wing",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "fin",
+													"amount": 1,
+													"per_level": true
+												},
+												{
+													"type": "dr_bonus",
+													"location": "brain",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"calc": {
+												"points": 7
+											}
+										}
+									],
+									"name": "Fireproof (Enhanced)",
+									"reference": "PDF11",
+									"modifiers": [
+										{
+											"id": "a0afed95-bd7c-4187-bf2d-a4df384be250",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"calc": {
+										"points": 9
+									}
+								},
+								{
+									"id": "18bb30a9-b7cb-49ba-88e1-efa56647f760",
+									"type": "trait",
+									"name": "Flesh Wounds",
+									"reference": "PDF9",
+									"notes": "Regeneration",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "88fddc1e-134b-4de4-8d29-19119b290e55",
+											"type": "modifier",
+											"name": "Slow",
+											"reference": "B80",
+											"notes": "You recover 1 HP per 12 hours",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "a0f99160-dca7-4f65-a8ae-70f351b4a778",
+											"type": "modifier",
+											"name": "Regular",
+											"reference": "B80",
+											"notes": "You recover 1 HP per hour",
+											"cost": 25,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "0e9b5035-f872-4e5c-b4fc-ca3471857617",
+											"type": "modifier",
+											"name": "Fast",
+											"reference": "B80",
+											"notes": "You recover 1 HP per minute",
+											"cost": 50,
+											"cost_type": "points"
+										},
+										{
+											"id": "a3ad8375-ea15-41b1-b869-16da85a4b21a",
+											"type": "modifier",
+											"name": "Very Fast",
+											"reference": "B80",
+											"notes": "You recover 1 HP per second",
+											"cost": 100,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "0f585834-2607-49b7-a2a7-9712c7b12999",
+											"type": "modifier",
+											"name": "Extreme",
+											"reference": "B80",
+											"notes": "You recover 10 HP per second",
+											"cost": 150,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "50e75f10-a0f4-47e2-b9ba-02c39a093553",
+											"type": "modifier",
+											"name": "Heals Radiation",
+											"reference": "B80",
+											"cost": 40,
+											"disabled": true
+										},
+										{
+											"id": "214d475f-dbcf-4c9a-888e-914a7bdde752",
+											"type": "modifier",
+											"name": "Radiation Only",
+											"reference": "B80",
+											"cost": -60,
+											"disabled": true
+										},
+										{
+											"id": "378de91f-9ac5-4d43-8077-615cc76adbf0",
+											"type": "modifier",
+											"name": "Fatigue Recovery",
+											"reference": "P70",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "262c8058-ac0f-45b5-8ad5-1d7880a0ca0f",
+											"type": "modifier",
+											"name": "Fatigue Only",
+											"reference": "P70",
+											"disabled": true
+										},
+										{
+											"id": "db85121c-4259-4255-bcf8-c113db4b0574",
+											"type": "modifier",
+											"name": "Limited: @Advantage@ Only",
+											"reference": "P70",
+											"cost": -40,
+											"disabled": true
+										},
+										{
+											"id": "c49297da-7c37-444b-9b5b-30351de146f9",
+											"type": "modifier",
+											"name": "Bane",
+											"reference": "H18",
+											"notes": "@Common or Very Common@",
+											"cost": -50,
+											"disabled": true
+										},
+										{
+											"id": "ce42aab7-6811-4399-9bb3-3be3168931fb",
+											"type": "modifier",
+											"name": "Bane",
+											"reference": "H18",
+											"notes": "@Occasional@",
+											"cost": -30,
+											"disabled": true
+										},
+										{
+											"id": "7915c888-8e02-4eb1-8c63-338b26901945",
+											"type": "modifier",
+											"name": "Bane",
+											"reference": "H18",
+											"notes": "@Rare@",
+											"cost": -10,
+											"disabled": true
+										},
+										{
+											"id": "de45e1c0-92f7-4ea9-8c47-ab99e9707b1f",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "5cd6f4df-b449-41bc-9d3e-6ee09981b963",
+											"type": "modifier",
+											"name": "Maxium Duration, 10 minutes",
+											"cost": -50
+										},
+										{
+											"id": "9d204bdd-a3ac-4a27-af90-429a53f100ac",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 5
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 4
+									}
+								},
+								{
+									"id": "d0fe6ec9-0c43-4ddb-95b8-465e50cd0cf8",
+									"type": "trait",
+									"name": "Holy Touch",
+									"reference": "PDF8",
+									"notes": "Blessed (Font)",
+									"tags": [
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "4602d841-e768-4250-91a2-499ace32620e",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 10,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 4
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 2
+									}
+								}
+							],
+							"name": "Lananatret",
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "0eb7bc63-9917-4c3f-8427-9a04d32ec1f5",
+							"type": "trait_container",
+							"children": [
+								{
+									"id": "865d9d9d-e162-47d0-b2ab-1f2eacc990fd",
+									"type": "trait",
+									"name": "Final Rest",
+									"reference": "PDF8",
+									"notes": "Blessed (Last Rites)",
+									"tags": [
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "395c641d-9447-49b9-b1eb-7034c457c243",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 5,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 4
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 1
+									}
+								},
+								{
+									"id": "e515760e-4fb4-4789-bd42-db40c27862af",
+									"type": "trait",
+									"name": "Smite",
+									"reference": "PDF12",
+									"notes": "Innate Attack (Burning)",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "6e3f3e66-fd4e-4910-b38c-63e881d8c5c2",
+											"type": "modifier",
+											"name": "Accessibility, Malign Supernatural Beings Only",
+											"cost": -50
+										},
+										{
+											"id": "2fb5eea5-3b65-4551-8b8b-b2ebacfad8a9",
+											"type": "modifier",
+											"name": "Affects Insubstantial",
+											"cost": 20
+										},
+										{
+											"id": "8c4c9f6e-9b88-410e-a3a5-5f01a705a924",
+											"type": "modifier",
+											"name": "Area Effect, 4 yards",
+											"cost": 100
+										},
+										{
+											"id": "6a33c3e4-37e7-4209-aa79-d88d34ffecf1",
+											"type": "modifier",
+											"name": "Armor Divisor",
+											"reference": "B110",
+											"notes": "0.1",
+											"cost": -70,
+											"disabled": true
+										},
+										{
+											"id": "d0456e2d-bb7f-45ec-83dd-546ddbe0a216",
+											"type": "modifier",
+											"name": "Armor Divisor",
+											"reference": "B110",
+											"notes": "0.2",
+											"cost": -50,
+											"disabled": true
+										},
+										{
+											"id": "81d7f015-dc52-49a7-824e-9a8ad5ea74b6",
+											"type": "modifier",
+											"name": "Armor Divisor",
+											"reference": "B110",
+											"notes": "0.5",
+											"cost": -30,
+											"disabled": true
+										},
+										{
+											"id": "20049e94-d1d6-4dc2-be4b-3a4b60a98983",
+											"type": "modifier",
+											"name": "Armor Divisor",
+											"reference": "B102",
+											"notes": "2",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "daa2818c-60c6-472e-8ba5-8def8bd38891",
+											"type": "modifier",
+											"name": "Armor Divisor",
+											"reference": "B102",
+											"notes": "3",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "2822f9ee-48d3-43d5-b712-ff81845ef549",
+											"type": "modifier",
+											"name": "Armor Divisor",
+											"reference": "B102",
+											"notes": "5",
+											"cost": 150,
+											"disabled": true
+										},
+										{
+											"id": "5599b8f9-2739-475b-ae56-211559b31cf5",
+											"type": "modifier",
+											"name": "Armor Divisor",
+											"reference": "B102",
+											"notes": "10",
+											"cost": 200,
+											"disabled": true
+										},
+										{
+											"id": "f51c003e-8db8-45c7-a781-0ad7e4ba9cb3",
+											"type": "modifier",
+											"name": "Contagious",
+											"reference": "B103",
+											"notes": "Highly",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "4d120680-2cb2-4803-877c-713d242bc2eb",
+											"type": "modifier",
+											"name": "Contagious",
+											"reference": "B103",
+											"notes": "Mildly",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "bf1569e2-88f6-46db-8562-6df3b6c27236",
+											"type": "modifier",
+											"name": "Cosmic, Irresistable Attack",
+											"cost": 300
+										},
+										{
+											"id": "994cc7b1-5fba-4295-a0fd-5f1b6053c232",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "1 day",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "93912dbb-37a5-448b-9778-401628a95398",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "1 day; Resistible",
+											"cost": 5,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "7e0a5bc8-be6d-4104-9ac6-59ec64b59cce",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "1 hr",
+											"cost": 20,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "b1be0424-d09e-4de2-b5b5-70cbc3039e4c",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "1 hr; Resistible",
+											"cost": 10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "23918454-c582-42fd-ab37-72b1b12eb505",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "1 min",
+											"cost": 40,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "9df04ce3-53a7-4a09-a46c-4ecde7c5fc53",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "1 min; Resistible",
+											"cost": 20,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "c541a9ed-29e4-4fd0-b269-3b10f7fd6549",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "1 sec",
+											"cost": 100,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "9e616fdf-f792-457c-abea-1aa538a3eac8",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "1 sec; Resistible",
+											"cost": 50,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "a77751a0-6049-4e10-9885-e1a6a88fc891",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "10 sec",
+											"cost": 50,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "c15b7bc5-07db-47c3-b48b-1a8e1b24ce5e",
+											"type": "modifier",
+											"name": "Cyclic",
+											"reference": "B103",
+											"notes": "10 sec; Resistible",
+											"cost": 25,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "ca75e4d4-ce9b-4386-a783-d6137e93f23f",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "096184ad-5839-40ca-81a8-654362fa4de6",
+											"type": "modifier",
+											"name": "Double Blunt Trauma",
+											"reference": "B104",
+											"notes": "1HP per 10 dmg",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "e561bb38-ffec-4996-8f46-d96da27e76f1",
+											"type": "modifier",
+											"name": "Emanation",
+											"cost": -20
+										},
+										{
+											"id": "68baa0ca-c708-4987-9dc0-b98bb0192015",
+											"type": "modifier",
+											"name": "Explosion",
+											"reference": "B104",
+											"cost": 50,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "540c2fcf-c39f-4554-bb6a-8255685f7e7c",
+											"type": "modifier",
+											"name": "Fragmentation",
+											"reference": "B104",
+											"cost": 15,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "642280cb-323c-4674-8121-787c42ab2a9a",
+											"type": "modifier",
+											"name": "Fragmentation",
+											"reference": "B104",
+											"notes": "Hot",
+											"cost": 15,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "daf3e733-70ba-47bf-9a5a-db83b77cc33b",
+											"type": "modifier",
+											"name": "Low Signature",
+											"cost": 10
+										},
+										{
+											"id": "284c7a85-a997-490d-b5d2-0c53986404fc",
+											"type": "modifier",
+											"name": "No Wounding",
+											"reference": "B111",
+											"cost": -50,
+											"disabled": true
+										},
+										{
+											"id": "bff45030-2ad2-4074-a778-112ef696e7bf",
+											"type": "modifier",
+											"name": "Radiation",
+											"reference": "B104",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "c88b8be2-589e-45e5-9bb9-c2397068941e",
+											"type": "modifier",
+											"name": "Side Effect",
+											"reference": "B109",
+											"notes": "@Effect@",
+											"disabled": true
+										},
+										{
+											"id": "5d0d8348-0acd-4245-b27e-da7df9acd7c4",
+											"type": "modifier",
+											"name": "Surge",
+											"reference": "B104",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "99a05b8f-e9ca-4ea9-8140-f6790a47c09e",
+											"type": "modifier",
+											"name": "Symptoms",
+											"reference": "B109",
+											"notes": "@Effect@",
+											"disabled": true
+										},
+										{
+											"id": "7125509f-ae9b-4ea6-8b9c-5d4f5c593db4",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"levels": 2,
+									"points_per_level": 5,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 8
+												}
+											}
+										]
+									},
+									"weapons": [
+										{
+											"id": "6f9473d2-1350-4e0e-b6f7-f4a6466a3a07",
+											"type": "ranged_weapon",
+											"damage": {
+												"type": "burn",
+												"base": "1d"
+											},
+											"accuracy": "3",
+											"range": "100/10",
+											"rate_of_fire": "1",
+											"recoil": "1",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Innate Attack",
+													"specialization": "@Attack Type@"
+												},
+												{
+													"type": "skill",
+													"name": "Innate Attack",
+													"modifier": -2
+												},
+												{
+													"type": "dx",
+													"modifier": -4
+												}
+											],
+											"calc": {
+												"range": "100/10",
+												"damage": "1d burn"
+											}
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 9
+									}
+								},
+								{
+									"id": "384b491f-98d7-41c1-963a-92f7708b09be",
+									"type": "trait",
+									"name": "Stoicism",
+									"reference": "PDF10",
+									"notes": "Resistant (Immunity to Pain)",
+									"tags": [
+										"Advantage",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "848a7520-a9ba-4fd7-935b-efe749b7a0b6",
+											"type": "modifier",
+											"name": "Pain",
+											"reference": "B80",
+											"cost": 30,
+											"cost_type": "points"
+										},
+										{
+											"id": "88981096-296f-4905-8415-47e4b8457113",
+											"type": "modifier",
+											"name": "@Common: Poison, Sickness, etc.@",
+											"reference": "B81",
+											"cost": 15,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "39ff2729-75ec-4133-8268-4d0f846b644d",
+											"type": "modifier",
+											"name": "@Occasional: Disease, Ingested Poison, etc.@",
+											"reference": "B81",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "9727b538-77a2-4924-af7c-bd8dd6273ffd",
+											"type": "modifier",
+											"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+											"reference": "B81",
+											"cost": 5,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "8766c91f-5b4f-47d5-9fc2-ead118d32640",
+											"type": "modifier",
+											"name": "Immunity",
+											"reference": "B81",
+											"cost": 1,
+											"cost_type": "multiplier"
+										},
+										{
+											"id": "0f39a88a-acce-4871-9a80-d4423a2e5766",
+											"type": "modifier",
+											"name": "+8 to all HT rolls to resist",
+											"reference": "B81",
+											"cost": 0.5,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "f69dd9f4-174c-4acd-8947-7804e79dd4bd",
+											"type": "modifier",
+											"name": "+3 to all HT rolls to resist",
+											"reference": "B81",
+											"cost": 0.33,
+											"cost_type": "multiplier",
+											"disabled": true
+										},
+										{
+											"id": "3c02c670-2e30-4686-9b53-8d2e31d816a8",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "8384ddda-0cd6-4c39-a1c3-d27f1752b28a",
+											"type": "modifier",
+											"name": "Requires Concentrate",
+											"cost": -15
+										},
+										{
+											"id": "5392001a-7fe0-4f54-b02c-88055129ef9a",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 6
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 5
+									}
+								}
+							],
+							"name": "Rhal Sonl",
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "85558282-536c-42da-9e92-010f272f35c9",
+							"type": "trait_container",
+							"children": [
+								{
+									"id": "e02254de-a2ac-4439-8b55-e43c6e5e7886",
+									"type": "trait",
+									"name": "See Evil",
+									"reference": "PDF12",
+									"notes": "Detect",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Mental",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "00702bf7-f920-4485-8493-8a025fdd9ab3",
+											"type": "modifier",
+											"name": "@Rare Substance/Condition@",
+											"reference": "B48",
+											"cost": 5,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "9d198750-66c5-4927-967a-2c0ce99bf30a",
+											"type": "modifier",
+											"name": "@Occasional Substance/Condition@",
+											"reference": "B48",
+											"cost": 10,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "2c8f7f98-5806-457f-862c-855da257989a",
+											"type": "modifier",
+											"name": "@Common Substance/Condition@",
+											"reference": "B48",
+											"cost": 20,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "d18fb270-c1be-456a-b044-55d572a04b17",
+											"type": "modifier",
+											"name": "Evil",
+											"reference": "B48",
+											"cost": 30,
+											"cost_type": "points"
+										},
+										{
+											"id": "da5edeb4-9670-463d-954c-474e9bc144f2",
+											"type": "modifier",
+											"name": "Precise",
+											"reference": "B48",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "b15c14aa-0a58-43cb-8302-560d76e4019a",
+											"type": "modifier",
+											"name": "Signal Detection",
+											"reference": "B48",
+											"disabled": true
+										},
+										{
+											"id": "8651f8e3-b698-4c04-8fd6-2e21773e5849",
+											"type": "modifier",
+											"name": "Vague",
+											"reference": "B48",
+											"cost": -50,
+											"disabled": true
+										},
+										{
+											"id": "ad33b2dc-52af-48f4-b2fe-b51e7a3fdece",
+											"type": "modifier",
+											"name": "Analyzing",
+											"reference": "P47",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "1fc01cd5-efba-4fb8-87fa-26e7ec9a99d7",
+											"type": "modifier",
+											"name": "Cosmic, No die roll required",
+											"cost": 100
+										},
+										{
+											"id": "7ebe94b7-26d0-4d78-b3c2-66edc95c0ab5",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "80f43c06-c70d-4f1c-aee3-c5862aa813be",
+											"type": "modifier",
+											"name": "Vision-Based, Reversed",
+											"cost": -20
+										},
+										{
+											"id": "10b3498b-8b69-4754-83b5-90d050cd6d70",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 9
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 11
+									}
+								},
+								{
+									"id": "c41a2a84-016e-48fb-8297-10848984794c",
+									"type": "trait",
+									"name": "Sermonize",
+									"reference": "PDF9",
+									"notes": "Charisma",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "4e6e1c20-646e-4784-a479-48db12ceeb7e",
+											"type": "modifier",
+											"name": "Cannot Lie",
+											"cost": -10
+										},
+										{
+											"id": "e755ee69-9521-45f3-a8c9-30fbefc12c43",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "90a75eca-60e5-4b63-b149-cec3ccfa825f",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"levels": 5,
+									"points_per_level": 5,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 5
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "fortune-telling"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "leadership"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "panhandling"
+											},
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "skill_bonus",
+											"selection_type": "skills_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "public speaking"
+											},
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 4
+									}
+								}
+							],
+							"name": "Torr",
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "bc9e8ebe-df40-4bfc-a92d-299c20eb57eb",
+							"type": "trait_container",
+							"children": [
+								{
+									"id": "baaabd80-e49d-4a56-abaa-221f1caf3caa",
+									"type": "trait",
+									"name": "Feed the Masses",
+									"reference": "PDF8",
+									"notes": "Create Food/Drink",
+									"tags": [
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "1035a77a-8036-465c-a2e7-d805a1b32ecc",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "f8d8e61f-e6b2-4097-b0e7-7602963901ee",
+											"type": "modifier",
+											"name": "Limited Use, 3/Day",
+											"cost": -20
+										},
+										{
+											"id": "e57a5292-036a-4f40-b1dc-9fc7b12ed3b8",
+											"type": "modifier",
+											"name": "Reduced Fatigue Cost",
+											"cost": 40
+										},
+										{
+											"id": "29ebcac2-670c-4270-89a8-6df64c3303d6",
+											"type": "modifier",
+											"name": "Takes Extra Time 1",
+											"cost": -10
+										},
+										{
+											"id": "e833bdbb-9af9-467d-9b2a-1ed4eb8b7688",
+											"type": "modifier",
+											"name": "Trigger, Food",
+											"cost": -10
+										},
+										{
+											"id": "4628c773-c534-4de0-9ee2-76a0b855a792",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 20,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 5
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 4
+									}
+								},
+								{
+									"id": "abea4281-061c-40e2-be4b-89459cb822a8",
+									"type": "trait",
+									"name": "Holy Touch",
+									"reference": "PDF8",
+									"notes": "Blessed (Font)",
+									"tags": [
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "4602d841-e768-4250-91a2-499ace32620e",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 10,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 4
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 2
+									}
+								},
+								{
+									"id": "a76aaee6-1bc0-4818-ad61-072aa63b9847",
+									"type": "trait",
+									"name": "Protection from Evil",
+									"reference": "PDF8",
+									"notes": "True Faith",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Supernatural"
+									],
+									"modifiers": [
+										{
+											"id": "1cd4747e-261f-4622-bd12-1810c1df9bc6",
+											"type": "modifier",
+											"name": "Chosen",
+											"reference": "P84",
+											"notes": "@Deity@",
+											"disabled": true
+										},
+										{
+											"id": "005bd630-9951-4eea-9f56-79fae7b61fde",
+											"type": "modifier",
+											"name": "Turning",
+											"reference": "P84",
+											"cost": 65,
+											"disabled": true
+										},
+										{
+											"id": "e5eaf418-f9a2-4ce5-8bd5-62ebd83e82e2",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"base_points": 15,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 4
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 3
+									}
+								},
+								{
+									"id": "2d403243-b64f-4767-9315-f850654373aa",
+									"type": "trait",
+									"name": "Traveler's Blessing",
+									"reference": "PDF10",
+									"notes": "Serendipity",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "5a157e8f-bde4-4547-be49-179028c30701",
+											"type": "modifier",
+											"name": "Wishing",
+											"reference": "P73",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "c61150e0-079c-4379-9212-5a4e026d5f6b",
+											"type": "modifier",
+											"name": "Wishing",
+											"reference": "P73",
+											"notes": "For others only",
+											"disabled": true
+										},
+										{
+											"id": "08562c88-76a9-43bb-a5cd-39a407da636d",
+											"type": "modifier",
+											"name": "Aspected, Surviving travel-related accidents",
+											"cost": -20
+										},
+										{
+											"id": "a1223ee3-fff6-441e-bf60-5342cee3e04f",
+											"type": "modifier",
+											"name": "Divine",
+											"cost": -10
+										},
+										{
+											"id": "149c0c2e-7c49-4588-9d0e-142a422cdf0e",
+											"type": "modifier",
+											"name": "Wishing",
+											"cost": 100
+										},
+										{
+											"id": "01a07506-6fdf-41d5-a36f-b8ef321ce0d4",
+											"type": "modifier",
+											"name": "Learned Prayer",
+											"cost": 0.2,
+											"cost_type": "multiplier"
+										}
+									],
+									"levels": 1,
+									"points_per_level": 15,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Divine Favor"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 7
+												}
+											}
+										]
+									},
+									"can_level": true,
+									"calc": {
+										"points": 6
+									}
+								}
+							],
+							"name": "Yalond",
+							"calc": {
+								"points": 15
+							}
+						}
+					],
+					"name": "Learned Prayers",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					},
+					"calc": {
+						"points": 90
 					}
 				}
 			],
 			"name": "Holy Cleric",
 			"reference": "DF1:4",
 			"calc": {
-				"points": 47
+				"points": 95
 			}
 		}
 	],
@@ -1200,12 +2679,6 @@
 							"type": "skill_container",
 							"open": true,
 							"children": [
-								{
-									"id": "a7834c91-eff5-4a18-95aa-5f4e4015e62d",
-									"type": "skill_container",
-									"open": true,
-									"name": "2 Divinely Granted spells at [2]"
-								},
 								{
 									"id": "a46f6a3a-69ab-4696-aa65-08b0e93c6f8f",
 									"type": "skill",
@@ -1679,988 +3152,6 @@
 						}
 					],
 					"name": "4. Adventuring Skills"
-				}
-			],
-			"name": "Holy Cleric"
-		}
-	],
-	"spells": [
-		{
-			"id": "692d1536-57f9-435b-96df-28f1f229e351",
-			"type": "spell_container",
-			"open": true,
-			"children": [
-				{
-					"id": "e52a3893-c5c2-4a42-bb91-a3991de8bd10",
-					"type": "spell",
-					"name": "Armor",
-					"reference": "M167",
-					"tags": [
-						"Protection \u0026 Warning"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Protection \u0026 Warning"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "2 per DR",
-					"maintenance_cost": "Half",
-					"casting_time": "1 sec",
-					"duration": "1 min",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "shield"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "2d7e9e3a-23cc-4231-9d7a-4bf7955918a5",
-					"type": "spell",
-					"name": "Aura",
-					"reference": "M101",
-					"tags": [
-						"Knowledge"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Knowledge"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Info",
-					"casting_cost": "3",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "Instant",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "detect magic"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "40e923e6-18e1-422f-bf88-7327562aa824",
-					"type": "spell",
-					"name": "Bravery",
-					"reference": "M134",
-					"tags": [
-						"Mind Control"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Mind Control"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Area",
-					"casting_cost": "2",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "1 hr",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "fear"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "1e397e74-5415-48fc-a5af-48abb014f11a",
-					"type": "spell",
-					"name": "Cleansing",
-					"reference": "M94",
-					"tags": [
-						"Healing"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Healing"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"resist": "Special",
-					"casting_cost": "2/4/6",
-					"maintenance_cost": "-",
-					"casting_time": "3 sec",
-					"duration": "Permanent",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "minor healing"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							},
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "purify earth"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "af69695d-3582-41fa-94c9-2f6d3c2b3d27",
-					"type": "spell",
-					"name": "Coolness",
-					"reference": "M187",
-					"tags": [
-						"Protection \u0026 Warning",
-						"Water"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Protection \u0026 Warning",
-						"Water"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "2",
-					"maintenance_cost": "1",
-					"casting_time": "10 sec",
-					"duration": "1 hour",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "cold"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "434a5bb4-d028-441a-84f3-97cee7f2a1bc",
-					"type": "spell",
-					"name": "Detect Magic",
-					"reference": "M101",
-					"tags": [
-						"Knowledge"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Knowledge"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "2",
-					"maintenance_cost": "-",
-					"casting_time": "5 sec",
-					"duration": "Instant",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": false,
-						"prereqs": [
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "magery"
-								},
-								"level": {
-									"compare": "at_least",
-									"qualifier": 1
-								},
-								"notes": {
-									"compare": "does_not_contain",
-									"qualifier": "one college"
-								}
-							},
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "magery"
-								},
-								"level": {
-									"compare": "at_least",
-									"qualifier": 1
-								},
-								"notes": {
-									"compare": "contains",
-									"qualifier": "one college (knowledge)"
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "4bc71bc0-5ca3-4f07-9d22-3c577cba28b4",
-					"type": "spell",
-					"name": "Final Rest",
-					"reference": "M89",
-					"tags": [
-						"Healing",
-						"Necromancy"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Healing",
-						"Necromancy"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "20",
-					"maintenance_cost": "-",
-					"casting_time": "10 min",
-					"duration": "Permanent",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": false,
-						"prereqs": [
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "spirit empathy"
-								}
-							},
-							{
-								"type": "prereq_list",
-								"all": false,
-								"prereqs": [
-									{
-										"type": "trait_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "magery"
-										},
-										"level": {
-											"compare": "at_least",
-											"qualifier": 1
-										},
-										"notes": {
-											"compare": "does_not_contain",
-											"qualifier": "one college"
-										}
-									},
-									{
-										"type": "trait_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "magery"
-										},
-										"level": {
-											"compare": "at_least",
-											"qualifier": 1
-										},
-										"notes": {
-											"compare": "contains",
-											"qualifier": "one college (healing)"
-										}
-									},
-									{
-										"type": "trait_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "magery"
-										},
-										"level": {
-											"compare": "at_least",
-											"qualifier": 1
-										},
-										"notes": {
-											"compare": "contains",
-											"qualifier": "one college (necromancy)"
-										}
-									}
-								]
-							}
-						]
-					}
-				},
-				{
-					"id": "f1f5ece7-215f-41dc-90da-2d3bb7dce847",
-					"type": "spell",
-					"name": "Light",
-					"reference": "M110",
-					"tags": [
-						"Light \u0026 Darkness"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Light \u0026 Darkness"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "1",
-					"maintenance_cost": "1",
-					"casting_time": "1 sec",
-					"duration": "1 min",
-					"points": 1
-				},
-				{
-					"id": "8e0b6a6d-94a9-474b-af1f-2953a252091f",
-					"type": "spell",
-					"name": "Might",
-					"reference": "M37",
-					"tags": [
-						"Body Control"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Body Control"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "2/+ST",
-					"maintenance_cost": "Same",
-					"casting_time": "1 sec",
-					"duration": "1 min",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "lend energy"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "8619632b-0121-45cb-9956-45db53229ea7",
-					"type": "spell",
-					"name": "Minor Healing",
-					"reference": "M91",
-					"tags": [
-						"Healing"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Healing"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "1-3",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "Permanent",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "lend vitality"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "0308dc6a-74d9-4baa-a123-0a8400558a34",
-					"type": "spell_container",
-					"open": true,
-					"children": [
-						{
-							"id": "97ef88f1-fa4d-44f9-be5e-4ff620767e38",
-							"type": "spell_container",
-							"open": true,
-							"children": [
-								{
-									"id": "3c557a40-721e-4d5a-9aba-24bc95d7b50e",
-									"type": "spell_container",
-									"open": true,
-									"name": "10 points in Earth and/or Food spells"
-								}
-							],
-							"name": "Cleric of Arra"
-						},
-						{
-							"id": "296fbfc5-0c04-420e-9ec1-933a0c772c0b",
-							"type": "spell_container",
-							"open": true,
-							"children": [
-								{
-									"id": "0fafcea9-fc2e-4fe8-b16c-04a0788ee8d3",
-									"type": "spell_container",
-									"open": true,
-									"name": "10 points in Weather spells"
-								}
-							],
-							"name": "Cleric of Helmek"
-						},
-						{
-							"id": "6a4c1475-3b96-48db-a43a-e1965bb75479",
-							"type": "spell_container",
-							"open": true,
-							"children": [
-								{
-									"id": "8ff169c2-0bb9-4c27-b475-4a3fc0efe74c",
-									"type": "spell_container",
-									"open": true,
-									"name": "10 points in Making and Breaking, Technological, and/or Enchantment spells"
-								}
-							],
-							"name": "Cleric of Lananatret"
-						},
-						{
-							"id": "46dc0369-379a-4d59-908b-81dfed3dc2a4",
-							"type": "spell_container",
-							"open": true,
-							"children": [
-								{
-									"id": "c490aeae-2b53-4c8e-98bc-a7a138d7471f",
-									"type": "spell_container",
-									"open": true,
-									"name": "10 points in Necromancy Spells"
-								}
-							],
-							"name": "Cleric of Neren"
-						},
-						{
-							"id": "9a7dce61-ef11-4077-8c51-441afa57277e",
-							"type": "spell_container",
-							"open": true,
-							"children": [
-								{
-									"id": "ae0351dd-f828-49c9-9e01-e5aa6e3eb5e5",
-									"type": "spell_container",
-									"open": true,
-									"name": "8 points in Movement and/or Protection and Warding Spells"
-								},
-								{
-									"id": "ec966064-83d1-49e8-bf23-3859e85795f5",
-									"type": "spell",
-									"name": "Haste",
-									"reference": "M142",
-									"tags": [
-										"Movement"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Movement"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Regular",
-									"casting_cost": "2/pt",
-									"maintenance_cost": "Half",
-									"casting_time": "2 sec",
-									"duration": "1 min",
-									"points": 1
-								},
-								{
-									"id": "09dd31f4-5c9a-41a3-8f1d-0f1896ecb611",
-									"type": "spell",
-									"name": "Lightning",
-									"reference": "M196",
-									"tags": [
-										"Air",
-										"Weather"
-									],
-									"difficulty": "iq/h",
-									"college": [
-										"Air",
-										"Weather"
-									],
-									"power_source": "Arcane",
-									"spell_class": "Missile",
-									"casting_cost": "1-Magery",
-									"maintenance_cost": "-",
-									"casting_time": "1-3 sec",
-									"duration": "Instant",
-									"points": 1,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "prereq_list",
-												"all": false,
-												"prereqs": [
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "magery"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 1
-														},
-														"notes": {
-															"compare": "does_not_contain",
-															"qualifier": "one college"
-														}
-													},
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "magery"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 1
-														},
-														"notes": {
-															"compare": "contains",
-															"qualifier": "one college (air)"
-														}
-													},
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "magery"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 1
-														},
-														"notes": {
-															"compare": "contains",
-															"qualifier": "one college (weather)"
-														}
-													}
-												]
-											},
-											{
-												"type": "spell_prereq",
-												"sub_type": "college",
-												"has": true,
-												"qualifier": {
-													"compare": "contains",
-													"qualifier": "Air"
-												},
-												"quantity": {
-													"compare": "at_least",
-													"qualifier": 6
-												}
-											}
-										]
-									},
-									"weapons": [
-										{
-											"id": "2426dd41-1736-4e12-a464-d3521f21a5c3",
-											"type": "ranged_weapon",
-											"damage": {
-												"type": "burn/point",
-												"base": "1d-1"
-											},
-											"accuracy": "3",
-											"range": "50/100",
-											"defaults": [
-												{
-													"type": "dx",
-													"modifier": -4
-												},
-												{
-													"type": "skill",
-													"name": "Innate Attack",
-													"specialization": "Beam"
-												}
-											],
-											"calc": {
-												"range": "50/100",
-												"damage": "1d-1 burn/point"
-											}
-										}
-									]
-								}
-							],
-							"name": "Cleric of Rhal Sonl"
-						},
-						{
-							"id": "a45a404b-80d1-4b3d-9488-966ad011f1f3",
-							"type": "spell_container",
-							"open": true,
-							"children": [
-								{
-									"id": "8ef3d6e1-6488-4ae6-93f2-aeec1bfdc02e",
-									"type": "spell_container",
-									"open": true,
-									"name": "10 points in Mind Control Spells"
-								}
-							],
-							"name": "Cleric of Torr"
-						},
-						{
-							"id": "57605452-5ad1-4dc5-902d-1a6b3f2b4e10",
-							"type": "spell_container",
-							"open": true,
-							"children": [
-								{
-									"id": "0b4b5816-ff23-4073-9b53-e29bfe2c862b",
-									"type": "spell_container",
-									"open": true,
-									"name": "10 points in Animal, Plant, and/or Healing Spells"
-								}
-							],
-							"name": "Cleric of Yalond"
-						}
-					],
-					"name": "Deity",
-					"template_picker": {
-						"type": "count",
-						"qualifier": {
-							"compare": "is",
-							"qualifier": 1
-						}
-					}
-				},
-				{
-					"id": "578c415d-a5bd-4b8d-aa57-a57a894453d8",
-					"type": "spell",
-					"name": "Purify Air",
-					"reference": "M23",
-					"tags": [
-						"Air"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Air"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Area",
-					"casting_cost": "1",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "Instant",
-					"points": 1
-				},
-				{
-					"id": "46be4549-f689-4d17-a51f-a2abf716b445",
-					"type": "spell",
-					"name": "Purify Water",
-					"reference": "M184",
-					"tags": [
-						"Water"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Water"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Special",
-					"casting_cost": "1/gal",
-					"maintenance_cost": "-",
-					"casting_time": "5-10/gal#",
-					"duration": "Permanent",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "seek water"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "b7f7e002-62a8-41f3-aefa-57cf1a066a84",
-					"type": "spell",
-					"name": "Sense Danger",
-					"reference": "M166",
-					"tags": [
-						"Protection \u0026 Warning"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Protection \u0026 Warning"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Info",
-					"casting_cost": "3",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "Instant",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": false,
-						"prereqs": [
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "sense foes"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							},
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "danger sense"
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "ca7e50b2-1780-4110-b10d-8d8c8b115dba",
-					"type": "spell",
-					"name": "Sense Spirit",
-					"reference": "M149",
-					"tags": [
-						"Necromancy"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Necromancy"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Info/Area",
-					"casting_cost": "1/2 (min 1)",
-					"maintenance_cost": "-",
-					"casting_time": "1 sec",
-					"duration": "Instant",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": false,
-						"prereqs": [
-							{
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "prereq_list",
-										"all": false,
-										"prereqs": [
-											{
-												"type": "trait_prereq",
-												"has": true,
-												"name": {
-													"compare": "is",
-													"qualifier": "magery"
-												},
-												"level": {
-													"compare": "at_least",
-													"qualifier": 1
-												},
-												"notes": {
-													"compare": "does_not_contain",
-													"qualifier": "one college"
-												}
-											},
-											{
-												"type": "trait_prereq",
-												"has": true,
-												"name": {
-													"compare": "is",
-													"qualifier": "magery"
-												},
-												"level": {
-													"compare": "at_least",
-													"qualifier": 1
-												},
-												"notes": {
-													"compare": "contains",
-													"qualifier": "one college (necromancy)"
-												}
-											}
-										]
-									},
-									{
-										"type": "spell_prereq",
-										"sub_type": "name",
-										"has": true,
-										"qualifier": {
-											"compare": "is",
-											"qualifier": "sense life"
-										},
-										"quantity": {
-											"compare": "at_least",
-											"qualifier": 1
-										}
-									}
-								]
-							},
-							{
-								"type": "spell_prereq",
-								"sub_type": "name",
-								"has": true,
-								"qualifier": {
-									"compare": "is",
-									"qualifier": "death vision"
-								},
-								"quantity": {
-									"compare": "at_least",
-									"qualifier": 1
-								}
-							}
-						]
-					}
-				},
-				{
-					"id": "5f112b2f-1304-4790-914a-e850043b9cfe",
-					"type": "spell",
-					"name": "Shield",
-					"reference": "M167",
-					"tags": [
-						"Protection \u0026 Warning"
-					],
-					"difficulty": "iq/h",
-					"college": [
-						"Protection \u0026 Warning"
-					],
-					"power_source": "Arcane",
-					"spell_class": "Regular",
-					"casting_cost": "2 per DB",
-					"maintenance_cost": "Half",
-					"casting_time": "1 sec",
-					"duration": "1 min",
-					"points": 1,
-					"prereqs": {
-						"type": "prereq_list",
-						"all": false,
-						"prereqs": [
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "magery"
-								},
-								"level": {
-									"compare": "at_least",
-									"qualifier": 2
-								},
-								"notes": {
-									"compare": "does_not_contain",
-									"qualifier": "one college"
-								}
-							},
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "is",
-									"qualifier": "magery"
-								},
-								"level": {
-									"compare": "at_least",
-									"qualifier": 2
-								},
-								"notes": {
-									"compare": "contains",
-									"qualifier": "one college (protection \u0026 warning)"
-								}
-							}
-						]
-					}
 				}
 			],
 			"name": "Holy Cleric"

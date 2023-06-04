@@ -1,0 +1,814 @@
+{
+	"type": "skill_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "74733000-4314-4661-b565-2913fe12a05c",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "6348da3c-2872-4b8b-a421-ab84c10c3637",
+					"type": "skill",
+					"name": "Path of Body",
+					"reference": "TRPM7",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "feed438c-476c-4299-996b-0b8fdf91f30c",
+					"type": "skill",
+					"name": "Path of Chance",
+					"reference": "TRPM8",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "f064e2c5-1e5d-42c9-9c95-00e8d479ff9d",
+					"type": "skill",
+					"name": "Path of Crossroads",
+					"reference": "TRPM9",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "bc55d33a-2177-49fc-b6af-ddc7e37edb6b",
+					"type": "skill",
+					"name": "Path of Energy",
+					"reference": "TRPM9",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "82a0ae06-5035-4236-ac3f-b7151165bb70",
+					"type": "skill",
+					"name": "Path of Magic",
+					"reference": "TRPM10",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "3b25a66c-9cc3-47e6-ad78-70ade5450234",
+					"type": "skill",
+					"name": "Path of Matter",
+					"reference": "TRPM11",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "db5ac1a8-1613-4512-98d7-e87e055c3a27",
+					"type": "skill",
+					"name": "Path of Mind",
+					"reference": "TRPM11",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "71c8111b-7b4b-4cde-8e5b-8574b1c0ff55",
+					"type": "skill",
+					"name": "Path of Spirit",
+					"reference": "TRPM12",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "64d315f3-5123-47cd-888f-f8cec5ddd00f",
+					"type": "skill",
+					"name": "Path of Undead",
+					"reference": "TRPM12",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Thaumatology",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Thaumatology"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					}
+				}
+			],
+			"name": "Ritual Path Skills"
+		},
+		{
+			"id": "a68d6eca-6acd-4778-8140-d164d6ae6304",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "0b487e6f-84f7-476d-ac78-d67fe9065246",
+					"type": "skill",
+					"name": "Path of Body",
+					"reference": "TRPM7",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 8,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "2210dd73-cc3c-4099-8a12-fe06c11ab100",
+					"type": "skill",
+					"name": "Path of Chance",
+					"reference": "TRPM8",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 4,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "f4e18037-98f3-49de-9150-c0d4f989d7c9",
+					"type": "skill",
+					"name": "Path of Crossroads",
+					"reference": "TRPM9",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 8,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "0be666be-8da2-44c5-9abb-6873b9fafe4b",
+					"type": "skill",
+					"name": "Path of Energy",
+					"reference": "TRPM9",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 4,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "1370f38b-a655-488a-805a-0cdec15afb25",
+					"type": "skill",
+					"name": "Path of Magic",
+					"reference": "TRPM10",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 8,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "95a9a2f0-1a67-428b-acd4-ff2f2b29e9e8",
+					"type": "skill",
+					"name": "Path of Matter",
+					"reference": "TRPM11",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 4,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "1469928b-d30d-46f7-a004-a424bd2c7ac4",
+					"type": "skill",
+					"name": "Path of Mind",
+					"reference": "TRPM11",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 2,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "a2d4ed87-088c-415c-9a7a-2f8e9041a185",
+					"type": "skill",
+					"name": "Path of Spirit",
+					"reference": "TRPM12",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 8,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "9c107e3f-34b7-4371-b57a-1e2ecf29160d",
+					"type": "skill",
+					"name": "Path of Undead",
+					"reference": "TRPM12",
+					"tags": [
+						"Magic",
+						"Ritual Path Magic"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"defaulted_from": {
+						"type": "skill",
+						"name": "Ritual Magic",
+						"specialization": "Craft of the Wise",
+						"modifier": -6,
+						"level": 9,
+						"adjusted_level": 9,
+						"points": -9
+					},
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Ritual Magic",
+							"specialization": "Craft of the Wise",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Ritual Magic"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "Craft of the Wise"
+								}
+							}
+						]
+					}
+				}
+			],
+			"name": "Ritual Path Skills (Craft of the Wise)"
+		}
+	]
+}

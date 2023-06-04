@@ -1,0 +1,456 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "41118ccd-3056-48cb-a5f6-57eb53cc3272",
+			"type": "trait",
+			"name": "Magery (Ritual Path)",
+			"reference": "TRPM5",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Supernatural"
+			],
+			"base_points": 5,
+			"points_per_level": 10,
+			"can_level": true,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "ffcdfabd-8e38-4074-bad3-ae03ae757278",
+			"type": "trait",
+			"name": "Higher Purpose (Tradition)",
+			"reference": "TRPM5",
+			"notes": "@Tradition?@",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Mental"
+			],
+			"base_points": 5,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "b5e5fded-5ee3-479e-b5e3-7f2081ef67ec",
+			"type": "trait",
+			"name": "Ritual Adept",
+			"reference": "TRPM6",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Supernatural"
+			],
+			"base_points": 40,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery (Ritual Path)"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": 40
+			}
+		},
+		{
+			"id": "f40a43e8-3931-4ed9-9c52-331af012016a",
+			"type": "trait",
+			"name": "Ritual Adept (Connection)",
+			"reference": "TRPM6",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Supernatural"
+			],
+			"base_points": 10,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery (Ritual Path)"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "1b5d714d-50e2-4406-a36a-b41412861012",
+			"type": "trait",
+			"name": "Ritual Adept (Space)",
+			"reference": "TRPM6",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Supernatural"
+			],
+			"base_points": 10,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery (Ritual Path)"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "25d88683-124d-4e22-9975-4c296d3b7cec",
+			"type": "trait",
+			"name": "Ritual Adept (Time)",
+			"reference": "TRPM6",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Supernatural"
+			],
+			"levels": 1,
+			"points_per_level": 10,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery (Ritual Path)"
+						}
+					}
+				]
+			},
+			"can_level": true,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "802b84ee-d1dc-47d6-9cf6-bb7894a51452",
+			"type": "trait",
+			"name": "Ritual Adept (Time)",
+			"reference": "TRPM6",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Supernatural"
+			],
+			"levels": 2,
+			"points_per_level": 10,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery (Ritual Path)"
+						}
+					}
+				]
+			},
+			"can_level": true,
+			"calc": {
+				"points": 20
+			}
+		},
+		{
+			"id": "65fe9917-b893-40c8-9b13-79cc0a6e481d",
+			"type": "trait",
+			"name": "Ritual Mastery (@Ritual?@)",
+			"reference": "TRPM6",
+			"tags": [
+				"Mental",
+				"Perk",
+				"Supernatural"
+			],
+			"base_points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Magery (Ritual Path)"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "bb86f232-6e74-415a-b0e4-6aa1b42864f1",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "1533e537-c0a6-49a3-8568-95a62a3d60ba",
+					"type": "trait",
+					"name": "Magery (Ritual Path)",
+					"reference": "TRPM5",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "1b1ed72d-11c2-4f9c-a14a-b8ad1d1a5b65",
+					"type": "trait",
+					"name": "Magery (Symbol Magic)",
+					"reference": "B66",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "10b7c609-d742-473c-a229-fd39e10a948f",
+							"type": "modifier",
+							"name": "Dance",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "8cffcc39-a19c-4aa2-8a65-f270534b6ad7",
+							"type": "modifier",
+							"name": "Dark-Aspected",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "9a43b6eb-5fca-4b3b-9475-9c8922652001",
+							"type": "modifier",
+							"name": "Day-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "1db3c1d2-12b8-4d9f-aaec-8a1f58f99922",
+							"type": "modifier",
+							"name": "Musical",
+							"cost": -50,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "7ef63d35-934c-4046-8b55-22208f7a99b6",
+							"type": "modifier",
+							"name": "Night-Aspected",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "0f92e868-30bd-4a88-8dd7-d1929eb47c0e",
+							"type": "modifier",
+							"name": "One College",
+							"notes": "@College@",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "7a67c4c3-2454-43a0-acd4-aac1265bd79a",
+							"type": "modifier",
+							"name": "Solitary",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "162576be-563f-43f2-9bd3-91db2defc569",
+							"type": "modifier",
+							"name": "Song",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "Symbol: "
+							},
+							"tags": {
+								"compare": "is",
+								"qualifier": "Rune Magic"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"name": "Runic Magery",
+			"container_type": "alternative_abilities",
+			"calc": {
+				"points": 6
+			}
+		},
+		{
+			"id": "c89b446b-e6c9-4556-8a72-3c000178e4a7",
+			"type": "trait",
+			"name": "Sorcery Talent",
+			"reference": "TSOR5",
+			"tags": [
+				"Mental",
+				"Supernatural"
+			],
+			"modifiers": [
+				{
+					"id": "393b527e-2810-41b3-9fc2-caf47232b351",
+					"type": "modifier",
+					"name": "Limited",
+					"cost": 0.5,
+					"cost_type": "multiplier",
+					"disabled": true
+				}
+			],
+			"levels": 1,
+			"points_per_level": 10,
+			"can_level": true,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "97c3440f-597b-49c6-bdec-94023e1f48e4",
+			"type": "trait_container",
+			"children": [
+				{
+					"id": "98386dc8-ea1d-45ae-82a8-105ccffb3cfd",
+					"type": "trait",
+					"name": "Sorcerous Empowerment",
+					"reference": "TSOR4",
+					"tags": [
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "5a8ea687-8e1f-46c6-bd58-9f3a8c92cae7",
+							"type": "modifier",
+							"name": "Limited Colleges (1 College) (@College@)",
+							"reference": "TSOR4",
+							"cost": -40,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "9cd7062b-5504-45e6-9c3c-02726a2dfeb1",
+							"type": "modifier",
+							"name": "Limited Colleges (2 Colleges) (@Colleges@)",
+							"reference": "TSOR4",
+							"cost": -30,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "8422d620-1dda-4582-8208-f1d7df75f944",
+							"type": "modifier",
+							"name": "Limited Colleges (3 Colleges) (@Colleges@)",
+							"reference": "TSOR4",
+							"cost": -20,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "a3bc6727-0387-485b-bbe1-12f62c25e634",
+							"type": "modifier",
+							"name": "Limited Colleges (4 Colleges) (@Colleges@)",
+							"reference": "TSOR4",
+							"cost": -10,
+							"affects": "levels_only",
+							"disabled": true
+						},
+						{
+							"id": "2065383e-3552-4fae-9820-58def973a72a",
+							"type": "modifier",
+							"name": "Limited Scope",
+							"reference": "TSOR4",
+							"notes": "The GM may limit Sorcerous Empowerment in a way that doesn't line up with normal colleges",
+							"cost": -20,
+							"disabled": true
+						}
+					],
+					"base_points": 10,
+					"levels": 1,
+					"points_per_level": 10,
+					"can_level": true,
+					"calc": {
+						"points": 20
+					}
+				}
+			],
+			"name": "Sorcery",
+			"container_type": "alternative_abilities",
+			"calc": {
+				"points": 20
+			}
+		}
+	]
+}

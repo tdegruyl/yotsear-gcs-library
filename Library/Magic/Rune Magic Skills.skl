@@ -1,0 +1,270 @@
+{
+	"type": "skill_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "3f9d781c-1fd2-48be-891b-e97035e96d2c",
+			"type": "skill",
+			"name": "Symbol: Arat/Strengthen",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "60d40e86-6028-4e98-8d3d-ec788037ceff",
+			"type": "skill",
+			"name": "Symbol: At/Sound",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/e",
+			"points": 1
+		},
+		{
+			"id": "68f65317-1fd9-4881-8e87-066afb05c091",
+			"type": "skill",
+			"name": "Symbol: Birk/Create",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "2df18d70-0e2a-4cde-9d4a-11551230b726",
+			"type": "skill",
+			"name": "Symbol: Bot/Destiny",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/vh",
+			"points": 1
+		},
+		{
+			"id": "b1a70027-d4e8-4ed8-8a0a-b331c612d352",
+			"type": "skill",
+			"name": "Symbol: Elgol/Protect",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "1f5b3850-06b9-44b4-8ef3-1bde6bdf1764",
+			"type": "skill",
+			"name": "Symbol: Engwat/Heal",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "80e2177a-813f-4260-84da-e3e8562b3e60",
+			"type": "skill",
+			"name": "Symbol: Ensaz/Communicate",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "31778d21-9b11-457e-87d4-04c6772bc37b",
+			"type": "skill",
+			"name": "Symbol: Fah/Animal",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "a1641728-e123-4178-87a9-672c43285a2b",
+			"type": "skill",
+			"name": "Symbol: Gef/Food",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/e",
+			"points": 1
+		},
+		{
+			"id": "c634ea25-6d66-4601-aea4-9529f3fbb42a",
+			"type": "skill",
+			"name": "Symbol: Iswa/Move",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "aea05151-5fd3-4d38-8f4f-3ee7bd01adcc",
+			"type": "skill",
+			"name": "Symbol: Kanat/Fire",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "01323ab6-60a6-4ebe-b6b0-5c37d137e572",
+			"type": "skill",
+			"name": "Symbol: Kel/Weaken",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "ac01c384-e2b6-47da-8bfc-d69cf70d5cb4",
+			"type": "skill",
+			"name": "Symbol: Lagat/Water",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "74e8218e-59fd-4748-9e00-5fa3906524e6",
+			"type": "skill",
+			"name": "Symbol: Mannet/Body",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "dd35c7de-17a8-4e42-b138-35de11fa714b",
+			"type": "skill",
+			"name": "Symbol: Natat/Control",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "a6d7c10d-a46b-418f-b332-8defb8422f29",
+			"type": "skill",
+			"name": "Symbol: Prato/Magic",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "31ff48c8-61a9-48c3-a067-a08613b1351d",
+			"type": "skill",
+			"name": "Symbol: Redho/Sense",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "08251ca0-2401-4072-8b37-f6a8d67a63b3",
+			"type": "skill",
+			"name": "Symbol: Sawelo/Spirit",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "55b1c65b-3115-44b7-bc3f-f4a4d1908234",
+			"type": "skill",
+			"name": "Symbol: Tagat/Light",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "9186caa3-5b13-410f-8ef8-7cdf223da501",
+			"type": "skill",
+			"name": "Symbol: Tivat/Mind",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "b9e7ce49-656d-4d29-980e-66b85507573b",
+			"type": "skill",
+			"name": "Symbol: Turitat/Transform",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "557fd958-f494-4644-8119-7d90c08da258",
+			"type": "skill",
+			"name": "Symbol: Uhwa/Earth",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "0da20ec6-55cc-40e8-af8e-b328d41335d0",
+			"type": "skill",
+			"name": "Symbol: Vunya/Air",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "c9624a9a-74d2-49bc-b581-56ea56a186ca",
+			"type": "skill",
+			"name": "Symbol: Yaru/Plant",
+			"reference": "M205, Y42",
+			"tags": [
+				"Rune Magic"
+			],
+			"difficulty": "iq/a",
+			"points": 1
+		}
+	]
+}
