@@ -45,12 +45,6 @@
 			"reference": "M156"
 		},
 		{
-			"id": "f7311ef2-f1d3-4cfa-a4f5-3b49a557a15c",
-			"type": "note",
-			"text": "### Banish\n\n  * Spell Effects: Greater Control Spirit; Lesser Destroy Crossroads\n  * Inherent Modifiers: None\n  * Greater Effects: 1 (x3)\n  * Typical Casting: Greater Control Spirit (5) + Lesser Destroy Crossroads (5);\n      Range: Cross-dimension (10) + Subject Weight: 300 lbs. (3). Cost: 69 (23x3)",
-			"reference": "M156"
-		},
-		{
 			"id": "571e7c32-0bd1-448e-bb01-5a8d14a7f786",
 			"type": "note",
 			"text": "### Beast Speech\n\n  * Spell Effects: Lesser Strengthen Mind\n  * Inherent Modifiers: Altered Traits\n  * Greater Effects: 0 (x1)\n  * Typical Casting: Lesser Strengthen Mind (3) + Altered Trait, Speak with\n      Animals (25) + Duration, 10 minutes (1). Cost: 29 (29×1)",

@@ -941,6 +941,7 @@
 				}
 			],
 			"name": "Dwarf",
+			"ancestry": "Dwarf",
 			"container_type": "race",
 			"calc": {
 				"points": -4

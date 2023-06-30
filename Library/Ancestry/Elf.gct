@@ -704,6 +704,7 @@
 				}
 			],
 			"name": "Elf",
+			"ancestry": "Elf",
 			"container_type": "race",
 			"calc": {
 				"points": 19

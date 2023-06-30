@@ -587,6 +587,7 @@
 				}
 			],
 			"name": "Orc",
+			"ancestry": "Elf",
 			"container_type": "race",
 			"calc": {
 				"points": 30

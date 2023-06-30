@@ -8,6 +8,8 @@
 			"type": "trait_container",
 			"open": true,
 			"name": "Human",
+			"ancestry": "Human",
+			"container_type": "race",
 			"calc": {
 				"points": 0
 			}

@@ -978,6 +978,7 @@
 				}
 			],
 			"name": "Saebloth",
+			"ancestry": "Elf",
 			"container_type": "race",
 			"calc": {
 				"points": 30

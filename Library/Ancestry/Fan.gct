@@ -434,6 +434,7 @@
 			],
 			"name": "Fán",
 			"reference": "B316",
+			"ancestry": "Elf",
 			"container_type": "race",
 			"calc": {
 				"points": 11
