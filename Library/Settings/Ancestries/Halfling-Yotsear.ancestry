@@ -1,10 +1,10 @@
 {
 	"type": "ancestry",
 	"version": 4,
-	"name": "Gnome",
+	"name": "Halfling (Yotsear)",
 	"common_options": {
 		"height_formula": "floor(random_height($st) * 0.6)",
-		"weight_formula": "random_weight($st, 0.66)",
+		"weight_formula": "random_weight($st, 0.5)",
 		"age_formula": "roll(1d24+28)",
 		"hair_options": [
 			{
@@ -12,7 +12,7 @@
 				"value": "Black"
 			},
 			{
-				"weight": 8,
+				"weight": 4,
 				"value": "Brown"
 			},
 			{
@@ -38,7 +38,7 @@
 		],
 		"eye_options": [
 			{
-				"weight": 52,
+				"weight": 30,
 				"value": "Brown"
 			},
 			{
@@ -92,22 +92,22 @@
 				"value": "Freckled"
 			},
 			{
-				"weight": 1,
+				"weight": 3,
 				"value": "Pale"
 			}
 		],
 		"handedness_options": [
 			{
-				"weight": 1,
+				"weight": 8,
 				"value": "Left"
 			},
 			{
-				"weight": 9,
+				"weight": 1,
 				"value": "Right"
 			}
 		],
 		"name_generators": [
-			"Gnome Last"
+			"Halfling Last"
 		]
 	},
 	"gender_options": [
@@ -116,8 +116,8 @@
 			"value": {
 				"name": "Male",
 				"name_generators": [
-					"Gnome First - Male",
-					"Gnome Last"
+					"Halfling First - Male",
+					"Halfling Last"
 				]
 			}
 		},
@@ -126,8 +126,8 @@
 			"value": {
 				"name": "Nonbinary",
 				"name_generators": [
-					"Gnome First - Male",
-					"Gnome Last"
+					"Halfling First - Male",
+					"Halfling Last"
 				]
 			}
 		},
@@ -136,8 +136,8 @@
 			"value": {
 				"name": "Female",
 				"name_generators": [
-					"Gnome First - Female",
-					"Gnome Last"
+					"Halfling First - Female",
+					"Halfling Last"
 				]
 			}
 		}

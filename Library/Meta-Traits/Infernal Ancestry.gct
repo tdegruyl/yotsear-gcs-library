@@ -182,7 +182,7 @@
 						"Mental",
 						"Physical"
 					],
-					"levels": 2,
+					"levels": 3,
 					"points_per_level": 5,
 					"features": [
 						{
@@ -194,7 +194,75 @@
 					],
 					"can_level": true,
 					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "02840e20-7e7c-418a-9b33-5f003e598bfd",
+					"type": "trait",
+					"name": "Increased Strength",
+					"reference": "B14",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "fc2b398f-467b-4c36-857b-98087975f0c4",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"reference": "B15",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "89e24b12-233b-4ad9-a77a-934e7bc640f7",
+							"type": "modifier",
+							"name": "Size",
+							"reference": "B15",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "4f3a7bdb-ed81-4735-87e8-d9eaeb4856c7",
+							"type": "modifier",
+							"name": "Super-Effort",
+							"reference": "SU24",
+							"cost": 300,
+							"disabled": true
+						}
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
 						"points": 10
+					}
+				},
+				{
+					"id": "41d4edbd-5e52-433e-8084-6958aa1d38f5",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "B71",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 9,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 9
 					}
 				},
 				{
@@ -225,122 +293,67 @@
 					}
 				},
 				{
-					"id": "9e456d97-4b2d-4337-8daf-7e2c3c150a86",
+					"id": "09b9c66a-a1a0-40a8-be83-c12d62b20c41",
 					"type": "trait",
-					"name": "Magery",
-					"reference": "B66",
+					"name": "Sorcerous Empowerment",
+					"reference": "TSOR4",
 					"tags": [
-						"Advantage",
 						"Mental",
 						"Supernatural"
 					],
 					"modifiers": [
 						{
-							"id": "10b7c609-d742-473c-a229-fd39e10a948f",
+							"id": "5a8ea687-8e1f-46c6-bd58-9f3a8c92cae7",
 							"type": "modifier",
-							"name": "Dance",
+							"name": "Limited Colleges (1 College) (@College@)",
+							"reference": "TSOR4",
 							"cost": -40,
 							"affects": "levels_only",
 							"disabled": true
 						},
 						{
-							"id": "8cffcc39-a19c-4aa2-8a65-f270534b6ad7",
+							"id": "9cd7062b-5504-45e6-9c3c-02726a2dfeb1",
 							"type": "modifier",
-							"name": "Dark-Aspected",
-							"cost": -50,
+							"name": "Limited Colleges (2 Colleges) (@Colleges@)",
+							"reference": "TSOR4",
+							"cost": -30,
 							"affects": "levels_only",
 							"disabled": true
 						},
 						{
-							"id": "9a43b6eb-5fca-4b3b-9475-9c8922652001",
+							"id": "8422d620-1dda-4582-8208-f1d7df75f944",
 							"type": "modifier",
-							"name": "Day-Aspected",
-							"cost": -40,
+							"name": "Limited Colleges (3 Colleges) (@Colleges@)",
+							"reference": "TSOR4",
+							"cost": -20,
 							"affects": "levels_only",
 							"disabled": true
 						},
 						{
-							"id": "1db3c1d2-12b8-4d9f-aaec-8a1f58f99922",
+							"id": "a3bc6727-0387-485b-bbe1-12f62c25e634",
 							"type": "modifier",
-							"name": "Musical",
-							"cost": -50,
+							"name": "Limited Colleges (4 Colleges) (@Colleges@)",
+							"reference": "TSOR4",
+							"cost": -10,
 							"affects": "levels_only",
 							"disabled": true
 						},
 						{
-							"id": "7ef63d35-934c-4046-8b55-22208f7a99b6",
+							"id": "2065383e-3552-4fae-9820-58def973a72a",
 							"type": "modifier",
-							"name": "Night-Aspected",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "0f92e868-30bd-4a88-8dd7-d1929eb47c0e",
-							"type": "modifier",
-							"name": "One College",
-							"notes": "@College@",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "7a67c4c3-2454-43a0-acd4-aac1265bd79a",
-							"type": "modifier",
-							"name": "Solitary",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "162576be-563f-43f2-9bd3-91db2defc569",
-							"type": "modifier",
-							"name": "Song",
-							"cost": -40,
-							"affects": "levels_only",
+							"name": "Limited Scope",
+							"reference": "TSOR4",
+							"notes": "The GM may limit Sorcerous Empowerment in a way that doesn't line up with normal colleges",
+							"cost": -20,
 							"disabled": true
 						}
 					],
-					"base_points": 5,
+					"base_points": 10,
 					"levels": 1,
 					"points_per_level": 10,
-					"features": [
-						{
-							"type": "spell_bonus",
-							"match": "all_colleges",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "is",
-								"qualifier": "thaumatology"
-							},
-							"amount": 1,
-							"per_level": true
-						}
-					],
 					"can_level": true,
 					"calc": {
-						"points": 15
-					}
-				},
-				{
-					"id": "41d4edbd-5e52-433e-8084-6958aa1d38f5",
-					"type": "trait",
-					"name": "Night Vision",
-					"reference": "B71",
-					"tags": [
-						"Advantage",
-						"Physical"
-					],
-					"levels": 9,
-					"points_per_level": 1,
-					"can_level": true,
-					"calc": {
-						"points": 9
+						"points": 20
 					}
 				},
 				{
@@ -403,9 +416,8 @@
 							"disabled": true
 						}
 					],
-					"base_points": 15,
 					"calc": {
-						"points": 15
+						"points": 0
 					}
 				},
 				{
@@ -449,7 +461,7 @@
 			],
 			"name": "Infernal Ancestry",
 			"calc": {
-				"points": 19
+				"points": 24
 			}
 		}
 	]

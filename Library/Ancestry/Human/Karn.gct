@@ -1,0 +1,207 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "41408314-5255-46d9-ad8e-9967ddb13624",
+	"traits": [
+		{
+			"id": "92d1a36a-8114-4b47-8964-193ef2d4d389",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "a9674473-7bd1-4fc1-8530-134e24e070e4",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "b27e9681-2ff4-4071-8309-da3c09550568",
+							"type": "trait",
+							"name": "Cultural Familiarity (Karn)",
+							"reference": "B23",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "829c43a8-e3aa-493d-9afc-17ec15129fce",
+									"type": "modifier",
+									"name": "Alien",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5e6580ce-30ee-48c8-a77f-3e4539265aed",
+									"type": "modifier",
+									"name": "Native",
+									"cost": -1,
+									"cost_type": "points"
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "6b91b17c-e732-440d-8345-502a2873e77e",
+							"type": "trait",
+							"name": "Language: Karn",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "3f310ca0-27c8-4f6c-aff0-24e6636b38d0",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "993c0d07-05c5-47a0-bb1f-30c66cbd2d5e",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "465a265f-ccf7-4f60-81dd-063d874c25bb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5f43020d-a48b-402b-b43e-2d4dc70affb6",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "55ca0b53-ae53-4dec-a9af-73ae68cf269c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "e956db46-531f-44eb-82e5-d650542155f0",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ec0983d1-9b16-424e-a8fb-fb69e1f33f3a",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e80df003-50da-4a2f-94e7-8eb549bd0994",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3fa84041-f382-4694-bf3f-87e9a00c361c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -3
+							}
+						},
+						{
+							"id": "7e43a9b2-fbd4-424e-8d46-c51f41067721",
+							"type": "trait",
+							"name": "Low TL",
+							"reference": "B22",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"levels": 1,
+							"points_per_level": -5,
+							"can_level": true,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "021881d9-c5d8-4c8a-8e1e-38a2d575c296",
+							"type": "trait",
+							"name": "Social Stigma (Minority Group)",
+							"reference": "B155",
+							"notes": "You are a member of a minority that the dominant culture around you regards as “barbarians” or “inferior.”",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"base_points": -10,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others except your own kind",
+									"amount": -2
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others of your own kind in an area, profession, or situation where your minority is especially rare",
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"name": "Karn",
+					"container_type": "race",
+					"calc": {
+						"points": -18
+					}
+				}
+			],
+			"name": "Human",
+			"ancestry": "Human Karn-Yotsear",
+			"container_type": "race",
+			"calc": {
+				"points": -18
+			}
+		}
+	]
+}

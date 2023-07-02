@@ -166,16 +166,41 @@
 						"Physical"
 					],
 					"levels": 3,
-					"points_per_level": 2,
 					"can_level": true,
 					"calc": {
-						"points": 6
+						"points": 0
+					}
+				},
+				{
+					"id": "7a939121-e8a4-4d80-a0a4-c71dda811bff",
+					"type": "trait",
+					"name": "Increased Perception",
+					"reference": "B16",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "per",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
 					}
 				},
 				{
 					"id": "7fabacd1-3b94-4f65-a22c-1cccfda14c23",
 					"type": "trait",
-					"name": "Magery",
+					"name": "Magery (Ritual Path)",
 					"reference": "B66",
 					"tags": [
 						"Advantage",
@@ -363,7 +388,7 @@
 			"name": "Fae Ancestry",
 			"container_type": "meta_trait",
 			"calc": {
-				"points": -20
+				"points": -21
 			}
 		}
 	]

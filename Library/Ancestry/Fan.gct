@@ -28,12 +28,12 @@
 					}
 				},
 				{
-					"id": "998f0973-902e-4a4b-a877-f3e81827907a",
+					"id": "293db585-b29b-42a8-afde-a5f1d76c94d0",
 					"type": "trait_container",
 					"open": true,
 					"children": [
 						{
-							"id": "4fa28550-f181-4c93-8944-58779f538a1c",
+							"id": "e4f34ddc-144b-4f26-ab95-e0ddd5e05169",
 							"type": "trait",
 							"name": "Cannot speak or write a falsehood",
 							"base_points": -1,
@@ -42,7 +42,7 @@
 							}
 						},
 						{
-							"id": "19d2b5df-f6ee-431f-9fb6-1a5a9d97454b",
+							"id": "369c569b-fcbc-4be9-a349-ba507eaa4aa2",
 							"type": "trait",
 							"name": "Dependency (Mana)",
 							"reference": "B130",
@@ -180,7 +180,7 @@
 							}
 						},
 						{
-							"id": "22e582a1-3322-423f-b133-e355003c7aa9",
+							"id": "9b4e4cb0-7971-49ff-85b2-b4f5a4745391",
 							"type": "trait",
 							"name": "Extended Lifespan",
 							"reference": "B53",
@@ -190,16 +190,41 @@
 								"Physical"
 							],
 							"levels": 3,
-							"points_per_level": 2,
 							"can_level": true,
 							"calc": {
-								"points": 6
+								"points": 0
 							}
 						},
 						{
-							"id": "1240dba0-d32d-483e-ac82-7a5ee4460fbf",
+							"id": "b41377ad-3e11-48f4-a413-0a6868f16632",
 							"type": "trait",
-							"name": "Magery",
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "f4e65429-c1f6-4616-a3a6-769cfe373c5e",
+							"type": "trait",
+							"name": "Magery (Ritual Path)",
 							"reference": "B66",
 							"tags": [
 								"Advantage",
@@ -299,7 +324,7 @@
 							}
 						},
 						{
-							"id": "3b6b22a2-1048-4acd-bd06-b1395ba75cf9",
+							"id": "f7039872-fab8-4bb8-98ba-4e47ee7c320a",
 							"type": "trait",
 							"name": "Vulnerability",
 							"reference": "B161",
@@ -387,7 +412,7 @@
 					"name": "Fae Ancestry",
 					"container_type": "meta_trait",
 					"calc": {
-						"points": -20
+						"points": -21
 					}
 				},
 				{
@@ -430,15 +455,479 @@
 					"calc": {
 						"points": 6
 					}
+				},
+				{
+					"id": "d2051d00-5462-4e3f-a543-f2fb08fe4b0b",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "0ae34fa2-02ca-4166-9342-671b6e854225",
+							"type": "trait",
+							"name": "Cultural Familiarity (Northern Plains Fán)",
+							"reference": "B23",
+							"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ab12b725-01c8-4fc4-8e71-619a54c79496",
+									"type": "modifier",
+									"name": "Alien",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "f72aa995-6766-4eaf-a3ca-0f4ff76d47c5",
+									"type": "modifier",
+									"name": "Native",
+									"cost": -1,
+									"cost_type": "points"
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "107e6ac0-f1e8-4393-8157-446cd78c2f5a",
+							"type": "trait",
+							"name": "Language: Elvish",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points"
+								},
+								{
+									"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points"
+								},
+								{
+									"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "f4727955-9063-4ecf-9af9-c3d4273ef6d4",
+							"type": "trait",
+							"name": "Language: Fán",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "a2aaec65-584f-4a6e-8cc5-b2a534a87d80",
+							"type": "trait",
+							"name": "Language: Miroganti",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points"
+								},
+								{
+									"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points"
+								},
+								{
+									"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 2
+							}
+						}
+					],
+					"name": "Northern Plains Fán Culture",
+					"calc": {
+						"points": 6
+					}
 				}
 			],
 			"name": "Fán",
 			"reference": "B316",
-			"ancestry": "Elf",
+			"ancestry": "Elf-Yotsear",
 			"container_type": "race",
 			"calc": {
-				"points": 11
+				"points": 16
 			}
+		}
+	],
+	"skills": [
+		{
+			"id": "5bf46de9-b85c-46f7-8d1f-3be00ae07581",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "b957f694-1b84-4c76-b7b8-aeb92f147e8d",
+					"type": "skill",
+					"name": "Bow",
+					"reference": "B182",
+					"tags": [
+						"Combat",
+						"Ranged Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/a",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "ba073a1b-694a-4779-9b75-f08ba7ec6c0a",
+					"type": "skill",
+					"name": "Survival",
+					"reference": "B223",
+					"tags": [
+						"Exploration",
+						"Outdoor"
+					],
+					"specialization": "Plains",
+					"difficulty": "per/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Naturalist",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Arctic",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Desert",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Island/Beach",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Jungle",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Mountain",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Swampland",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Woodlands",
+							"modifier": -3
+						}
+					]
+				},
+				{
+					"id": "51205e3a-df13-4277-a727-21445ba2ec1b",
+					"type": "skill",
+					"name": "Riding",
+					"reference": "B217",
+					"tags": [
+						"Animal"
+					],
+					"specialization": "Equines",
+					"difficulty": "dx/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Animal Handling",
+							"specialization": "Equines",
+							"modifier": -3
+						}
+					]
+				}
+			],
+			"name": "Northern Plains Fán Culture"
 		}
 	]
 }

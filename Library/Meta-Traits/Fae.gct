@@ -156,9 +156,35 @@
 					}
 				},
 				{
+					"id": "e7555774-f297-4dde-865f-5dbfa9ce68b9",
+					"type": "trait",
+					"name": "Increased Perception",
+					"reference": "B16",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental",
+						"Physical"
+					],
+					"levels": 3,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "per",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
 					"id": "7fabacd1-3b94-4f65-a22c-1cccfda14c23",
 					"type": "trait",
-					"name": "Magery",
+					"name": "Magery (Ritual Path)",
 					"reference": "B66",
 					"tags": [
 						"Advantage",
@@ -317,9 +343,8 @@
 							"disabled": true
 						}
 					],
-					"base_points": 15,
 					"calc": {
-						"points": 15
+						"points": 0
 					}
 				},
 				{

@@ -1,0 +1,163 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "41408314-5255-46d9-ad8e-9967ddb13624",
+	"traits": [
+		{
+			"id": "92d1a36a-8114-4b47-8964-193ef2d4d389",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "70ddf139-d4dc-4fb6-b940-2e8c49b7f8be",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "87c74873-552e-4c65-8ab7-21d628170d39",
+							"type": "trait",
+							"name": "Cultural Familiarity (Belvantine)",
+							"reference": "B23",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "1cb9700f-9c66-49e1-b4ec-d90b78ac0025",
+									"type": "modifier",
+									"name": "Alien",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "1b9a713b-e6b8-4cc3-9cc8-0ecdbc55e7d3",
+									"type": "modifier",
+									"name": "Native",
+									"cost": -1,
+									"cost_type": "points"
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "fe74e045-e524-4589-a206-259340f0009a",
+							"type": "trait",
+							"name": "Language: Belvantine",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "e8b104ea-69c8-46b3-a459-6446b143922d",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "f4ebcc91-a487-462f-9c06-ef2d128471b5",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5aa5a865-01d1-4c24-acaa-08622d610d1d",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ccf1352d-47e1-4e2f-8349-eed6f1e4431c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "c567bcc3-f3ab-490c-b1da-cac695b24900",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "0822aebd-e3e5-4c56-bba8-c5e18b829cf1",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "60c3bde1-b565-4b4f-95f4-8ab1a010d458",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "39ec79a5-d80e-4050-8e38-1541fcc48c7b",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "57c9c655-00ed-4780-a27b-03b007287469",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"name": "Belvantine",
+					"container_type": "race",
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"name": "Human",
+			"ancestry": "Human Belvantine-Yotsear",
+			"container_type": "race",
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}

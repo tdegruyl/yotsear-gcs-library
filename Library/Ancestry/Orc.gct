@@ -75,12 +75,12 @@
 					}
 				},
 				{
-					"id": "b7aa09dc-bf16-4104-a258-1485dcbcb926",
+					"id": "3b159bc3-4f24-4d47-ad66-70044035975c",
 					"type": "trait_container",
 					"open": true,
 					"children": [
 						{
-							"id": "9e63d51d-99a7-49cf-8aac-837b84b8e5b3",
+							"id": "eab893c5-23c1-431a-9c60-c4ca5183e041",
 							"type": "trait",
 							"name": "Cannot speak or write a falsehood",
 							"base_points": -1,
@@ -89,7 +89,7 @@
 							}
 						},
 						{
-							"id": "95e7f198-b304-4a7b-ace2-aab219a0a6a7",
+							"id": "3570677f-8544-4d49-8f4e-6661b4068b09",
 							"type": "trait",
 							"name": "Dependency (Mana)",
 							"reference": "B130",
@@ -227,7 +227,7 @@
 							}
 						},
 						{
-							"id": "91912bdf-deb5-4c68-80e9-b0e8a3fa4899",
+							"id": "040f6686-65a8-4e1b-8d21-3a75e2eb549b",
 							"type": "trait",
 							"name": "Extended Lifespan",
 							"reference": "B53",
@@ -237,16 +237,41 @@
 								"Physical"
 							],
 							"levels": 3,
-							"points_per_level": 2,
 							"can_level": true,
 							"calc": {
-								"points": 6
+								"points": 0
 							}
 						},
 						{
-							"id": "e94f8ab4-1419-4a42-a9c5-ab36b34949e5",
+							"id": "a0131fad-ea1c-4dbe-94b9-0fb78f1f238e",
 							"type": "trait",
-							"name": "Magery",
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"levels": 1,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "9379f33d-bcce-4080-a989-549b3b183acb",
+							"type": "trait",
+							"name": "Magery (Ritual Path)",
 							"reference": "B66",
 							"tags": [
 								"Advantage",
@@ -346,7 +371,7 @@
 							}
 						},
 						{
-							"id": "16712b1f-d382-425d-b827-76272b6db07a",
+							"id": "a6ac9717-201d-47b0-ba9c-a8405bdd37c1",
 							"type": "trait",
 							"name": "Vulnerability",
 							"reference": "B161",
@@ -434,7 +459,7 @@
 					"name": "Fae Ancestry",
 					"container_type": "meta_trait",
 					"calc": {
-						"points": -20
+						"points": -21
 					}
 				},
 				{
@@ -584,13 +609,685 @@
 					"calc": {
 						"points": 1
 					}
+				},
+				{
+					"id": "fba1e7d5-053a-442e-b844-337340e9e660",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "e914af38-7e4b-4dc4-8ec8-9349e7e81ef6",
+							"type": "trait_container",
+							"open": true,
+							"children": [
+								{
+									"id": "6749d1e7-1867-432b-b211-3fa693714a5c",
+									"type": "trait",
+									"name": "Cultural Familiarity (Darkwood)",
+									"reference": "B23",
+									"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "ab12b725-01c8-4fc4-8e71-619a54c79496",
+											"type": "modifier",
+											"name": "Alien",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "f72aa995-6766-4eaf-a3ca-0f4ff76d47c5",
+											"type": "modifier",
+											"name": "Native",
+											"cost": -1,
+											"cost_type": "points"
+										}
+									],
+									"base_points": 1,
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "3a1ae478-81aa-4ae7-80eb-bd771057f48d",
+									"type": "trait",
+									"name": "Impulsiveness",
+									"reference": "B139",
+									"notes": "Make a self-control roll whenever it would be wise to wait and ponder. If you fail, you must act",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -10,
+									"cr": 12,
+									"calc": {
+										"points": -10
+									}
+								},
+								{
+									"id": "5e6872df-2aaa-45a9-9f32-0dd0c11c35c1",
+									"type": "trait",
+									"name": "Innumerate",
+									"reference": "B140",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -5,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "contains",
+													"qualifier": "physics"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "contains",
+													"qualifier": "mathematics"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "market analysis"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "finance"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "contains",
+													"qualifier": "engineer"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "cryptography"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "astronomy"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "accounting"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "economics"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "computer programming"
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to rolls to notice you've been cheated by dishonest merchants",
+											"amount": -4
+										}
+									],
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "7ffe2bce-e0cd-42ca-bb8f-4bfb014d8542",
+									"type": "trait",
+									"name": "Language: Orcish",
+									"reference": "B24",
+									"tags": [
+										"Advantage",
+										"Language",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+											"type": "modifier",
+											"name": "Native",
+											"reference": "B23",
+											"cost": -6,
+											"cost_type": "points"
+										},
+										{
+											"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points"
+										},
+										{
+											"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points"
+										},
+										{
+											"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": -3
+									}
+								},
+								{
+									"id": "683ef301-5dd7-4798-b01a-52df5115cc3d",
+									"type": "trait",
+									"name": "Social Stigma (Minority Group)",
+									"reference": "B155",
+									"notes": "You are a member of a minority that the dominant culture around you regards as “barbarians” or “inferior.”",
+									"tags": [
+										"Disadvantage",
+										"Social"
+									],
+									"base_points": -10,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others except your own kind",
+											"amount": -2
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from others of your own kind in an area, profession, or situation where your minority is especially rare",
+											"amount": 2
+										}
+									],
+									"calc": {
+										"points": -10
+									}
+								}
+							],
+							"name": "Darkwood Orcish Culture",
+							"calc": {
+								"points": -28
+							}
+						},
+						{
+							"id": "d55c5c2a-d51a-4681-8329-abb7e738b508",
+							"type": "trait_container",
+							"open": true,
+							"children": [
+								{
+									"id": "ed47a62e-b3a7-4417-aa88-59eda6af2dff",
+									"type": "trait",
+									"name": "Cultural Familiarity (Dry Plains)",
+									"reference": "B23",
+									"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "ab12b725-01c8-4fc4-8e71-619a54c79496",
+											"type": "modifier",
+											"name": "Alien",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "f72aa995-6766-4eaf-a3ca-0f4ff76d47c5",
+											"type": "modifier",
+											"name": "Native",
+											"cost": -1,
+											"cost_type": "points"
+										}
+									],
+									"base_points": 1,
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "cd56ade6-bd08-4161-bd38-ff98d5389517",
+									"type": "trait",
+									"name": "Impulsiveness",
+									"reference": "B139",
+									"notes": "Make a self-control roll whenever it would be wise to wait and ponder. If you fail, you must act",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -10,
+									"cr": 12,
+									"calc": {
+										"points": -10
+									}
+								},
+								{
+									"id": "40703c52-bafb-4832-9e7d-37ec438034c4",
+									"type": "trait",
+									"name": "Increased Strength",
+									"reference": "B14",
+									"tags": [
+										"Advantage",
+										"Attribute",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "fc2b398f-467b-4c36-857b-98087975f0c4",
+											"type": "modifier",
+											"name": "No Fine Manipulators",
+											"reference": "B15",
+											"cost": -40,
+											"disabled": true
+										},
+										{
+											"id": "89e24b12-233b-4ad9-a77a-934e7bc640f7",
+											"type": "modifier",
+											"name": "Size",
+											"reference": "B15",
+											"cost": -10,
+											"levels": 1,
+											"disabled": true
+										},
+										{
+											"id": "4f3a7bdb-ed81-4735-87e8-d9eaeb4856c7",
+											"type": "modifier",
+											"name": "Super-Effort",
+											"reference": "SU24",
+											"cost": 300,
+											"disabled": true
+										}
+									],
+									"levels": 2,
+									"points_per_level": 10,
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"attribute": "st",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 20
+									}
+								},
+								{
+									"id": "b01049de-8a79-454f-bab3-c83e7fbb198d",
+									"type": "trait",
+									"name": "Innumerate",
+									"reference": "B140",
+									"tags": [
+										"Disadvantage",
+										"Mental"
+									],
+									"base_points": -5,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "contains",
+													"qualifier": "physics"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "contains",
+													"qualifier": "mathematics"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "market analysis"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "finance"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "contains",
+													"qualifier": "engineer"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "cryptography"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "astronomy"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "accounting"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "economics"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "computer programming"
+												}
+											}
+										]
+									},
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "to rolls to notice you've been cheated by dishonest merchants",
+											"amount": -4
+										}
+									],
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "ba018718-d2ba-4c06-ba4a-ef8a5d298f86",
+									"type": "trait",
+									"name": "Language: Orcish",
+									"reference": "B24",
+									"tags": [
+										"Advantage",
+										"Language",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+											"type": "modifier",
+											"name": "Native",
+											"reference": "B23",
+											"cost": -6,
+											"cost_type": "points"
+										},
+										{
+											"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points"
+										},
+										{
+											"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points"
+										},
+										{
+											"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points",
+											"disabled": true
+										}
+									],
+									"calc": {
+										"points": -3
+									}
+								},
+								{
+									"id": "4b5f637e-790a-44b3-aa95-e3dd52b2c25d",
+									"type": "trait",
+									"name": "Low TL",
+									"reference": "B22",
+									"tags": [
+										"Disadvantage",
+										"Social"
+									],
+									"levels": 1,
+									"points_per_level": -5,
+									"can_level": true,
+									"calc": {
+										"points": -5
+									}
+								},
+								{
+									"id": "63ef0c67-d7fe-471c-8f4d-5cebc2b8f2a9",
+									"type": "trait",
+									"name": "Social Stigma (Minority Group)",
+									"reference": "B155",
+									"notes": "You are a member of a minority that the dominant culture around you regards as “barbarians” or “inferior.”",
+									"tags": [
+										"Disadvantage",
+										"Social"
+									],
+									"base_points": -10,
+									"features": [
+										{
+											"type": "reaction_bonus",
+											"situation": "from others except your own kind",
+											"amount": -2
+										},
+										{
+											"type": "reaction_bonus",
+											"situation": "from others of your own kind in an area, profession, or situation where your minority is especially rare",
+											"amount": 2
+										}
+									],
+									"calc": {
+										"points": -10
+									}
+								}
+							],
+							"name": "Dry Plains Orcish Culture",
+							"calc": {
+								"points": -13
+							}
+						}
+					],
+					"name": "Culture",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					},
+					"calc": {
+						"points": -41
+					}
 				}
 			],
 			"name": "Orc",
-			"ancestry": "Elf",
+			"ancestry": "Orc-Yotsear",
 			"container_type": "race",
 			"calc": {
-				"points": 30
+				"points": -12
 			}
 		}
 	]

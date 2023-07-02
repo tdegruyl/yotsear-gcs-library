@@ -392,12 +392,12 @@
 					}
 				},
 				{
-					"id": "dea1c2ae-ac31-44ed-b24f-f06de0e7c860",
+					"id": "cb715a73-96b0-402a-a8b8-b6d9759f1c3a",
 					"type": "trait_container",
 					"open": true,
 					"children": [
 						{
-							"id": "c3fe3f51-4899-4c95-9628-ada9a58559c9",
+							"id": "0193834e-79cc-44d6-ac9a-bbd8a51029e2",
 							"type": "trait",
 							"name": "Cannot speak or write a falsehood",
 							"base_points": -1,
@@ -406,7 +406,7 @@
 							}
 						},
 						{
-							"id": "48230816-e1c4-4c50-bf19-03969cca8937",
+							"id": "d2de0f09-3e1e-4e68-a090-82e30082fbef",
 							"type": "trait",
 							"name": "Dependency (Mana)",
 							"reference": "B130",
@@ -544,9 +544,35 @@
 							}
 						},
 						{
-							"id": "29e140e8-825e-42cf-a227-c1cc33030800",
+							"id": "fc972c19-ff83-48d1-a37d-204e0ad12ef3",
 							"type": "trait",
-							"name": "Magery",
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"levels": 3,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "421b6322-e9c3-4968-8d89-fa0ba0007c43",
+							"type": "trait",
+							"name": "Magery (Ritual Path)",
 							"reference": "B66",
 							"tags": [
 								"Advantage",
@@ -646,7 +672,7 @@
 							}
 						},
 						{
-							"id": "80c02f07-e42e-44a8-b252-2df3966289b0",
+							"id": "e1a774f8-fa96-4195-89bb-ac6a62b29d9d",
 							"type": "trait",
 							"name": "Unaging",
 							"reference": "B95",
@@ -705,13 +731,12 @@
 									"disabled": true
 								}
 							],
-							"base_points": 15,
 							"calc": {
-								"points": 15
+								"points": 0
 							}
 						},
 						{
-							"id": "d4fc0bbd-29e1-4809-a8e2-e2f587f118a3",
+							"id": "57c08757-3555-415d-aef9-da469ea0c8c9",
 							"type": "trait",
 							"name": "Vulnerability",
 							"reference": "B161",
@@ -796,7 +821,7 @@
 							}
 						},
 						{
-							"id": "c3129285-a1ff-4ec1-aad3-6f423cc4099b",
+							"id": "9b36e863-8e98-4b72-b86b-ea19e194314c",
 							"type": "trait",
 							"name": "Weakness",
 							"reference": "B161",
@@ -975,13 +1000,290 @@
 					"calc": {
 						"points": 6
 					}
+				},
+				{
+					"id": "55f9fc55-c281-4153-9843-447ca62c072c",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "1d318bb4-e1f4-4c90-9f1f-f9adc59db926",
+							"type": "trait",
+							"name": "Cultural Familiarity (Faerie)",
+							"reference": "B23",
+							"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ab12b725-01c8-4fc4-8e71-619a54c79496",
+									"type": "modifier",
+									"name": "Alien",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "f72aa995-6766-4eaf-a3ca-0f4ff76d47c5",
+									"type": "modifier",
+									"name": "Native",
+									"cost": -1,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "ca1aeeee-aa29-4d92-b37f-beaca8bb726a",
+							"type": "trait",
+							"name": "Cultural Familiarity (Sæbloth)",
+							"reference": "B23",
+							"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ab12b725-01c8-4fc4-8e71-619a54c79496",
+									"type": "modifier",
+									"name": "Alien",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "f72aa995-6766-4eaf-a3ca-0f4ff76d47c5",
+									"type": "modifier",
+									"name": "Native",
+									"cost": -1,
+									"cost_type": "points"
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "ccb43ce1-0274-4a7a-924e-7e4d0e4ac07d",
+							"type": "trait",
+							"name": "Language: Faerie",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 6
+							}
+						},
+						{
+							"id": "b7c618f5-bea6-4aeb-8917-d8bcde3ec19f",
+							"type": "trait",
+							"name": "Language: Sæbloth",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"name": "Sæbloth Culture",
+					"calc": {
+						"points": 7
+					}
 				}
 			],
 			"name": "Saebloth",
-			"ancestry": "Elf",
+			"ancestry": "Elf-Yotsear",
 			"container_type": "race",
 			"calc": {
-				"points": 30
+				"points": 37
 			}
 		}
 	]

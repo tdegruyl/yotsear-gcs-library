@@ -334,105 +334,107 @@
 			"id": "fd7dd0ad-746d-4f55-b8c7-486720c4f9fc",
 			"type": "skill_container",
 			"open": true,
-			"name": "Yotsear Fairy Culture"
-		},
-		{
-			"id": "c0efad32-ddbf-4c2d-b1b8-f007ea70515a",
-			"type": "skill",
-			"name": "Camouflage",
-			"reference": "B183",
-			"tags": [
-				"Exploration",
-				"Military",
-				"Outdoor"
-			],
-			"difficulty": "iq/e",
-			"points": 2,
-			"defaults": [
+			"children": [
 				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
+					"id": "c0efad32-ddbf-4c2d-b1b8-f007ea70515a",
 					"type": "skill",
-					"name": "Survival",
-					"modifier": -2
-				}
-			]
-		},
-		{
-			"id": "1cb0830e-bea1-4c3e-b02d-8f8a9fcd7ab8",
-			"type": "skill",
-			"name": "Stealth",
-			"reference": "B222",
-			"tags": [
-				"Criminal",
-				"Police",
-				"Spy",
-				"Street"
-			],
-			"difficulty": "dx/a",
-			"points": 8,
-			"encumbrance_penalty_multiplier": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
+					"name": "Camouflage",
+					"reference": "B183",
+					"tags": [
+						"Exploration",
+						"Military",
+						"Outdoor"
+					],
+					"difficulty": "iq/e",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"modifier": -2
+						}
+					]
 				},
 				{
-					"type": "dx",
-					"modifier": -5
-				}
-			]
-		},
-		{
-			"id": "40625ab3-45aa-43b9-803e-37054e41b25e",
-			"type": "skill",
-			"name": "Invisibility Art",
-			"reference": "B202",
-			"tags": [
-				"Esoteric"
-			],
-			"difficulty": "iq/vh",
-			"points": 1,
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "stealth"
+					"id": "1cb0830e-bea1-4c3e-b02d-8f8a9fcd7ab8",
+					"type": "skill",
+					"name": "Stealth",
+					"reference": "B222",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "dx/a",
+					"points": 8,
+					"encumbrance_penalty_multiplier": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
 						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 14
+						{
+							"type": "dx",
+							"modifier": -5
 						}
-					},
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "hypnotism"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 14
-						}
-					},
-					{
-						"type": "trait_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "trained by a master"
-						}
+					]
+				},
+				{
+					"id": "40625ab3-45aa-43b9-803e-37054e41b25e",
+					"type": "skill",
+					"name": "Invisibility Art",
+					"reference": "B202",
+					"tags": [
+						"Esoteric"
+					],
+					"difficulty": "iq/vh",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "stealth"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 14
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "hypnotism"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 14
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "trained by a master"
+								}
+							}
+						]
 					}
-				]
-			}
+				}
+			],
+			"name": "Yotsear Fairy Culture"
 		}
 	]
 }

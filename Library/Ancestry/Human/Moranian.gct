@@ -1,0 +1,191 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "41408314-5255-46d9-ad8e-9967ddb13624",
+	"traits": [
+		{
+			"id": "92d1a36a-8114-4b47-8964-193ef2d4d389",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "72a5a993-598c-442c-a921-171ee4a15c08",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "774d43e0-d0a1-4f39-b067-3d20ddd477ae",
+							"type": "trait_container",
+							"open": true,
+							"children": [
+								{
+									"id": "12824868-64a9-45bb-92ca-aebfadffd908",
+									"type": "trait",
+									"name": "Cultural Familiarity (Alfarnian)",
+									"reference": "B23",
+									"tags": [
+										"Advantage",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "5858b71a-64e9-450a-acea-975b860278e0",
+											"type": "modifier",
+											"name": "Alien",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "df7127c0-d411-48d2-a787-7dd6914c62ba",
+											"type": "modifier",
+											"name": "Native",
+											"cost": -1,
+											"cost_type": "points"
+										}
+									],
+									"base_points": 1,
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "922b5750-12d6-4160-a419-dd9ccb8c94bc",
+									"type": "trait",
+									"name": "Language: Alfarnian",
+									"reference": "B24",
+									"tags": [
+										"Advantage",
+										"Language",
+										"Mental"
+									],
+									"modifiers": [
+										{
+											"id": "325bfc39-d8ad-4ba8-a668-8dd14e8f66d0",
+											"type": "modifier",
+											"name": "Native",
+											"reference": "B23",
+											"cost": -6,
+											"cost_type": "points"
+										},
+										{
+											"id": "15ef9119-5fe1-495e-a12e-8f925ba27baa",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "5ded424b-0f9a-427a-b30f-daa03cddafbd",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "3983c741-5749-4764-b202-6434cb7b2c0d",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "30f0a467-05c4-4b61-9f3d-9709d592bef9",
+											"type": "modifier",
+											"name": "Spoken",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points"
+										},
+										{
+											"id": "41d22309-d5fb-4f40-a805-d09a5a98adc7",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "None",
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "df3ba92a-fb64-420c-b81f-17ad9cf86ad2",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Broken",
+											"cost": 1,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "67b020ff-3709-46c5-9dfd-5c531a9d161c",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Accented",
+											"cost": 2,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "907832b0-8802-44cc-accb-855f11e7974a",
+											"type": "modifier",
+											"name": "Written",
+											"reference": "B24",
+											"notes": "Native",
+											"cost": 3,
+											"cost_type": "points"
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								}
+							],
+							"name": "Alfarnian",
+							"container_type": "race",
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "d6b9c004-3482-4f6a-932b-b0c8fbf8de2d",
+							"type": "trait",
+							"name": "High TL",
+							"reference": "B23",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"levels": 1,
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"name": "Moranian",
+					"container_type": "race",
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"name": "Human",
+			"ancestry": "Human Alfarnian-Yotsear",
+			"container_type": "race",
+			"calc": {
+				"points": 5
+			}
+		}
+	]
+}
