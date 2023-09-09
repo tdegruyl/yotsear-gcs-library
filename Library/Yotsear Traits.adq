@@ -2875,6 +2875,7 @@
 		{
 			"id": "cf590ff0-06a4-4628-ba65-085b5d0e17b8",
 			"type": "trait_container",
+			"open": true,
 			"children": [
 				{
 					"id": "0e28042b-c019-4746-9e73-02fb3124cb2f",
@@ -3118,92 +3119,6 @@
 					],
 					"levels": 4,
 					"points_per_level": 5,
-					"features": [
-						{
-							"type": "dr_bonus",
-							"location": "skull",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "face",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "neck",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "torso",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "vitals",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "groin",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "arm",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "hand",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "leg",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "foot",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "tail",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "wing",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "fin",
-							"amount": 1,
-							"per_level": true
-						},
-						{
-							"type": "dr_bonus",
-							"location": "brain",
-							"amount": 1,
-							"per_level": true
-						}
-					],
 					"can_level": true,
 					"calc": {
 						"points": 8
@@ -13453,18 +13368,43 @@
 			}
 		},
 		{
-			"id": "9d349a2d-f417-4694-ab31-8d9e135cd949",
+			"id": "0fafc29b-4b2b-449d-ab61-cff9497067ad",
 			"type": "trait",
-			"name": "Signature Gear",
-			"reference": "B85",
-			"notes": "For equipment normally bought with money, each point gives goods worth up to 50% of the average campaign starting wealth (but never cash).",
+			"name": "Signature Gear (@Item@)",
+			"reference": "DFA53",
 			"tags": [
 				"Advantage",
 				"Social"
 			],
-			"levels": 1,
-			"points_per_level": 1,
-			"can_level": true,
+			"base_points": 1,
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "318998b3-c143-41dc-936b-e62207e9e64c",
+			"type": "trait",
+			"name": "Legendary Possession (@Item)",
+			"reference": "AOL22",
+			"reference_highlight": "Legendary Possession",
+			"tags": [
+				"Advantage"
+			],
+			"base_points": 1,
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "a1683d88-49f5-44f1-96d7-49cce1a13c61",
+			"type": "trait",
+			"name": "Runecarved Possession (@Item)",
+			"reference": "DTGFD11",
+			"reference_highlight": "Runecarved Possession",
+			"tags": [
+				"Advantage"
+			],
+			"base_points": 1,
 			"calc": {
 				"points": 1
 			}

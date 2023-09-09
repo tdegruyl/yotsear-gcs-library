@@ -7003,6 +7003,29 @@
 			"weight": "2 lb",
 			"weapons": [
 				{
+					"id": "958d04fc-ad1a-4465-a318-43fa7fa4c05f",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"usage": "Entangle",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "block",
+							"name": "Cloak"
+						}
+					],
+					"calc": {
+						"parry": "No",
+						"block": "+0",
+						"damage": "-"
+					}
+				},
+				{
 					"id": "c580167a-9e18-410b-93d8-7e30c6b7aaf4",
 					"type": "ranged_weapon",
 					"damage": {
@@ -7060,6 +7083,29 @@
 			"value": 64,
 			"weight": "2 lb",
 			"weapons": [
+				{
+					"id": "b07e5b22-ab2d-4ca4-b2cb-2fd863e33af9",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"usage": "Entangle",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "block",
+							"name": "Cloak"
+						}
+					],
+					"calc": {
+						"parry": "No",
+						"block": "+0",
+						"damage": "-"
+					}
+				},
 				{
 					"id": "02ffe628-a98c-4dde-b502-f154b9015fd3",
 					"type": "ranged_weapon",
@@ -7119,6 +7165,29 @@
 			"weight": "3 lb",
 			"weapons": [
 				{
+					"id": "3396e5c5-d639-4d43-a370-071217ab7b65",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"usage": "Entangle",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "block",
+							"name": "Cloak"
+						}
+					],
+					"calc": {
+						"parry": "No",
+						"block": "+0",
+						"damage": "-"
+					}
+				},
+				{
 					"id": "e2d04ece-3f7e-40c2-ad4b-5745f8929de2",
 					"type": "ranged_weapon",
 					"damage": {
@@ -7176,6 +7245,29 @@
 			"value": 92,
 			"weight": "3 lb",
 			"weapons": [
+				{
+					"id": "6d9e4431-c4a6-48e9-9a2a-2aa9a9caa50a",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"usage": "Entangle",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "block",
+							"name": "Cloak"
+						}
+					],
+					"calc": {
+						"parry": "No",
+						"block": "+0",
+						"damage": "-"
+					}
+				},
 				{
 					"id": "01ea748b-93db-4a3f-81f6-ad53ba77f1e2",
 					"type": "ranged_weapon",
@@ -7235,6 +7327,29 @@
 			"weight": "3 lb",
 			"weapons": [
 				{
+					"id": "8e97f4cb-9e81-48a9-b986-926ed0b6bc9d",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"usage": "Entangle",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "block",
+							"name": "Cloak"
+						}
+					],
+					"calc": {
+						"parry": "No",
+						"block": "+0",
+						"damage": "-"
+					}
+				},
+				{
 					"id": "257bc21b-6247-449e-8a75-fab25e1ba340",
 					"type": "ranged_weapon",
 					"damage": {
@@ -7292,6 +7407,29 @@
 			"value": 12,
 			"weight": "2 lb",
 			"weapons": [
+				{
+					"id": "eb015b96-d4a7-4d0f-ac33-4c1b49456bd8",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"usage": "Entangle",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "block",
+							"name": "Cloak"
+						}
+					],
+					"calc": {
+						"parry": "No",
+						"block": "+0",
+						"damage": "-"
+					}
+				},
 				{
 					"id": "723003ba-c7ad-4290-8c56-fb1d334a81bd",
 					"type": "ranged_weapon",
@@ -17171,6 +17309,7 @@
 						"type": "-"
 					},
 					"strength": "-",
+					"usage": "Entangle",
 					"reach": "-",
 					"parry": "No",
 					"block": "+0",
@@ -23621,6 +23760,7 @@
 						"type": "-"
 					},
 					"strength": "-",
+					"usage": "Entangle",
 					"reach": "-",
 					"parry": "No",
 					"block": "+0",

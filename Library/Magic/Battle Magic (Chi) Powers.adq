@@ -2292,6 +2292,7 @@
 		{
 			"id": "856d677c-8b3b-48ab-a118-df3b4604f6ba",
 			"type": "trait_container",
+			"open": true,
 			"children": [
 				{
 					"id": "91fe53be-2bf3-4c48-ad6b-97d79f887d67",
@@ -3307,7 +3308,7 @@
 							}
 						}
 					],
-					"name": "Far SIght",
+					"name": "Far Sight",
 					"reference": "Y54",
 					"tags": [
 						"Chi",

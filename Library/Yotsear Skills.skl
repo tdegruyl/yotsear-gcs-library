@@ -8643,6 +8643,36 @@
 			"difficulty": "dx/h",
 			"points": 1,
 			"encumbrance_penalty_multiplier": 1,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Judo"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 10
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Judo"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 4
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
 			"calc": {}
 		},
 		{
@@ -13621,6 +13651,36 @@
 			],
 			"difficulty": "dx/a",
 			"points": 1,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sumo Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 7
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sumo Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
 			"calc": {}
 		},
 		{
@@ -16450,6 +16510,36 @@
 			],
 			"difficulty": "dx/a",
 			"points": 1,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 4
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 1
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
 			"calc": {}
 		},
 		{

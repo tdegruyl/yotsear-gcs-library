@@ -269,97 +269,34 @@
 							}
 						},
 						{
-							"id": "9379f33d-bcce-4080-a989-549b3b183acb",
+							"id": "3d4ce010-1d21-4524-840d-c331cb6ae80b",
 							"type": "trait",
 							"name": "Magery (Ritual Path)",
-							"reference": "B66",
+							"reference": "TRPM5",
 							"tags": [
 								"Advantage",
 								"Mental",
 								"Supernatural"
 							],
-							"modifiers": [
-								{
-									"id": "e9f4f060-4920-4cc8-90fc-ad5511264a60",
-									"type": "modifier",
-									"name": "Dance",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "5ce5cb4a-7374-4292-bb44-a2d583aa1773",
-									"type": "modifier",
-									"name": "Dark-Aspected",
-									"cost": -50,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "d3912606-25c8-4631-ac20-f47ac6fa71c8",
-									"type": "modifier",
-									"name": "Day-Aspected",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "66554765-6d27-4b84-8b98-92de7db881c1",
-									"type": "modifier",
-									"name": "Musical",
-									"cost": -50,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "013120ac-74a1-4dfd-bc5c-20b490021070",
-									"type": "modifier",
-									"name": "Night-Aspected",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "c717162c-2a38-4f97-8a70-91fb42149810",
-									"type": "modifier",
-									"name": "One College",
-									"notes": "@College@",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "9b3df016-cae2-42e0-ba2c-cf10d110c3b9",
-									"type": "modifier",
-									"name": "Solitary",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								},
-								{
-									"id": "4a98e37a-879f-4942-916e-01c59f288596",
-									"type": "modifier",
-									"name": "Song",
-									"cost": -40,
-									"affects": "levels_only",
-									"disabled": true
-								}
-							],
 							"base_points": 5,
 							"points_per_level": 10,
 							"features": [
 								{
-									"type": "spell_bonus",
-									"match": "all_colleges",
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Thaumatology"
+									},
 									"amount": 1,
 									"per_level": true
 								},
 								{
 									"type": "skill_bonus",
 									"selection_type": "skills_with_name",
-									"name": {
+									"tags": {
 										"compare": "is",
-										"qualifier": "thaumatology"
+										"qualifier": "Ritual Path Magic"
 									},
 									"amount": 1,
 									"per_level": true
@@ -537,6 +474,146 @@
 					"can_level": true,
 					"calc": {
 						"points": 20
+					}
+				},
+				{
+					"id": "c97e7b99-5bab-4b63-a8a6-d4e2d425ceab",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "B271",
+					"weapons": [
+						{
+							"id": "3e9e3fcb-99b2-47ac-8679-25cda2fd98dc",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"parry": "No",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"parry": "No",
+								"block": "No",
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "8dad6001-ad66-4b20-8c05-8dc1388fe410",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"parry": "0",
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "a846ed7c-042f-4aeb-9a18-5646972a99e5",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"parry": "No",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"parry": "No",
+								"damage": "thr cr"
+							}
+						},
+						{
+							"id": "8b379884-92a7-4939-b05e-259039f107bf",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Unarmed Grapple",
+							"reach": "1",
+							"parry": "No",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Wrestling"
+								},
+								{
+									"type": "skill",
+									"name": "Sumo Wrestling"
+								},
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Judo"
+								}
+							],
+							"calc": {
+								"parry": "No",
+								"block": "No",
+								"damage": "thr cp"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
 					}
 				},
 				{
@@ -1285,7 +1362,7 @@
 			],
 			"name": "Orc",
 			"ancestry": "Orc-Yotsear",
-			"container_type": "race",
+			"container_type": "ancestry",
 			"calc": {
 				"points": -12
 			}

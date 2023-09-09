@@ -3,20 +3,82 @@
 	"version": 4,
 	"rows": [
 		{
-			"id": "41118ccd-3056-48cb-a5f6-57eb53cc3272",
+			"id": "a6519024-5b73-427f-b629-c8be79a7f96d",
 			"type": "trait",
-			"name": "Magery (Ritual Path)",
-			"reference": "TRPM5",
+			"name": "Energy Reserve (Mana Reserve)",
+			"reference": "P119",
 			"tags": [
 				"Advantage",
-				"Mental",
-				"Supernatural"
+				"Attribute",
+				"Exotic",
+				"Physical"
 			],
-			"base_points": 5,
-			"points_per_level": 10,
+			"modifiers": [
+				{
+					"id": "0d9f9e54-37eb-4f3f-93e8-fe199215ee61",
+					"type": "modifier",
+					"name": "Abilities Only",
+					"reference": "P119",
+					"cost": -10,
+					"disabled": true
+				},
+				{
+					"id": "d86a6850-5824-4828-a36a-c0c2d7dd9ae1",
+					"type": "modifier",
+					"name": "One Power",
+					"reference": "P119",
+					"cost": -50,
+					"disabled": true
+				},
+				{
+					"id": "6def0103-d90b-4a23-99b2-8461b6c0362a",
+					"type": "modifier",
+					"name": "Slow Recharge",
+					"reference": "P119",
+					"notes": "1/hour",
+					"cost": -20,
+					"disabled": true
+				},
+				{
+					"id": "2c83d6d7-373d-4ad7-8ef3-a325c41f624d",
+					"type": "modifier",
+					"name": "Slow Recharge",
+					"reference": "P119",
+					"notes": "1/day",
+					"cost": -60,
+					"disabled": true
+				},
+				{
+					"id": "a8312047-2254-4f59-8aa7-16bf6ad942d5",
+					"type": "modifier",
+					"name": "Special Recharge",
+					"reference": "P119",
+					"cost": -70,
+					"disabled": true
+				},
+				{
+					"id": "f25aa14e-76dc-4a48-8f2e-bd651878d0ac",
+					"type": "modifier",
+					"name": "Special Recharge",
+					"reference": "P119",
+					"notes": "1/s bleed",
+					"cost": -80,
+					"disabled": true
+				},
+				{
+					"id": "dd6f9515-be1c-4f58-86ed-16013395b5cf",
+					"type": "modifier",
+					"name": "Stunts Only",
+					"reference": "P119",
+					"cost": -10,
+					"disabled": true
+				}
+			],
+			"levels": 1,
+			"points_per_level": 3,
 			"can_level": true,
 			"calc": {
-				"points": 5
+				"points": 3
 			}
 		},
 		{
@@ -36,32 +98,42 @@
 			}
 		},
 		{
-			"id": "b5e5fded-5ee3-479e-b5e3-7f2081ef67ec",
+			"id": "41118ccd-3056-48cb-a5f6-57eb53cc3272",
 			"type": "trait",
-			"name": "Ritual Adept",
-			"reference": "TRPM6",
+			"name": "Magery (Ritual Path)",
+			"reference": "TRPM5",
 			"tags": [
 				"Advantage",
 				"Mental",
 				"Supernatural"
 			],
-			"base_points": 40,
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "trait_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Magery (Ritual Path)"
-						}
-					}
-				]
-			},
+			"base_points": 5,
+			"points_per_level": 10,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Thaumatology"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"tags": {
+						"compare": "is",
+						"qualifier": "Ritual Path Magic"
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
 			"calc": {
-				"points": 40
+				"points": 5
 			}
 		},
 		{
@@ -219,7 +291,7 @@
 			"open": true,
 			"children": [
 				{
-					"id": "1533e537-c0a6-49a3-8568-95a62a3d60ba",
+					"id": "ae6b5efa-fb84-4fdf-b074-9f00017769a6",
 					"type": "trait",
 					"name": "Magery (Ritual Path)",
 					"reference": "TRPM5",
@@ -230,6 +302,28 @@
 					],
 					"base_points": 5,
 					"points_per_level": 10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"tags": {
+								"compare": "is",
+								"qualifier": "Ritual Path Magic"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
 					"can_level": true,
 					"calc": {
 						"points": 5
@@ -352,34 +446,9 @@
 			}
 		},
 		{
-			"id": "c89b446b-e6c9-4556-8a72-3c000178e4a7",
-			"type": "trait",
-			"name": "Sorcery Talent",
-			"reference": "TSOR5",
-			"tags": [
-				"Mental",
-				"Supernatural"
-			],
-			"modifiers": [
-				{
-					"id": "393b527e-2810-41b3-9fc2-caf47232b351",
-					"type": "modifier",
-					"name": "Limited",
-					"cost": 0.5,
-					"cost_type": "multiplier",
-					"disabled": true
-				}
-			],
-			"levels": 1,
-			"points_per_level": 10,
-			"can_level": true,
-			"calc": {
-				"points": 10
-			}
-		},
-		{
 			"id": "97c3440f-597b-49c6-bdec-94023e1f48e4",
 			"type": "trait_container",
+			"open": true,
 			"children": [
 				{
 					"id": "98386dc8-ea1d-45ae-82a8-105ccffb3cfd",
@@ -450,6 +519,32 @@
 			"container_type": "alternative_abilities",
 			"calc": {
 				"points": 20
+			}
+		},
+		{
+			"id": "c89b446b-e6c9-4556-8a72-3c000178e4a7",
+			"type": "trait",
+			"name": "Sorcery Talent",
+			"reference": "TSOR5",
+			"tags": [
+				"Mental",
+				"Supernatural"
+			],
+			"modifiers": [
+				{
+					"id": "393b527e-2810-41b3-9fc2-caf47232b351",
+					"type": "modifier",
+					"name": "Limited",
+					"cost": 0.5,
+					"cost_type": "multiplier",
+					"disabled": true
+				}
+			],
+			"levels": 1,
+			"points_per_level": 10,
+			"can_level": true,
+			"calc": {
+				"points": 10
 			}
 		}
 	]

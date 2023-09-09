@@ -9,6 +9,150 @@
 			"open": true,
 			"children": [
 				{
+					"id": "bec48e65-27a1-4d3c-839a-1725135393a4",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "B271",
+					"weapons": [
+						{
+							"id": "3e9e3fcb-99b2-47ac-8679-25cda2fd98dc",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"parry": "No",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"level": 13,
+								"parry": "No",
+								"block": "No",
+								"damage": "1d-2 cr"
+							}
+						},
+						{
+							"id": "8dad6001-ad66-4b20-8c05-8dc1388fe410",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"level": 13,
+								"parry": "10",
+								"damage": "1d-2 cr"
+							}
+						},
+						{
+							"id": "a846ed7c-042f-4aeb-9a18-5646972a99e5",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"parry": "No",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"level": 11,
+								"parry": "No",
+								"damage": "1d-1 cr"
+							}
+						},
+						{
+							"id": "8b379884-92a7-4939-b05e-259039f107bf",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Unarmed Grapple",
+							"reach": "1",
+							"parry": "No",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Wrestling"
+								},
+								{
+									"type": "skill",
+									"name": "Sumo Wrestling"
+								},
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Judo"
+								}
+							],
+							"calc": {
+								"level": 13,
+								"parry": "No",
+								"block": "No",
+								"damage": "1d-1 cp"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "a9674473-7bd1-4fc1-8530-134e24e070e4",
 					"type": "trait_container",
 					"open": true,
@@ -190,7 +334,7 @@
 						}
 					],
 					"name": "Karn",
-					"container_type": "race",
+					"container_type": "ancestry",
 					"calc": {
 						"points": -18
 					}
@@ -198,7 +342,7 @@
 			],
 			"name": "Human",
 			"ancestry": "Human Karn-Yotsear",
-			"container_type": "race",
+			"container_type": "ancestry",
 			"calc": {
 				"points": -18
 			}

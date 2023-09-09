@@ -182,97 +182,34 @@
 					}
 				},
 				{
-					"id": "7fabacd1-3b94-4f65-a22c-1cccfda14c23",
+					"id": "cfae861a-33b9-422b-8560-96dc8f2f7ed8",
 					"type": "trait",
 					"name": "Magery (Ritual Path)",
-					"reference": "B66",
+					"reference": "TRPM5",
 					"tags": [
 						"Advantage",
 						"Mental",
 						"Supernatural"
 					],
-					"modifiers": [
-						{
-							"id": "e9f4f060-4920-4cc8-90fc-ad5511264a60",
-							"type": "modifier",
-							"name": "Dance",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "5ce5cb4a-7374-4292-bb44-a2d583aa1773",
-							"type": "modifier",
-							"name": "Dark-Aspected",
-							"cost": -50,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "d3912606-25c8-4631-ac20-f47ac6fa71c8",
-							"type": "modifier",
-							"name": "Day-Aspected",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "66554765-6d27-4b84-8b98-92de7db881c1",
-							"type": "modifier",
-							"name": "Musical",
-							"cost": -50,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "013120ac-74a1-4dfd-bc5c-20b490021070",
-							"type": "modifier",
-							"name": "Night-Aspected",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "c717162c-2a38-4f97-8a70-91fb42149810",
-							"type": "modifier",
-							"name": "One College",
-							"notes": "@College@",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "9b3df016-cae2-42e0-ba2c-cf10d110c3b9",
-							"type": "modifier",
-							"name": "Solitary",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						},
-						{
-							"id": "4a98e37a-879f-4942-916e-01c59f288596",
-							"type": "modifier",
-							"name": "Song",
-							"cost": -40,
-							"affects": "levels_only",
-							"disabled": true
-						}
-					],
 					"base_points": 5,
 					"points_per_level": 10,
 					"features": [
 						{
-							"type": "spell_bonus",
-							"match": "all_colleges",
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Thaumatology"
+							},
 							"amount": 1,
 							"per_level": true
 						},
 						{
 							"type": "skill_bonus",
 							"selection_type": "skills_with_name",
-							"name": {
+							"tags": {
 								"compare": "is",
-								"qualifier": "thaumatology"
+								"qualifier": "Ritual Path Magic"
 							},
 							"amount": 1,
 							"per_level": true
