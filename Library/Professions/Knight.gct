@@ -153,6 +153,76 @@
 					"open": true,
 					"children": [
 						{
+							"id": "b799138e-317e-413d-b582-f2e1ba772590",
+							"type": "trait",
+							"name": "Combat Reflexes",
+							"reference": "B43",
+							"notes": "Never freeze",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"base_points": 15,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Enhanced Time Sense"
+										}
+									}
+								]
+							},
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "fast-draw"
+									},
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "dodge",
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "parry",
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "block",
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "fright_check",
+									"amount": 2
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "on all IQ rolls to wake up or to recover from surprise or mental stun",
+									"amount": 6
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to initiative rolls for your side (+2 if you are the leader)",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
 							"id": "9904deef-d24e-4e71-a6c3-391454b120c0",
 							"type": "trait_container",
 							"open": true,
@@ -214,66 +284,6 @@
 									"can_level": true,
 									"calc": {
 										"points": 5
-									}
-								},
-								{
-									"id": "fd924020-067b-4051-93d9-9bec8344300f",
-									"type": "trait",
-									"name": "Combat Reflexes",
-									"reference": "B43",
-									"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls (+2 if you're the leader)",
-									"tags": [
-										"Advantage",
-										"Mental"
-									],
-									"base_points": 15,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": true,
-										"prereqs": [
-											{
-												"type": "trait_prereq",
-												"has": false,
-												"name": {
-													"compare": "is",
-													"qualifier": "Enhanced Time Sense"
-												}
-											}
-										]
-									},
-									"features": [
-										{
-											"type": "skill_bonus",
-											"selection_type": "skills_with_name",
-											"name": {
-												"compare": "starts_with",
-												"qualifier": "fast-draw"
-											},
-											"amount": 1
-										},
-										{
-											"type": "attribute_bonus",
-											"attribute": "dodge",
-											"amount": 1
-										},
-										{
-											"type": "attribute_bonus",
-											"attribute": "parry",
-											"amount": 1
-										},
-										{
-											"type": "attribute_bonus",
-											"attribute": "block",
-											"amount": 1
-										},
-										{
-											"type": "attribute_bonus",
-											"attribute": "fright_check",
-											"amount": 2
-										}
-									],
-									"calc": {
-										"points": 15
 									}
 								},
 								{
@@ -364,6 +374,36 @@
 									"calc": {
 										"points": 0
 									}
+								},
+								{
+									"id": "ecd3c0d9-0c1b-4d0a-9d45-f0a99e1e543e",
+									"type": "trait",
+									"name": "Signature Gear (@Item@)",
+									"reference": "DFA53",
+									"tags": [
+										"Advantage",
+										"Social"
+									],
+									"base_points": 1,
+									"calc": {
+										"points": 1
+									}
+								},
+								{
+									"id": "2d1a5c19-c5be-4247-ba4a-b6cfc62c4ff3",
+									"type": "trait",
+									"name": "Weapon Bond",
+									"reference": "DF1:14",
+									"notes": "+1 to effective skill when using @a specific weapon@",
+									"tags": [
+										"Advantage",
+										"Perk",
+										"Physical"
+									],
+									"base_points": 1,
+									"calc": {
+										"points": 1
+									}
 								}
 							],
 							"name": "Other Advantages",
@@ -371,11 +411,11 @@
 								"type": "points",
 								"qualifier": {
 									"compare": "is",
-									"qualifier": 20
+									"qualifier": 30
 								}
 							},
 							"calc": {
-								"points": 28
+								"points": 15
 							}
 						},
 						{
@@ -397,257 +437,102 @@
 							}
 						},
 						{
-							"id": "9f226e43-bf08-4753-bbe4-049dd813fd33",
-							"type": "trait_container",
-							"open": true,
-							"children": [
-								{
-									"id": "91387606-c6a6-4c1f-bc23-26b0bf403eb5",
-									"type": "trait",
-									"name": "Wealth",
-									"reference": "B25",
-									"tags": [
-										"Advantage",
-										"Disadvantage",
-										"Social"
-									],
-									"modifiers": [
-										{
-											"id": "90613439-39cb-4ae7-9277-941a11cfd5b7",
-											"type": "modifier",
-											"name": "Dead Broke",
-											"reference": "B25",
-											"notes": "Starting wealth is $0",
-											"cost": -25,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "eba9d568-351d-4f3a-9ab5-822b211f7549",
-											"type": "modifier",
-											"name": "Poor",
-											"reference": "B25",
-											"notes": "Starting wealth is 1/5 average",
-											"cost": -15,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "107f38d1-78e9-4c1f-9e3a-2f38dcb358bd",
-											"type": "modifier",
-											"name": "Struggling",
-											"reference": "B25",
-											"notes": "Starting wealth is 1/2 average",
-											"cost": -10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "026ee1a9-bc86-4f78-8e1b-b7a984e6f50b",
-											"type": "modifier",
-											"name": "Average",
-											"reference": "B25",
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "979687e4-a608-4133-8b07-edbcf585512e",
-											"type": "modifier",
-											"name": "Comfortable",
-											"reference": "B25",
-											"notes": "Starting wealth is 2x average",
-											"cost": 10,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "1ff4856e-2b8b-4324-9057-06308403097b",
-											"type": "modifier",
-											"name": "Wealthy",
-											"reference": "B25",
-											"notes": "Starting wealth is 5x average",
-											"cost": 20,
-											"cost_type": "points",
-											"disabled": true
-										},
-										{
-											"id": "cf130a20-4015-4f44-b4cb-ccbddcf2de2e",
-											"type": "modifier",
-											"name": "Very Wealthy",
-											"reference": "B25",
-											"notes": "Starting wealth is 20x average",
-											"cost": 30,
-											"cost_type": "points"
-										},
-										{
-											"id": "ea77ce57-2835-4087-9988-5b074b6162e9",
-											"type": "modifier",
-											"name": "Filthy Rich",
-											"reference": "B25",
-											"notes": "Starting wealth is 100x average",
-											"cost": 50,
-											"cost_type": "points",
-											"disabled": true
-										}
-									],
-									"calc": {
-										"points": 30
-									}
-								},
-								{
-									"id": "c028ceba-33af-4c17-bf6d-24fd0b541372",
-									"type": "trait_container",
-									"open": true,
-									"children": [
-										{
-											"id": "c7b0fa58-f02a-4954-bb78-1c9b34529f27",
-											"type": "trait",
-											"name": "Signature Gear",
-											"reference": "B85",
-											"notes": "For equipment normally bought with money, each point gives goods worth up to 50% of the average campaign starting wealth (but never cash).",
-											"tags": [
-												"Advantage",
-												"Social"
-											],
-											"levels": 10,
-											"points_per_level": 1,
-											"can_level": true,
-											"calc": {
-												"points": 10
-											}
-										},
-										{
-											"id": "43b96c15-4737-4504-8bda-a7c370e654ff",
-											"type": "trait",
-											"name": "Wealth",
-											"reference": "B25",
-											"tags": [
-												"Advantage",
-												"Disadvantage",
-												"Social"
-											],
-											"modifiers": [
-												{
-													"id": "1d83325e-7571-48e7-824f-9fbbea477ba7",
-													"type": "modifier",
-													"name": "Dead Broke",
-													"reference": "B25",
-													"notes": "Starting wealth is $0",
-													"cost": -25,
-													"cost_type": "points",
-													"disabled": true
-												},
-												{
-													"id": "1915088f-a15d-4802-93a2-7fe6e843a21e",
-													"type": "modifier",
-													"name": "Poor",
-													"reference": "B25",
-													"notes": "Starting wealth is 1/5 average",
-													"cost": -15,
-													"cost_type": "points",
-													"disabled": true
-												},
-												{
-													"id": "d49ffb82-374f-4317-ab95-0d4d813c8e1e",
-													"type": "modifier",
-													"name": "Struggling",
-													"reference": "B25",
-													"notes": "Starting wealth is 1/2 average",
-													"cost": -10,
-													"cost_type": "points",
-													"disabled": true
-												},
-												{
-													"id": "c7aabe01-99e2-407d-a927-69d10502ab18",
-													"type": "modifier",
-													"name": "Average",
-													"reference": "B25",
-													"cost_type": "points",
-													"disabled": true
-												},
-												{
-													"id": "8552bac6-3fb1-4501-9796-233de863f8e1",
-													"type": "modifier",
-													"name": "Comfortable",
-													"reference": "B25",
-													"notes": "Starting wealth is 2x average",
-													"cost": 10,
-													"cost_type": "points",
-													"disabled": true
-												},
-												{
-													"id": "7035e699-fea9-4fe3-ace1-e9a42b502b7f",
-													"type": "modifier",
-													"name": "Wealthy",
-													"reference": "B25",
-													"notes": "Starting wealth is 5x average",
-													"cost": 20,
-													"cost_type": "points"
-												},
-												{
-													"id": "881e9f3d-ea2e-4995-981b-53691be8fdf4",
-													"type": "modifier",
-													"name": "Very Wealthy",
-													"reference": "B25",
-													"notes": "Starting wealth is 20x average",
-													"cost": 30,
-													"cost_type": "points",
-													"disabled": true
-												},
-												{
-													"id": "e5b8b7fc-27f3-478a-a788-73e04ce395e9",
-													"type": "modifier",
-													"name": "Filthy Rich",
-													"reference": "B25",
-													"notes": "Starting wealth is 100x average",
-													"cost": 50,
-													"cost_type": "points",
-													"disabled": true
-												}
-											],
-											"calc": {
-												"points": 20
-											}
-										}
-									],
-									"name": "Wealthy + Signature Gear",
-									"calc": {
-										"points": 30
-									}
-								}
-							],
-							"name": "Wealth Level",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							},
-							"calc": {
-								"points": 60
-							}
-						},
-						{
-							"id": "2d1a5c19-c5be-4247-ba4a-b6cfc62c4ff3",
+							"id": "43b96c15-4737-4504-8bda-a7c370e654ff",
 							"type": "trait",
-							"name": "Weapon Bond",
-							"reference": "DF1:14",
-							"notes": "+1 to effective skill when using @a specific weapon@",
+							"name": "Wealth",
+							"reference": "B25",
 							"tags": [
 								"Advantage",
-								"Perk",
-								"Physical"
+								"Disadvantage",
+								"Social"
 							],
-							"base_points": 1,
+							"modifiers": [
+								{
+									"id": "1d83325e-7571-48e7-824f-9fbbea477ba7",
+									"type": "modifier",
+									"name": "Dead Broke",
+									"reference": "B25",
+									"notes": "Starting wealth is $0",
+									"cost": -25,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "1915088f-a15d-4802-93a2-7fe6e843a21e",
+									"type": "modifier",
+									"name": "Poor",
+									"reference": "B25",
+									"notes": "Starting wealth is 1/5 average",
+									"cost": -15,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "d49ffb82-374f-4317-ab95-0d4d813c8e1e",
+									"type": "modifier",
+									"name": "Struggling",
+									"reference": "B25",
+									"notes": "Starting wealth is 1/2 average",
+									"cost": -10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "c7aabe01-99e2-407d-a927-69d10502ab18",
+									"type": "modifier",
+									"name": "Average",
+									"reference": "B25",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "8552bac6-3fb1-4501-9796-233de863f8e1",
+									"type": "modifier",
+									"name": "Comfortable",
+									"reference": "B25",
+									"notes": "Starting wealth is 2x average",
+									"cost": 10,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "7035e699-fea9-4fe3-ace1-e9a42b502b7f",
+									"type": "modifier",
+									"name": "Wealthy",
+									"reference": "B25",
+									"notes": "Starting wealth is 5x average",
+									"cost": 20,
+									"cost_type": "points"
+								},
+								{
+									"id": "881e9f3d-ea2e-4995-981b-53691be8fdf4",
+									"type": "modifier",
+									"name": "Very Wealthy",
+									"reference": "B25",
+									"notes": "Starting wealth is 20x average",
+									"cost": 30,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e5b8b7fc-27f3-478a-a788-73e04ce395e9",
+									"type": "modifier",
+									"name": "Filthy Rich",
+									"reference": "B25",
+									"notes": "Starting wealth is 100x average",
+									"cost": 50,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
 							"calc": {
-								"points": 1
+								"points": 20
 							}
 						}
 					],
 					"name": "Class Advantage",
 					"calc": {
-						"points": 94
+						"points": 55
 					}
 				},
 				{
@@ -1186,7 +1071,7 @@
 			],
 			"name": "Knight",
 			"calc": {
-				"points": 69
+				"points": 30
 			}
 		}
 	],
@@ -1562,7 +1447,7 @@
 												"qualifier": 2
 											},
 											"amount": 1,
-											"per_level": true
+											"per_die": true
 										}
 									]
 								},
@@ -1623,24 +1508,6 @@
 											"name": "Animal Handling",
 											"specialization": "Raptors",
 											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "fcdbf4c7-090e-44ea-9d44-48578df5de9c",
-									"type": "skill",
-									"name": "Games",
-									"reference": "B197",
-									"tags": [
-										"Knowledge"
-									],
-									"specialization": "Tournament Rules",
-									"difficulty": "iq/e",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
 										}
 									]
 								},

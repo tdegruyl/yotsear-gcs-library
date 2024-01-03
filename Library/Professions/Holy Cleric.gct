@@ -159,6 +159,7 @@
 				{
 					"id": "f192ffe9-ee8d-4589-bb6e-637bd2129abd",
 					"type": "trait_container",
+					"open": true,
 					"children": [
 						{
 							"id": "82c653c5-2ee7-4fff-956a-40db57e9f384",
@@ -173,6 +174,34 @@
 							"cr": 12,
 							"calc": {
 								"points": -15
+							}
+						},
+						{
+							"id": "3348cdef-58aa-43c5-bbb3-27209a0fd79a",
+							"type": "trait",
+							"name": "Disciplines of Faith (Asceticism)",
+							"reference": "B132",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "879a48d7-48a2-402d-aca9-6703c10015ac",
+							"type": "trait",
+							"name": "Disciplines of Faith (Monasticism)",
+							"reference": "B132",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
 							}
 						},
 						{
@@ -367,6 +396,22 @@
 							}
 						},
 						{
+							"id": "2bb82c98-f2d0-4609-8717-c4d84b8a4ba6",
+							"type": "trait",
+							"name": "Selfless",
+							"reference": "B153",
+							"notes": "You must make a self-control roll to put your needs – even survival – before those of someone else.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"cr": 12,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
 							"id": "cbac7ad2-71d9-4738-8f6b-c1eedbd54330",
 							"type": "trait",
 							"name": "Sense of Duty",
@@ -509,7 +554,7 @@
 						}
 					},
 					"calc": {
-						"points": -135
+						"points": -165
 					}
 				},
 				{
@@ -1938,7 +1983,7 @@
 												"base": "1d"
 											},
 											"accuracy": "3",
-											"range": "100/10",
+											"range": "10",
 											"rate_of_fire": "1",
 											"recoil": "1",
 											"defaults": [
@@ -1958,7 +2003,6 @@
 												}
 											],
 											"calc": {
-												"range": "100/10",
 												"damage": "1d burn"
 											}
 										}
@@ -2599,7 +2643,7 @@
 			"name": "Holy Cleric",
 			"reference": "DF1:4",
 			"calc": {
-				"points": 95
+				"points": 65
 			}
 		}
 	],
@@ -2625,7 +2669,7 @@
 								"Social"
 							],
 							"difficulty": "iq/a",
-							"points": 4,
+							"points": 2,
 							"defaults": [
 								{
 									"type": "iq",
@@ -2721,99 +2765,6 @@
 									"specialization": "Spirit Lore",
 									"difficulty": "iq/a",
 									"points": 4
-								},
-								{
-									"id": "7e31f7da-b151-462a-a627-3cd9ea057439",
-									"type": "skill",
-									"name": "Mental Strength",
-									"reference": "B209",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/e",
-									"points": 4,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": false,
-										"prereqs": [
-											{
-												"type": "trait_prereq",
-												"has": true,
-												"name": {
-													"compare": "starts_with",
-													"qualifier": "weapon master"
-												}
-											},
-											{
-												"type": "trait_prereq",
-												"has": true,
-												"name": {
-													"compare": "is",
-													"qualifier": "trained by a master"
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "61656fe1-efb8-4d9f-bbc9-c252d586b9ac",
-									"type": "skill_container",
-									"open": true,
-									"children": [
-										{
-											"id": "c34a3280-68b5-4715-bd23-801f7d63616c",
-											"type": "skill",
-											"name": "Persuade",
-											"reference": "B191",
-											"tags": [
-												"Esoteric"
-											],
-											"difficulty": "will/h",
-											"points": 2,
-											"prereqs": {
-												"type": "prereq_list",
-												"all": true,
-												"prereqs": [
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "charisma"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 1
-														}
-													},
-													{
-														"type": "skill_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "public speaking"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 12
-														}
-													}
-												]
-											}
-										},
-										{
-											"id": "1822679d-b8bf-43fa-b351-b56cf78e79e3",
-											"type": "skill",
-											"name": "Sway Emotions",
-											"reference": "B192",
-											"tags": [
-												"Social"
-											],
-											"difficulty": "will/h",
-											"points": 2
-										}
-									],
-									"name": "Supernatural Persuasion"
 								}
 							],
 							"name": "Other Skills",
@@ -2880,108 +2831,6 @@
 					"type": "skill_container",
 					"open": true,
 					"children": [
-						{
-							"id": "a65d0617-c08e-4e61-b28a-67951caa41bc",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "48d6679e-5527-4743-b798-901adab5a564",
-									"type": "skill",
-									"name": "Dreaming",
-									"reference": "B188",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										}
-									]
-								},
-								{
-									"id": "42588913-0798-4857-a9b6-41103a01608c",
-									"type": "skill",
-									"name": "Exorcism",
-									"reference": "B193",
-									"tags": [
-										"Magical",
-										"Occult"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Religious Ritual",
-											"modifier": -3
-										},
-										{
-											"type": "skill",
-											"name": "Ritual Magic",
-											"modifier": -3
-										},
-										{
-											"type": "skill",
-											"name": "Theology",
-											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "3488a142-5427-48ed-8938-c868f7a8bc99",
-									"type": "skill",
-									"name": "Expert Skill",
-									"reference": "B193,MA56",
-									"tags": [
-										"Humanities",
-										"Knowledge",
-										"Scholarly",
-										"Social Sciences"
-									],
-									"specialization": "Thantology",
-									"difficulty": "iq/h",
-									"points": 1
-								},
-								{
-									"id": "eed3981b-3314-46fb-8f68-ce2538a34e69",
-									"type": "skill",
-									"name": "Meditation",
-									"reference": "B207",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Autohypnosis",
-											"modifier": -4
-										}
-									]
-								}
-							],
-							"name": "Divine Skills",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							}
-						},
 						{
 							"id": "66e80f2c-175a-48cb-95dc-de24b6abcfa4",
 							"type": "skill_container",
@@ -3104,25 +2953,6 @@
 										{
 											"type": "ht",
 											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "c561f4af-e9f8-4ef4-aaab-603b21b0093f",
-									"type": "skill",
-									"name": "Writing",
-									"reference": "B228",
-									"tags": [
-										"Arts",
-										"Entertainment",
-										"Scholarly"
-									],
-									"difficulty": "iq/a",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
 										}
 									]
 								}

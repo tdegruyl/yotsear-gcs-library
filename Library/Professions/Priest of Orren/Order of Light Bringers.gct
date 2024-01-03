@@ -170,6 +170,64 @@
 					"open": true,
 					"children": [
 						{
+							"id": "4eda8aa1-5102-4ff7-8a18-17d55c3257b6",
+							"type": "trait",
+							"name": "Callous",
+							"reference": "B125",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -5,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "psychology"
+									},
+									"amount": -3
+								},
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "teaching"
+									},
+									"amount": -3
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from past victims and anyone with Empathy",
+									"amount": -1
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to Interrogation and Intimidation rolls when you use threats or torture",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "357bf222-b0fc-42b9-806c-ea845cc51f03",
+							"type": "trait",
+							"name": "Disciplines of Faith (Monasticism)",
+							"reference": "B132",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
 							"id": "56c0ec41-39b7-4dbb-9e07-c9030425a58f",
 							"type": "trait_container",
 							"open": true,
@@ -317,64 +375,6 @@
 							}
 						},
 						{
-							"id": "4eda8aa1-5102-4ff7-8a18-17d55c3257b6",
-							"type": "trait",
-							"name": "Callous",
-							"reference": "B125",
-							"tags": [
-								"Disadvantage",
-								"Mental"
-							],
-							"base_points": -5,
-							"features": [
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "psychology"
-									},
-									"amount": -3
-								},
-								{
-									"type": "skill_bonus",
-									"selection_type": "skills_with_name",
-									"name": {
-										"compare": "is",
-										"qualifier": "teaching"
-									},
-									"amount": -3
-								},
-								{
-									"type": "reaction_bonus",
-									"situation": "from past victims and anyone with Empathy",
-									"amount": -1
-								},
-								{
-									"type": "conditional_modifier",
-									"situation": "to Interrogation and Intimidation rolls when you use threats or torture",
-									"amount": 1
-								}
-							],
-							"calc": {
-								"points": -5
-							}
-						},
-						{
-							"id": "357bf222-b0fc-42b9-806c-ea845cc51f03",
-							"type": "trait",
-							"name": "Disciplines of Faith (Monasticism)",
-							"reference": "B132",
-							"tags": [
-								"Disadvantage",
-								"Mental"
-							],
-							"base_points": -10,
-							"calc": {
-								"points": -10
-							}
-						},
-						{
 							"id": "89150d9a-7a85-4a2d-b391-839fddfb9779",
 							"type": "trait",
 							"name": "Vow (Chastity)",
@@ -439,6 +439,34 @@
 					"type": "skill_container",
 					"open": true,
 					"children": [
+						{
+							"id": "18d9a618-a5ce-492b-96fa-054e371a1c74",
+							"type": "skill",
+							"name": "Acting",
+							"reference": "B174",
+							"tags": [
+								"Social",
+								"Spy"
+							],
+							"difficulty": "iq/a",
+							"points": 8,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Performance",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Public Speaking",
+									"modifier": -5
+								}
+							]
+						},
 						{
 							"id": "8d315a66-4336-4962-86d8-d8d81c01e99c",
 							"type": "skill",
@@ -523,14 +551,16 @@
 							]
 						},
 						{
-							"id": "89b11fff-3750-4a25-ba08-dbafa03c0c9a",
+							"id": "ef7692ae-d033-46e7-a774-718cd7469139",
 							"type": "skill",
-							"name": "Psychology",
-							"reference": "B216",
+							"name": "Physiology",
+							"reference": "B213",
 							"tags": [
-								"Humanities",
-								"Social Sciences"
+								"Medical",
+								"Natural Science"
 							],
+							"specialization": "Human",
+							"tech_level": "",
 							"difficulty": "iq/h",
 							"points": 8,
 							"defaults": [
@@ -540,8 +570,18 @@
 								},
 								{
 									"type": "skill",
-									"name": "Sociology",
-									"modifier": -4
+									"name": "Diagnosis",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Physician",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Surgery",
+									"modifier": -5
 								}
 							]
 						},
@@ -579,59 +619,6 @@
 					"open": true,
 					"children": [
 						{
-							"id": "0726236f-3b31-4736-ba74-5149e46ce2c8",
-							"type": "skill",
-							"name": "Acting",
-							"reference": "B174",
-							"tags": [
-								"Social",
-								"Spy"
-							],
-							"difficulty": "iq/a",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Performance",
-									"modifier": -2
-								},
-								{
-									"type": "skill",
-									"name": "Public Speaking",
-									"modifier": -5
-								}
-							]
-						},
-						{
-							"id": "bd4371ce-b3c9-492d-bbc6-abcf0acdd477",
-							"type": "skill",
-							"name": "Body Language",
-							"reference": "B181",
-							"tags": [
-								"Police",
-								"Social",
-								"Spy"
-							],
-							"difficulty": "per/a",
-							"points": 4,
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Detect Lies",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Psychology",
-									"modifier": -4
-								}
-							]
-						},
-						{
 							"id": "b5709cb0-1c75-413d-b297-4ad01792b403",
 							"type": "skill",
 							"name": "Knife",
@@ -642,7 +629,7 @@
 								"Weapon"
 							],
 							"difficulty": "dx/e",
-							"points": 2,
+							"points": 4,
 							"defaults": [
 								{
 									"type": "skill",
@@ -674,7 +661,7 @@
 								"Everyman"
 							],
 							"difficulty": "dx/e",
-							"points": 2,
+							"points": 4,
 							"defaults": [
 								{
 									"type": "dx",
@@ -705,7 +692,7 @@
 							],
 							"tech_level": "",
 							"difficulty": "iq/h",
-							"points": 1,
+							"points": 4,
 							"defaults": [
 								{
 									"type": "iq",
@@ -725,60 +712,6 @@
 									"type": "skill",
 									"name": "Physician",
 									"modifier": -3
-								}
-							]
-						},
-						{
-							"id": "80488bf2-f673-4b69-b3e9-9dd6bc6632d2",
-							"type": "skill",
-							"name": "Politics",
-							"reference": "B215",
-							"tags": [
-								"Business",
-								"Social"
-							],
-							"difficulty": "iq/a",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Diplomacy",
-									"modifier": -5
-								}
-							]
-						},
-						{
-							"id": "7c5dfc17-00cb-458c-baf1-f5fa099798aa",
-							"type": "skill",
-							"name": "Propaganda",
-							"reference": "B216",
-							"tags": [
-								"Business",
-								"Military",
-								"Social",
-								"Spy"
-							],
-							"tech_level": "",
-							"difficulty": "iq/a",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Merchant",
-									"modifier": -5
-								},
-								{
-									"type": "skill",
-									"name": "Psychology",
-									"modifier": -4
 								}
 							]
 						},
@@ -821,7 +754,7 @@
 								"Street"
 							],
 							"difficulty": "iq/a",
-							"points": 2,
+							"points": 4,
 							"defaults": [
 								{
 									"type": "iq",
@@ -851,7 +784,7 @@
 								"Street"
 							],
 							"difficulty": "dx/a",
-							"points": 2,
+							"points": 4,
 							"encumbrance_penalty_multiplier": 1,
 							"defaults": [
 								{
@@ -959,25 +892,6 @@
 									"modifier": -4
 								}
 							]
-						},
-						{
-							"id": "40a4b6a7-2c5e-418f-a9bf-0c0ed99b246c",
-							"type": "skill",
-							"name": "History",
-							"reference": "B200",
-							"tags": [
-								"Humanities",
-								"Social Sciences"
-							],
-							"specialization": "Alfarnia",
-							"difficulty": "iq/h",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -6
-								}
-							]
 						}
 					],
 					"name": "3. Background Skills"
@@ -991,7 +905,7 @@
 							"id": "1b115cd4-0ebe-472d-af9b-27cf6b0ab24c",
 							"type": "skill_container",
 							"open": true,
-							"name": "10 points in weapon skills"
+							"name": "12 points in weapon skills"
 						}
 					],
 					"name": "4. Adventuring Skills"

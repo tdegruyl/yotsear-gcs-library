@@ -123,7 +123,7 @@
 									"disabled": true
 								}
 							],
-							"levels": 1,
+							"levels": 5,
 							"points_per_level": 2,
 							"features": [
 								{
@@ -141,7 +141,7 @@
 							],
 							"can_level": true,
 							"calc": {
-								"points": 2
+								"points": 10
 							}
 						},
 						{
@@ -876,7 +876,7 @@
 					],
 					"name": "Advantages",
 					"calc": {
-						"points": 89
+						"points": 97
 					}
 				},
 				{
@@ -884,31 +884,6 @@
 					"type": "trait_container",
 					"open": true,
 					"children": [
-						{
-							"id": "d07893b8-563e-4171-b952-8e70556b762b",
-							"type": "trait",
-							"name": "Increased Health",
-							"reference": "B14",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Physical"
-							],
-							"levels": 1,
-							"points_per_level": 10,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "ht",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 10
-							}
-						},
 						{
 							"id": "e3c5e9c4-13ae-4543-814e-519fe4250579",
 							"type": "trait",
@@ -937,7 +912,7 @@
 					],
 					"name": "Attributes",
 					"calc": {
-						"points": 70
+						"points": 60
 					}
 				},
 				{
@@ -995,7 +970,7 @@
 			],
 			"name": "Order of Shepherds",
 			"calc": {
-				"points": 154
+				"points": 152
 			}
 		}
 	],
@@ -1140,99 +1115,6 @@
 									"specialization": "Spirit Lore",
 									"difficulty": "iq/a",
 									"points": 8
-								},
-								{
-									"id": "a77739e6-6c4d-4923-8f8e-cd663c743dd5",
-									"type": "skill",
-									"name": "Mental Strength",
-									"reference": "B209",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/e",
-									"points": 8,
-									"prereqs": {
-										"type": "prereq_list",
-										"all": false,
-										"prereqs": [
-											{
-												"type": "trait_prereq",
-												"has": true,
-												"name": {
-													"compare": "starts_with",
-													"qualifier": "weapon master"
-												}
-											},
-											{
-												"type": "trait_prereq",
-												"has": true,
-												"name": {
-													"compare": "is",
-													"qualifier": "trained by a master"
-												}
-											}
-										]
-									}
-								},
-								{
-									"id": "1bdd2cf1-71c6-4126-8c46-ef62b0ea3f21",
-									"type": "skill_container",
-									"open": true,
-									"children": [
-										{
-											"id": "3f8f7a4d-c03c-4c3d-a410-b492a7637ea9",
-											"type": "skill",
-											"name": "Persuade",
-											"reference": "B191",
-											"tags": [
-												"Esoteric"
-											],
-											"difficulty": "will/h",
-											"points": 4,
-											"prereqs": {
-												"type": "prereq_list",
-												"all": true,
-												"prereqs": [
-													{
-														"type": "trait_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "charisma"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 1
-														}
-													},
-													{
-														"type": "skill_prereq",
-														"has": true,
-														"name": {
-															"compare": "is",
-															"qualifier": "public speaking"
-														},
-														"level": {
-															"compare": "at_least",
-															"qualifier": 12
-														}
-													}
-												]
-											}
-										},
-										{
-											"id": "0bad5907-13b5-416b-ad25-76cc63264b27",
-											"type": "skill",
-											"name": "Sway Emotions",
-											"reference": "B192",
-											"tags": [
-												"Social"
-											],
-											"difficulty": "will/h",
-											"points": 4
-										}
-									],
-									"name": "Supernatural Persuasion"
 								}
 							],
 							"name": "Other Skills",
@@ -1361,29 +1243,6 @@
 									"points": 1
 								},
 								{
-									"id": "a6d485e8-131a-4313-900c-1eaae13dc926",
-									"type": "skill",
-									"name": "Poetry",
-									"reference": "B214",
-									"tags": [
-										"Arts",
-										"Entertainment"
-									],
-									"difficulty": "iq/a",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Writing",
-											"modifier": -5
-										}
-									]
-								},
-								{
 									"id": "acf98fab-5e7a-4d0c-bdef-7db550a66311",
 									"type": "skill",
 									"name": "Singing",
@@ -1400,25 +1259,6 @@
 											"modifier": -4
 										}
 									]
-								},
-								{
-									"id": "2e1fc84e-585a-4aa7-8e80-183a9b9758b4",
-									"type": "skill",
-									"name": "Writing",
-									"reference": "B228",
-									"tags": [
-										"Arts",
-										"Entertainment",
-										"Scholarly"
-									],
-									"difficulty": "iq/a",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										}
-									]
 								}
 							],
 							"name": "Knowledge",
@@ -1426,109 +1266,7 @@
 								"type": "count",
 								"qualifier": {
 									"compare": "is",
-									"qualifier": 1
-								}
-							}
-						},
-						{
-							"id": "3471c072-7d5b-4f34-a04b-2ef30b2d279f",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "673037af-3bfe-4cb8-abbe-f2a47bff44a0",
-									"type": "skill",
-									"name": "Dreaming",
-									"reference": "B188",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										}
-									]
-								},
-								{
-									"id": "d509c654-9522-417e-853c-ff8af1bbb5cc",
-									"type": "skill",
-									"name": "Exorcism",
-									"reference": "B193",
-									"tags": [
-										"Magical",
-										"Occult"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Religious Ritual",
-											"modifier": -3
-										},
-										{
-											"type": "skill",
-											"name": "Ritual Magic",
-											"modifier": -3
-										},
-										{
-											"type": "skill",
-											"name": "Theology",
-											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "ebb0b038-c610-40c7-84cc-a47eb6bed76a",
-									"type": "skill",
-									"name": "Expert Skill",
-									"reference": "B193,MA56",
-									"tags": [
-										"Humanities",
-										"Knowledge",
-										"Scholarly",
-										"Social Sciences"
-									],
-									"specialization": "Thantology",
-									"difficulty": "iq/h",
-									"points": 1
-								},
-								{
-									"id": "094db90c-21bd-4f22-ab2e-ac89b6d43935",
-									"type": "skill",
-									"name": "Meditation",
-									"reference": "B207",
-									"tags": [
-										"Esoteric"
-									],
-									"difficulty": "will/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "will",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Autohypnosis",
-											"modifier": -4
-										}
-									]
-								}
-							],
-							"name": "Professional Skills",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
+									"qualifier": 2
 								}
 							}
 						},

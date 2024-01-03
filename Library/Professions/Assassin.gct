@@ -1530,27 +1530,6 @@
 									]
 								},
 								{
-									"id": "15c9a134-4477-4f71-880c-4f3b93b66136",
-									"type": "skill",
-									"name": "Cryptography",
-									"reference": "B186",
-									"tags": [
-										"Military",
-										"Spy"
-									],
-									"tech_level": "",
-									"difficulty": "iq/h",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Mathematics",
-											"specialization": "Cryptology",
-											"modifier": -5
-										}
-									]
-								},
-								{
 									"id": "c09ee01c-28a6-43b4-a2f6-d9dd38ade3d9",
 									"type": "skill",
 									"name": "Disguise",
@@ -1600,18 +1579,6 @@
 											"modifier": -2
 										}
 									]
-								},
-								{
-									"id": "983b17dc-d42b-458f-8eba-3f92d6d50109",
-									"type": "skill",
-									"name": "Hidden Lore",
-									"reference": "B199",
-									"tags": [
-										"Knowledge"
-									],
-									"specialization": "@Subject@",
-									"difficulty": "iq/a",
-									"points": 2
 								},
 								{
 									"id": "872485ff-5dd8-4e09-a7fb-3ce09fbc67b9",

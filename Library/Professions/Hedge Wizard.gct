@@ -813,16 +813,16 @@
 									}
 								},
 								{
-									"id": "7f0380f2-fa55-4502-b0c2-380f92a05d01",
+									"id": "90923796-c4ec-4f7c-ba3d-311a460de498",
 									"type": "trait",
-									"name": "Ritual Adept",
+									"name": "Ritual Adept (Connection)",
 									"reference": "TRPM6",
 									"tags": [
 										"Advantage",
 										"Mental",
 										"Supernatural"
 									],
-									"base_points": 40,
+									"base_points": 10,
 									"prereqs": {
 										"type": "prereq_list",
 										"all": true,
@@ -838,7 +838,98 @@
 										]
 									},
 									"calc": {
-										"points": 40
+										"points": 10
+									}
+								},
+								{
+									"id": "79264146-2e32-4de0-b42c-6bfd3b638940",
+									"type": "trait",
+									"name": "Ritual Adept (Space)",
+									"reference": "TRPM6",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Supernatural"
+									],
+									"base_points": 10,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Magery (Ritual Path)"
+												}
+											}
+										]
+									},
+									"calc": {
+										"points": 10
+									}
+								},
+								{
+									"id": "b3d91e01-8c52-47dc-b092-30ca5e0466d2",
+									"type": "trait",
+									"name": "Ritual Adept (Time)",
+									"reference": "TRPM6",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Supernatural"
+									],
+									"levels": 1,
+									"points_per_level": 10,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Magery (Ritual Path)"
+												}
+											}
+										]
+									},
+									"can_level": true,
+									"calc": {
+										"points": 10
+									}
+								},
+								{
+									"id": "2634100c-6937-4372-9323-5f62a2f07c79",
+									"type": "trait",
+									"name": "Ritual Adept (Time)",
+									"reference": "TRPM6",
+									"tags": [
+										"Advantage",
+										"Mental",
+										"Supernatural"
+									],
+									"levels": 2,
+									"points_per_level": 10,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Magery (Ritual Path)"
+												}
+											}
+										]
+									},
+									"can_level": true,
+									"calc": {
+										"points": 20
 									}
 								},
 								{
@@ -899,13 +990,13 @@
 								}
 							},
 							"calc": {
-								"points": 75
+								"points": 85
 							}
 						}
 					],
 					"name": "Class Advantage",
 					"calc": {
-						"points": 119
+						"points": 129
 					}
 				},
 				{
@@ -1193,7 +1284,7 @@
 			],
 			"name": "Hedge Wizard",
 			"calc": {
-				"points": 129
+				"points": 139
 			}
 		}
 	],
@@ -1208,64 +1299,6 @@
 					"type": "skill_container",
 					"open": true,
 					"children": [
-						{
-							"id": "ab1a3685-6856-494d-b035-d18744b9a003",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "d3015cc4-c33b-42d7-9b9c-36185f80970a",
-									"type": "skill",
-									"name": "Area Knowledge",
-									"reference": "B176",
-									"tags": [
-										"Everyman",
-										"Knowledge"
-									],
-									"specialization": "Town",
-									"difficulty": "iq/e",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Geography",
-											"modifier": -3
-										}
-									],
-									"calc": {}
-								},
-								{
-									"id": "ccabb2c5-2a0e-4435-b7e6-4486ac26cc4d",
-									"type": "skill",
-									"name": "Area Knowledge",
-									"reference": "B176",
-									"tags": [
-										"Everyman",
-										"Knowledge"
-									],
-									"specialization": "Village",
-									"difficulty": "iq/e",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Geography",
-											"modifier": -3
-										}
-									],
-									"calc": {}
-								}
-							],
-							"name": "Area Knowledge",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							},
-							"calc": {}
-						},
 						{
 							"id": "48f1e314-dd9f-4875-82be-7355ebe2efd4",
 							"type": "skill",
@@ -1293,12 +1326,10 @@
 									"name": "Spear",
 									"modifier": -2
 								}
-							],
-							"calc": {}
+							]
 						}
 					],
-					"name": "Background Skill",
-					"calc": {}
+					"name": "Background Skill"
 				},
 				{
 					"id": "27e4f35a-9e75-4790-bd3d-53db2b803f7f",
@@ -1317,8 +1348,7 @@
 							],
 							"tech_level": "",
 							"difficulty": "iq/vh",
-							"points": 4,
-							"calc": {}
+							"points": 4
 						},
 						{
 							"id": "4bc204a1-0ce1-467e-bcea-47e401b006df",
@@ -1344,8 +1374,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "1af73275-318c-4f44-864e-2e896ce1c111",
@@ -1363,12 +1392,10 @@
 									"type": "iq",
 									"modifier": -7
 								}
-							],
-							"calc": {}
+							]
 						}
 					],
-					"name": "Primary Skill",
-					"calc": {}
+					"name": "Primary Skill"
 				},
 				{
 					"id": "eecf85bf-4f1a-45e7-9a01-f7c230fb3e11",
@@ -1379,8 +1406,7 @@
 							"id": "1217cc77-2adf-4b13-9912-7430c06ad807",
 							"type": "skill_container",
 							"open": true,
-							"name": "2 other Path Skills raised to 1 pt",
-							"calc": {}
+							"name": "3 additional points in path skills"
 						},
 						{
 							"id": "fff43604-6f54-43ba-a6ff-2996f28b23a0",
@@ -1417,8 +1443,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "f7a67113-58ef-4b0f-a08c-25d9f586a467",
@@ -1455,8 +1480,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "3a9ab303-9cbd-4ab0-a151-9e1827ec61f2",
@@ -1492,8 +1516,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "131a91c1-15df-49d1-9560-e62c55ba6b6b",
@@ -1529,8 +1552,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "694f87f8-3648-4dbd-ba12-df3effab1cbc",
@@ -1566,8 +1588,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "b8f54330-d804-47a9-b540-12e0719c6a44",
@@ -1603,8 +1624,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "a1bf1ca6-5322-4a4a-a065-9842b84bb8ff",
@@ -1640,8 +1660,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "74eacdbd-7ac2-4c40-9bee-0ac7b04bc7d5",
@@ -1678,8 +1697,7 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						},
 						{
 							"id": "341b7ff6-0c99-419f-86dc-e2547e432f95",
@@ -1715,12 +1733,10 @@
 										}
 									}
 								]
-							},
-							"calc": {}
+							}
 						}
 					],
-					"name": "Ritual Path Skills",
-					"calc": {}
+					"name": "Ritual Path Skills"
 				},
 				{
 					"id": "67a7cdd2-3a55-45fc-b5ee-e61ae5bb1dbf",
@@ -1757,18 +1773,21 @@
 									"name": "Veterinary",
 									"modifier": -4
 								}
-							],
-							"calc": {}
+							]
 						},
 						{
-							"id": "0c0c498c-a1dc-4a3c-9606-7dacfdf52e36",
+							"id": "8c260a49-6204-4de4-9a9a-869364277c5b",
 							"type": "skill",
-							"name": "Diagnosis",
-							"reference": "B187",
+							"name": "Naturalist",
+							"reference": "B211",
 							"tags": [
-								"Medical"
+								"Animal",
+								"Exploration",
+								"Natural Science",
+								"Outdoor",
+								"Plant"
 							],
-							"tech_level": "",
+							"specialization": "@Planet type@",
 							"difficulty": "iq/h",
 							"points": 2,
 							"defaults": [
@@ -1778,21 +1797,10 @@
 								},
 								{
 									"type": "skill",
-									"name": "First Aid",
-									"modifier": -8
-								},
-								{
-									"type": "skill",
-									"name": "Physician",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Veterinary",
-									"modifier": -5
+									"name": "Biology",
+									"modifier": -3
 								}
-							],
-							"calc": {}
+							]
 						},
 						{
 							"id": "2dc77fee-01bb-4400-8b7e-9df5e318de2f",
@@ -1800,18 +1808,14 @@
 							"open": true,
 							"children": [
 								{
-									"id": "8c260a49-6204-4de4-9a9a-869364277c5b",
+									"id": "0c0c498c-a1dc-4a3c-9606-7dacfdf52e36",
 									"type": "skill",
-									"name": "Naturalist",
-									"reference": "B211",
+									"name": "Diagnosis",
+									"reference": "B187",
 									"tags": [
-										"Animal",
-										"Exploration",
-										"Natural Science",
-										"Outdoor",
-										"Plant"
+										"Medical"
 									],
-									"specialization": "@Planet type@",
+									"tech_level": "",
 									"difficulty": "iq/h",
 									"points": 2,
 									"defaults": [
@@ -1821,11 +1825,20 @@
 										},
 										{
 											"type": "skill",
-											"name": "Biology",
-											"modifier": -3
+											"name": "First Aid",
+											"modifier": -8
+										},
+										{
+											"type": "skill",
+											"name": "Physician",
+											"modifier": -4
+										},
+										{
+											"type": "skill",
+											"name": "Veterinary",
+											"modifier": -5
 										}
-									],
-									"calc": {}
+									]
 								},
 								{
 									"id": "71bd79c7-fcc3-4e73-8833-83382be219ec",
@@ -1876,8 +1889,7 @@
 												}
 											}
 										]
-									},
-									"calc": {}
+									}
 								},
 								{
 									"id": "896f4655-dbf2-4692-8a1e-d81f75d236ec",
@@ -1895,8 +1907,7 @@
 											"type": "iq",
 											"modifier": -5
 										}
-									],
-									"calc": {}
+									]
 								}
 							],
 							"name": "Other Skill",
@@ -1906,16 +1917,13 @@
 									"compare": "is",
 									"qualifier": 1
 								}
-							},
-							"calc": {}
+							}
 						}
 					],
-					"name": "Secondary Skill",
-					"calc": {}
+					"name": "Secondary Skill"
 				}
 			],
-			"name": "Hedge Wizard",
-			"calc": {}
+			"name": "Hedge Wizard"
 		}
 	]
 }

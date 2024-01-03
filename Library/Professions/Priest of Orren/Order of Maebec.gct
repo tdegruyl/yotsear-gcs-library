@@ -571,31 +571,6 @@
 					"open": true,
 					"children": [
 						{
-							"id": "330294f6-c95d-490e-838b-fab625d13d34",
-							"type": "skill",
-							"name": "Body Language",
-							"reference": "B181",
-							"tags": [
-								"Police",
-								"Social",
-								"Spy"
-							],
-							"difficulty": "per/a",
-							"points": 1,
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Detect Lies",
-									"modifier": -4
-								},
-								{
-									"type": "skill",
-									"name": "Psychology",
-									"modifier": -4
-								}
-							]
-						},
-						{
 							"id": "743fbc7e-8889-4b10-980e-570997a653fa",
 							"type": "skill",
 							"name": "Detect Lies",
@@ -606,7 +581,7 @@
 								"Spy"
 							],
 							"difficulty": "per/h",
-							"points": 1,
+							"points": 2,
 							"defaults": [
 								{
 									"type": "per",
@@ -729,7 +704,7 @@
 								"Weapon"
 							],
 							"difficulty": "dx/e",
-							"points": 1,
+							"points": 2,
 							"defaults": [
 								{
 									"type": "skill",
@@ -765,7 +740,7 @@
 							],
 							"tech_level": "",
 							"difficulty": "iq/h",
-							"points": 1,
+							"points": 2,
 							"defaults": [
 								{
 									"type": "iq",
@@ -785,29 +760,6 @@
 									"type": "skill",
 									"name": "Physician",
 									"modifier": -3
-								}
-							]
-						},
-						{
-							"id": "babddca2-ba8b-43dd-9e7f-6bcbbd643c89",
-							"type": "skill",
-							"name": "Psychology",
-							"reference": "B216",
-							"tags": [
-								"Humanities",
-								"Social Sciences"
-							],
-							"difficulty": "iq/h",
-							"points": 2,
-							"defaults": [
-								{
-									"type": "iq",
-									"modifier": -6
-								},
-								{
-									"type": "skill",
-									"name": "Sociology",
-									"modifier": -4
 								}
 							]
 						}

@@ -1626,7 +1626,7 @@
 							]
 						}
 					],
-					"name": "2. Secondary Skill"
+					"name": "2. Secondary Skills"
 				},
 				{
 					"id": "4193a6f5-9a4e-4b2a-a3e2-e8c458684c4a",
@@ -1701,7 +1701,7 @@
 												"qualifier": 2
 											},
 											"amount": 1,
-											"per_level": true
+											"per_die": true
 										}
 									]
 								},
@@ -1797,36 +1797,6 @@
 										{
 											"type": "iq",
 											"modifier": -5
-										}
-									]
-								},
-								{
-									"id": "587bfec0-dd1f-4b65-bc30-245a59f4078c",
-									"type": "skill",
-									"name": "Jeweler",
-									"reference": "B203",
-									"tags": [
-										"Craft"
-									],
-									"tech_level": "",
-									"difficulty": "iq/h",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Smith",
-											"specialization": "Copper",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Smith",
-											"specialization": "Lead \u0026 Tin",
-											"modifier": -4
 										}
 									]
 								},

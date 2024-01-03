@@ -177,6 +177,85 @@
 							}
 						},
 						{
+							"id": "ed1953cd-be00-4a9d-be7c-2e9cc8bb03b7",
+							"type": "trait",
+							"name": "Lifting ST",
+							"reference": "B65,P58",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "cdcc6dd9-be46-44b2-9b2d-9258972a9abb",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "3a979126-6b53-4293-825a-fd4679b99bdf",
+									"type": "modifier",
+									"name": "Size",
+									"reference": "B15",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "4dee3f9c-cdb5-41b9-9bd9-417234971df0",
+									"type": "modifier",
+									"name": "Super-Effort",
+									"reference": "P58",
+									"cost": 400,
+									"disabled": true
+								},
+								{
+									"id": "5beca2a9-73aa-4acc-a809-a69d38a0c31c",
+									"type": "modifier",
+									"name": "Know Your Own Strength Variant Price",
+									"reference": "PY83:18",
+									"cost": 4,
+									"affects": "levels_only",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e2c9f797-e7e2-4d31-a059-9af1330cfb7c",
+									"type": "modifier",
+									"name": "@Limb@ Grip ST",
+									"reference": "MATG28",
+									"cost": -70,
+									"disabled": true
+								},
+								{
+									"id": "4a7c2b00-d7ab-4ea6-84a8-1d223584ade1",
+									"type": "modifier",
+									"name": "Bite ST",
+									"reference": "MATG28",
+									"cost": -70,
+									"disabled": true
+								}
+							],
+							"levels": 2,
+							"points_per_level": 3,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"limitation": "lifting_only",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 6
+							}
+						},
+						{
 							"id": "c9fbc59f-3d94-49a0-820a-fc8d3ce26a07",
 							"type": "trait_container",
 							"open": true,
@@ -866,7 +945,7 @@
 								"type": "points",
 								"qualifier": {
 									"compare": "is",
-									"qualifier": 15
+									"qualifier": 35
 								}
 							},
 							"calc": {
@@ -876,7 +955,7 @@
 					],
 					"name": "Class Advantage",
 					"calc": {
-						"points": 114
+						"points": 120
 					}
 				},
 				{
@@ -1627,7 +1706,7 @@
 			"name": "Peasant Adventurer",
 			"reference": "F122",
 			"calc": {
-				"points": 44
+				"points": 50
 			}
 		}
 	],
@@ -1667,7 +1746,7 @@
 										"qualifier": 2
 									},
 									"amount": 1,
-									"per_level": true
+									"per_die": true
 								}
 							]
 						},
@@ -1906,34 +1985,6 @@
 							"open": true,
 							"children": [
 								{
-									"id": "7bb7e114-d290-478a-8d20-81b3978b2506",
-									"type": "skill",
-									"name": "Farming",
-									"reference": "B194",
-									"tags": [
-										"Plant"
-									],
-									"tech_level": "",
-									"difficulty": "iq/a",
-									"points": 4,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Biology",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Gardening",
-											"modifier": -5
-										}
-									]
-								},
-								{
 									"id": "bb09aef7-05df-47d0-8514-a5382b0822d8",
 									"type": "skill_container",
 									"open": true,
@@ -2055,6 +2106,34 @@
 										}
 									],
 									"name": "Fisherman"
+								},
+								{
+									"id": "7bb7e114-d290-478a-8d20-81b3978b2506",
+									"type": "skill",
+									"name": "Professional Skill (Farming)",
+									"reference": "B194",
+									"tags": [
+										"Plant"
+									],
+									"tech_level": "",
+									"difficulty": "iq/a",
+									"points": 4,
+									"defaults": [
+										{
+											"type": "iq",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Biology",
+											"modifier": -5
+										},
+										{
+											"type": "skill",
+											"name": "Gardening",
+											"modifier": -5
+										}
+									]
 								}
 							],
 							"name": "Professional Background",
@@ -2246,154 +2325,31 @@
 					"open": true,
 					"children": [
 						{
-							"id": "8522191d-c76d-4cd9-b6f4-8ac894b9d1d2",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "3c2a85a5-5ee9-4c59-90fc-74a64c30515d",
-									"type": "skill",
-									"name": "Carpentry",
-									"reference": "B183",
-									"tags": [
-										"Craft"
-									],
-									"difficulty": "iq/e",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "b259ca36-01da-427a-ade9-9d6a940f650d",
-									"type": "skill",
-									"name": "Leatherworking",
-									"reference": "B205",
-									"tags": [
-										"Craft"
-									],
-									"difficulty": "dx/e",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "49aed4e1-0466-40e0-8fdc-da04360e3bd4",
-									"type": "skill",
-									"name": "Masonry",
-									"reference": "B207",
-									"tags": [
-										"Craft"
-									],
-									"difficulty": "iq/e",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										}
-									]
-								}
+							"id": "017ad9b6-3c55-47db-95ce-4bc0a4b7e0ac",
+							"type": "skill",
+							"name": "Naturalist",
+							"reference": "B211",
+							"tags": [
+								"Animal",
+								"Exploration",
+								"Natural Science",
+								"Outdoor",
+								"Plant"
 							],
-							"name": "Crafts",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							}
-						},
-						{
-							"id": "21bc82e4-8072-4c77-85ee-bd6f9f013170",
-							"type": "skill_container",
-							"open": true,
-							"children": [
+							"specialization": "Earthlike",
+							"difficulty": "iq/h",
+							"points": 2,
+							"defaults": [
 								{
-									"id": "9399609b-d7bb-4a35-906a-5d737f26fc4e",
-									"type": "skill",
-									"name": "Meteorology",
-									"reference": "B209",
-									"tags": [
-										"Natural Science"
-									],
-									"specialization": "Earthlike",
-									"tech_level": "",
-									"difficulty": "iq/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										}
-									]
+									"type": "iq",
+									"modifier": -6
 								},
 								{
-									"id": "017ad9b6-3c55-47db-95ce-4bc0a4b7e0ac",
 									"type": "skill",
-									"name": "Naturalist",
-									"reference": "B211",
-									"tags": [
-										"Animal",
-										"Exploration",
-										"Natural Science",
-										"Outdoor",
-										"Plant"
-									],
-									"specialization": "Earthlike",
-									"difficulty": "iq/h",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -6
-										},
-										{
-											"type": "skill",
-											"name": "Biology",
-											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "793618f1-dcdc-4803-b2e3-422c160d32d0",
-									"type": "skill",
-									"name": "Tracking",
-									"reference": "B226",
-									"tags": [
-										"Exploration",
-										"Outdoor"
-									],
-									"difficulty": "per/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "per",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Naturalist",
-											"modifier": -5
-										}
-									]
+									"name": "Biology",
+									"modifier": -3
 								}
-							],
-							"name": "Knowledge",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							}
+							]
 						},
 						{
 							"id": "f5381f5c-0d06-40c6-9115-0532037bde8f",
@@ -2436,42 +2392,6 @@
 											"modifier": -4
 										}
 									]
-								},
-								{
-									"id": "5ebf535d-a982-455f-9abe-39a9464de755",
-									"type": "skill",
-									"name": "Games",
-									"reference": "B197",
-									"tags": [
-										"Knowledge"
-									],
-									"specialization": "@Specialty@",
-									"difficulty": "iq/e",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -4
-										}
-									]
-								},
-								{
-									"id": "b1955baa-a75f-48d2-b0f6-e25159f62707",
-									"type": "skill",
-									"name": "Sports",
-									"reference": "B222",
-									"tags": [
-										"Athletic"
-									],
-									"specialization": "@Speciality@",
-									"difficulty": "dx/a",
-									"points": 1,
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -5
-										}
-									]
 								}
 							],
 							"name": "Other Skills",
@@ -2482,6 +2402,29 @@
 									"qualifier": 1
 								}
 							}
+						},
+						{
+							"id": "793618f1-dcdc-4803-b2e3-422c160d32d0",
+							"type": "skill",
+							"name": "Tracking",
+							"reference": "B226",
+							"tags": [
+								"Exploration",
+								"Outdoor"
+							],
+							"difficulty": "per/a",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "per",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Naturalist",
+									"modifier": -5
+								}
+							]
 						}
 					],
 					"name": "3. Background Skill"

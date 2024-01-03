@@ -5,6 +5,7 @@
 		{
 			"id": "1f0399a0-3539-4220-bc00-85a0ac8c092e",
 			"type": "trait_container",
+			"open": true,
 			"children": [
 				{
 					"id": "74c1d07b-eef3-4b27-bf53-67cc84c0f684",
@@ -2615,7 +2616,6 @@
 										}
 									],
 									"calc": {
-										"range": "10/100",
 										"damage": "1d burn"
 									}
 								}

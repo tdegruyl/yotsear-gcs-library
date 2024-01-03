@@ -1224,6 +1224,22 @@
 							}
 						},
 						{
+							"id": "d39fe154-e409-4a96-aeff-dc223b6ece1e",
+							"type": "trait",
+							"name": "Lecherousness",
+							"reference": "B142",
+							"notes": "Make a self-control roll whenever you have more than the briefest contact with an appealing member of the sex you find attractive, at -5 if this person is Handsome/Beautiful, or at -10 if Very Handsome/Very Beautiful. If you fail, you must make a “pass” using whatever wiles and skills you can bring to bear.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"base_points": -15,
+							"cr": 12,
+							"calc": {
+								"points": -15
+							}
+						},
+						{
 							"id": "dbb6c048-6bdf-4b20-b4b9-7f9c384038eb",
 							"type": "trait",
 							"name": "Overconfidence",
@@ -1529,14 +1545,14 @@
 						}
 					},
 					"calc": {
-						"points": -125
+						"points": -140
 					}
 				}
 			],
 			"name": "Bandit",
 			"reference": "LOY34",
 			"calc": {
-				"points": -18
+				"points": -33
 			}
 		}
 	],
@@ -1576,7 +1592,7 @@
 										"qualifier": 2
 									},
 									"amount": 1,
-									"per_level": true
+									"per_die": true
 								}
 							]
 						},
@@ -1981,86 +1997,6 @@
 							]
 						},
 						{
-							"id": "3fc99ec1-43bf-49f2-a300-046ac14eb8ed",
-							"type": "skill_container",
-							"open": true,
-							"children": [
-								{
-									"id": "21d28356-b7e9-4a8b-8e98-471769dce1f8",
-									"type": "skill",
-									"name": "Area Knowledge",
-									"reference": "B176",
-									"notes": "All important businesses, streets, citizens, leaders, etc.",
-									"tags": [
-										"Everyman",
-										"Knowledge"
-									],
-									"difficulty": "iq/e",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Geography",
-											"modifier": -3
-										}
-									]
-								},
-								{
-									"id": "6b9149c2-42fb-4a24-a0e7-4e67f50de236",
-									"type": "skill",
-									"name": "Navigation",
-									"reference": "B211",
-									"tags": [
-										"Exploration",
-										"Outdoor",
-										"Technical",
-										"Vehicle"
-									],
-									"specialization": "Land",
-									"tech_level": "",
-									"difficulty": "iq/a",
-									"points": 2,
-									"defaults": [
-										{
-											"type": "iq",
-											"modifier": -5
-										},
-										{
-											"type": "skill",
-											"name": "Cartography",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Mathematics",
-											"specialization": "Surveying",
-											"modifier": -4
-										},
-										{
-											"type": "skill",
-											"name": "Navigation",
-											"specialization": "Air",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Navigation",
-											"specialization": "Sea",
-											"modifier": -2
-										}
-									]
-								}
-							],
-							"name": "Knowledge",
-							"template_picker": {
-								"type": "count",
-								"qualifier": {
-									"compare": "is",
-									"qualifier": 1
-								}
-							}
-						},
-						{
 							"id": "c54c5bef-05bc-4a08-8029-7b611e958848",
 							"type": "skill",
 							"name": "Leadership",
@@ -2075,6 +2011,51 @@
 								{
 									"type": "iq",
 									"modifier": -5
+								}
+							]
+						},
+						{
+							"id": "6b9149c2-42fb-4a24-a0e7-4e67f50de236",
+							"type": "skill",
+							"name": "Navigation",
+							"reference": "B211",
+							"tags": [
+								"Exploration",
+								"Outdoor",
+								"Technical",
+								"Vehicle"
+							],
+							"specialization": "Land",
+							"tech_level": "",
+							"difficulty": "iq/a",
+							"points": 2,
+							"defaults": [
+								{
+									"type": "iq",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Cartography",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Mathematics",
+									"specialization": "Surveying",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Navigation",
+									"specialization": "Air",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Navigation",
+									"specialization": "Sea",
+									"modifier": -2
 								}
 							]
 						},

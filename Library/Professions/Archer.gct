@@ -1226,7 +1226,7 @@
 										"qualifier": 2
 									},
 									"amount": 1,
-									"per_level": true
+									"per_die": true
 								}
 							]
 						},
@@ -1517,7 +1517,7 @@
 										"Weapon"
 									],
 									"difficulty": "dx/e",
-									"points": 8,
+									"points": 4,
 									"defaults": [
 										{
 											"type": "dx",
@@ -1537,7 +1537,7 @@
 									],
 									"specialization": "Arrow",
 									"difficulty": "dx/e",
-									"points": 4
+									"points": 5
 								}
 							],
 							"name": "Crossbow"
