@@ -1123,6 +1123,7 @@
 			"type": "trait",
 			"name": "Anti-Talent (@Large@)",
 			"reference": "PU3:19",
+			"reference_highlight": "Anti-Talent",
 			"tags": [
 				"Disadvantage",
 				"Mental",
@@ -3159,20 +3160,6 @@
 			}
 		},
 		{
-			"id": "70db2f2c-888e-4494-87ac-d301da8f1ebd",
-			"type": "trait",
-			"name": "Bowlegged",
-			"reference": "PU6:22",
-			"tags": [
-				"Physical",
-				"Quirk"
-			],
-			"base_points": -1,
-			"calc": {
-				"points": -1
-			}
-		},
-		{
 			"id": "079c0ea6-62dc-4204-bb32-1cd982a7082d",
 			"type": "trait",
 			"name": "Bowlegged",
@@ -3198,6 +3185,20 @@
 					"amount": -1
 				}
 			],
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "70db2f2c-888e-4494-87ac-d301da8f1ebd",
+			"type": "trait",
+			"name": "Bowlegged",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
 			"calc": {
 				"points": -1
 			}
@@ -9455,6 +9456,20 @@
 			}
 		},
 		{
+			"id": "318998b3-c143-41dc-936b-e62207e9e64c",
+			"type": "trait",
+			"name": "Legendary Possession (@Item)",
+			"reference": "AOL22",
+			"reference_highlight": "Legendary Possession",
+			"tags": [
+				"Advantage"
+			],
+			"base_points": 1,
+			"calc": {
+				"points": 1
+			}
+		},
+		{
 			"id": "149e4b53-8a30-4ed0-a202-bcba88517397",
 			"type": "trait",
 			"name": "Less Sleep",
@@ -10546,6 +10561,20 @@
 			}
 		},
 		{
+			"id": "e7f84352-8e94-4efc-a4cb-3caea66b1f5c",
+			"type": "trait",
+			"name": "Nervous Stomach",
+			"reference": "PU6:25",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "b68e50e5-24de-477a-8709-8be791740d1d",
 			"type": "trait",
 			"name": "Nervous Stomach",
@@ -10562,20 +10591,6 @@
 					"amount": -3
 				}
 			],
-			"calc": {
-				"points": -1
-			}
-		},
-		{
-			"id": "e7f84352-8e94-4efc-a4cb-3caea66b1f5c",
-			"type": "trait",
-			"name": "Nervous Stomach",
-			"reference": "PU6:25",
-			"tags": [
-				"Physical",
-				"Quirk"
-			],
-			"base_points": -1,
 			"calc": {
 				"points": -1
 			}
@@ -12766,6 +12781,20 @@
 			}
 		},
 		{
+			"id": "a1683d88-49f5-44f1-96d7-49cce1a13c61",
+			"type": "trait",
+			"name": "Runecarved Possession (@Item)",
+			"reference": "DTGFD11",
+			"reference_highlight": "Runecarved Possession",
+			"tags": [
+				"Advantage"
+			],
+			"base_points": 1,
+			"calc": {
+				"points": 1
+			}
+		},
+		{
 			"id": "4703a1ed-5a3b-45d6-9d8f-fe2fe8e946e1",
 			"type": "trait",
 			"name": "Sacrificial Parry (@Weapon@)",
@@ -13375,34 +13404,6 @@
 			"tags": [
 				"Advantage",
 				"Social"
-			],
-			"base_points": 1,
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "318998b3-c143-41dc-936b-e62207e9e64c",
-			"type": "trait",
-			"name": "Legendary Possession (@Item)",
-			"reference": "AOL22",
-			"reference_highlight": "Legendary Possession",
-			"tags": [
-				"Advantage"
-			],
-			"base_points": 1,
-			"calc": {
-				"points": 1
-			}
-		},
-		{
-			"id": "a1683d88-49f5-44f1-96d7-49cce1a13c61",
-			"type": "trait",
-			"name": "Runecarved Possession (@Item)",
-			"reference": "DTGFD11",
-			"reference_highlight": "Runecarved Possession",
-			"tags": [
-				"Advantage"
 			],
 			"base_points": 1,
 			"calc": {
@@ -15748,111 +15749,6 @@
 			"can_level": true,
 			"calc": {
 				"points": 5
-			}
-		},
-		{
-			"id": "3a13028b-ca48-4449-95e4-76beab89aa0b",
-			"type": "trait",
-			"name": "Talent (Business Acumen)",
-			"reference": "B90",
-			"tags": [
-				"Advantage",
-				"Mental",
-				"Talent"
-			],
-			"levels": 1,
-			"points_per_level": 10,
-			"features": [
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Accounting"
-					},
-					"amount": 1,
-					"per_level": true
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Administration"
-					},
-					"amount": 1,
-					"per_level": true
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Economics"
-					},
-					"amount": 1,
-					"per_level": true
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Finance"
-					},
-					"amount": 1,
-					"per_level": true
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Gambling"
-					},
-					"amount": 1,
-					"per_level": true
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Market Analysis"
-					},
-					"amount": 1,
-					"per_level": true
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Merchant"
-					},
-					"amount": 1,
-					"per_level": true
-				},
-				{
-					"type": "skill_bonus",
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Propaganda"
-					},
-					"amount": 1,
-					"per_level": true
-				},
-				{
-					"type": "reaction_bonus",
-					"situation": "from business partners",
-					"amount": 1,
-					"per_level": true
-				}
-			],
-			"can_level": true,
-			"calc": {
-				"points": 10
 			}
 		},
 		{

@@ -1,0 +1,467 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "a3a30343-c601-42be-95f4-169a50528441",
+	"traits": [
+		{
+			"id": "42c702d1-c505-449d-aab4-3a4edf4ed5fb",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "ac775f24-2a79-4b2e-acba-37cebf48b6a8",
+					"type": "trait",
+					"name": "Increased HT",
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": 1
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "91e3ca13-6183-4bf0-bbd3-d0a8af48e6e0",
+					"type": "trait",
+					"name": "Talent (Outdoorsman)",
+					"reference": "B90,PU3:14",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Talent"
+					],
+					"modifiers": [
+						{
+							"id": "254be33f-2141-4378-b967-c5d751c27942",
+							"type": "modifier",
+							"name": "Alternate Benefit",
+							"notes": "Bonus to HT rolls to avoid harm from failure of covered skills",
+							"disabled": true
+						},
+						{
+							"id": "2d095bbd-0918-4dfc-975e-de2ff3901fb2",
+							"type": "modifier",
+							"name": "Alternative Cost",
+							"cost": -3,
+							"affects": "levels_only",
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Camouflage"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Fishing"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Mimicry"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Naturalist"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Navigation"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Survival"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Tracking"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from explorers and nature lovers",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "63d48f07-459c-459b-a081-d4b7d538ff6a",
+					"type": "trait",
+					"name": "Temperature Tolerance (cold)",
+					"reference": "B93",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "b45dc3a3-9139-4a61-ac01-5b1b029b6a90",
+					"type": "trait",
+					"name": "Temperature Tolerance (hot)",
+					"reference": "B93",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"name": "Ranger",
+			"calc": {
+				"points": 22
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "02505b25-3381-4950-b114-06291f8be8d5",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "dac63853-c0b8-4cc6-aaee-90da806878d5",
+					"type": "skill",
+					"name": "Fishing",
+					"reference": "B195",
+					"tags": [
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "per/e",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "a0ea4d21-05f3-49f6-9387-3d9eef625f64",
+					"type": "skill",
+					"name": "Hiking",
+					"reference": "B200",
+					"tags": [
+						"Athletic",
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "ht/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "b72aec80-7591-4041-8947-f5cf5d56ca4e",
+					"type": "skill",
+					"name": "Naturalist",
+					"reference": "B211",
+					"tags": [
+						"Animal",
+						"Exploration",
+						"Natural Science",
+						"Outdoor",
+						"Plant"
+					],
+					"specialization": "Earthlike",
+					"difficulty": "iq/h",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Biology",
+							"modifier": -3
+						}
+					]
+				},
+				{
+					"id": "b36db37e-b554-431f-88b5-e61f1b35b369",
+					"type": "skill",
+					"name": "Navigation",
+					"reference": "B211",
+					"tags": [
+						"Exploration",
+						"Outdoor",
+						"Technical",
+						"Vehicle"
+					],
+					"specialization": "Land",
+					"tech_level": "",
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Cartography",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Mathematics",
+							"specialization": "Surveying",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Navigation",
+							"specialization": "Air",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Navigation",
+							"specialization": "Sea",
+							"modifier": -2
+						}
+					]
+				},
+				{
+					"id": "ccabc61d-9569-49ea-81c6-806e2617df16",
+					"type": "skill",
+					"name": "Navigation",
+					"reference": "B211",
+					"tags": [
+						"Exploration",
+						"Outdoor",
+						"Technical",
+						"Vehicle"
+					],
+					"specialization": "Sea",
+					"tech_level": "",
+					"difficulty": "iq/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Astronomy",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Seamanship",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Navigation",
+							"specialization": "Air",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Navigation",
+							"specialization": "Land",
+							"modifier": -2
+						}
+					]
+				},
+				{
+					"id": "fb113e07-5f26-44c1-8194-e6dd5d9a274c",
+					"type": "skill",
+					"name": "Running",
+					"reference": "B218",
+					"tags": [
+						"Athletic"
+					],
+					"difficulty": "ht/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "a2424233-92d3-4aa7-a56f-9d0fcc02efa3",
+					"type": "skill",
+					"name": "Seamanship",
+					"reference": "B185",
+					"tags": [
+						"Vehicle"
+					],
+					"tech_level": "",
+					"difficulty": "iq/e",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "d0d83ec4-59c8-43c7-970a-ff38127d260a",
+					"type": "skill",
+					"name": "Skiing",
+					"reference": "B221",
+					"tags": [
+						"Athletic",
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "ht/h",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -6
+						}
+					]
+				},
+				{
+					"id": "f3c28529-f059-4cab-b337-73db6e8f5464",
+					"type": "skill",
+					"name": "Survival",
+					"reference": "B223",
+					"tags": [
+						"Exploration",
+						"Outdoor"
+					],
+					"specialization": "@Environment@",
+					"difficulty": "per/a",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Naturalist",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Bank",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Deep Ocean Vent",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Fresh-Water Lake",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Open Ocean",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Reef",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "River/Stream",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Survival",
+							"specialization": "Tropical Lagoon",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"name": "Ranger",
+			"template_picker": {
+				"type": "points",
+				"qualifier": {
+					"compare": "is",
+					"qualifier": 3
+				}
+			}
+		}
+	]
+}

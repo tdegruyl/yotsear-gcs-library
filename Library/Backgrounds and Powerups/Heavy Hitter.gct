@@ -1,0 +1,107 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "ead0a7fd-41d7-41b5-b821-ff66129e5e5e",
+	"traits": [
+		{
+			"id": "6979d657-6f09-40fe-b883-bc6c490004c1",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "fd1fe71f-367c-48e6-9841-f9ae40136b29",
+					"type": "trait",
+					"name": "Increased ST",
+					"levels": 2,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "f27d8107-e65c-48a6-b1e6-944ed887dcc8",
+					"type": "trait",
+					"name": "Striking ST",
+					"reference": "B88,P78",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "9b8e80e8-e2b2-459f-ab27-d96a9aa1e1ca",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "32892d90-82df-401d-bddc-d39a12d0f8b7",
+							"type": "modifier",
+							"name": "Size",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "eaabe509-f453-401a-89c1-4830111d0544",
+							"type": "modifier",
+							"name": "Super Effort",
+							"reference": "SU24",
+							"cost": 400,
+							"disabled": true
+						},
+						{
+							"id": "f35b516b-28d2-4935-8caa-e9f85f5310e0",
+							"type": "modifier",
+							"name": "One Attack Only",
+							"reference": "P79",
+							"notes": "@Attack@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "4c469f7d-a2fc-45fa-9b19-a51985d575cd",
+							"type": "modifier",
+							"name": "Know Your Own Strength Pricing Variant",
+							"reference": "PY83:18",
+							"cost": -4,
+							"affects": "levels_only",
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"limitation": "striking_only",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"name": "Heavy Hitter",
+			"calc": {
+				"points": 25
+			}
+		}
+	]
+}

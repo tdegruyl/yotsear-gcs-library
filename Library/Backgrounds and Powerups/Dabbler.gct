@@ -1,0 +1,747 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "1e4ef860-d13f-44d3-bacb-76efcae3ac9a",
+	"traits": [
+		{
+			"id": "63580a6e-ba08-4cf9-94dc-bb546fdeb1af",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "065f0b57-a096-4229-bfd8-f4548fc70cd0",
+					"type": "trait",
+					"name": "Magery (Ritual Path)",
+					"reference": "TRPM5",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"tags": {
+								"compare": "is",
+								"qualifier": "Ritual Path Magic"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "e6a827f0-7c36-4f7a-92c5-89edc2235795",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "c2232599-7668-4820-81f9-0388ce074010",
+							"type": "trait",
+							"name": "Language: Faerie",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points"
+								},
+								{
+									"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points"
+								},
+								{
+									"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "dcc5ee33-38b4-43fa-be26-647d67473d0a",
+							"type": "trait",
+							"name": "Language: Old Celatiern",
+							"reference": "B24",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points"
+								},
+								{
+									"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Broken",
+									"cost": 1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Accented",
+									"cost": 2,
+									"cost_type": "points"
+								},
+								{
+									"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": 4
+							}
+						}
+					],
+					"name": "Magical Language",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					},
+					"calc": {
+						"points": 8
+					}
+				}
+			],
+			"name": "Dabbler",
+			"calc": {
+				"points": 13
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "7fda40bd-c6f5-4758-96ac-08470e8c1992",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "bad7858e-f66e-4c01-85d1-66df52d728a8",
+					"type": "skill_container",
+					"open": true,
+					"children": [
+						{
+							"id": "cc7494e9-eb00-4aa2-94ce-0b39cce88ed7",
+							"type": "skill",
+							"name": "Path of Body",
+							"reference": "TRPM7",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "757e68e3-3f94-4813-b140-924eaeb7e9cd",
+							"type": "skill",
+							"name": "Path of Chance",
+							"reference": "TRPM8",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "bbe9498e-a24f-43ad-adf1-7002c715ffca",
+							"type": "skill",
+							"name": "Path of Crossroads",
+							"reference": "TRPM9",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "cf975d96-bde7-489e-9325-56e349b5490b",
+							"type": "skill",
+							"name": "Path of Energy",
+							"reference": "TRPM9",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "411961e7-5155-4ddc-a4b6-e62a9f9b3112",
+							"type": "skill",
+							"name": "Path of Magic",
+							"reference": "TRPM10",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "a346cbbe-199c-4263-94ad-3e609ab47cdb",
+							"type": "skill",
+							"name": "Path of Matter",
+							"reference": "TRPM11",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "0c934fed-1acc-4835-8202-b2d701fb900b",
+							"type": "skill",
+							"name": "Path of Mind",
+							"reference": "TRPM11",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "4b0de800-a5e3-47db-886e-3c55677b3e86",
+							"type": "skill",
+							"name": "Path of Spirit",
+							"reference": "TRPM12",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": "85c0cd5a-7eb1-4253-a8cf-158407a9b9cd",
+							"type": "skill",
+							"name": "Path of Undead",
+							"reference": "TRPM12",
+							"tags": [
+								"Magic",
+								"Ritual Path Magic"
+							],
+							"difficulty": "iq/vh",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Thaumatology",
+									"modifier": -6
+								}
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Thaumatology"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										}
+									}
+								]
+							}
+						}
+					],
+					"name": "Ritual Path Skills",
+					"template_picker": {
+						"type": "points",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 4
+						}
+					}
+				},
+				{
+					"id": "f82d13a8-cc48-4455-91f1-41842e22767f",
+					"type": "skill",
+					"name": "Research",
+					"reference": "B217",
+					"tags": [
+						"Scholarly",
+						"Spy"
+					],
+					"tech_level": "",
+					"difficulty": "iq/a",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Writing",
+							"modifier": -3
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 8
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Computer Operation"
+										}
+									}
+								]
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"when_tl": {
+									"compare": "at_most",
+									"qualifier": 4
+								},
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Native"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Accented)"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Broken)"
+										}
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "61e42df5-5c77-498e-8eac-61bce0926710",
+					"type": "skill",
+					"name": "Thaumatology",
+					"reference": "B225",
+					"tags": [
+						"Magical",
+						"Occult"
+					],
+					"difficulty": "iq/vh",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -7
+						}
+					]
+				}
+			],
+			"name": "Dabbler"
+		}
+	]
+}

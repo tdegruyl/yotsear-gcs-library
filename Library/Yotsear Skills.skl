@@ -462,362 +462,6 @@
 			]
 		},
 		{
-			"id": "b80210d5-8a69-4a02-870c-f89bcaef3a80",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Entertainment"
-			],
-			"specialization": "Body Art",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Calligraphy",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Drawing",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Illumination",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Painting",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
-			"id": "08fe553a-1825-4eff-8aba-23953b6cd92c",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Entertainment"
-			],
-			"specialization": "Calligraphy",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Drawing",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Illumination",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Painting",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Body Art",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
-			"id": "0434d298-9f28-4512-970b-03919998078d",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Entertainment"
-			],
-			"specialization": "Drawing",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Calligraphy",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Illumination",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Painting",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Body Art",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
-			"id": "82116fb1-3ba0-41d8-a086-542044516606",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Entertainment"
-			],
-			"specialization": "Illumination",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Calligraphy",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Drawing",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Painting",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Body Art",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
-			"id": "2f75efed-bde6-4a9d-b553-3236b1b314c0",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Entertainment"
-			],
-			"specialization": "Illusion",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
-			"id": "1a0d5e15-082f-406e-b0d8-192e0e00f224",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Entertainment"
-			],
-			"specialization": "Painting",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Calligraphy",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Drawing",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Illumination",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Body Art",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
-			"id": "47745d09-18d7-4d51-b254-fea846cf1af7",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Craft",
-				"Entertainment"
-			],
-			"specialization": "Pottery",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
-			"id": "9c7b23da-4ec4-486f-ba1a-5906cdab249d",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Craft",
-				"Entertainment"
-			],
-			"specialization": "Sculpting",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
-			"id": "39d941bd-b278-46c5-9a02-04c537baf632",
-			"type": "skill",
-			"name": "Expert Skill",
-			"reference": "B179",
-			"tags": [
-				"Arts",
-				"Craft",
-				"Entertainment"
-			],
-			"specialization": "Woodworking",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Carpentry",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Interior Decorating",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"specialization": "Scene Design",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Artist",
-					"modifier": -6
-				}
-			]
-		},
-		{
 			"id": "f14e1c91-277e-4a87-8ce3-ee90660c2143",
 			"type": "skill",
 			"name": "Axe/Mace",
@@ -1317,23 +961,6 @@
 			]
 		},
 		{
-			"id": "296a6e44-b0b8-4a34-940a-26da2512edcb",
-			"type": "skill",
-			"name": "Professional Skill (Carpentry)",
-			"reference": "B183",
-			"tags": [
-				"Craft"
-			],
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				}
-			]
-		},
-		{
 			"id": "f1def8d9-32bb-4fb5-be51-ac5839f6e053",
 			"type": "skill",
 			"name": "Cartography",
@@ -1728,28 +1355,6 @@
 			"defaults": [
 				{
 					"type": "iq",
-					"modifier": -5
-				}
-			]
-		},
-		{
-			"id": "b6b66501-43b2-4bd5-a70a-8e284866f50a",
-			"type": "skill",
-			"name": "Professional Skill (Cooking)",
-			"reference": "B185",
-			"tags": [
-				"Everyman"
-			],
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Housekeeping",
 					"modifier": -5
 				}
 			]
@@ -2872,6 +2477,150 @@
 			]
 		},
 		{
+			"id": "b80210d5-8a69-4a02-870c-f89bcaef3a80",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"specialization": "Body Art",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Calligraphy",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Drawing",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Illumination",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Painting",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
+		},
+		{
+			"id": "08fe553a-1825-4eff-8aba-23953b6cd92c",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"specialization": "Calligraphy",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Drawing",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Illumination",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Painting",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Body Art",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
+		},
+		{
+			"id": "0434d298-9f28-4512-970b-03919998078d",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"specialization": "Drawing",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Calligraphy",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Illumination",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Painting",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Body Art",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
+		},
+		{
 			"id": "ce5fd498-8ad0-408d-9bdb-5421a96503e4",
 			"type": "skill",
 			"name": "Expert Skill (Hopology)",
@@ -2882,6 +2631,108 @@
 			],
 			"difficulty": "dx/h",
 			"points": 1
+		},
+		{
+			"id": "82116fb1-3ba0-41d8-a086-542044516606",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"specialization": "Illumination",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Calligraphy",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Drawing",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Painting",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Body Art",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
+		},
+		{
+			"id": "2f75efed-bde6-4a9d-b553-3236b1b314c0",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"specialization": "Illusion",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
+		},
+		{
+			"id": "48254850-5807-4e77-9f64-2aab3a9dada6",
+			"type": "skill",
+			"name": "Expert Skill (Jeweler)",
+			"reference": "B203",
+			"tags": [
+				"Craft"
+			],
+			"tech_level": "",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Smith",
+					"specialization": "Copper",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Smith",
+					"specialization": "Lead \u0026 Tin",
+					"modifier": -4
+				}
+			]
 		},
 		{
 			"id": "08ec033a-e4f5-422b-b540-5b5220d84149",
@@ -2896,6 +2747,54 @@
 			"specialization": "Natural Philosophy",
 			"difficulty": "iq/h",
 			"points": 1
+		},
+		{
+			"id": "1a0d5e15-082f-406e-b0d8-192e0e00f224",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Entertainment"
+			],
+			"specialization": "Painting",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Calligraphy",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Drawing",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Illumination",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Body Art",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
 		},
 		{
 			"id": "67f17d9c-ea88-410f-9b86-d100975d58de",
@@ -2913,6 +2812,56 @@
 			"points": 1
 		},
 		{
+			"id": "47745d09-18d7-4d51-b254-fea846cf1af7",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Craft",
+				"Entertainment"
+			],
+			"specialization": "Pottery",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
+		},
+		{
+			"id": "9c7b23da-4ec4-486f-ba1a-5906cdab249d",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Craft",
+				"Entertainment"
+			],
+			"specialization": "Sculpting",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
+		},
+		{
 			"id": "04c3446e-7f40-4179-9427-79df1e56ea49",
 			"type": "skill",
 			"name": "Expert Skill",
@@ -2926,6 +2875,48 @@
 			"specialization": "Thantology",
 			"difficulty": "iq/h",
 			"points": 1
+		},
+		{
+			"id": "39d941bd-b278-46c5-9a02-04c537baf632",
+			"type": "skill",
+			"name": "Expert Skill",
+			"reference": "B179",
+			"tags": [
+				"Arts",
+				"Craft",
+				"Entertainment"
+			],
+			"specialization": "Woodworking",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Carpentry",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Interior Decorating",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"specialization": "Scene Design",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Artist",
+					"modifier": -6
+				}
+			]
 		},
 		{
 			"id": "116fe70e-8b58-47c3-9176-f996455b5bd1",
@@ -3064,33 +3055,6 @@
 					"type": "skill",
 					"name": "Animal Handling",
 					"specialization": "Raptors",
-					"modifier": -3
-				}
-			]
-		},
-		{
-			"id": "e5a2e3b5-c7b0-4d1d-9932-39a59808f720",
-			"type": "skill",
-			"name": "Professional Skill (Farming)",
-			"reference": "B194",
-			"tags": [
-				"Plant"
-			],
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Biology",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Gardening",
 					"modifier": -3
 				}
 			]
@@ -3558,28 +3522,6 @@
 			]
 		},
 		{
-			"id": "53e83d50-0eeb-4ca1-a13a-d3cd8725167a",
-			"type": "skill",
-			"name": "Hobby Skill (Gardening)",
-			"reference": "B197",
-			"tags": [
-				"Plant"
-			],
-			"difficulty": "iq/e",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Farming",
-					"modifier": -3
-				}
-			]
-		},
-		{
 			"id": "55fd8a46-66ea-4ed3-9f9a-529e41c624b0",
 			"type": "skill",
 			"name": "Garrote",
@@ -4037,8 +3979,6 @@
 					},
 					"usage": "Head Butt",
 					"reach": "C",
-					"parry": "No",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "skill",
@@ -4091,8 +4031,6 @@
 					},
 					"usage": "Head Butt",
 					"reach": "C",
-					"parry": "No",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "skill",
@@ -4145,8 +4083,6 @@
 					},
 					"usage": "Head Butt",
 					"reach": "C",
-					"parry": "No",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "skill",
@@ -4199,8 +4135,6 @@
 					},
 					"usage": "Head Butt",
 					"reach": "C",
-					"parry": "No",
-					"block": "No",
 					"defaults": [
 						{
 							"type": "skill",
@@ -4366,30 +4300,6 @@
 			"points": 1
 		},
 		{
-			"id": "927844be-bad2-4bdb-88fc-85c889dc2938",
-			"type": "skill",
-			"name": "Hidden Lore",
-			"reference": "B199,MA57",
-			"tags": [
-				"Knowledge"
-			],
-			"specialization": "Lost Civilizations",
-			"difficulty": "iq/a",
-			"points": 1
-		},
-		{
-			"id": "18df448a-98b1-49f7-88c4-244a19e28fa3",
-			"type": "skill",
-			"name": "Hidden Lore",
-			"reference": "B199,MA57",
-			"tags": [
-				"Knowledge"
-			],
-			"specialization": "Magic Items",
-			"difficulty": "iq/a",
-			"points": 1
-		},
-		{
 			"id": "5b59574a-f96b-4d17-9b6a-cfad5f5c345e",
 			"type": "skill",
 			"name": "Hidden Lore",
@@ -4414,6 +4324,30 @@
 				"Occult"
 			],
 			"specialization": "Faerie Lore",
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "927844be-bad2-4bdb-88fc-85c889dc2938",
+			"type": "skill",
+			"name": "Hidden Lore",
+			"reference": "B199,MA57",
+			"tags": [
+				"Knowledge"
+			],
+			"specialization": "Lost Civilizations",
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "18df448a-98b1-49f7-88c4-244a19e28fa3",
+			"type": "skill",
+			"name": "Hidden Lore",
+			"reference": "B199,MA57",
+			"tags": [
+				"Knowledge"
+			],
+			"specialization": "Magic Items",
 			"difficulty": "iq/a",
 			"points": 1
 		},
@@ -4506,6 +4440,45 @@
 			]
 		},
 		{
+			"id": "53e83d50-0eeb-4ca1-a13a-d3cd8725167a",
+			"type": "skill",
+			"name": "Hobby Skill (Gardening)",
+			"reference": "B197",
+			"tags": [
+				"Plant"
+			],
+			"difficulty": "iq/e",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Farming",
+					"modifier": -3
+				}
+			]
+		},
+		{
+			"id": "95f0adb0-0914-47d0-8cc0-835d01708f88",
+			"type": "skill",
+			"name": "Hobby Skill (Leatherworking)",
+			"reference": "B205",
+			"tags": [
+				"Craft"
+			],
+			"difficulty": "dx/e",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			]
+		},
+		{
 			"id": "e1c953b9-bae8-4f7b-8080-b50c1c45e20f",
 			"type": "skill",
 			"name": "Holdout",
@@ -4547,7 +4520,7 @@
 			]
 		},
 		{
-			"id": "5771237a-1a4a-49c8-967a-f8f9e2f34db2",
+			"id": "22db3a91-ad9f-45a2-897c-769b82c1048f",
 			"type": "skill",
 			"name": "Hypnotic Hands",
 			"reference": "MA61",
@@ -4584,7 +4557,7 @@
 			}
 		},
 		{
-			"id": "22db3a91-ad9f-45a2-897c-769b82c1048f",
+			"id": "5771237a-1a4a-49c8-967a-f8f9e2f34db2",
 			"type": "skill",
 			"name": "Hypnotic Hands",
 			"reference": "MA61",
@@ -4883,36 +4856,6 @@
 					}
 				]
 			}
-		},
-		{
-			"id": "48254850-5807-4e77-9f64-2aab3a9dada6",
-			"type": "skill",
-			"name": "Expert Skill (Jeweler)",
-			"reference": "B203",
-			"tags": [
-				"Craft"
-			],
-			"tech_level": "",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Smith",
-					"specialization": "Copper",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Smith",
-					"specialization": "Lead \u0026 Tin",
-					"modifier": -4
-				}
-			]
 		},
 		{
 			"id": "768b6d1c-e157-4d08-a0b4-d5593e26a227",
@@ -5311,23 +5254,6 @@
 			]
 		},
 		{
-			"id": "95f0adb0-0914-47d0-8cc0-835d01708f88",
-			"type": "skill",
-			"name": "Hobby Skill (Leatherworking)",
-			"reference": "B205",
-			"tags": [
-				"Craft"
-			],
-			"difficulty": "dx/e",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				}
-			]
-		},
-		{
 			"id": "f77c2abd-bc52-4e61-a4c0-1a3dd1c7d050",
 			"type": "skill",
 			"name": "Lifting",
@@ -5467,23 +5393,6 @@
 					"type": "skill",
 					"name": "Smallsword",
 					"modifier": -3
-				}
-			]
-		},
-		{
-			"id": "58998834-4007-4c2d-a0ff-231bc04bb567",
-			"type": "skill",
-			"name": "Professional Skill (Masonry)",
-			"reference": "B207",
-			"tags": [
-				"Craft"
-			],
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
 				}
 			]
 		},
@@ -6476,6 +6385,89 @@
 				{
 					"type": "dx",
 					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "296a6e44-b0b8-4a34-940a-26da2512edcb",
+			"type": "skill",
+			"name": "Professional Skill (Carpentry)",
+			"reference": "B183",
+			"tags": [
+				"Craft"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			]
+		},
+		{
+			"id": "b6b66501-43b2-4bd5-a70a-8e284866f50a",
+			"type": "skill",
+			"name": "Professional Skill (Cooking)",
+			"reference": "B185",
+			"tags": [
+				"Everyman"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Housekeeping",
+					"modifier": -5
+				}
+			]
+		},
+		{
+			"id": "e5a2e3b5-c7b0-4d1d-9932-39a59808f720",
+			"type": "skill",
+			"name": "Professional Skill (Farming)",
+			"reference": "B194",
+			"tags": [
+				"Plant"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Biology",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Gardening",
+					"modifier": -3
+				}
+			]
+		},
+		{
+			"id": "58998834-4007-4c2d-a0ff-231bc04bb567",
+			"type": "skill",
+			"name": "Professional Skill (Masonry)",
+			"reference": "B207",
+			"tags": [
+				"Craft"
+			],
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
 				}
 			]
 		},

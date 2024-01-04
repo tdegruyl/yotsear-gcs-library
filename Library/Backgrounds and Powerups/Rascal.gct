@@ -1,0 +1,646 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "b2683189-d1ec-406c-a6bf-db82d3651a7b",
+	"traits": [
+		{
+			"id": "59be95ad-ea88-4121-b841-4a6a583c98df",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "5210d4ed-c119-49be-9cea-7b273381180a",
+					"type": "trait",
+					"name": "Alcohol Tolerance",
+					"reference": "B100",
+					"tags": [
+						"Perk",
+						"Physical"
+					],
+					"base_points": 1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "on all HT rolls related to drinking",
+							"amount": 2
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "f34f56bc-0429-40c9-844f-77631a00f009",
+					"type": "trait",
+					"name": "Appearance",
+					"reference": "B21",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "db88e777-c246-49aa-87cc-8c1dbfef8cd0",
+							"type": "modifier",
+							"name": "Attractive",
+							"reference": "B21",
+							"cost": 4,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 1
+								}
+							]
+						},
+						{
+							"id": "2fda71e1-13b5-4bed-8188-83946dbbb13b",
+							"type": "modifier",
+							"name": "Average",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "59011a6b-7cd8-4a59-8a7b-af75aa057843",
+							"type": "modifier",
+							"name": "Beautiful",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "f2ef3d46-2535-466f-b85d-82d3a9a59937",
+							"type": "modifier",
+							"name": "Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "260c9611-0aad-407d-a8f2-cdeab7f8e022",
+							"type": "modifier",
+							"name": "Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "1d6d3fc1-a874-42ee-a40a-ab72d7d653ff",
+							"type": "modifier",
+							"name": "Handsome",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "66b67232-40a9-49ce-a30c-a41aa79a86e8",
+							"type": "modifier",
+							"name": "Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "5c3f10f5-fb42-44a7-9953-ce727ebc4c89",
+							"type": "modifier",
+							"name": "Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							]
+						},
+						{
+							"id": "cfef51b4-8526-47be-bb28-49c4e7db46b5",
+							"type": "modifier",
+							"name": "Hideous",
+							"reference": "B21,B202",
+							"cost": -16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									},
+									"amount": 2
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -4
+								}
+							]
+						},
+						{
+							"id": "67eda3d3-3b02-4324-b86a-cad4432e2092",
+							"type": "modifier",
+							"name": "Horrific",
+							"reference": "B21,B202",
+							"cost": -24,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									},
+									"amount": 4
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -6
+								}
+							]
+						},
+						{
+							"id": "1d0d263d-39e6-4b05-96c9-bcab7c73917a",
+							"type": "modifier",
+							"name": "Impressive",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea5ee8d3-92de-44f7-b869-97bbcb0a0446",
+							"type": "modifier",
+							"name": "Monstrous",
+							"reference": "B21,B202",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Intimidation"
+									},
+									"amount": 3
+								},
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -5
+								}
+							]
+						},
+						{
+							"id": "bcec029e-a194-48dd-a4f3-d79852417ff1",
+							"type": "modifier",
+							"name": "Off-the-Shelf Looks",
+							"reference": "B21",
+							"notes": "Halves the usual reaction bonus - adjust manually",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "4e3e372b-d8bb-41c3-a675-1c37f39c0a06",
+							"type": "modifier",
+							"name": "Transcendent",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 8
+								}
+							]
+						},
+						{
+							"id": "2bb71c80-552e-499d-a4e6-e57f26881a8c",
+							"type": "modifier",
+							"name": "Transcendent (Androgynous)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							]
+						},
+						{
+							"id": "ddf25679-e521-4ac2-b914-5b31d097cc09",
+							"type": "modifier",
+							"name": "Transcendent (Impressive)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							]
+						},
+						{
+							"id": "52c66ff0-cb7b-4bd8-8d77-4e6f78fa6ce4",
+							"type": "modifier",
+							"name": "Ugly",
+							"reference": "B21",
+							"cost": -8,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -2
+								}
+							]
+						},
+						{
+							"id": "f2ade180-af68-4cdb-91c2-2b6062b625b5",
+							"type": "modifier",
+							"name": "Unattractive",
+							"reference": "B21",
+							"cost": -4,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -1
+								}
+							]
+						},
+						{
+							"id": "585340a8-301a-451e-918c-89fac91595d4",
+							"type": "modifier",
+							"name": "Universal",
+							"reference": "B21",
+							"cost": 25,
+							"disabled": true
+						},
+						{
+							"id": "e1bcea51-b24b-4e72-a625-be62b9161aaf",
+							"type": "modifier",
+							"name": "Very Beautiful",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							]
+						},
+						{
+							"id": "45fe1d7c-54ed-4171-ac37-0c14d3825e89",
+							"type": "modifier",
+							"name": "Very Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "211f4936-94c1-4043-862b-d73a066832ac",
+							"type": "modifier",
+							"name": "Very Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "8c0bc9b1-f818-427e-838e-9cb3f1125587",
+							"type": "modifier",
+							"name": "Very Handsome",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							]
+						},
+						{
+							"id": "1cf4494d-453a-403d-890b-7233286080e7",
+							"type": "modifier",
+							"name": "Very Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						},
+						{
+							"id": "19314e0f-05c4-4488-adf0-ba1785d46b23",
+							"type": "modifier",
+							"name": "Very Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"disabled": true,
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							]
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "3297f2b6-0c1a-4068-9fc2-11cd579d08fc",
+					"type": "trait",
+					"name": "Broad-Minded",
+					"reference": "PU6:17",
+					"tags": [
+						"Mental",
+						"Quirk",
+						"Social"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "4ebdbc52-9888-4142-bd71-c5e2f88e9f9a",
+					"type": "trait",
+					"name": "Congenial",
+					"reference": "PU6:17",
+					"tags": [
+						"Mental",
+						"Quirk",
+						"Social"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "21764a7b-9aa1-4d8a-b7da-02094d8e6165",
+					"type": "trait",
+					"name": "Daredevil",
+					"reference": "B47",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to skill rolls any time you take an unnecessary risk (in the GM’s opinion)",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "16ec5907-d38d-4ad4-a111-76e0fc67960c",
+					"type": "trait",
+					"name": "Desirous",
+					"reference": "PU6:18",
+					"tags": [
+						"Mental",
+						"Quirk",
+						"Social"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "bb5e9096-af4e-4915-bc00-9e676eff43c7",
+					"type": "trait",
+					"name": "Flirtatious",
+					"reference": "PU6:28",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "7950999a-4488-42d4-9fb1-c337aeaafca8",
+					"type": "trait",
+					"name": "Honest Face",
+					"reference": "B101",
+					"tags": [
+						"Perk",
+						"Physical"
+					],
+					"base_points": 1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to trained Acting skill for the sole purpose of \"acting innocent\"",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "d92a2ffd-b613-466e-a22f-d3acc5bb4d63",
+					"type": "trait",
+					"name": "Overconfidence",
+					"reference": "B148",
+					"notes": "You must make a self-control roll any time the GM feels you show an unreasonable degree of caution. If you fail, you must go ahead as though you were able to handle the situation!",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from young or naive individuals who believe you are as good as you say you are",
+							"amount": 2
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from experienced NPCs",
+							"amount": -2
+						}
+					],
+					"cr": 12,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "de0aa2bf-8bb3-4e14-891d-86fcc0ed8b3b",
+					"type": "trait",
+					"name": "Social Chameleon",
+					"reference": "B86",
+					"notes": "Exempt from reaction penalties due to differences in Rank or Status",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from those who demand respect in situations where there would be no penalties due to differences in Rank or Status",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"name": "Rascal",
+			"calc": {
+				"points": 17
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "8e56f720-889d-4f0b-b621-08df2303efd4",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "a17c3cbb-80d0-4449-81b0-5b8277ff41ba",
+					"type": "skill",
+					"name": "Carousing",
+					"reference": "B183",
+					"tags": [
+						"Criminal",
+						"Social",
+						"Street"
+					],
+					"difficulty": "ht/e",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "5a09eddb-386a-46e2-b991-12abfb89607d",
+					"type": "skill",
+					"name": "Sex Appeal",
+					"reference": "B219",
+					"tags": [
+						"Social"
+					],
+					"difficulty": "ht/a",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -3
+						}
+					]
+				}
+			],
+			"name": "Rascal"
+		}
+	]
+}

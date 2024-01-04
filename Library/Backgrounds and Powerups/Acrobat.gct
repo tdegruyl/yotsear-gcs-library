@@ -1,0 +1,168 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "c12705a3-4d1f-42f9-bde3-a7421e48eb64",
+	"traits": [
+		{
+			"id": "8bea8ad2-3654-4869-b78b-ea731f627ac2",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "486b4e6c-fba9-4e55-895b-c6c7d2e18d5b",
+					"type": "trait",
+					"name": "Fevered Defense",
+					"reference": "DTG33",
+					"tags": [
+						"Physical"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "76ceffc7-e7c2-4756-b422-c9f5f1de6a88",
+					"type": "trait",
+					"name": "Increased Basic Move",
+					"reference": "DFA11",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "basic_move",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "09ce4828-a782-4369-a936-b6562f9db706",
+					"type": "trait",
+					"name": "Perfect Balance",
+					"reference": "B74",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "on DX and DX-based skill rolls to keep your feet or avoid being knocked down in combat",
+							"amount": 4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "on all rolls to keep your feet if the surface is wet, slippery or unstable",
+							"amount": 6
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "piloting"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "acrobatics"
+							},
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "climbing"
+							},
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				}
+			],
+			"name": "Acrobat",
+			"calc": {
+				"points": 21
+			}
+		}
+	],
+	"skills": [
+		{
+			"id": "fece081f-ec44-4713-8a11-5832ff000d16",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "ef2a6bd4-b62c-43dd-85b5-00a72c2d566c",
+					"type": "skill",
+					"name": "Acrobatics",
+					"reference": "B174,MA54",
+					"tags": [
+						"Athletic"
+					],
+					"difficulty": "dx/h",
+					"points": 3,
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Aerobatics",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Aquabatics",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "8711b272-a1c8-4629-b944-dd3eb3c62009",
+					"type": "skill",
+					"name": "Climbing",
+					"reference": "B183",
+					"tags": [
+						"Athletic",
+						"Criminal",
+						"Exploration",
+						"Outdoor",
+						"Street"
+					],
+					"difficulty": "dx/a",
+					"points": 1,
+					"encumbrance_penalty_multiplier": 1,
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					]
+				}
+			],
+			"name": "Acrobat"
+		}
+	]
+}
