@@ -292,7 +292,7 @@
 			],
 			"name": "Wood Elf",
 			"reference": "DFA44",
-			"ancestry": "Human",
+			"ancestry": "Elf-Yotsear",
 			"container_type": "ancestry",
 			"calc": {
 				"points": 20

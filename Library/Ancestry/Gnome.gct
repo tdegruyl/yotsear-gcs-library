@@ -226,8 +226,8 @@
 			],
 			"name": "Gnome",
 			"reference": "DFA44",
-			"ancestry": "Human",
-			"container_type": "race",
+			"ancestry": "Gnome-Yotsear",
+			"container_type": "ancestry",
 			"calc": {
 				"points": 20
 			}

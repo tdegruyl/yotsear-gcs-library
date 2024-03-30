@@ -344,8 +344,8 @@
 			],
 			"name": "Halfling",
 			"reference": "DFA45",
-			"ancestry": "Human",
-			"container_type": "race",
+			"ancestry": "Halfling-Yotsear",
+			"container_type": "ancestry",
 			"calc": {
 				"points": 0
 			}

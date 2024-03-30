@@ -215,7 +215,7 @@
 			],
 			"name": "Half-Orc",
 			"reference": "DFA45",
-			"ancestry": "Human",
+			"ancestry": "Orc-Yotsear",
 			"container_type": "ancestry",
 			"calc": {
 				"points": 20

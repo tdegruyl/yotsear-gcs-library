@@ -375,8 +375,8 @@
 			],
 			"name": "Dwarf",
 			"reference": "DFA43",
-			"ancestry": "Human",
-			"container_type": "race",
+			"ancestry": "Dwarf-Yotsear",
+			"container_type": "ancestry",
 			"calc": {
 				"points": 20
 			}

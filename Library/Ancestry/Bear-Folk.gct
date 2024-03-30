@@ -514,7 +514,7 @@
 				}
 			],
 			"name": "Bear-Folk",
-			"ancestry": "Human",
+			"ancestry": "Human Karn-Yotsear",
 			"container_type": "ancestry",
 			"calc": {
 				"points": 29

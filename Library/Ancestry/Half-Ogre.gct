@@ -264,7 +264,7 @@
 			],
 			"name": "Half-Ogre",
 			"reference": "DFA44",
-			"ancestry": "Human",
+			"ancestry": "Orc-Yotsear",
 			"container_type": "ancestry",
 			"calc": {
 				"points": 20
