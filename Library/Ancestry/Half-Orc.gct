@@ -17,7 +17,7 @@
 						"Advantage",
 						"Physical"
 					],
-					"levels": 2,
+					"levels": 1,
 					"points_per_level": 2,
 					"features": [
 						{
@@ -29,179 +29,29 @@
 					],
 					"can_level": true,
 					"calc": {
-						"points": 4
-					}
-				},
-				{
-					"id": "dbf16c08-f947-4035-854a-d1aaa895f8a1",
-					"type": "trait",
-					"name": "Acute Taste \u0026 Smell",
-					"reference": "DFA46",
-					"tags": [
-						"Advantage",
-						"Physical"
-					],
-					"levels": 1,
-					"points_per_level": 2,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "taste_smell",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"calc": {
 						"points": 2
 					}
 				},
 				{
-					"id": "2a690ae7-b728-4495-a157-1e23d0f3b120",
+					"id": "1ca8111e-8486-42b8-bcdb-43bdc3806ab2",
 					"type": "trait",
 					"name": "Appearance",
-					"reference": "DFA47",
+					"reference": "DFA46",
 					"tags": [
-						"Advantage",
+						"Disadvantage",
 						"Physical"
 					],
 					"modifiers": [
 						{
-							"id": "96f5b8ba-8036-429f-b39f-e283b9fd6d71",
-							"type": "modifier",
-							"name": "Androgynous",
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "a96b39cf-83b3-40cb-a450-b2d70f3edd85",
-							"type": "modifier",
-							"name": "Impressive",
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "b4ccdefa-2144-4165-a330-f3fcd057d482",
-							"type": "modifier",
-							"name": "Attractive",
-							"cost": 4,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "6333b8c8-bd65-4f85-898a-9abd4c8e1b95",
-							"type": "modifier",
-							"name": "Average",
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "b15aae19-f168-4821-9d35-eefbbd90d070",
-							"type": "modifier",
-							"name": "Horrific",
-							"cost": -24,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "49e69b1f-a6a5-4dfb-9c0e-5467039c6571",
-							"type": "modifier",
-							"name": "Monstrous",
-							"cost": -20,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "f995185e-9b68-4ae7-b50b-f7ff5645eeac",
-							"type": "modifier",
-							"name": "Hideous",
-							"cost": -16,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "37824a5b-f827-4318-8a86-d046a10a0937",
-							"type": "modifier",
-							"name": "Ugly",
-							"cost": -8,
-							"cost_type": "points"
-						},
-						{
-							"id": "8c61decb-1ab2-4bd8-a8b6-c5b8c6a0347c",
+							"id": "6329af92-c966-4ad9-bd21-e7e7b5c58ba5",
 							"type": "modifier",
 							"name": "Unattractive",
 							"cost": -4,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "04b29ce4-cd7b-4346-8fde-413bae3c4049",
-							"type": "modifier",
-							"name": "Handsome",
-							"cost": 12,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "136b0d72-449e-416b-9867-a020e77029d7",
-							"type": "modifier",
-							"name": "Beautiful",
-							"cost": 12,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "6e6176e6-cfff-47b7-ba5c-339ec723d9d8",
-							"type": "modifier",
-							"name": "Very Handsome",
-							"cost": 16,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "6bbed62f-a5df-4068-b8b9-de209f698975",
-							"type": "modifier",
-							"name": "Very Beautiful",
-							"cost": 16,
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "032cf4e0-1ffe-4318-a782-aae212daa02f",
-							"type": "modifier",
-							"name": "Transcendent",
-							"cost": 20,
-							"cost_type": "points",
-							"disabled": true
+							"cost_type": "points"
 						}
 					],
 					"calc": {
-						"points": -8
-					}
-				},
-				{
-					"id": "6dc0581d-cd4c-4e64-93a7-57ee1577b191",
-					"type": "trait",
-					"name": "Clueless",
-					"reference": "DFA58",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"base_points": -10,
-					"features": [
-						{
-							"type": "skill_bonus",
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "starts_with",
-								"qualifier": "savoir-faire"
-							},
-							"amount": -4
-						}
-					],
-					"calc": {
-						"points": -10
+						"points": -4
 					}
 				},
 				{
@@ -214,7 +64,7 @@
 						"Attribute",
 						"Physical"
 					],
-					"levels": 2,
+					"levels": 1,
 					"points_per_level": 2,
 					"features": [
 						{
@@ -226,22 +76,7 @@
 					],
 					"can_level": true,
 					"calc": {
-						"points": 4
-					}
-				},
-				{
-					"id": "365053fa-0ee2-468e-8b6a-421da564a6d8",
-					"type": "trait",
-					"name": "Illiteracy",
-					"reference": "DFA61",
-					"tags": [
-						"Disadvantage",
-						"Language",
-						"Mental"
-					],
-					"base_points": -3,
-					"calc": {
-						"points": -3
+						"points": 2
 					}
 				},
 				{
@@ -270,31 +105,6 @@
 					}
 				},
 				{
-					"id": "9092d99b-1e42-47d1-8c43-35b51b1ad5f2",
-					"type": "trait",
-					"name": "Increased Strength",
-					"reference": "DFA8",
-					"tags": [
-						"Advantage",
-						"Attribute",
-						"Physical"
-					],
-					"levels": 2,
-					"points_per_level": 10,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "st",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"calc": {
-						"points": 20
-					}
-				},
-				{
 					"id": "899549bc-1f0f-4c08-bca9-4d29c6b7b540",
 					"type": "trait",
 					"name": "Night Vision",
@@ -303,11 +113,11 @@
 						"Advantage",
 						"Physical"
 					],
-					"levels": 6,
+					"levels": 5,
 					"points_per_level": 1,
 					"can_level": true,
 					"calc": {
-						"points": 6
+						"points": 5
 					}
 				},
 				{
@@ -403,12 +213,12 @@
 					}
 				}
 			],
-			"name": "Orc",
+			"name": "Half-Orc",
 			"reference": "DFA45",
 			"ancestry": "Human",
 			"container_type": "ancestry",
 			"calc": {
-				"points": 30
+				"points": 20
 			}
 		},
 		{
@@ -474,7 +284,7 @@
 					}
 				}
 			],
-			"name": "Orc Gifts",
+			"name": "Half-Orc Gifts",
 			"calc": {
 				"points": 33
 			}

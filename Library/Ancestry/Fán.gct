@@ -1,0 +1,96 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "93cb7c17-b116-49ed-901b-6e3faeff4b1d",
+	"traits": [
+		{
+			"id": "824abf54-04a9-476d-872e-413e27feca38",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "4cf9be19-2b3d-4ced-844b-aeb4956d9bce",
+					"type": "trait",
+					"name": "Feature: Unnatural hair color",
+					"tags": [
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "b628ae53-77c0-4195-ba08-18fff7f9f943",
+					"type": "trait",
+					"name": "Increased Dexterity",
+					"reference": "DFA8",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "f40b36f6-6b64-499b-9a61-f2c2f13ba445",
+					"type": "trait",
+					"name": "Magery",
+					"reference": "DFA41",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"base_points": 5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "spell_bonus",
+							"match": "power_source_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Arcane"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"name": "Fán",
+			"reference": "DFA44",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"calc": {
+				"points": 25
+			}
+		}
+	]
+}

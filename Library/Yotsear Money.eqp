@@ -16,113 +16,9 @@
 			}
 		},
 		{
-			"id": "568d77b5-22a1-4b9b-81a3-d3c567b674d4",
-			"type": "equipment",
-			"description": "Money: Arnen Pfennich (CP)",
-			"tech_level": "3",
-			"quantity": 1,
-			"value": 1,
-			"weight": "0.008 lb",
-			"calc": {
-				"extended_value": 1,
-				"extended_weight": "0.008 lb"
-			}
-		},
-		{
-			"id": "a957aea1-1680-401c-b027-658e5d59b6da",
-			"type": "equipment",
-			"description": "Money: Belvantine Pica (CP)",
-			"tech_level": "3",
-			"quantity": 1,
-			"value": 1,
-			"weight": "0.008 lb",
-			"calc": {
-				"extended_value": 1,
-				"extended_weight": "0.008 lb"
-			}
-		},
-		{
-			"id": "3f85e304-172f-4b9f-9882-89b1b7af98fc",
-			"type": "equipment",
-			"description": "Money: Silverwood Forenti (CP)",
-			"tech_level": "3",
-			"quantity": 1,
-			"value": 1,
-			"weight": "0.008 lb",
-			"calc": {
-				"extended_value": 1,
-				"extended_weight": "0.008 lb"
-			}
-		},
-		{
-			"id": "d3c7cc69-245a-45c6-8f1b-ff3afad7d86a",
-			"type": "equipment",
-			"description": "Money: Celatiern Piece (CP)",
-			"tech_level": "3",
-			"quantity": 1,
-			"value": 1,
-			"weight": "0.008 lb",
-			"calc": {
-				"extended_value": 1,
-				"extended_weight": "0.008 lb"
-			}
-		},
-		{
 			"id": "123a7a50-26b0-41f7-a7d2-895d09ba6688",
 			"type": "equipment",
 			"description": "Money: Alfarnian Pound (GP)",
-			"tech_level": "3",
-			"quantity": 1,
-			"value": 256,
-			"weight": "0.03 lb",
-			"calc": {
-				"extended_value": 256,
-				"extended_weight": "0.03 lb"
-			}
-		},
-		{
-			"id": "59b4d6c9-2194-4632-bff0-8f332061979a",
-			"type": "equipment",
-			"description": "Money: Arnen Guilden (GP)",
-			"tech_level": "3",
-			"quantity": 1,
-			"value": 256,
-			"weight": "0.03 lb",
-			"calc": {
-				"extended_value": 256,
-				"extended_weight": "0.03 lb"
-			}
-		},
-		{
-			"id": "b95e6d6e-45e7-443f-8f72-3d28d7798e9e",
-			"type": "equipment",
-			"description": "Money: Belvantine Doubloon (GP)",
-			"tech_level": "3",
-			"quantity": 1,
-			"value": 256,
-			"weight": "0.03 lb",
-			"calc": {
-				"extended_value": 256,
-				"extended_weight": "0.03 lb"
-			}
-		},
-		{
-			"id": "ba1af956-6c41-464a-a15b-92d52ac015bc",
-			"type": "equipment",
-			"description": "Money: Celatiern Talen (GP)",
-			"tech_level": "3",
-			"quantity": 1,
-			"value": 256,
-			"weight": "0.03 lb",
-			"calc": {
-				"extended_value": 256,
-				"extended_weight": "0.03 lb"
-			}
-		},
-		{
-			"id": "eb9781f5-4f7b-4b5f-ba3c-109eaebebce4",
-			"type": "equipment",
-			"description": "Money: Silverwood Pound (GP)",
 			"tech_level": "3",
 			"quantity": 1,
 			"value": 256,
@@ -159,6 +55,58 @@
 			}
 		},
 		{
+			"id": "59b4d6c9-2194-4632-bff0-8f332061979a",
+			"type": "equipment",
+			"description": "Money: Arnen Guilden (GP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 256,
+			"weight": "0.03 lb",
+			"calc": {
+				"extended_value": 256,
+				"extended_weight": "0.03 lb"
+			}
+		},
+		{
+			"id": "568d77b5-22a1-4b9b-81a3-d3c567b674d4",
+			"type": "equipment",
+			"description": "Money: Arnen Pfennich (CP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 1,
+			"weight": "0.008 lb",
+			"calc": {
+				"extended_value": 1,
+				"extended_weight": "0.008 lb"
+			}
+		},
+		{
+			"id": "b95e6d6e-45e7-443f-8f72-3d28d7798e9e",
+			"type": "equipment",
+			"description": "Money: Belvantine Doubloon (GP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 256,
+			"weight": "0.03 lb",
+			"calc": {
+				"extended_value": 256,
+				"extended_weight": "0.03 lb"
+			}
+		},
+		{
+			"id": "a957aea1-1680-401c-b027-658e5d59b6da",
+			"type": "equipment",
+			"description": "Money: Belvantine Pica (CP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 1,
+			"weight": "0.008 lb",
+			"calc": {
+				"extended_value": 1,
+				"extended_weight": "0.008 lb"
+			}
+		},
+		{
 			"id": "e2c44abb-1b63-4345-91b9-df45e51ecd78",
 			"type": "equipment",
 			"description": "Money: Belvantine Réal (SP)",
@@ -185,7 +133,98 @@
 			}
 		},
 		{
+			"id": "d3c7cc69-245a-45c6-8f1b-ff3afad7d86a",
+			"type": "equipment",
+			"description": "Money: Celatiern Piece (CP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 1,
+			"weight": "0.008 lb",
+			"calc": {
+				"extended_value": 1,
+				"extended_weight": "0.008 lb"
+			}
+		},
+		{
+			"id": "ba1af956-6c41-464a-a15b-92d52ac015bc",
+			"type": "equipment",
+			"description": "Money: Celatiern Talen (GP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 256,
+			"weight": "0.03 lb",
+			"calc": {
+				"extended_value": 256,
+				"extended_weight": "0.03 lb"
+			}
+		},
+		{
+			"id": "3f85e304-172f-4b9f-9882-89b1b7af98fc",
+			"type": "equipment",
+			"description": "Money: Faerie Florenti (CP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 1,
+			"weight": "0.008 lb",
+			"calc": {
+				"extended_value": 1,
+				"extended_weight": "0.008 lb"
+			}
+		},
+		{
+			"id": "005e5af0-62e1-4f18-bf7f-fd7240f2e42b",
+			"type": "equipment",
+			"description": "Money: Faerie Livre (GP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 256,
+			"weight": "0.03 lb",
+			"calc": {
+				"extended_value": 256,
+				"extended_weight": "0.03 lb"
+			}
+		},
+		{
 			"id": "d6d60712-a244-4919-ac2c-a49f1e177e80",
+			"type": "equipment",
+			"description": "Money: Faerie Silventi (SP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 16,
+			"weight": "0.03 lb",
+			"calc": {
+				"extended_value": 16,
+				"extended_weight": "0.03 lb"
+			}
+		},
+		{
+			"id": "67779570-d936-426d-bb94-eef2b72796c1",
+			"type": "equipment",
+			"description": "Money: Silverwood Forenti (CP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 1,
+			"weight": "0.008 lb",
+			"calc": {
+				"extended_value": 1,
+				"extended_weight": "0.008 lb"
+			}
+		},
+		{
+			"id": "eb9781f5-4f7b-4b5f-ba3c-109eaebebce4",
+			"type": "equipment",
+			"description": "Money: Silverwood Pound (GP)",
+			"tech_level": "3",
+			"quantity": 1,
+			"value": 256,
+			"weight": "0.03 lb",
+			"calc": {
+				"extended_value": 256,
+				"extended_weight": "0.03 lb"
+			}
+		},
+		{
+			"id": "b1d12531-47d9-4cf9-97c4-5573a497beae",
 			"type": "equipment",
 			"description": "Money: Silverwood Silven (SP)",
 			"tech_level": "3",
