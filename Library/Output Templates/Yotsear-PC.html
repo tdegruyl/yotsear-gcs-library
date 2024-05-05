@@ -5,7 +5,10 @@
     <title>@NAME</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rock+Salt&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
     .qty1 {
      /*   visibility: hidden; */
@@ -15,64 +18,81 @@
         text-align: right;
     }
     .field {
-        padding-left: 1ex;
-        padding-right: 1ex;
+        padding-left: 1em;
+        padding-right: 1em;
         color: darkblue;
+        font-family: "Merienda", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size:130%;
     }
     .underlined {
+     /*
         border-bottom: thin solid black;
+    */
     }
     th { 
         text-align: left;
         text-decoration: underline;
         font-weight:bold;
     }
-    body {
-        width: 8in;
-        font-size: 9pt;
-        font-family: Verdana, sans-serif;
-        padding: 1ex;
-        display:grid;
-        grid-template-columns:  1fr  1fr  1fr  1fr;
-        grid-template-rows: auto;
-        gap: 1ex 1ex;
-        grid-auto-flow: column;
-        grid-template-areas:
-            "charinfo charinfo charinfo charinfo"
-            "primary-attributes secondary-attributes defense hit-locations"
-            "melee melee skills skills"
-            "ranged ranged skills skills"
-            "languages reactions skills skills"
-            "conditional conditional skills skills"
-            "carried-equipment carried-equipment traits traits"
-            "encumbrance lift traits traits"
-            "other-equipment other-equipment traits traits"
-            "other-equipment other-equipment notes notes"
-            ;
-    }
     div {
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
+        break-inside: avoid;
     }
 
-
+    body {
+        padding: 1em;
+        display: grid;
+        width: 1200px; 
+        font-size:10pt;
+        font-family: verdana;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        gap: 3px 3px;
+        grid-auto-flow: column;
+        grid-template-areas:
+            "char-portrait-field charinfo charinfo charinfo"
+            "attributes attributes attributes attributes"
+            "traits traits skills skills"
+            "melee melee melee spells"
+            "ranged ranged ranged spells"
+            "carried-equipment carried-equipment carried-equipment languages"
+            "carried-equipment carried-equipment carried-equipment reactions"
+            "encumbrance lift hit-locations conditional"
+            "other-equipment other-equipment other-equipment notes";
+    }
+    .attributes {  
+        grid-area: attributes;
+        padding: 1em;
+        border: thick solid black;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%; 
+        grid-template-rows: auto;
+        gap: 3px 3px;
+        grid-auto-flow: column;
+        grid-template-areas:
+            "primary-attributes secondary-attributes pools defense"
+    }
     .charinfo {  
         grid-area: charinfo;
-        padding: 20px;
-        border: thin solid black;
+        padding: 1em;
+        border: thick solid black;
         display: grid;
         grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 1fr; 
         grid-template-rows: auto;
-        gap: 5px 5px;
+        gap: 3px 3px;
         grid-auto-flow: column;
         grid-template-areas:
               "char-name-field char-name-field char-name-field char-name-field player player-field player-field player-field"
-              "char-title-field char-title-field org-field org-field ancestry ancestry-field total-points total-points-field"
+              "char-title-field char-title-field char-title-field org-field org-field org-field total-points total-points-field"
               "height height-field eyes eyes-field hair hair-field unspent-points unspent-points-field "
               "weight weight-field skin skin-field hand hand-field tl tl-field"
               "birthday birthday-field age age-field religion religion-field size size-field";
     }
  
+    .char-portrait-field { grid-area: char-portrait-field; font-size: 20pt; text-align: center;}
     .char-name-field { grid-area: char-name-field; font-size: 20pt; text-align: center;}
     .player-field { grid-area: player-field;  }
     .player { grid-area: player;}
@@ -110,36 +130,59 @@
     .religion {grid-area: religion; }
     .religion-field {grid-area: religion-field; }
 
-    .primary-attributes {grid-area: primary-attributes; width:100%; font-size: 110%; border: thin solid black;}
-    .primary-attributes .box {font-size: 130%; }
-    .box {border: thin solid black; padding: 6pt; text-align:center;}
-    .secondary-attributes {grid-area: secondary-attributes; font-size: 110%;  border: thin solid black;}
-    .secondary-attributes .box {font-size: 130%; }
-    .defense {grid-area: defense; font-size: 110%;  border: thin solid black;}
-    .defense .box {font-size: 150%; }
-    .melee {grid-area: melee;  border: thin solid black; font-size: 90%;}
-    .ranged {grid-area: ranged;  border: thin solid black; font-size: 90%}
-    .carried-equipment { grid-area: carried-equipment;  border: thin solid black;}
-    .other-equipment { grid-area: other-equipment;  border: thin solid black;}
-    .traits {grid-area: traits; min-width: 2.5in; font-size: 90%;  border: thin solid black;}
-    .skills {grid-area: skills; min-width: 2.5in; font-size: 90%;   border: thin solid black;}
-    .encumbrance {grid-area: encumbrance; font-size: 90%;   border: thin solid black;}
-    .lift {grid-area: lift; min-width: 2.5in; font-size: 90%;   border: thin solid black;}
-    .points {text-align:center;}
-    .equipment { width: 100%; padding: 20px; font-size: 90%;  border: thin solid black;}
+    .primary-attributes {grid-area: primary-attributes; width:100%; font-size: 110%; }
+    .primary-attributes .box {font-size: 150%; height: 50px; width:50px; }
+    .primary-attributes .title {font-size: 170%; vertical-align: middle; }
+    .box {border: thick solid black; padding: 3px; text-align:center;}
+    .secondary-attributes {grid-area: secondary-attributes; font-size: 110%;  }
+    .pools {grid-area: pools;secondary-attributes font-size: 110%;  }
+    .pools .box {font-size: 150%;  height: 50px; width:50px;}
+    .pools .title {font-size: 130%; vertical-align: middle; }
+    .secondary-attributes .box {font-size: 150%;  height: 50px; width:50px;}
+    .secondary-attributes .title {font-size: 150%; vertical-align: middle; }
+    .defense {grid-area: defense; font-size: 110%;}
+    .defense .title { font-size: 150%;}
+    .defense .box {font-size: 150%; height:50px; width:50px; }
+    .melee {grid-area: melee;  border: thick solid black; font-size: 90%;}
+    .ranged {grid-area: ranged;  border: thick solid black; font-size: 90%}
+    .carried-equipment { grid-area: carried-equipment;  border: thick solid black;}
+    .other-equipment { grid-area: other-equipment;  border: thick solid black;}
+    .traits {grid-area: traits; min-width: 2.5in; border: thick solid black; }
+    .traits-list { column-count:2; font-size:85%; column-gap: 6px; column-rule: 2px solid black; }
+    .traits-list div.field::before {
+        content: "- ";
+    }
+    .skills {grid-area: skills; min-width: 2.5in; border: thick solid black;}
+    .skills-list { column-count:2; font-size:85%;  column-gap: 6px; column-rule: 2px solid black; }
+    .skills-list div.field::before {
+        content: "- ";
+    }
+    .spells {grid-area: spells; min-width: 2.5in; border: thick solid black;}
+    .spells-list { column-count:1; font-size:85%;  column-gap: 6px; column-rule: 2px solid black; }
+    .spells-list div.field::before {
+        content: "- ";
+    }
+    .encumbrance {grid-area: encumbrance; font-size: 90%;   border: thick solid black;}
+    .lift {grid-area: lift; min-width: 2.5in; font-size: 90%;   border: thick solid black;}
+    .points {font-size:80%;display:none;visibility:hidden;}
+    .equipment { width: 100%; padding: 1em; font-size: 90%;  border: thick solid black;}
+    .equipment-list { column-count:2; font-size:85%; column-gap: 6px; column-rule: 2px solid black; }
     /*.note {font-size: 70%; font-weight:normal; padding-left: 12px; } */
-    .reactions { grid-area: reactions; border: thin solid black; }
-    .conditional { grid-area: conditional; border: thin solid black; }
-    .languages { grid-area: languages; border: thin solid black;}
-    .hit-locations { grid-area: hit-locations; border: thin solid black; }
-    .hit-locations th {text-align: center;}
-    .hit-locations td {text-align: center;}
-    .notes {grid-area: notes; border: thin solid black;}
-    td { padding: 0.5ex; padding-left: 1ex; padding-right:1ex; vertical-align: top; min-width: 5ex;}
+    .reactions { grid-area: reactions; border: thick solid black; }
+    .conditional { grid-area: conditional; border: thick solid black; }
+    .languages { grid-area: languages; border: thick solid black;}
+    .hit-locations { grid-area: hit-locations; border: thick solid black; }
+    .hit-locations-list { padding-left:20px; padding-right:20px; text-indent: 1em; font-size:85%; column-count:2; column-gap: 1em; column-rule: 2px solid black; }
+    .notes {grid-area: notes; border: thick solid black;}
+    td { padding-left: 1em; padding-right:1em; vertical-align: middle; }
     .number { text-align: right; }
-    .table-title {text-decoration: none; background-color: black; color: white; padding: 1ex; font-size: 110%; height: 1.3ex; font-weight: bold; text-align: center; }
-    table { width: 100%; font-size: 95%; }
+    .section-title {text-decoration: none; background-color: black; color: white; padding: 1em; font-size: 110%; font-weight: bold; text-align: center; }
+    .table-title {text-decoration: none; background-color: black; color: white; padding: 1em; font-size: 110%; font-weight: bold; text-align: center; }
+    table { width: 100%; }
     .alternate tr:nth-child(even) {
+        background-color: #D3D3D3;
+    }
+    .current {
         background-color: #D3D3D3;
     }
     #notifications {
@@ -149,16 +192,16 @@
 /* Tooltip text */
     .note {
         font-size: 90%;
-      visibility: hidden;
-      width: 150px;
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 5px;
-      border-radius: 6px;
-      position: absolute;
-      z-index: 1;
-      font-weight: bold;
+        visibility: hidden;
+        width: 150px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        font-weight: bold;
     }
 
     td:hover .note {
@@ -168,18 +211,24 @@
         display: none;
     }
 </style>
+<style media="print" type="text/css">
+        input {
+            display: none !important;
+        }
+</style>
 </head>
 <body>
-<div class="charinfo">
+    <div class="char-portrait-field"><img src="@PORTRAIT" alt="character portrait"></div>
+  <div class="charinfo">
   <div class="char-name-field field">@NAME</div>
   <div class="player title">Player</div>
   <div class="player-field field">@PLAYER</div>
-  <!-- div class="char-title title">Title</div -->
   <div class="char-title-field field">@TITLE</div>
-  <!--div class="org title">Organization</div -->
   <div class="org-field field">@ORGANIZATION</div>
+<!--
   <div class="ancestry title">Ancestry</div>
   <div class="ancestry-field field underlined">@RACE</div>
+-->
   <div class="total-points-field field underlined">@TOTAL_POINTS</div>
   <div class="total-points title">Points</div>
   <div class="height title">Height</div>
@@ -207,17 +256,17 @@
   <div class="size title">Size</div>
   <div class="size-field field underlined">@SIZE</div>
 </div>
-    <div class="primary-attributes">
+<div class="attributes">
+<div class="primary-attributes">
     <table>
-        <tr><th class="table-title" colspan="4">Attributes</th></tr>
-@PRIMARY_ATTRIBUTE_LOOP_START
-<tr><td class="title">@NAME</td><td class="box field">@VALUE</td><td></td><td class="points">[@POINTS]</td></tr>
-@PRIMARY_ATTRIBUTE_LOOP_END
-            <tr><td>&nbsp;</td><td></td><td></td></tr>
-            <tr><td class="title">Thrust</td><td class="box field">@THRUST</td><td></td><td></td></tr>
-            <tr><td class="title">Swing</td><td class="box field">@SWING</td><td></td><td></td></tr>
-        </table>
-    </div>
+    @PRIMARY_ATTRIBUTE_LOOP_START
+        <tr><td class="title">@NAME</td><td class="box field">@VALUE</td><td></td><td class="points">[@POINTS]</td></tr>
+    @PRIMARY_ATTRIBUTE_LOOP_END
+        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+        <tr><td class="title">Thrust</td><td class="field">@THRUST</td><td></td><td></td></tr>
+        <tr><td class="title">Swing</td><td class="field">@SWING</td><td></td><td></td></tr>
+    </table>
+</div>
     <script>
                 function poolConditionNotifications(){
                     var output = "";
@@ -265,9 +314,8 @@
     </script>
     <div class="secondary-attributes">
         <table >
-            <tr><th class="table-title" colspan="4">Secondary</th></tr>
 @SECONDARY_ATTRIBUTE_LOOP_START
-<tr id="@ID"><td class="title">@COMBINED_NAME</td><td class="box field">@VALUE</td><td></td><td class="points">[@POINTS]<script> let @ID = @VALUE; </script></td></tr>
+<tr id="@ID"><td class="title">@NAME</td><td class="box field">@VALUE</td><td></td><td class="points">[@POINTS]</td><script> let @ID = @VALUE; </script></tr>
 @SECONDARY_ATTRIBUTE_LOOP_END
 <!--
             <tr><td class="title">Will</td><td class="box field">@WILL</td><td></td><td class="points">[@WILL_POINTS]</td></tr>
@@ -275,21 +323,35 @@
             <tr><td class="title">Basic Speed</td><td class="box field">@BASIC_SPEED</td><td></td><td class="points">[@BASIC_SPEED_POINTS]</td></tr>
             <tr><td class="title">Basic Move</td><td class="box field">@BASIC_MOVE</td><td></td><td class="points">[@BASIC_MOVE_POINTS]</td></tr>
 -->
-            <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;</td><td></td><td></td><!-- <td></td>--></tr>
+        </table>
+    </div>
+    <div class="pools">
+        <table >
 @POINT_POOL_LOOP_START
-            <tr id="@ID"><td class="title">@COMBINED_NAME</td><td class="box field">@MAXIMUM</td><td class="box field" style="min-width:1em;"><input type="number" id="cur_@ID" name="Current @NAME" min="0" max="@MAXIMUM" size="4"  value="@CURRENT" placeholder="@CURRENT" onchange="poolConditionNotifications()" ></td><td class="points">[@POINTS]<script> let @ID = @MAXIMUM; </script></td></tr>
+<tr id="@ID"><td class="title">@NAME</td><td class="box field">@MAXIMUM</td><td class="box field" style="min-width:1em;"><input class="noprint" type="number" id="cur_@ID" name="Current @NAME" min="0" max="@MAXIMUM" value="@CURRENT" placeholder="@CURRENT" onchange="poolConditionNotifications()" size="3"></td><td class="points">[@POINTS]</td><script> let @ID = @MAXIMUM; </script></tr>
 @POINT_POOL_LOOP_END
-            <tr id="@ID"><td class="title">Control Points</td><td></td><td class="box field" style="min-width:1em;"><input type="number" id="cur_cp" name="Current CP" min="0" size="4"  value="0" placeholder="0" onchange="poolConditionNotifications()" ></td><td></td></tr>
-<tr><td colspan="4"><ul id="notifications"></ul></td></tr>
+<tr id="@ID"><td class="title">Control Points</td><td></td><td class="box field" style="min-width:1em;"><input class="noprint" type="number" id="cur_cp" name="Current CP" min="0" value="0" placeholder="0" onchange="poolConditionNotifications()" size="3">&nbsp;</td><td></td></tr>
+<tr><td colspan="3"><ul id="notifications"></ul></td></tr>
             <!--
-            <tr><td class="title">Hit Points (HP)</td><td class="box field">@BASIC_HP</td><td class="box field" style="min-width:1em;"><input type="number" id="cur_hp" name="Current HP" min="@DEAD" max="@HP" size="4"  value="@HP" placeholder="@HP" ></td><td class="points">[@HP_POINTS]</td></tr>
-            <tr><td class="title">Fatigue Points (FP)</td><td class="box field">@BASIC_FP</td><td class="box field" style="min-width:1em;"><input type="number" max="@FP" min="@UNCONSCIOUS" id="cur_fp" name="Current FP" size="4"  value="@FP" placeholder="@FP"></td><td class="points">[@FP_POINTS]</td></tr>
+            <tr><td class="title">Hit Points (HP)</td><td class="box field">@BASIC_HP</td><td class="box field" style="min-width:1em;"><input type="number" id="cur_hp" name="Current HP" min="@DEAD" max="@HP" value="@HP" placeholder="@HP" ></td><td class="points">[@HP_POINTS]</td></tr>
+            <tr><td class="title">Fatigue Points (FP)</td><td class="box field">@BASIC_FP</td><td class="box field" style="min-width:1em;"><input type="number" max="@FP" min="@UNCONSCIOUS" id="cur_fp" name="Current FP" value="@FP" placeholder="@FP"></td><td class="points">[@FP_POINTS]</td></tr>
             -->
         </table>
     </div>
+    <div class="defense">
+        <table>
+            <tr><td class="title">DR</td><td class="box field">@GENERAL_DR</td><td></td></tr>
+        <tr><td class="title">Move</td><td class="box field">@CURRENT_MOVE</td><td></td></tr>
+        <tr><td class="title">Dodge</td><td class="box field">@CURRENT_DODGE</td><td></td></tr>
+        <tr><td class="title">Block</td><td class="box field">@BEST_CURRENT_BLOCK</td><td></td></tr>
+        <tr><td class="title">Parry</td><td class="box field">@BEST_CURRENT_PARRY</td><td></td></tr>
+        </table>
+    </div>
+</div>
     <div class="lift">
-        <table class="alternate">
-            <tr><th class="table-title" colspan="2">Lift and Carry</th></tr>
+        <h1 class="section-title">Lift and Carry</h1>
+        <table class="unalternate">
             <tr><td class="title">Basic Lift</td><td class="field">@BASIC_LIFT</td></tr>
             <tr><td class="title">One-Handed Lift</td><td class="field">@ONE_HANDED_LIFT</td></tr>
             <tr><td class="title">Two-Handed Lift</td><td class="field">@TWO_HANDED_LIFT</td></tr>
@@ -300,127 +362,113 @@
         </table>
     </div>
     <div class="encumbrance">
-        <table class="alternate">
-        <tr><th colspan="2" class="table-title">Encumbrance</th></tr>
-        <tr><th>Level</th><th>Max Load</th></tr>
+        <h1 class="section-title">Encumbrance</h1>
+        <table class="unalternate">
+        <tr><th class="number">Level</th><th>Max Load</th></tr>
 @ENCUMBRANCE_LOOP_START
-        <tr class="@CURRENT_MARKER"><td>@LEVEL</td><td class="field">@MAX_LOAD</td></tr>
+        <tr class="@CURRENT_MARKER"><td class="number field">@LEVEL</td><td class="field">@MAX_LOAD</td></tr>
 @ENCUMBRANCE_LOOP_END
         </table>
     </div>
-    <div class="defense">
-        <table>
-            <tr><th class="table-title" colspan="2">Defense</th></tr>
-        <tr><td class="title">DR</td><td class="box field">@GENERAL_DR</td></tr>
-        <tr><td class="title">Move</td><td class="box field">@CURRENT_MOVE</td></tr>
-        <tr><td class="title">Dodge</td><td class="box field">@CURRENT_DODGE</td></tr>
-        <tr><td class="title">Block</td><td class="box field">@BEST_CURRENT_BLOCK</td></tr>
-        <tr><td class="title">Parry</td><td class="box field">@BEST_CURRENT_PARRY</td></tr>
-        </table>
-    </div>
     <div class="hit-locations">
-        <table class="alternate">
-            <tr><th class="table-title" colspan="2">Hit Locations</th></tr>
-            <tr><th>Location</th><th>DR</th></tr>
+        <h1 class="section-title">DR by Hit Location</h1>
+        <div class="hit-locations-list">
         @HIT_LOCATION_LOOP_START
-        <tr><td>@WHERE</td><td>@DR</td></tr>
+        <div>@WHERE: <span class="field">@DR</span></div>
         @HIT_LOCATION_LOOP_END
-        </table>
+        </div>
     </div>
 
         <div class="melee"> 
-            <table class="alternate">
-            <tr><th class="table-title" colspan="6">Melée Attacks</th></tr>
-        <tr class="heading"><th>Attack</th><th class="number">Skill</th><th>Damage</th><th class="number">Block</th><th class="number">Parry</th><th>Reach</th></tr>
+            <h1 class="section-title">Melée Attacks</h1>
+            <div class="attack-list">
 @HIERARCHICAL_MELEE_LOOP_START
-<tr class="field"><td colspan="6">@DESCRIPTION</td></tr>
+<div class="field">@DESCRIPTION
     @ATTACK_MODES_LOOP_START
-        <tr><td style="padding-left:29px">@USAGE</td><td class="number">@LEVEL</td><td>@DAMAGE</td><td class="number">@BLOCK</td><td class="number">@PARRY</td><td>@REACH</td></tr>
+        <div style="padding-left:29px">@USAGE - @LEVEL: @DAMAGE; Block: @BLOCK; Parry: @PARRY; Reach: @REACH</div>
     @ATTACK_MODES_LOOP_END
+</div>
 @HIERARCHICAL_MELEE_LOOP_END
-        </table>
+            </div>
         </div>
         <div class="ranged">
-            <table class="alternate">
-            <tr><th class="table-title" colspan="9">Ranged Attacks</th></tr>
-            <tr class="heading"><th>Attack</th><th class="number">Skill</th><th>Damage</th><th class="number">Acc</th><th>Range</th><th class="number">RoF</th><th class="number">Shots</th><th>ST</th><th>Bulk</th></tr>
+            <h1 class="section-title">Ranged Attacks</h1>
+            <div class="attack-list">
 @HIERARCHICAL_RANGED_LOOP_START
-<tr class="field"><td colspan="9">@DESCRIPTION</td></tr>
-    @ATTACK_MODES_LOOP_START
-        <tr class="field"><td style="padding-left: 29px">@USAGE</td><td class="number">@LEVEL</td><td>@DAMAGE</td><td class="number">@ACCURACY</td><td>@RANGE</td><td class="number">@ROF</td><td class="number">@SHOTS</td><td>@STRENGTH</td><td>@BULK</td></tr>
-    @ATTACK_MODES_LOOP_END
+                <div class="field">@DESCRIPTION
+@ATTACK_MODES_LOOP_START
+                <div style="padding-left: 29px">@USAGE - @LEVEL: @DAMAGE; Acc: @ACCURACY; Range: @RANGE; RoF: @ROF</div>
+@ATTACK_MODES_LOOP_END
+                </div>
 @HIERARCHICAL_RANGED_LOOP_END
-        </table>
+            </div>
         </div>
             <div class="skills">
-            <table class="alternate">
-                <tr><th class="table-title" colspan="4">Skills</th></tr>
-                <tr class="heading"><th>Name</th><th class="number">Skill</th><th>Relative</th><th class="points">Points</th></tr>
+                <h1 class="section-title">Skills</h1>
+                <div class="skills-list">
 @SKILLS_LOOP_START
-                <tr class="field"><td  style="padding-left: calc(25px * @DEPTHx1 + 4px)" >@DESCRIPTION</td><td class="number">@SL</td><td>(@RSL)</td><td class="points">[@POINTS]</td></tr>
+<div class="field"  style="padding-left: calc(20px * @DEPTHx1 + 24px); text-indent:-16px;" >@DESCRIPTION (@RSL)-@SL<span class="points">[@POINTS]</span></div>
 @SKILLS_LOOP_END
-            </table>
+                </div>
             </div>
             <div class="traits">
-                <table class="alternate">
-                <tr><th class="table-title" colspan="2">Traits</th></tr>
-                <tr><th>Name</th><th class="points">Points</th></tr>
-                @EXCLUDE_TAGS_LANGUAGE
+                <h1 class="section-title">Traits</h1>
+                <div class="traits-list">
+@EXCLUDE_TAGS_LANGUAGE
+@EXCLUDE_TAGS_HIDDEN
 @ADVANTAGES_LOOP_START
-                <tr class="field @TYPE"><td style="padding-left: calc(25px * @DEPTHx1 + 4px)" >@DESCRIPTION</td><td class="points">[@POINTS]</td></tr>
+<div class="field @TYPE" style="padding-left: calc(20px * @DEPTHx1 + 24px); text-indent:-16px;" >@DESCRIPTION_PRIMARY @DESCRIPTION_MODIFIER_NOTES_PAREN @DESCRIPTION_NOTES_PAREN<span class="points">[@POINTS]</span></div>
 @ADVANTAGES_LOOP_END
-            </table>
+                </div>
             </div>
 <div class="carried-equipment">
-    <table class="alternate">
-    <tr><th class="table-title" colspan="4">Carried Equipment (@CARRIED_WEIGHT, @CARRIED_VALUE)</th></tr>
-    <tr class="heading"><th>Equipment</th><th class="number">Qty</th><th class="number">Weight</th><th class="number">Value</th></tr>
+    <h1 class="section-title">Carried Equipment (@CARRIED_WEIGHT, @CARRIED_VALUE)</h1>
+    <div class="equipment-list">
 @EQUIPMENT_LOOP_START
-<tr class="field"><td style="padding-left: calc(25px * @DEPTHx1 + 4px)" >@DESCRIPTION</td><td class="qty@QTY number">@QTY</td><td class="number">@WEIGHT_SUMMARY</td><td class="number">$@COST_SUMMARY</td></tr>
+<div class="field" style="padding-left: calc(25px * @DEPTHx1 + 4px)" >@DESCRIPTION<span class="qty@QTY number"> (@QTY)</span> (@WEIGHT_SUMMARY; $@COST_SUMMARY)</div>
 @EQUIPMENT_LOOP_END
-</table>
+    </div>
 </div>
 <!-- Other Equipment  -->
 <div class="other-equipment">
-    <table class="alternate">
-    <tr><th class="table-title" colspan="4">Other Equipment (@OTHER_EQUIPMENT_VALUE)</th></tr>
-    <tr class="heading"><th>Equipment</th><th class="number">Qty</th><th class="number">Weight</th><th class="number">Value</th></tr>
+    <h1 class="section-title">Other Equipment (@OTHER_EQUIPMENT_VALUE)</h1>
+    <div class="equipment-list">
 @OTHER_EQUIPMENT_LOOP_START
-<tr class="field"><td style="padding-left: calc(25px * @DEPTHx1 + 4px)" >@DESCRIPTION</td><td class="qty@QTY number">@QTY</td><td class="number">@WEIGHT_SUMMARY</td><td class="number">$@COST_SUMMARY</td></tr>
+<div class="field" style="padding-left: calc(25px * @DEPTHx1 + 4px)" >@DESCRIPTION<span class="qty@QTY number"> (@QTY)</span> (@WEIGHT_SUMMARY; $@COST_SUMMARY)</div>
 @OTHER_EQUIPMENT_LOOP_END
-</table>
+    </div>
 </div>
+            <div class="spells">
+                <h1 class="section-title">Spells</h1>
+                <div class="spells-list">
+@SPELLS_LOOP_START
+<div class="field" style="padding-left: calc(20px * @DEPTHx1 + 24px); text-indent:-16px;" >@DESCRIPTION (@RSL)-@SL<span class="points">[@POINTS]</span></div>
+@SPELLS_LOOP_END
+                </div>
+            </div>
             <div class="languages">
-                <table>
-                <tr><th class="table-title">Languages</th></tr>
+                <h1 class="section-title">Languages</h1>
             @LANGUAGES_LOOP_START
-                <tr class="field"><td>@DESCRIPTION</td></tr>
+                <div class="field">@DESCRIPTION @DESCRIPTION_NOTES_PAREN</div>
             @LANGUAGES_LOOP_END
-            </table>
             </div>
             <div class="conditional">
-                <table>
-                <tr><th class="table-title" colspan="2">Conditional Modifiers</th></tr>
+                <h1 class="section-title">Conditional Modifiers</h1>
             @CONDITIONAL_MODIFIERS_LOOP_START
-            <tr class="field"><td>@MODIFIER</td><td>@SITUATION</td></tr>
+                <div class="field">@MODIFIER: @SITUATION</div>
             @CONDITIONAL_MODIFIERS_LOOP_END
-            </table>
             </div>
             <div class="reactions">
-                <table>
-                <tr><th class="table-title" colspan="2">Reaction Modifiers</th></tr>
+                <h1 class="section-title">Reaction Modifiers</h1>
             @REACTION_LOOP_START
-            <tr class="field"><td>@MODIFIER</td><td>@SITUATION</td></tr>
+                <div class="field">@MODIFIER: @SITUATION</div>
             @REACTION_LOOP_END
-            </table>
             </div>
             <div class="notes">
-                <table>
-                <tr><th class="table-title">Notes</th></tr>
+                <h1 class="section-title">Notes</h1>
             @NOTES_LOOP_START
-            <tr class="field"><td>@NOTE</td></tr>
+            <div class="field">@NOTE</div>
             @NOTES_LOOP_END
-            </table>
             </div>
             <script>
                 const list = document.getElementsByClassName("qty1");
@@ -429,9 +477,6 @@
             <script>
                 document.getElementById("cur_hp").min = -10 * hp;
                 document.getElementById("cur_fp").min = -1 * fp;
-                if(mana_reserve == 0){
-                    document.getElementById("mana_reserve").style.display = "none";
-                }
 
             </script>
 

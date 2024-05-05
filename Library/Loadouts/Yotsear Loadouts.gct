@@ -1,0 +1,314 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "bddf77be-6d12-47be-92ba-07061daf73cc",
+	"equipment": [
+		{
+			"id": "a6a143c0-4fe3-4475-bc00-08b919c2a022",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
+				{
+					"id": "78541273-3cf2-4b92-8c0b-7a4443e87967",
+					"type": "equipment",
+					"description": "Silver Coin",
+					"reference": "DFX73",
+					"tags": [
+						"Money"
+					],
+					"value": 20,
+					"weight": "0.02 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "d6e5e209-1084-4645-a817-78abc8fad3ec",
+					"type": "equipment",
+					"description": "Personal Basics",
+					"reference": "DFA111",
+					"notes": "Basic equipment for camping; -2 to Survival rolls without it",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"quantity": 1,
+					"value": 5,
+					"weight": "1 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 5,
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "33296603-17d5-4afd-a9b9-0eca5da08acb",
+					"type": "equipment",
+					"description": "Gold Coin",
+					"reference": "DFX73",
+					"tags": [
+						"Money"
+					],
+					"value": 400,
+					"weight": "0.02 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "3c197647-df80-4ca0-ad7d-5a0b2c3322ac",
+					"type": "equipment",
+					"description": "Glow Vial",
+					"reference": "DFA115",
+					"notes": "Drop separate pill into vial to create light in 2 yard radius for 12 hours; Includes lanyard",
+					"tags": [
+						"Chemicals",
+						"Concoctions",
+						"Utility"
+					],
+					"quantity": 1,
+					"value": 30,
+					"weight": "0.5 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 30,
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "4c7c092a-27ce-44d7-8f3f-5cfab00faf9a",
+					"type": "equipment",
+					"description": "Copper Coin",
+					"reference": "DFX73",
+					"tags": [
+						"Money"
+					],
+					"value": 1,
+					"weight": "0.02 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"description": "Pouch",
+			"reference": "DFA111",
+			"tags": [
+				"Camping and Survival Gear",
+				"Container"
+			],
+			"quantity": 1,
+			"value": 10,
+			"weight": "0.2 lb",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "3 lb"
+						}
+					}
+				]
+			},
+			"equipped": true,
+			"calc": {
+				"extended_value": 45,
+				"extended_weight": "1.7 lb"
+			}
+		},
+		{
+			"id": "2970bece-24c1-411d-a015-f937bbc71513",
+			"type": "equipment_container",
+			"open": true,
+			"children": [
+				{
+					"id": "026492ff-ec24-431b-840b-d75ddd69febe",
+					"type": "equipment_container",
+					"open": true,
+					"children": [
+						{
+							"id": "e9fcb220-0285-4b78-8162-f909300ed594",
+							"type": "equipment",
+							"description": "Water",
+							"reference": "DFA111",
+							"notes": "1 pint",
+							"tags": [
+								"Camping and Survival Gear"
+							],
+							"quantity": 8,
+							"weight": "1 lb",
+							"equipped": true,
+							"calc": {
+								"extended_value": 0,
+								"extended_weight": "8 lb"
+							}
+						}
+					],
+					"description": "Wineskin",
+					"reference": "DFA111",
+					"notes": "Holds 1 gallon of liquid",
+					"tags": [
+						"Camping and Survival Gear",
+						"Container"
+					],
+					"quantity": 1,
+					"value": 10,
+					"weight": "0.25 lb",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "8 lb"
+								}
+							}
+						]
+					},
+					"equipped": true,
+					"calc": {
+						"extended_value": 10,
+						"extended_weight": "8.25 lb"
+					}
+				},
+				{
+					"id": "f9d8e764-d1c8-406b-bc6c-7fb6508945fb",
+					"type": "equipment",
+					"description": "Torch",
+					"reference": "DFA111",
+					"notes": "Eliminates darkness penalties in a 2 yard radius; Requires a hand; Burns for 1 hour",
+					"tags": [
+						"Light Sources"
+					],
+					"quantity": 2,
+					"value": 3,
+					"weight": "1 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 6,
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "204b4c12-67e9-4c28-a986-9c199f60ac0a",
+					"type": "equipment",
+					"description": "Rations",
+					"reference": "DFA111",
+					"notes": "One meal",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"quantity": 21,
+					"value": 2,
+					"weight": "0.5 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 42,
+						"extended_weight": "10.5 lb"
+					}
+				},
+				{
+					"id": "bb8738e5-80c5-4934-9d8d-15f1f50df3cc",
+					"type": "equipment",
+					"description": "First Aid Kit",
+					"reference": "DFA111",
+					"tags": [
+						"Medical Gear"
+					],
+					"quantity": 1,
+					"value": 50,
+					"weight": "2 lb",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "First Aid"
+							},
+							"amount": 1
+						}
+					],
+					"equipped": true,
+					"calc": {
+						"extended_value": 50,
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "ac3a747b-f1f5-4109-aff6-f9fbbe4b4ab8",
+					"type": "equipment",
+					"description": "Blanket",
+					"reference": "DFA111",
+					"tags": [
+						"Camping and Survival Gear"
+					],
+					"quantity": 1,
+					"value": 20,
+					"weight": "4 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 20,
+						"extended_weight": "4 lb"
+					}
+				}
+			],
+			"description": "Backpack, Small",
+			"reference": "DFA111",
+			"tags": [
+				"Camping and Survival Gear",
+				"Container"
+			],
+			"quantity": 1,
+			"value": 60,
+			"weight": "3 lb",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"equipped": true,
+			"calc": {
+				"extended_value": 188,
+				"extended_weight": "29.75 lb"
+			}
+		},
+		{
+			"id": "1bb8cee0-4f41-4f0a-a88d-32926c7fa155",
+			"type": "equipment",
+			"description": "Clothing",
+			"reference": "DFA110",
+			"tags": [
+				"Clothing"
+			],
+			"quantity": 1,
+			"value": 120,
+			"weight": "2 lb",
+			"equipped": true,
+			"calc": {
+				"extended_value": 120,
+				"extended_weight": "2 lb"
+			}
+		}
+	]
+}

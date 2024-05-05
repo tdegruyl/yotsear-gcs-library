@@ -6,52 +6,20 @@
 		{
 			"id": "bf32529d-43d8-4c24-9262-b51dd9019e24",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
-					"id": "305fff6f-799e-43f3-a18a-87eaea809c30",
+					"id": "307a0299-4670-4e59-9503-2583b4c63e0f",
 					"type": "trait",
-					"name": "Reduced Size",
+					"name": "Curious",
+					"reference": "DFA59",
 					"tags": [
-						"Physical"
+						"Disadvantage",
+						"Mental"
 					],
-					"levels": 1,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "sm",
-							"amount": -1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
+					"cr": 12,
+					"base_points": -5,
 					"calc": {
-						"points": 0
-					}
-				},
-				{
-					"id": "370e32ab-c2dc-4650-8ebc-432697f0cc5d",
-					"type": "trait",
-					"name": "Extra Fatigue Points",
-					"reference": "DFA10",
-					"tags": [
-						"Advantage",
-						"Attribute",
-						"Physical"
-					],
-					"levels": 3,
-					"points_per_level": 3,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "fp",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"calc": {
-						"points": 9
+						"points": -5
 					}
 				},
 				{
@@ -62,7 +30,8 @@
 					"tags": [
 						"Attribute",
 						"Disadvantage",
-						"Mental"
+						"Mental",
+						"HIdden"
 					],
 					"levels": 1,
 					"points_per_level": -5,
@@ -80,6 +49,103 @@
 					}
 				},
 				{
+					"id": "370e32ab-c2dc-4650-8ebc-432697f0cc5d",
+					"type": "trait",
+					"name": "Extra Fatigue Points",
+					"reference": "DFA10",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical",
+						"Hidden"
+					],
+					"levels": 3,
+					"points_per_level": 3,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "fp",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "4f9b5b5a-bbae-4969-83cd-4337628435b2",
+					"type": "trait",
+					"name": "Feature: Armor interchangeable only with that of SM -1 races.",
+					"tags": [
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "a5047199-276a-4269-bca8-4aebf4fb1a91",
+					"type": "trait",
+					"name": "Gnomish",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "c2dc2543-f35d-4160-a4ad-59dbe256ae6d",
 					"type": "trait",
 					"name": "Honest Face",
@@ -91,6 +157,128 @@
 					"base_points": 1,
 					"calc": {
 						"points": 1
+					}
+				},
+				{
+					"id": "81c7bb91-7831-4a06-93a5-72763d566f99",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "DFE38",
+					"reference_highlight": "Unarmed Combat",
+					"tags": [
+						"Hidden"
+					],
+					"weapons": [
+						{
+							"id": "88370d04-c467-46df-ba2d-2f510c8c7ef8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "73781dfb-055f-4163-8757-41a065725e54",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Grappling",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr cp"
+							}
+						},
+						{
+							"id": "86488540-50ef-4afd-b3c0-aa68a4066735",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "7fa814d8-5086-47bc-a6ef-956ee29c06b8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
 					}
 				},
 				{
@@ -107,6 +295,28 @@
 					"can_level": true,
 					"calc": {
 						"points": 5
+					}
+				},
+				{
+					"id": "305fff6f-799e-43f3-a18a-87eaea809c30",
+					"type": "trait",
+					"name": "Reduced Size",
+					"tags": [
+						"Physical",
+						"Hidden"
+					],
+					"levels": 1,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "sm",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 0
 					}
 				},
 				{
@@ -196,34 +406,9 @@
 					"calc": {
 						"points": 10
 					}
-				},
-				{
-					"id": "307a0299-4670-4e59-9503-2583b4c63e0f",
-					"type": "trait",
-					"name": "Curious",
-					"reference": "DFA59",
-					"tags": [
-						"Disadvantage",
-						"Mental"
-					],
-					"base_points": -5,
-					"cr": 12,
-					"calc": {
-						"points": -5
-					}
-				},
-				{
-					"id": "4f9b5b5a-bbae-4969-83cd-4337628435b2",
-					"type": "trait",
-					"name": "Feature: Armor interchangeable only with that of SM -1 races.",
-					"tags": [
-						"Physical"
-					],
-					"calc": {
-						"points": 0
-					}
 				}
 			],
+			"open": true,
 			"name": "Gnome",
 			"reference": "DFA44",
 			"ancestry": "Gnome-Yotsear",
@@ -235,8 +420,26 @@
 		{
 			"id": "e80a181b-efa3-40f6-9c51-6768a29fe4f2",
 			"type": "trait_container",
-			"open": true,
 			"children": [
+				{
+					"id": "8fdae458-013e-46c3-8cea-b5e947ccb736",
+					"type": "trait",
+					"name": "Artificer's Lore",
+					"tags": [
+						"Physical"
+					],
+					"base_points": 25,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "when selling anything identified using this ability.",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 25
+					}
+				},
 				{
 					"id": "6efb5b6f-d41c-4d68-9750-cf6380ce004b",
 					"type": "trait",
@@ -248,6 +451,22 @@
 					"base_points": 1,
 					"calc": {
 						"points": 1
+					}
+				},
+				{
+					"id": "2dde9c05-90c6-4fb7-82b7-ad78662dcc5e",
+					"type": "trait",
+					"name": "Gizmo",
+					"reference": "DFA39",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"can_level": true,
+					"calc": {
+						"points": 5
 					}
 				},
 				{
@@ -336,43 +555,9 @@
 					"calc": {
 						"points": 60
 					}
-				},
-				{
-					"id": "2dde9c05-90c6-4fb7-82b7-ad78662dcc5e",
-					"type": "trait",
-					"name": "Gizmo",
-					"reference": "DFA39",
-					"tags": [
-						"Advantage",
-						"Mental"
-					],
-					"levels": 1,
-					"points_per_level": 5,
-					"can_level": true,
-					"calc": {
-						"points": 5
-					}
-				},
-				{
-					"id": "8fdae458-013e-46c3-8cea-b5e947ccb736",
-					"type": "trait",
-					"name": "Artificer's Lore",
-					"tags": [
-						"Physical"
-					],
-					"base_points": 25,
-					"features": [
-						{
-							"type": "reaction_bonus",
-							"situation": "when selling anything identified using this ability.",
-							"amount": 1
-						}
-					],
-					"calc": {
-						"points": 25
-					}
 				}
 			],
+			"open": true,
 			"name": "Gnome Gifts",
 			"calc": {
 				"points": 136

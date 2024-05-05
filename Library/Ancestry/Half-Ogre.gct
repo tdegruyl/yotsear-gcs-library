@@ -6,7 +6,6 @@
 		{
 			"id": "9d896f6c-f147-4df7-aa34-c676dcc529b7",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "f08cb968-b4a5-485c-896a-2fabad087460",
@@ -38,7 +37,8 @@
 					"tags": [
 						"Attribute",
 						"Disadvantage",
-						"Mental"
+						"Mental",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": -20,
@@ -79,7 +79,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": 10,
@@ -104,7 +105,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 4,
 					"points_per_level": 10,
@@ -119,6 +121,446 @@
 					"can_level": true,
 					"calc": {
 						"points": 40
+					}
+				},
+				{
+					"id": "03fae5f0-52a9-4638-874a-7dcea4d25d42",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "c038e389-5311-4003-bb55-4da1c78cf22c",
+							"type": "trait",
+							"name": "Alfarnian",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "9947eda7-2c36-42fb-bede-22f332b49d42",
+							"type": "trait",
+							"name": "Belvantine",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "d2baf49c-30c3-41ae-a34b-909184dfcfbd",
+							"type": "trait",
+							"name": "Celatiern",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "cf395507-946c-4bda-b35b-8de98e61792f",
+							"type": "trait",
+							"name": "Miroganti",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "d5301798-400a-4cec-8f7a-46177b55cfd7",
+							"type": "trait",
+							"name": "Orcish",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"open": true,
+					"name": "Language",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					},
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "4d20f0af-2c3d-41b7-9d41-f64bd88c10f8",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "DFE38",
+					"reference_highlight": "Unarmed Combat",
+					"tags": [
+						"Hidden"
+					],
+					"weapons": [
+						{
+							"id": "88370d04-c467-46df-ba2d-2f510c8c7ef8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "73781dfb-055f-4163-8757-41a065725e54",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Grappling",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr cp"
+							}
+						},
+						{
+							"id": "86488540-50ef-4afd-b3c0-aa68a4066735",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "7fa814d8-5086-47bc-a6ef-956ee29c06b8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
 					}
 				},
 				{
@@ -262,6 +704,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Half-Ogre",
 			"reference": "DFA44",
 			"ancestry": "Orc-Yotsear",
@@ -273,7 +716,6 @@
 		{
 			"id": "f18319f4-6b58-4ca3-828e-c484d5a131b4",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "7c73ba8b-b86b-4e30-889d-15c769176190",
@@ -438,6 +880,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Half-Ogre Gifts",
 			"calc": {
 				"points": 35

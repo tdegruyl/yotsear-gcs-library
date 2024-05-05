@@ -6,8 +6,67 @@
 		{
 			"id": "608c7254-332b-47f2-ace6-4841ab3b027b",
 			"type": "trait_container",
-			"open": true,
 			"children": [
+				{
+					"id": "5f651a50-2ced-4279-906d-90785a5a1afd",
+					"type": "trait",
+					"name": "Cat-Folk",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
 				{
 					"id": "6b8f0b46-71b4-4b7a-afb3-e2dfbf45d36b",
 					"type": "trait",
@@ -91,7 +150,8 @@
 					"tags": [
 						"Attribute",
 						"Disadvantage",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": -10,
@@ -128,8 +188,8 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -10,
 					"cr": 12,
+					"base_points": -10,
 					"calc": {
 						"points": -10
 					}
@@ -142,7 +202,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": 20,
@@ -168,7 +229,8 @@
 						"Advantage",
 						"Attribute",
 						"Mental",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": 5,
@@ -200,6 +262,128 @@
 					}
 				},
 				{
+					"id": "e0d25065-cf10-49ef-9fd4-dc9e66d4d7c8",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "DFE38",
+					"reference_highlight": "Unarmed Combat",
+					"tags": [
+						"Hidden"
+					],
+					"weapons": [
+						{
+							"id": "88370d04-c467-46df-ba2d-2f510c8c7ef8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "73781dfb-055f-4163-8757-41a065725e54",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Grappling",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr cp"
+							}
+						},
+						{
+							"id": "86488540-50ef-4afd-b3c0-aa68a4066735",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "7fa814d8-5086-47bc-a6ef-956ee29c06b8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "b55e6162-961c-4fcf-b3ee-60ad5540ce1e",
 					"type": "trait",
 					"name": "Night Vision",
@@ -224,8 +408,8 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -5,
 					"cr": 15,
+					"base_points": -5,
 					"calc": {
 						"points": -2
 					}
@@ -237,7 +421,8 @@
 					"reference": "DFA43",
 					"tags": [
 						"Advantage",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"base_points": 5,
 					"weapons": [
@@ -315,7 +500,8 @@
 					"tags": [
 						"Advantage",
 						"Exotic",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"base_points": 1,
 					"weapons": [
@@ -411,6 +597,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Cat-Folk",
 			"ancestry": "Human",
 			"container_type": "ancestry",
@@ -421,7 +608,6 @@
 		{
 			"id": "95ee54dd-890d-4ffd-bffa-9dca74c90cc0",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "43fea443-0f8a-4600-96fc-dd3b1837325a",
@@ -579,6 +765,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Cat-Folk Gifts",
 			"calc": {
 				"points": 40

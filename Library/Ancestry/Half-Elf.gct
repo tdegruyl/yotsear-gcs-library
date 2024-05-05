@@ -6,42 +6,127 @@
 		{
 			"id": "824abf54-04a9-476d-872e-413e27feca38",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
-					"id": "4cf9be19-2b3d-4ced-844b-aeb4956d9bce",
+					"id": "dd456cab-4c0b-46f6-9200-f90e068eb845",
 					"type": "trait",
-					"name": "Feature: Unnatural hair color",
+					"name": "Natural Attacks",
+					"reference": "DFE38",
+					"reference_highlight": "Unarmed Combat",
 					"tags": [
-						"Physical"
+						"Hidden"
+					],
+					"weapons": [
+						{
+							"id": "88370d04-c467-46df-ba2d-2f510c8c7ef8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "73781dfb-055f-4163-8757-41a065725e54",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Grappling",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr cp"
+							}
+						},
+						{
+							"id": "86488540-50ef-4afd-b3c0-aa68a4066735",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "7fa814d8-5086-47bc-a6ef-956ee29c06b8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
 					],
 					"calc": {
 						"points": 0
-					}
-				},
-				{
-					"id": "b628ae53-77c0-4195-ba08-18fff7f9f943",
-					"type": "trait",
-					"name": "Increased Dexterity",
-					"reference": "DFA8",
-					"tags": [
-						"Advantage",
-						"Attribute",
-						"Physical"
-					],
-					"levels": 1,
-					"points_per_level": 20,
-					"features": [
-						{
-							"type": "attribute_bonus",
-							"attribute": "dx",
-							"amount": 1,
-							"per_level": true
-						}
-					],
-					"can_level": true,
-					"calc": {
-						"points": 20
 					}
 				},
 				{
@@ -82,8 +167,364 @@
 					"calc": {
 						"points": 5
 					}
+				},
+				{
+					"id": "ff07e190-9ee9-4e02-a7a1-02d556baadca",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "d0b89f27-de6a-4669-a6d7-94724da1ba95",
+							"type": "trait",
+							"name": "Miroganti",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "8fb7496a-c6e3-462b-a390-5a6f284a4d03",
+							"type": "trait",
+							"name": "Elvish",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "8df71d10-26bd-488c-a0e6-1808def1eb5a",
+							"type": "trait",
+							"name": "Celatiern",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "11635de0-3fd6-47de-946e-9e76fcc4e0f1",
+							"type": "trait",
+							"name": "Belvantine",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "15185589-5ef0-43ab-a2f0-31ddb9fbfd21",
+							"type": "trait",
+							"name": "Alfarnian",
+							"reference": "DFA51",
+							"tags": [
+								"Advantage",
+								"Language",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+									"type": "modifier",
+									"name": "Native",
+									"reference": "B23",
+									"cost": -6,
+									"cost_type": "points"
+								},
+								{
+									"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+									"type": "modifier",
+									"name": "Spoken",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								},
+								{
+									"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "None",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+									"type": "modifier",
+									"name": "Written",
+									"reference": "B24",
+									"notes": "Native",
+									"cost": 3,
+									"cost_type": "points"
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"open": true,
+					"name": "Language",
+					"template_picker": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					},
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "b628ae53-77c0-4195-ba08-18fff7f9f943",
+					"type": "trait",
+					"name": "Increased Dexterity",
+					"reference": "DFA8",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical",
+						"Hidden"
+					],
+					"levels": 1,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "4cf9be19-2b3d-4ced-844b-aeb4956d9bce",
+					"type": "trait",
+					"name": "Feature: Unnatural hair color",
+					"tags": [
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
 				}
 			],
+			"open": true,
 			"name": "Half-Elf",
 			"reference": "DFA44",
 			"ancestry": "Human",

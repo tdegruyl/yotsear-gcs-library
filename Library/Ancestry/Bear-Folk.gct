@@ -6,7 +6,6 @@
 		{
 			"id": "6b508d7b-2475-410c-95ce-e86ff1a0ecc6",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "056955ee-5d7e-4365-a733-dc2ce96b4de7",
@@ -81,6 +80,66 @@
 					}
 				},
 				{
+					"id": "d6a4c3b9-9866-457f-8840-a872b3e50738",
+					"type": "trait",
+					"name": "Bear-Folk",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "f30bcc46-e6d4-4dbf-88c6-cd97c2d72b1a",
 					"type": "trait",
 					"name": "Berserk",
@@ -89,8 +148,8 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -10,
 					"cr": 15,
+					"base_points": -10,
 					"calc": {
 						"points": -5
 					}
@@ -119,7 +178,8 @@
 					"tags": [
 						"Attribute",
 						"Disadvantage",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": -5,
@@ -159,7 +219,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": 2,
@@ -185,8 +246,8 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -5,
 					"cr": 12,
+					"base_points": -5,
 					"calc": {
 						"points": -5
 					}
@@ -199,7 +260,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": 10,
@@ -224,7 +286,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 2,
 					"points_per_level": 10,
@@ -256,13 +319,136 @@
 					}
 				},
 				{
+					"id": "5bb76afd-6ed1-4083-ad1f-17e926301e94",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "DFE38",
+					"reference_highlight": "Unarmed Combat",
+					"tags": [
+						"Hidden"
+					],
+					"weapons": [
+						{
+							"id": "88370d04-c467-46df-ba2d-2f510c8c7ef8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "73781dfb-055f-4163-8757-41a065725e54",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Grappling",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr cp"
+							}
+						},
+						{
+							"id": "86488540-50ef-4afd-b3c0-aa68a4066735",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "7fa814d8-5086-47bc-a6ef-956ee29c06b8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "37ab8470-959b-49a5-af85-0e6a93ae09b1",
 					"type": "trait",
 					"name": "Sharp Claws",
 					"reference": "DFA43",
 					"tags": [
 						"Advantage",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"base_points": 5,
 					"weapons": [
@@ -361,7 +547,8 @@
 					"tags": [
 						"Advantage",
 						"Exotic",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"base_points": 1,
 					"weapons": [
@@ -513,6 +700,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Bear-Folk",
 			"ancestry": "Human Karn-Yotsear",
 			"container_type": "ancestry",
@@ -523,7 +711,6 @@
 		{
 			"id": "11c402bc-abea-4e4b-a7f7-ef489d206254",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "48c2d65d-7586-46c0-9cfe-d820a65bdfed",
@@ -540,6 +727,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Bear-Folk Gifts",
 			"calc": {
 				"points": 16

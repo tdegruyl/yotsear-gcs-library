@@ -6,7 +6,6 @@
 		{
 			"id": "f877bc7a-bd38-4c31-b610-1b11ebee5aa2",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "27f59906-331d-4111-a077-ff89e253e3e5",
@@ -212,7 +211,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 2,
 					"points_per_level": 2,
@@ -230,21 +230,6 @@
 					}
 				},
 				{
-					"id": "365053fa-0ee2-468e-8b6a-421da564a6d8",
-					"type": "trait",
-					"name": "Illiteracy",
-					"reference": "DFA61",
-					"tags": [
-						"Disadvantage",
-						"Language",
-						"Mental"
-					],
-					"base_points": -3,
-					"calc": {
-						"points": -3
-					}
-				},
-				{
 					"id": "4eab7f55-3708-4b22-a398-3a7d68ecbdda",
 					"type": "trait",
 					"name": "Increased Health",
@@ -252,7 +237,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"HIdden"
 					],
 					"levels": 1,
 					"points_per_level": 10,
@@ -295,6 +281,125 @@
 					}
 				},
 				{
+					"id": "dbfb04e7-acac-480d-9613-5e6e03783a29",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "DFE38",
+					"reference_highlight": "Unarmed Combat",
+					"weapons": [
+						{
+							"id": "88370d04-c467-46df-ba2d-2f510c8c7ef8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "73781dfb-055f-4163-8757-41a065725e54",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Grappling",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr cp"
+							}
+						},
+						{
+							"id": "86488540-50ef-4afd-b3c0-aa68a4066735",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "7fa814d8-5086-47bc-a6ef-956ee29c06b8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "899549bc-1f0f-4c08-bca9-4d29c6b7b540",
 					"type": "trait",
 					"name": "Night Vision",
@@ -308,6 +413,67 @@
 					"can_level": true,
 					"calc": {
 						"points": 6
+					}
+				},
+				{
+					"id": "5162d748-14b2-4f92-9f3c-74c02c8e6d3f",
+					"type": "trait",
+					"name": "Orcish",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -3
 					}
 				},
 				{
@@ -403,6 +569,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Orc",
 			"reference": "DFA45",
 			"ancestry": "Orc-Yotsear",
@@ -414,7 +581,6 @@
 		{
 			"id": "10a2d3f6-64db-4385-87d1-1d0c27adf318",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "e0e55a59-4bc8-4004-96e9-05311ba7ec48",
@@ -474,6 +640,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Orc Gifts",
 			"calc": {
 				"points": 33

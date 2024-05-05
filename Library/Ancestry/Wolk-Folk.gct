@@ -6,7 +6,6 @@
 		{
 			"id": "b892b29d-52ca-4e67-8ace-a6f57d492cd2",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "1f5e600b-0c47-416c-9cb4-961aa83da4ca",
@@ -39,7 +38,8 @@
 					"reference": "B42",
 					"tags": [
 						"Advantage",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"base_points": 3,
 					"weapons": [
@@ -181,7 +181,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": 10,
@@ -207,7 +208,8 @@
 						"Advantage",
 						"Attribute",
 						"Mental",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": 5,
@@ -222,6 +224,128 @@
 					"can_level": true,
 					"calc": {
 						"points": 5
+					}
+				},
+				{
+					"id": "c6cdba83-94e6-4ec0-aec6-e4e4dc431bda",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "DFE38",
+					"reference_highlight": "Unarmed Combat",
+					"tags": [
+						"Hidden"
+					],
+					"weapons": [
+						{
+							"id": "88370d04-c467-46df-ba2d-2f510c8c7ef8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "73781dfb-055f-4163-8757-41a065725e54",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Grappling",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr cp"
+							}
+						},
+						{
+							"id": "86488540-50ef-4afd-b3c0-aa68a4066735",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "7fa814d8-5086-47bc-a6ef-956ee29c06b8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
 					}
 				},
 				{
@@ -290,7 +414,8 @@
 					"tags": [
 						"Advantage",
 						"Exotic",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"base_points": 1,
 					"weapons": [
@@ -337,8 +462,69 @@
 					"calc": {
 						"points": 1
 					}
+				},
+				{
+					"id": "fba7f282-3f45-4dc6-9adf-ac1ce85dd419",
+					"type": "trait",
+					"name": "Wolf-Folk",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
 				}
 			],
+			"open": true,
 			"name": "Wolf-Folk",
 			"ancestry": "Human",
 			"container_type": "ancestry",
@@ -349,7 +535,6 @@
 		{
 			"id": "4d3e718b-8817-4ed3-a0c3-570507d85978",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "faa9bfba-f1bd-4467-8406-d6c86e2f187b",
@@ -367,6 +552,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Wolf-Folk Gifts",
 			"calc": {
 				"points": 5

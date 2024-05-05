@@ -6,7 +6,6 @@
 		{
 			"id": "2232ae21-1fb4-4cbb-8031-2c89c796d977",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "37e89a96-cb21-4d9b-b007-9c704a97c97b",
@@ -31,6 +30,66 @@
 					}
 				},
 				{
+					"id": "52012356-619f-4e1a-9496-460b85100e1d",
+					"type": "trait",
+					"name": "Boar-Folk",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "89bc9361-864b-4f5b-aa7b-f1677db9baf7",
 					"type": "trait",
 					"name": "Bully",
@@ -39,8 +98,8 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -10,
 					"cr": 12,
+					"base_points": -10,
 					"calc": {
 						"points": -10
 					}
@@ -69,7 +128,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 2,
 					"points_per_level": 2,
@@ -84,46 +144,6 @@
 					"can_level": true,
 					"calc": {
 						"points": 4
-					}
-				},
-				{
-					"id": "261975ba-61b5-4a62-8052-0c5f6ec160b6",
-					"type": "trait",
-					"name": "Fangs",
-					"reference": "B91",
-					"tags": [
-						"Advantage",
-						"Exotic",
-						"Physical"
-					],
-					"base_points": 2,
-					"weapons": [
-						{
-							"id": "86f09680-e338-41bd-aa68-79d0fbc68524",
-							"type": "melee_weapon",
-							"damage": {
-								"type": "imp",
-								"st": "thr",
-								"base": "-1"
-							},
-							"usage": "Bite",
-							"reach": "C",
-							"defaults": [
-								{
-									"type": "skill",
-									"name": "Brawling"
-								},
-								{
-									"type": "dx"
-								}
-							],
-							"calc": {
-								"damage": "thr-1 imp"
-							}
-						}
-					],
-					"calc": {
-						"points": 2
 					}
 				},
 				{
@@ -161,8 +181,8 @@
 						"Disadvantage",
 						"Mental"
 					],
-					"base_points": -10,
 					"cr": 12,
+					"base_points": -10,
 					"calc": {
 						"points": -10
 					}
@@ -175,7 +195,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical"
+						"Physical",
+						"Hidden"
 					],
 					"levels": 1,
 					"points_per_level": 10,
@@ -218,6 +239,128 @@
 					}
 				},
 				{
+					"id": "03fadff4-27a5-474b-8831-59f63fc047dd",
+					"type": "trait",
+					"name": "Natural Attacks",
+					"reference": "DFE38",
+					"reference_highlight": "Unarmed Combat",
+					"tags": [
+						"Hidden"
+					],
+					"weapons": [
+						{
+							"id": "88370d04-c467-46df-ba2d-2f510c8c7ef8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "73781dfb-055f-4163-8757-41a065725e54",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cp",
+								"st": "thr"
+							},
+							"usage": "Grappling",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr cp"
+							}
+						},
+						{
+							"id": "86488540-50ef-4afd-b3c0-aa68a4066735",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 cr"
+							}
+						},
+						{
+							"id": "7fa814d8-5086-47bc-a6ef-956ee29c06b8",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Kicking"
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "a6123f00-b7e8-4fd1-9354-871aeff739b1",
 					"type": "trait",
 					"name": "Ramming Speed",
@@ -251,6 +394,47 @@
 					}
 				},
 				{
+					"id": "261975ba-61b5-4a62-8052-0c5f6ec160b6",
+					"type": "trait",
+					"name": "Tusks",
+					"reference": "B91",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical",
+						"Hidden"
+					],
+					"base_points": 2,
+					"weapons": [
+						{
+							"id": "86f09680-e338-41bd-aa68-79d0fbc68524",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "dx"
+								}
+							],
+							"calc": {
+								"damage": "thr-1 imp"
+							}
+						}
+					],
+					"calc": {
+						"points": 2
+					}
+				},
+				{
 					"id": "6de97884-6129-4f8c-b931-d36e59e9c297",
 					"type": "trait",
 					"name": "Unfazeable",
@@ -265,6 +449,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Boar-Folk",
 			"ancestry": "Human",
 			"container_type": "ancestry",
@@ -275,7 +460,6 @@
 		{
 			"id": "c64a0cd7-04e2-4e7a-b005-c025814088ec",
 			"type": "trait_container",
-			"open": true,
 			"children": [
 				{
 					"id": "22b783cf-8aaf-4a7c-ae11-d3ecf9fbc964",
@@ -292,6 +476,7 @@
 					}
 				}
 			],
+			"open": true,
 			"name": "Boar-Folk Gifts",
 			"calc": {
 				"points": 12
