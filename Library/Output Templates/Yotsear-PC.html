@@ -46,7 +46,7 @@
         padding: 1em;
         display: grid;
         width: 1200px; 
-        font-size:10pt;
+        font-size:11pt;
         font-family: verdana;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: auto;
@@ -58,6 +58,7 @@
             "traits traits skills skills"
             "melee melee melee spells"
             "ranged ranged ranged spells"
+	    "ssrt ssrt ssrt ssrt"
             "carried-equipment carried-equipment carried-equipment languages"
             "carried-equipment carried-equipment carried-equipment reactions"
             "encumbrance lift hit-locations conditional"
@@ -174,6 +175,8 @@
     .hit-locations { grid-area: hit-locations; border: thick solid black; }
     .hit-locations-list { padding-left:20px; padding-right:20px; text-indent: 1em; font-size:85%; column-count:2; column-gap: 1em; column-rule: 2px solid black; }
     .notes {grid-area: notes; border: thick solid black;}
+    .ssrt {grid-area: ssrt; border: thick solid black;}
+    .ssrt td{ text-align: right }
     td { padding-left: 1em; padding-right:1em; vertical-align: middle; }
     .number { text-align: right; }
     .section-title {text-decoration: none; background-color: black; color: white; padding: 1em; font-size: 110%; font-weight: bold; text-align: center; }
@@ -470,6 +473,20 @@
             <div class="field">@NOTE</div>
             @NOTES_LOOP_END
             </div>
+	    <div class="ssrt">
+		    <h1 class="section-title">Range Penalties</h1>
+		    <table>
+			    <tr><th>Range</td><td>2 yd</td><td>3 yd</td><td>5 yd</td>
+				    <td>7 yd</td><td>10 yd</td><td>15 yd</td>
+				    <td>20 yd</td><td>30 yd</td><td>50 yd</td>
+				    <td>70 yd</td><td>100 yd</td><td>150 yd</td>
+			    	    <td>200 yd</td><td>300 yd</td><td>500 yd</td></tr> 
+			    <tr><th>Penalty</td><td>+0</td><td>-1</td><td>-2</td><td>-3</td>
+				    <td>-4</td><td>-5</td><td>-6</td><td>-7</td> 
+				    <td>-8</td><td>-9</td><td>-10</td><td>-11</td>
+			    	    <td>-12</td><td>-13</td><td>-14</td></tr>
+		    </table>
+	    </div>
             <script>
                 const list = document.getElementsByClassName("qty1");
                 for (var item of list) { item.innerHTML = ""; }
