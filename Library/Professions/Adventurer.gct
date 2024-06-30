@@ -1,0 +1,350 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "01fa25b7-40bc-4641-a336-a9827fea6116",
+	"skills": [
+		{
+			"id": "9d7c6af4-aa82-4ab0-ad89-b1a739df4eab",
+			"type": "skill_container",
+			"children": [
+				{
+					"id": "6515a5b8-eb8a-4ae7-ad17-64081824310d",
+					"type": "skill",
+					"name": "Acting",
+					"reference": "DFA72",
+					"tags": [
+						"Social",
+						"Spy"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Performance",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Public Speaking",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "3a5f290d-6099-42d4-a7d3-cc97ac5e1056",
+					"type": "skill",
+					"name": "Carousing",
+					"reference": "DFA73",
+					"tags": [
+						"Criminal",
+						"Social",
+						"Street"
+					],
+					"difficulty": "ht/e",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "54440a5a-a59b-4b4f-9e75-624e3d8cf3ab",
+					"type": "skill",
+					"name": "Climbing",
+					"reference": "DFA74",
+					"tags": [
+						"Athletic",
+						"Criminal",
+						"Exploration",
+						"Outdoor",
+						"Street"
+					],
+					"difficulty": "dx/a",
+					"encumbrance_penalty_multiplier": 1,
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "d20cbb21-9d49-4dd1-b1c5-dfc13d5a0a6c",
+					"type": "skill",
+					"name": "Diplomacy",
+					"reference": "DFA75",
+					"tags": [
+						"Business",
+						"Police",
+						"Social"
+					],
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Politics",
+							"modifier": -6
+						}
+					]
+				},
+				{
+					"id": "e8b15d00-2698-4d0a-b4ad-3b49494de3f4",
+					"type": "skill",
+					"name": "Fast-Talk",
+					"reference": "DFA76",
+					"tags": [
+						"Criminal",
+						"Social",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Acting",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "713115ee-0591-48cd-af7c-598d2105ae07",
+					"type": "skill",
+					"name": "First Aid",
+					"reference": "DFA76",
+					"tags": [
+						"Everyman",
+						"Medical"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Esoteric Medicine"
+						},
+						{
+							"type": "skill",
+							"name": "Physician"
+						},
+						{
+							"type": "skill",
+							"name": "Veterinary",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "eb6fc2d9-f729-414f-b66a-f6be0d34fd0c",
+					"type": "skill",
+					"name": "Gesture",
+					"reference": "DFA77",
+					"tags": [
+						"Social"
+					],
+					"difficulty": "iq/e",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "54d00743-f353-4e3f-a918-cbd70437ba8f",
+					"type": "skill",
+					"name": "Hiking",
+					"reference": "DFA78",
+					"tags": [
+						"Athletic",
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "ht/a",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "2c9ece5c-2029-4269-8362-1183404fdfe0",
+					"type": "skill",
+					"name": "Interrogation",
+					"reference": "DFA79",
+					"tags": [
+						"Military",
+						"Police",
+						"Spy"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Intimidation",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Psychology",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "4812906f-a046-462d-8392-094aac8e0342",
+					"type": "skill",
+					"name": "Observation",
+					"reference": "DFA84",
+					"tags": [
+						"Criminal",
+						"Military",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "per/a",
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Shadowing",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "726cd6d3-3053-416e-8fb9-ecac6b9d3a47",
+					"type": "skill",
+					"name": "Riding",
+					"reference": "DFA87",
+					"tags": [
+						"Animal"
+					],
+					"specialization": "Horse",
+					"difficulty": "dx/a",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Animal Handling",
+							"specialization": "Horse",
+							"modifier": -3
+						}
+					]
+				},
+				{
+					"id": "49d24dfe-7285-42e2-aa9f-57498106c88a",
+					"type": "skill",
+					"name": "Scrounging",
+					"reference": "DFA88",
+					"tags": [
+						"Criminal",
+						"Street"
+					],
+					"difficulty": "per/e",
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -4
+						}
+					]
+				},
+				{
+					"id": "abd72b54-4546-4edd-b026-7c993ecf4121",
+					"type": "skill",
+					"name": "Search",
+					"reference": "DFA88",
+					"tags": [
+						"Police",
+						"Spy"
+					],
+					"difficulty": "per/a",
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Criminology",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "8a9ec66d-cd12-4d91-8f47-9555386cb25e",
+					"type": "skill",
+					"name": "Stealth",
+					"reference": "DFA89",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Spy",
+						"Street"
+					],
+					"difficulty": "dx/a",
+					"encumbrance_penalty_multiplier": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						},
+						{
+							"type": "dx",
+							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "61bd4685-8d42-4799-a7e3-72556c1220a7",
+					"type": "skill",
+					"name": "Streetwise",
+					"reference": "DFA90",
+					"tags": [
+						"Criminal",
+						"Police",
+						"Social",
+						"Street"
+					],
+					"difficulty": "iq/a",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -5
+						}
+					]
+				}
+			],
+			"open": true,
+			"name": "Adventurer"
+		}
+	]
+}

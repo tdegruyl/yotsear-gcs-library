@@ -173,6 +173,7 @@
     .conditional { grid-area: conditional; border: thick solid black; }
     .languages { grid-area: languages; border: thick solid black;}
     .hit-locations { grid-area: hit-locations; border: thick solid black; }
+    .hit-locations td {text-align: right;}
     .hit-locations-list { padding-left:20px; padding-right:20px; text-indent: 1em; font-size:85%; column-count:2; column-gap: 1em; column-rule: 2px solid black; }
     .notes {grid-area: notes; border: thick solid black;}
     .ssrt {grid-area: ssrt; border: thick solid black;}
@@ -375,11 +376,12 @@
     </div>
     <div class="hit-locations">
         <h1 class="section-title">DR by Hit Location</h1>
-        <div class="hit-locations-list">
+        <table class="hit-locations-list">
+		<tr><th class="title">Location</th><th class="title">DR</th><th class="title">Penalty</th></tr>
         @HIT_LOCATION_LOOP_START
-        <div>@WHERE: <span class="field">@DR</span></div>
+	<tr><td>@WHERE</td><td class="field">@DR</td><td>@PENALTY</td></tr>
         @HIT_LOCATION_LOOP_END
-        </div>
+        </table>
     </div>
 
         <div class="melee"> 
