@@ -94,6 +94,20 @@
 			}
 		},
 		{
+			"id": "efd04922-1bd9-43b8-a88c-a840cd309b47",
+			"type": "trait",
+			"name": "Aches and Pains",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "7cda6c8b-e69d-455b-8a30-a18e78c871b4",
 			"type": "trait",
 			"name": "Acute Hearing",
@@ -206,6 +220,21 @@
 			}
 		},
 		{
+			"id": "0e61a892-9c35-40b1-aaa6-432798acd4e7",
+			"type": "trait",
+			"name": "Admiration",
+			"reference": "PU6:25",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "6750af12-6cb7-42d1-b443-7cb9400fd2f2",
 			"type": "trait",
 			"name": "Aerial",
@@ -217,6 +246,34 @@
 			],
 			"calc": {
 				"points": 0
+			}
+		},
+		{
+			"id": "9f758574-94f5-43a9-9760-365edfd3f43f",
+			"type": "trait",
+			"name": "Alcohol Intolerance",
+			"reference": "PU6:29",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "e090cd21-7855-4141-8887-fd9fefc9db72",
+			"type": "trait",
+			"name": "Allergy (@Subject@)",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -248,6 +305,21 @@
 			"base_points": 5,
 			"calc": {
 				"points": 5
+			}
+		},
+		{
+			"id": "add6a51d-7940-4567-b884-363b0ac89e83",
+			"type": "trait",
+			"name": "Amoral",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -675,6 +747,35 @@
 			}
 		},
 		{
+			"id": "f778488f-f6af-4263-a04d-2a469c4f9c42",
+			"type": "trait",
+			"name": "Atheist",
+			"reference": "PU6:8",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "71aef077-0f2d-4dbf-b0ef-14a038502563",
+			"type": "trait",
+			"name": "Attentive",
+			"reference": "PU6:17",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "e6a1e359-acda-4ed7-9f83-936f471a4771",
 			"type": "trait",
 			"name": "Automaton",
@@ -717,6 +818,21 @@
 			"can_level": true,
 			"calc": {
 				"points": -5
+			}
+		},
+		{
+			"id": "050ed7fc-7b90-4dbc-af99-4d5568214221",
+			"type": "trait",
+			"name": "Bad Posture",
+			"reference": "PU6:13",
+			"tags": [
+				"Physical",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -1106,6 +1222,21 @@
 			}
 		},
 		{
+			"id": "dea7f56c-ec02-4890-a2b8-8d2cda8a31ad",
+			"type": "trait",
+			"name": "Born Goon",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "287a55b4-f912-48d6-9f34-1bd7bb606fa0",
 			"type": "trait",
 			"name": "Born War Leader",
@@ -1178,6 +1309,20 @@
 			}
 		},
 		{
+			"id": "5a348a1d-3b5e-4656-848a-f6e5ae0bdefa",
+			"type": "trait",
+			"name": "Bowlegged",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "94188e9b-4a2d-446d-a0e7-f1286dfaccf4",
 			"type": "trait",
 			"name": "Brachiator",
@@ -1216,6 +1361,35 @@
 			"base_points": -15,
 			"calc": {
 				"points": -15
+			}
+		},
+		{
+			"id": "d1ab3531-45b5-47c8-8629-fa6aab863a89",
+			"type": "trait",
+			"name": "Broad-Minded",
+			"reference": "PU6:17",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "c81bd320-9b8e-4da9-b7e9-b31df77ceb8c",
+			"type": "trait",
+			"name": "Bulky Frame",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -1293,6 +1467,48 @@
 			"base_points": -30,
 			"calc": {
 				"points": -30
+			}
+		},
+		{
+			"id": "ceecb223-2599-4b93-a630-455388786c71",
+			"type": "trait",
+			"name": "Care (@Subject@)",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "4cf6a25d-3d47-4409-82fc-c01af3fd3a21",
+			"type": "trait",
+			"name": "Careful planner",
+			"reference": "PU6:30",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "1f077472-38a8-4a5d-8838-fafbc9a6ba8e",
+			"type": "trait",
+			"name": "Carries backup weapons",
+			"reference": "PU6:30",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -1415,6 +1631,36 @@
 			"base_points": -15,
 			"calc": {
 				"points": -15
+			}
+		},
+		{
+			"id": "d6f202c2-c083-4ab6-bed4-2497a4a79ecd",
+			"type": "trait",
+			"name": "Chauvinistic",
+			"reference": "PU6:17",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "27c7e362-d1e3-4931-b807-a1b468bbe446",
+			"type": "trait",
+			"name": "Checkered Past",
+			"reference": "PU6:32",
+			"notes": "@Subject@",
+			"tags": [
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -1886,6 +2132,20 @@
 			}
 		},
 		{
+			"id": "3f890a03-f8ce-42e6-80fb-f37dcfd9849c",
+			"type": "trait",
+			"name": "Clean freak",
+			"reference": "PU6:30",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "0fc778c9-ab03-4ea4-9b03-53162b8dd63e",
 			"type": "trait",
 			"name": "Clerical Investment",
@@ -1922,6 +2182,35 @@
 			],
 			"calc": {
 				"points": -10
+			}
+		},
+		{
+			"id": "3fae6abe-4579-4462-8391-864ae31fa8ea",
+			"type": "trait",
+			"name": "Clumsy Runner",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "852f1b08-500c-4934-b388-495848300294",
+			"type": "trait",
+			"name": "Code of Honor",
+			"reference": "PU6:9",
+			"notes": "@Subject@",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -1995,6 +2284,20 @@
 			}
 		},
 		{
+			"id": "df6fa8df-2eaf-4b99-a218-213e23c84652",
+			"type": "trait",
+			"name": "Cold Intolerance",
+			"reference": "PU6:25",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "793ee215-6558-4bbb-9ad6-466346c725b9",
 			"type": "trait",
 			"name": "Cold-Blooded",
@@ -2007,6 +2310,34 @@
 			"base_points": -5,
 			"calc": {
 				"points": -5
+			}
+		},
+		{
+			"id": "09f81e59-afbb-4a6c-8305-2e1440e139d3",
+			"type": "trait",
+			"name": "Collector (@Subject@)",
+			"reference": "PU6:27",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "eab48857-2aea-4984-b1fa-4b000f6cd57a",
+			"type": "trait",
+			"name": "Combat Hesitancy",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -2224,6 +2555,21 @@
 			}
 		},
 		{
+			"id": "3ab19c49-2783-4efc-9fb8-468034a6d99e",
+			"type": "trait",
+			"name": "Congenial",
+			"reference": "PU6:17",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "57f35e01-396c-467e-9753-f3e511b23e6e",
 			"type": "trait",
 			"name": "Constriction Attack",
@@ -2239,6 +2585,21 @@
 			}
 		},
 		{
+			"id": "63b247a8-40b7-4011-bbbb-1eacb75636fc",
+			"type": "trait",
+			"name": "Cooperative",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "05426261-3c26-4183-97cc-310d6b666d22",
 			"type": "trait",
 			"name": "Cowardice",
@@ -2251,6 +2612,21 @@
 			"base_points": -10,
 			"calc": {
 				"points": -10
+			}
+		},
+		{
+			"id": "b6d26643-856d-4162-8c78-d259f4baf810",
+			"type": "trait",
+			"name": "Credulous",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -2280,6 +2656,21 @@
 			"base_points": -5,
 			"calc": {
 				"points": -5
+			}
+		},
+		{
+			"id": "afd376b3-ea44-433d-b197-6e87e0f05323",
+			"type": "trait",
+			"name": "Daily Ritual",
+			"reference": "PU6:28",
+			"notes": "@Subject@",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -2386,6 +2777,20 @@
 			}
 		},
 		{
+			"id": "383db860-0f86-48c7-a102-a7ecc6f20cc6",
+			"type": "trait",
+			"name": "Damned",
+			"reference": "PU6:34",
+			"tags": [
+				"Quirk",
+				"Supernatural"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "f4c79c1e-b228-47e4-9eba-b34ca37622dd",
 			"type": "trait",
 			"name": "Danger Sense",
@@ -2426,6 +2831,21 @@
 			"base_points": 25,
 			"calc": {
 				"points": 25
+			}
+		},
+		{
+			"id": "3af79b63-299f-470b-bc9d-1441b04dba89",
+			"type": "trait",
+			"name": "Decisive",
+			"reference": "PU6:17",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -2630,6 +3050,35 @@
 			}
 		},
 		{
+			"id": "e33c98a5-9d0a-472a-9488-905a08977acf",
+			"type": "trait",
+			"name": "Delusion",
+			"reference": "PU6:17",
+			"notes": "@Subject@",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "8fe3fca1-7ad9-4c33-aa5c-712620d8d372",
+			"type": "trait",
+			"name": "Delusional Competence (@Skill@)",
+			"reference": "PU6:17",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "6e650950-b122-421b-b63d-462cfc0d841b",
 			"type": "trait",
 			"name": "Dependency (@Substance@)",
@@ -2770,6 +3219,21 @@
 			}
 		},
 		{
+			"id": "f81ec092-2922-48d2-b906-ad8398f29bbd",
+			"type": "trait",
+			"name": "Desirous",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "9f5952bc-b31b-4298-a255-fbdda4285870",
 			"type": "trait",
 			"name": "Detect",
@@ -2823,6 +3287,21 @@
 			}
 		},
 		{
+			"id": "4b45fe18-4cfe-409a-8284-0b0303cf9bf8",
+			"type": "trait",
+			"name": "Determined",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "bc019a23-c6bb-415e-9f1d-7e20ea0ace4e",
 			"type": "trait",
 			"name": "Diffuse",
@@ -2845,6 +3324,20 @@
 			"base_points": 100,
 			"calc": {
 				"points": 100
+			}
+		},
+		{
+			"id": "e6122478-6f02-4c0e-9265-890950d240b2",
+			"type": "trait",
+			"name": "Disciplined",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -2950,6 +3443,95 @@
 			],
 			"calc": {
 				"points": 10
+			}
+		},
+		{
+			"id": "1387550c-a9b7-415f-a085-0013536fa919",
+			"type": "trait",
+			"name": "Dishonest Face",
+			"reference": "PU6:14",
+			"tags": [
+				"Physical",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "f4964315-25d0-4462-b08d-ddc533e047d8",
+			"type": "trait",
+			"name": "Dislike (@Subject@)",
+			"reference": "PU6:26",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "a46eeac9-5000-4d98-8395-e36001e96287",
+			"type": "trait",
+			"name": "Disorganized",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "070c8005-608f-4ff2-9acc-7ea179e65c4f",
+			"type": "trait",
+			"name": "Distinctive Features",
+			"reference": "PU6:14",
+			"notes": "@Subject@",
+			"tags": [
+				"Physical",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "07fa033b-c597-4413-a498-3cf50b9d9221",
+			"type": "trait",
+			"name": "Distinctive Speech",
+			"reference": "PU6:16",
+			"notes": "@Subject@",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "d418416c-e59e-4e8f-af46-ab5f71201b1b",
+			"type": "trait",
+			"name": "Distractible",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -3122,6 +3704,21 @@
 			}
 		},
 		{
+			"id": "52a25b15-a3d5-4152-bd75-a756494f9ac9",
+			"type": "trait",
+			"name": "Dorky",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "114cf638-2386-456a-a1ba-bc03b045ed81",
 			"type": "trait",
 			"name": "Double-Jointed",
@@ -3218,6 +3815,20 @@
 			"can_level": true,
 			"calc": {
 				"points": -10
+			}
+		},
+		{
+			"id": "117a224e-4c74-443a-9650-cb9f137417b0",
+			"type": "trait",
+			"name": "Dreamer",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -3327,6 +3938,48 @@
 			}
 		},
 		{
+			"id": "06ca8604-f0bc-4101-9df4-3cdde10e8ab4",
+			"type": "trait",
+			"name": "Dull",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "967a4e37-9201-4d79-a5b7-fed2f0c72b64",
+			"type": "trait",
+			"name": "Dull Smell",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "1f44759f-63cc-4aa5-92e9-38bc8db830da",
+			"type": "trait",
+			"name": "Dull Taste",
+			"reference": "PU6:22",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "d0721e25-7bf7-40d2-a3a9-f021378927f6",
 			"type": "trait",
 			"name": "Dwarven Gear",
@@ -3337,6 +3990,21 @@
 			"base_points": 1,
 			"calc": {
 				"points": 1
+			}
+		},
+		{
+			"id": "47e9f654-9b32-4206-9ad2-2cfd8a0a84ef",
+			"type": "trait",
+			"name": "Easily Mistaken Sex",
+			"reference": "PU6:14",
+			"tags": [
+				"Physical",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -3351,6 +4019,20 @@
 			"base_points": -10,
 			"calc": {
 				"points": -10
+			}
+		},
+		{
+			"id": "0d723324-9508-4d2d-80d9-a19e9851288f",
+			"type": "trait",
+			"name": "Eavesdropper",
+			"reference": "PU6:28",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -3892,6 +4574,21 @@
 			}
 		},
 		{
+			"id": "ca7f65e0-b284-43d9-b784-474a467db450",
+			"type": "trait",
+			"name": "Fashion Disaster",
+			"reference": "PU6:14",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "5caa28d9-77ff-4c12-b526-10ff1c73cbfb",
 			"type": "trait",
 			"name": "Fat",
@@ -3952,6 +4649,21 @@
 			],
 			"calc": {
 				"points": -3
+			}
+		},
+		{
+			"id": "0a75096e-e0d9-42a4-baeb-902b4e8b1222",
+			"type": "trait",
+			"name": "Favor Owed",
+			"reference": "PU6:32",
+			"notes": "@Subject@",
+			"tags": [
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -4249,6 +4961,34 @@
 			"can_level": true,
 			"calc": {
 				"points": 5
+			}
+		},
+		{
+			"id": "80a5647c-742f-42fd-b1a6-7005233cb388",
+			"type": "trait",
+			"name": "Forgetful",
+			"reference": "PU6:19",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "93ce6ebd-7596-4121-a687-cfda82add833",
+			"type": "trait",
+			"name": "Friendly Drunk",
+			"reference": "PU6:29",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -5396,6 +6136,78 @@
 			}
 		},
 		{
+			"id": "7f014494-da5c-4f3f-bb8a-df7dc9bdcde5",
+			"type": "trait",
+			"name": "Horrible Hangovers",
+			"reference": "PU6:29",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "04d7a569-fc2d-4514-a1ca-321426be3103",
+			"type": "trait",
+			"name": "Humble",
+			"reference": "PU6:19",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "fed30780-fd53-40e4-be51-5dc0bd341073",
+			"type": "trait",
+			"name": "Hungry",
+			"reference": "PU6:23",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "d1ddf0dc-64f8-44da-9f8b-689e86c22b57",
+			"type": "trait",
+			"name": "Idealistic",
+			"reference": "PU6:19",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "4482b4dd-363a-40f5-945d-ff7f004859f2",
+			"type": "trait",
+			"name": "Ill-Advised Hobby (@Subject@)",
+			"reference": "PU6:28",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "5da5b487-a52b-4418-8e77-09766c232acf",
 			"type": "trait",
 			"name": "Illiteracy",
@@ -5408,6 +6220,20 @@
 			"base_points": -3,
 			"calc": {
 				"points": -3
+			}
+		},
+		{
+			"id": "dec57bb1-49b1-4550-8b82-87112ae0ffb9",
+			"type": "trait",
+			"name": "Imaginative",
+			"reference": "PU6:19",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -5462,6 +6288,20 @@
 			}
 		},
 		{
+			"id": "6b5db800-7eb7-42b1-a484-30cabd3964b9",
+			"type": "trait",
+			"name": "Impatient",
+			"reference": "PU6:19",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "4b9d7c10-fa05-4690-aef8-42889a5e3e98",
 			"type": "trait",
 			"name": "Improved Magic Resistance",
@@ -5490,6 +6330,154 @@
 			"base_points": -10,
 			"calc": {
 				"points": -10
+			}
+		},
+		{
+			"id": "8d5e95c6-80f5-4c7a-babc-e01d80e28107",
+			"type": "trait",
+			"name": "Inaccessible Idioms",
+			"reference": "PU6:16",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "30d8e32f-6eee-4ac0-baef-9e7ab81ca02c",
+			"type": "trait",
+			"name": "Inappropriate Manner (@Subject@)",
+			"reference": "PU6:14",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "2b47fb0e-ae8f-4c1d-9d3e-9985e05069f4",
+			"type": "trait",
+			"name": "Inappropriate Manner (Aristocratic)",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "228bf64f-b0ff-40a0-bd48-384ae8924ff0",
+			"type": "trait",
+			"name": "Inappropriate Manner (Oily)",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "64396437-b5d0-48c2-a210-713bb0175084",
+			"type": "trait",
+			"name": "Inappropriate Manner (Pushy)",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "e036b97f-d293-4e12-99d9-5309bb91e5fb",
+			"type": "trait",
+			"name": "Inappropriate Manner (Salacious)",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "f0c48e83-ec01-416a-a164-2a85ab6fe2c7",
+			"type": "trait",
+			"name": "Inappropriate Manner (Scummy)",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "1c725ea4-ff34-4145-ae6b-c95b4b087e4a",
+			"type": "trait",
+			"name": "Inappropriate Manner (Wishy-Washy)",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "0694e032-53a7-4e0b-befc-63d58331a3c9",
+			"type": "trait",
+			"name": "Incompetence (@Skill@)",
+			"reference": "PU6:31",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Skill@"
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -5771,6 +6759,21 @@
 			}
 		},
 		{
+			"id": "b3c726f7-a78a-4b74-9ef2-acf27fc06305",
+			"type": "trait",
+			"name": "Insensitive",
+			"reference": "PU6:19",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "579970c2-9f7b-4332-8534-5ed4f67978c1",
 			"type": "trait",
 			"name": "Intolerance (@Class, Ethnicity, Nationality, Religion, Sex, or Species@)",
@@ -5801,6 +6804,21 @@
 			],
 			"calc": {
 				"points": 0
+			}
+		},
+		{
+			"id": "b53ea2eb-6d2c-429a-b6e2-16ed673de9c3",
+			"type": "trait",
+			"name": "Intolerance (@Small Group@)",
+			"reference": "PU6:26",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -6086,6 +7104,20 @@
 			}
 		},
 		{
+			"id": "a3de0ba8-8443-49dd-a351-6cc77b05bc5c",
+			"type": "trait",
+			"name": "Layabout",
+			"reference": "PU6:19",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "7a3ac9b3-5246-4a27-8024-2f2c7a9036aa",
 			"type": "trait",
 			"name": "Laziness",
@@ -6143,6 +7175,45 @@
 			"points_per_level": 3,
 			"features": [
 				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Judo"
+					},
+					"level": {
+						"compare": "at_least"
+					},
+					"amount": 1,
+					"leveled": true
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sumo Wrestling"
+					},
+					"level": {
+						"compare": "at_least"
+					},
+					"amount": 1,
+					"leveled": true
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least"
+					},
+					"amount": 1,
+					"leveled": true
+				},
+				{
 					"type": "attribute_bonus",
 					"limitation": "lifting_only",
 					"attribute": "st",
@@ -6153,6 +7224,20 @@
 			"can_level": true,
 			"calc": {
 				"points": 3
+			}
+		},
+		{
+			"id": "c7725d5c-8fd9-4816-a4d8-b3d0001bc010",
+			"type": "trait",
+			"name": "Like (@Subject@)",
+			"reference": "PU6:26",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -6186,6 +7271,21 @@
 			}
 		},
 		{
+			"id": "5ad3ec71-8131-4fc6-9ba6-f1504eb94e2b",
+			"type": "trait",
+			"name": "Loud Voice",
+			"reference": "PU6:16",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "1caf6d1d-4196-4d28-9c60-4dee23ad8c52",
 			"type": "trait",
 			"name": "Low Pain Threshold",
@@ -6211,6 +7311,20 @@
 			},
 			"calc": {
 				"points": -10
+			}
+		},
+		{
+			"id": "47a1c537-9c1d-4baf-8a77-6e94f728a709",
+			"type": "trait",
+			"name": "Low-Frequency Hearing Loss",
+			"reference": "PU6:23",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -6357,6 +7471,34 @@
 			}
 		},
 		{
+			"id": "d5217aef-e0dd-4433-9524-5ce1c0dee0b0",
+			"type": "trait",
+			"name": "Math-Shy",
+			"reference": "PU6:31",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "a6d857a5-8e64-4d8d-b8cb-bcbdffe98b80",
+			"type": "trait",
+			"name": "Mild Dyslexia",
+			"reference": "PU6:31",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "f42f2d0a-7597-4d90-8bd4-1936c72deeec",
 			"type": "trait",
 			"name": "Mind Shield",
@@ -6374,6 +7516,35 @@
 			}
 		},
 		{
+			"id": "c1c2b328-0056-4451-9411-2afe3b7af885",
+			"type": "trait",
+			"name": "Mind-Numbing Magnetism",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "0bd7b3cf-af3f-49a0-823e-87ffa759b292",
+			"type": "trait",
+			"name": "Minor Addiction (@Subject@)",
+			"reference": "PU6:29",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "97364617-11e5-4474-8162-52410575c392",
 			"type": "trait",
 			"name": "Miserliness",
@@ -6386,6 +7557,34 @@
 			"base_points": -10,
 			"calc": {
 				"points": -10
+			}
+		},
+		{
+			"id": "dd8bb509-159f-4d75-884e-687743f0e857",
+			"type": "trait",
+			"name": "Missing Teeth",
+			"reference": "PU6:23",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "f807bfe7-bac3-4239-be3c-5c22a534ad88",
+			"type": "trait",
+			"name": "Missing Toes",
+			"reference": "PU6:23",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -6417,6 +7616,34 @@
 			"base_points": -25,
 			"calc": {
 				"points": -25
+			}
+		},
+		{
+			"id": "4b4bf18a-93ae-428e-96a5-2141bff82bc4",
+			"type": "trait",
+			"name": "Name-Bound",
+			"reference": "PU6:34",
+			"tags": [
+				"Quirk",
+				"Supernatural"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "e5b8e842-c054-4269-a41a-722fac6a8058",
+			"type": "trait",
+			"name": "Nervous Stomach",
+			"reference": "PU6:25",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -6658,6 +7885,34 @@
 			}
 		},
 		{
+			"id": "4399f98e-f03e-4dfe-ba02-54d945456571",
+			"type": "trait",
+			"name": "Nostalgic",
+			"reference": "PU6:19",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "0673a475-9e6e-49dd-84cc-06bbcd0c9b64",
+			"type": "trait",
+			"name": "Nosy",
+			"reference": "PU6:20",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "79809817-51e7-4842-80b1-95dcac421374",
 			"type": "trait",
 			"name": "Oblivious",
@@ -6762,6 +8017,35 @@
 			}
 		},
 		{
+			"id": "39d4175a-3178-47b5-8a76-05b95c204706",
+			"type": "trait",
+			"name": "Obsession (@Subject@)",
+			"reference": "PU6:29",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "b6103835-acb7-4174-a57f-bdfbb06c95f6",
+			"type": "trait",
+			"name": "Obvious",
+			"reference": "PU6:12",
+			"tags": [
+				"Exotic",
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "ed9a869e-1eb7-40f6-be58-231e10351ba3",
 			"type": "trait",
 			"name": "Odious Personal Habit",
@@ -6823,6 +8107,22 @@
 			],
 			"calc": {
 				"points": 0
+			}
+		},
+		{
+			"id": "1561d6f1-61c9-420e-942b-565b8d8a46a0",
+			"type": "trait",
+			"name": "Odious Personal Habit",
+			"reference": "PU6:20",
+			"notes": "@Subject@",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -7069,6 +8369,21 @@
 			}
 		},
 		{
+			"id": "f05dd892-30e5-4d6e-8b57-6911d0d821a1",
+			"type": "trait",
+			"name": "Overcautious Habit",
+			"reference": "PU6:30",
+			"notes": "@Subject@",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "78f48adb-29f2-41b6-8c33-8c7443f2ba4e",
 			"type": "trait",
 			"name": "Overconfidence",
@@ -7081,6 +8396,38 @@
 			"base_points": -5,
 			"calc": {
 				"points": -5
+			}
+		},
+		{
+			"id": "075ce2ac-bac7-4296-a200-99fe6fb0fdcc",
+			"type": "trait",
+			"name": "Overspecialization (@Skill@)",
+			"reference": "PU6:31",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "@Skill@"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -7222,6 +8569,21 @@
 			],
 			"calc": {
 				"points": 15
+			}
+		},
+		{
+			"id": "ee7a60f0-74c7-44d5-9a35-5ecdd2216b7a",
+			"type": "trait",
+			"name": "Philosophical Belief (@Subject@)",
+			"reference": "PU6:8",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -7391,6 +8753,36 @@
 			}
 		},
 		{
+			"id": "24ca3afd-a9c8-4bab-959c-bbb23b7a4389",
+			"type": "trait",
+			"name": "Posh",
+			"reference": "PU6:18",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "b43ad4e1-6c18-4740-9041-6c1e97aca368",
+			"type": "trait",
+			"name": "Positive Secret",
+			"reference": "PU6:33",
+			"notes": "@Subject@",
+			"tags": [
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "4dd6b905-8064-4d53-bb27-ae03466210c3",
 			"type": "trait",
 			"name": "Post-Combat Shakes",
@@ -7478,6 +8870,21 @@
 			"can_level": true,
 			"calc": {
 				"points": 5
+			}
+		},
+		{
+			"id": "3b27e3ed-d18c-495b-80be-a97744c1ba65",
+			"type": "trait",
+			"name": "Proud",
+			"reference": "PU6:20",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -7763,6 +9170,21 @@
 			}
 		},
 		{
+			"id": "a86d68e8-c19b-43a9-9547-c4e9ac6c955b",
+			"type": "trait",
+			"name": "Religious Belief (@Subject@)",
+			"reference": "PU6:8",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "ab48d373-aa20-4cc5-81cb-ed17ecce5c8f",
 			"type": "trait",
 			"name": "Reprogrammable",
@@ -7824,6 +9246,34 @@
 			"can_level": true,
 			"calc": {
 				"points": 1
+			}
+		},
+		{
+			"id": "3bf84b70-a254-4c34-9825-61ceef13d148",
+			"type": "trait",
+			"name": "Responsible",
+			"reference": "PU6:20",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "9b39d3c3-46d0-4f7b-81cd-60bb183893f6",
+			"type": "trait",
+			"name": "Responsive",
+			"reference": "PU6:20",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -7899,6 +9349,21 @@
 			"base_points": 15,
 			"calc": {
 				"points": 15
+			}
+		},
+		{
+			"id": "e837c31d-c0fb-4a60-acf9-ba81a16cf8f7",
+			"type": "trait",
+			"name": "Secretive",
+			"reference": "PU6:20",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -8038,6 +9503,21 @@
 			}
 		},
 		{
+			"id": "6bd83f6d-1fd3-4e4c-a916-20f018ff95d4",
+			"type": "trait",
+			"name": "Serious",
+			"reference": "PU6:20",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "1ea7d39a-507e-440e-993d-3795a1b1e54b",
 			"type": "trait",
 			"name": "Sessile",
@@ -8050,6 +9530,20 @@
 			"base_points": -50,
 			"calc": {
 				"points": -50
+			}
+		},
+		{
+			"id": "1a7ff393-7b66-41bb-9759-32349c02ad40",
+			"type": "trait",
+			"name": "Shaky Hands",
+			"reference": "PU6:24",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -8127,6 +9621,60 @@
 			],
 			"calc": {
 				"points": 5
+			}
+		},
+		{
+			"id": "59ec2434-fb7c-4ea1-9148-0f22395bcc93",
+			"type": "trait",
+			"name": "Sharp Teeth",
+			"reference": "DFA43",
+			"tags": [
+				"Advantage",
+				"Exotic",
+				"Physical"
+			],
+			"base_points": 1,
+			"weapons": [
+				{
+					"id": "7f229d71-dc50-4008-8744-5bb30c77fe4a",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "dx"
+						}
+					],
+					"calc": {
+						"damage": "thr-1 cut"
+					}
+				}
+			],
+			"calc": {
+				"points": 1
+			}
+		},
+		{
+			"id": "8a1ff753-c286-4a1c-8d96-2f224decaebb",
+			"type": "trait",
+			"name": "Sharpens weapons at every opportunity",
+			"reference": "PU6:30",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -8380,6 +9928,62 @@
 			}
 		},
 		{
+			"id": "d8de60e9-359d-4d97-a6cc-a1a84386e3b2",
+			"type": "trait",
+			"name": "Sleep of the Dead",
+			"reference": "PU6:24",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "11ddd8a7-6f38-4f30-a1dc-5762e9537392",
+			"type": "trait",
+			"name": "Sleeptalker",
+			"reference": "PU6:24",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "abc7882e-658b-4104-90c1-83d2f035a24f",
+			"type": "trait",
+			"name": "Sleepy Drinker",
+			"reference": "PU6:29",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "353253d6-2f2d-4d54-a63f-0f6ffb282e91",
+			"type": "trait",
+			"name": "Sleepyhead",
+			"reference": "PU6:24",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "0308024c-5d70-4ebf-afca-8e219b77b545",
 			"type": "trait",
 			"name": "Slippery",
@@ -8611,6 +10215,21 @@
 			}
 		},
 		{
+			"id": "b4e2c1ff-9599-40ef-aacd-a36347d89f32",
+			"type": "trait",
+			"name": "Spell Signature",
+			"reference": "PU6:34",
+			"notes": "@Subject@",
+			"tags": [
+				"Quirk",
+				"Supernatural"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "e737653e-61bf-42b2-a987-2c24250c0056",
 			"type": "trait",
 			"name": "Spider-Climb",
@@ -8655,6 +10274,20 @@
 			}
 		},
 		{
+			"id": "f163a70a-9df1-4bae-9032-da552b325d77",
+			"type": "trait",
+			"name": "Staid",
+			"reference": "PU6:20",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "fff8fbe2-3b71-40b1-a1fa-fcf4a712b633",
 			"type": "trait",
 			"name": "Striking ST",
@@ -8690,6 +10323,34 @@
 				"Physical"
 			],
 			"base_points": 1,
+			"features": [
+				{
+					"type": "weapon_min_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "bow"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					},
+					"amount": -1
+				},
+				{
+					"type": "weapon_min_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "bow"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 1
+					},
+					"amount": -1
+				}
+			],
 			"calc": {
 				"points": 1
 			}
@@ -8744,6 +10405,20 @@
 			}
 		},
 		{
+			"id": "df2cea5c-1cf4-4aec-94fe-95e733b71d40",
+			"type": "trait",
+			"name": "Sunburns Easily",
+			"reference": "PU6:24",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "3d1f8e52-32ad-4cc2-8655-ab5aac2dc1b7",
 			"type": "trait",
 			"name": "Super Jump",
@@ -8777,43 +10452,32 @@
 			}
 		},
 		{
-			"id": "59ec2434-fb7c-4ea1-9148-0f22395bcc93",
+			"id": "ff45fead-d4b1-4eac-8269-055e8a1ca0bf",
 			"type": "trait",
-			"name": "Sharp Teeth",
-			"reference": "DFA43",
+			"name": "Tattletale",
+			"reference": "PU6:30",
 			"tags": [
-				"Advantage",
-				"Exotic",
-				"Physical"
+				"Mental",
+				"Quirk"
 			],
-			"base_points": 1,
-			"weapons": [
-				{
-					"id": "7f229d71-dc50-4008-8744-5bb30c77fe4a",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cut",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Bite",
-					"reach": "C",
-					"defaults": [
-						{
-							"type": "skill",
-							"name": "Brawling"
-						},
-						{
-							"type": "dx"
-						}
-					],
-					"calc": {
-						"damage": "thr-1 cut"
-					}
-				}
-			],
+			"base_points": -1,
 			"calc": {
-				"points": 1
+				"points": -1
+			}
+		},
+		{
+			"id": "13576680-fe2e-4797-a752-d9ab88fa3bde",
+			"type": "trait",
+			"name": "Taunting",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -8911,6 +10575,35 @@
 			"can_level": true,
 			"calc": {
 				"points": 40
+			}
+		},
+		{
+			"id": "bf369f47-9ba5-43c1-8b5f-f47d138bed38",
+			"type": "trait",
+			"name": "Third Person",
+			"reference": "PU6:16",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "1110f2c6-38ff-40f9-9a66-3b2ed18c1a97",
+			"type": "trait",
+			"name": "Tone-Deaf",
+			"reference": "PU6:25",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -9046,6 +10739,21 @@
 			}
 		},
 		{
+			"id": "3d9daced-0528-4623-84c5-2d71f8741646",
+			"type": "trait",
+			"name": "Trademark",
+			"reference": "PU6:30",
+			"notes": "@Subject@",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "cc828beb-c6bf-4dd6-961e-885cdf6d857e",
 			"type": "trait",
 			"name": "Trademark Move",
@@ -9097,6 +10805,51 @@
 			}
 		},
 		{
+			"id": "d46c6614-c6e5-485f-814a-2873fc7b52e4",
+			"type": "trait",
+			"name": "Trivial Destiny",
+			"reference": "PU6:34",
+			"notes": "@Subject@",
+			"tags": [
+				"Quirk",
+				"Supernatural"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "c8828aa0-8c5f-43e6-b6f4-0975734fd566",
+			"type": "trait",
+			"name": "Trivial Reputation",
+			"reference": "PU6:33",
+			"notes": "@Subject@",
+			"tags": [
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "a1ef45b0-5e0b-4c84-b148-3a65c059dc7f",
+			"type": "trait",
+			"name": "Trivial Secret",
+			"reference": "PU6:33",
+			"notes": "@Subject@",
+			"tags": [
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "54b9a26b-bef5-48f5-9ebb-7f35959ac9bb",
 			"type": "trait",
 			"name": "Truthfulness",
@@ -9120,6 +10873,35 @@
 			],
 			"calc": {
 				"points": -5
+			}
+		},
+		{
+			"id": "3e3fe09a-ec03-49cf-bb1b-1c2fc8ab5a1e",
+			"type": "trait",
+			"name": "Twitchy",
+			"reference": "PU6:25",
+			"tags": [
+				"Physical",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
+			"id": "831d93df-11aa-4cc3-a047-1e411fdccd7b",
+			"type": "trait",
+			"name": "Uncongenial",
+			"reference": "PU6:20",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -9431,6 +11213,21 @@
 			}
 		},
 		{
+			"id": "493f0b5b-d972-4e4c-9f4d-1e378f48e7a4",
+			"type": "trait",
+			"name": "Villain-Worshipper",
+			"reference": "PU6:15",
+			"tags": [
+				"Mental",
+				"Quirk",
+				"Social"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
+			}
+		},
+		{
 			"id": "ca35e0b2-2a07-438a-ac26-25ea59f92d8f",
 			"type": "trait",
 			"name": "Voice",
@@ -9516,6 +11313,20 @@
 			],
 			"calc": {
 				"points": 10
+			}
+		},
+		{
+			"id": "a7447209-5ba8-454e-af8a-4c870397f039",
+			"type": "trait",
+			"name": "Vow (@Subject@)",
+			"reference": "PU6:9",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{
@@ -11503,6 +13314,21 @@
 			"can_level": true,
 			"calc": {
 				"points": 20
+			}
+		},
+		{
+			"id": "9d13c494-5c87-4c8a-bc1e-af92825f98c0",
+			"type": "trait",
+			"name": "Willful Ignorance",
+			"reference": "PU6:9",
+			"notes": "@Subject@",
+			"tags": [
+				"Mental",
+				"Quirk"
+			],
+			"base_points": -1,
+			"calc": {
+				"points": -1
 			}
 		},
 		{

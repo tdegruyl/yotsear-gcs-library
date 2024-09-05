@@ -2,6 +2,35 @@
 	"type": "template",
 	"version": 4,
 	"id": "01fa25b7-40bc-4641-a336-a9827fea6116",
+	"traits": [
+		{
+			"id": "2775334c-d472-4f58-a16f-2f0fba096281",
+			"type": "trait_container",
+			"open": true,
+			"name": "Advantages",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "f5b67c89-efb6-4062-95cf-900c57499985",
+			"type": "trait_container",
+			"open": true,
+			"name": "Disadvantages",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "9b2af62a-8253-4405-a1d3-05b5b5149764",
+			"type": "trait_container",
+			"open": true,
+			"name": "Quirks",
+			"calc": {
+				"points": 0
+			}
+		}
+	],
 	"skills": [
 		{
 			"id": "9d7c6af4-aa82-4ab0-ad89-b1a739df4eab",
@@ -31,6 +60,34 @@
 							"type": "skill",
 							"name": "Public Speaking",
 							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "91712bdc-2e3f-48d0-a527-a24a5740dc3e",
+					"type": "skill",
+					"name": "Brawling ",
+					"reference": "DFA93",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/e",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							},
+							"amount": 1,
+							"per_die": true
 						}
 					]
 				},
@@ -339,6 +396,72 @@
 						{
 							"type": "iq",
 							"modifier": -5
+						}
+					]
+				},
+				{
+					"id": "0c44fa73-18d4-458c-a984-91bdfd39afa5",
+					"type": "skill",
+					"name": "Wrestling",
+					"reference": "DFA93",
+					"tags": [
+						"Combat",
+						"Grappling",
+						"Melee Combat",
+						"Weapon"
+					],
+					"difficulty": "dx/a",
+					"weapons": [
+						{
+							"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "ctrl",
+								"st": "thr"
+							},
+							"strength": "†",
+							"usage": "Grappling",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Wrestling"
+								}
+							],
+							"calc": {
+								"damage": "thr ctrl"
+							}
+						}
+					],
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Wrestling"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 1
+							},
+							"amount": 1,
+							"per_die": true
+						},
+						{
+							"type": "weapon_bonus",
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Wrestling"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 4
+							},
+							"amount": 1,
+							"per_die": true
 						}
 					]
 				}

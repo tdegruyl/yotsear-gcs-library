@@ -234,6 +234,7 @@
 							}
 						}
 					],
+					"open": true,
 					"name": "187 Point template - Fast, Master",
 					"notes": "pick 2 disadvantage modules, one basic and one matching advanced module, and 2 upgrade modules",
 					"calc": {
@@ -378,7 +379,6 @@
 											}
 										}
 									],
-									"open": true,
 									"name": "Replace -10 points of disadvantages",
 									"calc": {
 										"points": -10
@@ -4521,7 +4521,7 @@
 									}
 								},
 								{
-									"id": "a5f9fd4d-1285-4723-b422-e8fd8c1c5800",
+									"id": "2b31bde7-0cad-4078-8e34-6d2eb5312268",
 									"type": "trait",
 									"name": "Strongbow",
 									"reference": "DFA35",
@@ -4530,6 +4530,34 @@
 										"Physical"
 									],
 									"base_points": 1,
+									"features": [
+										{
+											"type": "weapon_min_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "bow"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 2
+											},
+											"amount": -1
+										},
+										{
+											"type": "weapon_min_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "bow"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 1
+											},
+											"amount": -1
+										}
+									],
 									"calc": {
 										"points": 1
 									}
@@ -6037,6 +6065,7 @@
 									}
 								}
 							],
+							"open": true,
 							"name": "Archery Specialist",
 							"reference": "DTG17",
 							"notes": "Prereq: Scout",
@@ -12965,18 +12994,71 @@
 											]
 										},
 										{
-											"id": "34386c73-41a1-4f92-ad6c-f309acc5bf1c",
+											"id": "dd360e4d-d7fe-452e-861f-11f1e28e74e9",
 											"type": "skill",
 											"name": "Judo",
 											"reference": "DFA92",
 											"notes": "Allows parrying two different attacks per turn, one with each hand.",
 											"tags": [
 												"Combat",
+												"Grappling",
 												"Melee Combat",
 												"Weapon"
 											],
 											"difficulty": "dx/h",
-											"encumbrance_penalty_multiplier": 1
+											"encumbrance_penalty_multiplier": 1,
+											"weapons": [
+												{
+													"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+													"type": "melee_weapon",
+													"damage": {
+														"type": "ctrl",
+														"st": "thr"
+													},
+													"usage": "Grappling",
+													"reach": "C",
+													"parry": "0",
+													"defaults": [
+														{
+															"type": "skill",
+															"name": "Judo"
+														}
+													],
+													"calc": {
+														"damage": "thr ctrl"
+													}
+												}
+											],
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Judo"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 10
+													},
+													"amount": 1,
+													"per_die": true
+												},
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Judo"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 4
+													},
+													"amount": 1,
+													"per_die": true
+												}
+											]
 										},
 										{
 											"id": "64da1f0a-fc10-4fdb-a52f-6dc028b85993",
@@ -13267,10 +13349,12 @@
 											]
 										}
 									],
+									"open": true,
 									"name": "Weapon Skills",
 									"notes": "Distribute twelve points amongst these skills"
 								}
 							],
+							"open": true,
 							"name": "Martial Artist I",
 							"reference": "DTG14"
 						},
@@ -13613,7 +13697,35 @@
 												"Weapon"
 											],
 											"difficulty": "dx/h",
-											"points": 2
+											"points": 2,
+											"prereqs": {
+												"type": "prereq_list",
+												"all": false,
+												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "wrestling master"
+														},
+														"level": {
+															"compare": "at_least"
+														}
+													},
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "trained by a master"
+														},
+														"level": {
+															"compare": "at_least"
+														}
+													}
+												]
+											}
 										},
 										{
 											"id": "7ce3a688-d716-42fc-8837-4e2c189f6aef",
@@ -13693,8 +13805,19 @@
 											"points": 2,
 											"prereqs": {
 												"type": "prereq_list",
-												"all": true,
+												"all": false,
 												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "wrestling master"
+														},
+														"level": {
+															"compare": "at_least"
+														}
+													},
 													{
 														"type": "trait_prereq",
 														"has": true,
@@ -14053,18 +14176,71 @@
 											]
 										},
 										{
-											"id": "02b1958b-888c-4859-a83d-270745056ebf",
+											"id": "18084790-f03c-433d-ab93-071150fbd2d1",
 											"type": "skill",
 											"name": "Judo",
 											"reference": "DFA92",
 											"notes": "Allows parrying two different attacks per turn, one with each hand.",
 											"tags": [
 												"Combat",
+												"Grappling",
 												"Melee Combat",
 												"Weapon"
 											],
 											"difficulty": "dx/h",
-											"encumbrance_penalty_multiplier": 1
+											"encumbrance_penalty_multiplier": 1,
+											"weapons": [
+												{
+													"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+													"type": "melee_weapon",
+													"damage": {
+														"type": "ctrl",
+														"st": "thr"
+													},
+													"usage": "Grappling",
+													"reach": "C",
+													"parry": "0",
+													"defaults": [
+														{
+															"type": "skill",
+															"name": "Judo"
+														}
+													],
+													"calc": {
+														"damage": "thr ctrl"
+													}
+												}
+											],
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Judo"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 10
+													},
+													"amount": 1,
+													"per_die": true
+												},
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Judo"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 4
+													},
+													"amount": 1,
+													"per_die": true
+												}
+											]
 										},
 										{
 											"id": "fda5f6c3-c72b-46ca-a352-fcd977a17053",
@@ -14363,7 +14539,6 @@
 							"reference": "DTG11"
 						}
 					],
-					"open": true,
 					"name": "Martial Artist"
 				},
 				{
@@ -15232,7 +15407,6 @@
 								{
 									"id": "b2815365-3b7c-4c21-95ba-14a66443ebf0",
 									"type": "skill_container",
-									"open": true,
 									"name": "Weapons Skills",
 									"notes": "Distribute twelve points amonst these skills."
 								}
@@ -16553,7 +16727,6 @@
 													"notes": "just take Main-Gauche. If not, pick something else"
 												}
 											],
-											"open": true,
 											"name": " Journeyman"
 										},
 										{
@@ -17162,6 +17335,7 @@
 					"name": "Thief"
 				}
 			],
+			"open": true,
 			"name": "Fast Delver Skill Packages"
 		}
 	]

@@ -261,6 +261,7 @@
 							}
 						}
 					],
+					"open": true,
 					"name": " 187 Point template - Strong, Master",
 					"reference": "DTG6",
 					"notes": "pick 2 disadvantage modules, one basic and one matching advanced module, and 2 upgrade modules",
@@ -1673,9 +1674,30 @@
 									"points_per_level": 5,
 									"features": [
 										{
-											"type": "attribute_bonus",
-											"attribute": "parry",
-											"amount": 1
+											"type": "weapon_parry_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"level": {
+												"compare": "at_least"
+											},
+											"tags": {
+												"compare": "is",
+												"qualifier": "grappling"
+											},
+											"amount": 1,
+											"leveled": true
+										},
+										{
+											"type": "weapon_parry_bonus",
+											"selection_type": "weapons_with_name",
+											"name": {
+												"compare": "is",
+												"qualifier": "Natural Attacks"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1,
+											"leveled": true
 										}
 									],
 									"can_level": true,
@@ -1709,7 +1731,7 @@
 									}
 								},
 								{
-									"id": "f1df5b86-ef09-4dc4-b3a3-cc81f76409c8",
+									"id": "e163f913-f911-41d2-91d3-4b532c6c8c3d",
 									"type": "trait",
 									"name": "Lifting ST",
 									"reference": "DFA16",
@@ -1721,6 +1743,45 @@
 									"levels": 3,
 									"points_per_level": 3,
 									"features": [
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1,
+											"leveled": true
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Sumo Wrestling"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1,
+											"leveled": true
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1,
+											"leveled": true
+										},
 										{
 											"type": "attribute_bonus",
 											"limitation": "lifting_only",
@@ -1838,19 +1899,126 @@
 									}
 								},
 								{
-									"id": "fda8bf87-7416-4f56-8c41-6a95805274f8",
+									"id": "19ca74c0-c3c8-4aba-b053-71caff90b05f",
 									"type": "trait",
 									"name": "Wrestling Master",
-									"reference": "DTG22",
+									"reference": "DTG35",
 									"tags": [
 										"Physical"
 									],
 									"base_points": 10,
+									"features": [
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 10
+											},
+											"amount": 1
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 9
+											},
+											"amount": 1
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 8
+											},
+											"amount": 1
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 7
+											},
+											"amount": 1
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 6
+											},
+											"amount": 1
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 5
+											},
+											"amount": 1
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "contains",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 3
+											},
+											"amount": 1
+										}
+									],
 									"calc": {
 										"points": 10
 									}
 								}
 							],
+							"open": true,
 							"name": "Wrestler I \u0026 II",
 							"reference": "DTG8",
 							"calc": {
@@ -2811,6 +2979,71 @@
 									}
 								},
 								{
+									"id": "39df0725-e4d2-49d9-880d-29f7824df4d4",
+									"type": "trait",
+									"name": "Lifting ST",
+									"reference": "DFA16",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"levels": 1,
+									"points_per_level": 3,
+									"features": [
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1,
+											"leveled": true
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Sumo Wrestling"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1,
+											"leveled": true
+										},
+										{
+											"type": "weapon_effective_st_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least"
+											},
+											"amount": 1,
+											"leveled": true
+										},
+										{
+											"type": "attribute_bonus",
+											"limitation": "lifting_only",
+											"attribute": "st",
+											"amount": 1,
+											"per_level": true
+										}
+									],
+									"can_level": true,
+									"calc": {
+										"points": 3
+									}
+								},
+								{
 									"id": "11ebc426-514c-4adf-a2ed-c9b5ccde1831",
 									"type": "trait",
 									"name": "Increased Strength",
@@ -2834,34 +3067,9 @@
 									"calc": {
 										"points": 20
 									}
-								},
-								{
-									"id": "dc2e8ac1-6aa4-469a-b8f8-a7472df768f1",
-									"type": "trait",
-									"name": "Lifting ST",
-									"reference": "DFA16",
-									"tags": [
-										"Advantage",
-										"Exotic",
-										"Physical"
-									],
-									"levels": 1,
-									"points_per_level": 3,
-									"features": [
-										{
-											"type": "attribute_bonus",
-											"limitation": "lifting_only",
-											"attribute": "st",
-											"amount": 1,
-											"per_level": true
-										}
-									],
-									"can_level": true,
-									"calc": {
-										"points": 3
-									}
 								}
 							],
+							"open": true,
 							"name": "Hulk",
 							"reference": "DTG10",
 							"notes": "Prereq: Barbarian or Wrestler",
@@ -3563,6 +3771,7 @@
 									}
 								}
 							],
+							"open": true,
 							"name": "Unstoppable",
 							"reference": "DTG11",
 							"notes": "Prereq: Barbarian or Wrestler",
@@ -3659,6 +3868,7 @@
 									}
 								}
 							],
+							"open": true,
 							"name": "Veteran",
 							"reference": "DTG11",
 							"notes": "Prereq: Strong hero",
@@ -5887,10 +6097,12 @@
 											]
 										}
 									],
+									"open": true,
 									"name": "Weapons Skills",
 									"notes": "Distribute twelve points amonst these skills."
 								}
 							],
+							"open": true,
 							"name": "Barbarian I",
 							"reference": "DTG6"
 						},
@@ -6769,19 +6981,73 @@
 									"notes": "Distribute sixteen points amonst these skills if using the Journeyman template.\nDistribute eight more if you are using the Master."
 								},
 								{
-									"id": "3a4a12b5-e370-4e4b-a736-21276df12b87",
+									"id": "f947003f-47d6-4d03-8fba-92f54e07aba5",
 									"type": "skill",
 									"name": "Wrestling",
 									"reference": "DFA93",
 									"tags": [
 										"Combat",
+										"Grappling",
 										"Melee Combat",
 										"Weapon"
 									],
 									"difficulty": "dx/a",
-									"points": 1
+									"points": 1,
+									"weapons": [
+										{
+											"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"strength": "†",
+											"usage": "Grappling",
+											"reach": "C",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Wrestling"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 1
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
 								}
 							],
+							"open": true,
 							"name": "Barbarian I \u0026 II",
 							"reference": "DTG7"
 						}
@@ -7858,17 +8124,70 @@
 									]
 								},
 								{
-									"id": "cca25f7f-dd06-4876-9ee3-a028c3384620",
+									"id": "a79489d5-a6b3-4043-a96b-06fc239c3d6b",
 									"type": "skill",
 									"name": "Wrestling",
 									"reference": "DFA93",
 									"tags": [
 										"Combat",
+										"Grappling",
 										"Melee Combat",
 										"Weapon"
 									],
 									"difficulty": "dx/a",
-									"points": 2
+									"points": 2,
+									"weapons": [
+										{
+											"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"strength": "†",
+											"usage": "Grappling",
+											"reach": "C",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Wrestling"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 1
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
 								}
 							],
 							"name": "Holy Warrior I \u0026  II",
@@ -9048,17 +9367,70 @@
 									]
 								},
 								{
-									"id": "149c4b03-8869-43a0-8dcf-51027453b385",
+									"id": "24271392-380d-4402-a56c-09427370c908",
 									"type": "skill",
 									"name": "Wrestling",
 									"reference": "DFA93",
 									"tags": [
 										"Combat",
+										"Grappling",
 										"Melee Combat",
 										"Weapon"
 									],
 									"difficulty": "dx/a",
-									"points": 1
+									"points": 1,
+									"weapons": [
+										{
+											"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"strength": "†",
+											"usage": "Grappling",
+											"reach": "C",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Wrestling"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 1
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Wrestling"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
 								}
 							],
 							"name": "Knight I \u0026 II",
@@ -9105,42 +9477,151 @@
 									]
 								},
 								{
-									"id": "23e32e31-6de1-45e9-bbc9-9e888d0606e4",
+									"id": "dd30962a-c492-4d17-bb9c-b80fb0f2ab6b",
 									"type": "skill",
 									"name": "Judo",
 									"reference": "DFA92",
 									"notes": "Allows parrying two different attacks per turn, one with each hand.",
 									"tags": [
 										"Combat",
+										"Grappling",
 										"Melee Combat",
 										"Weapon"
 									],
 									"difficulty": "dx/h",
 									"points": 4,
-									"encumbrance_penalty_multiplier": 1
+									"encumbrance_penalty_multiplier": 1,
+									"weapons": [
+										{
+											"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"usage": "Grappling",
+											"reach": "C",
+											"parry": "0",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Judo"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 10
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
 								},
 								{
 									"id": "0ed98c48-b777-43b7-8616-a7998e606512",
 									"type": "skill_container",
 									"children": [
 										{
-											"id": "577d7037-94b0-485c-9bcc-67e47688a85f",
+											"id": "97c0172f-66f6-4516-8b0a-d658ae4f0ff9",
 											"type": "skill",
 											"name": "Wrestling",
 											"reference": "DFA93",
 											"tags": [
 												"Combat",
+												"Grappling",
 												"Melee Combat",
 												"Weapon"
 											],
 											"difficulty": "dx/a",
-											"points": 12
+											"points": 12,
+											"weapons": [
+												{
+													"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+													"type": "melee_weapon",
+													"damage": {
+														"type": "ctrl",
+														"st": "thr"
+													},
+													"strength": "†",
+													"usage": "Grappling",
+													"reach": "C",
+													"parry": "0",
+													"defaults": [
+														{
+															"type": "skill",
+															"name": "Wrestling"
+														}
+													],
+													"calc": {
+														"damage": "thr ctrl"
+													}
+												}
+											],
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Wrestling"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 1
+													},
+													"amount": 1,
+													"per_die": true
+												},
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Wrestling"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 4
+													},
+													"amount": 1,
+													"per_die": true
+												}
+											]
 										}
 									],
+									"open": true,
 									"name": "Weapons Skills",
 									"notes": "Distribute twelve points amonst these skills.\n(Don't worry, I've already put them in Wrestling for you)"
 								}
 							],
+							"open": true,
 							"name": "Wrestler I",
 							"reference": "DTG7"
 						},
@@ -9153,33 +9634,140 @@
 									"type": "skill_container",
 									"children": [
 										{
-											"id": "501b3b50-b81a-42eb-93b0-1450628fd2ac",
+											"id": "6152c3ed-5179-4ecb-ab00-90d52fd390d1",
 											"type": "skill",
 											"name": "Wrestling",
 											"reference": "DFA93",
 											"tags": [
 												"Combat",
+												"Grappling",
 												"Melee Combat",
 												"Weapon"
 											],
 											"difficulty": "dx/a",
-											"points": 16
+											"points": 16,
+											"weapons": [
+												{
+													"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+													"type": "melee_weapon",
+													"damage": {
+														"type": "ctrl",
+														"st": "thr"
+													},
+													"strength": "†",
+													"usage": "Grappling",
+													"reach": "C",
+													"parry": "0",
+													"defaults": [
+														{
+															"type": "skill",
+															"name": "Wrestling"
+														}
+													],
+													"calc": {
+														"damage": "thr ctrl"
+													}
+												}
+											],
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Wrestling"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 1
+													},
+													"amount": 1,
+													"per_die": true
+												},
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Wrestling"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 4
+													},
+													"amount": 1,
+													"per_die": true
+												}
+											]
 										},
 										{
-											"id": "c3928ada-2f32-4e40-9143-5a176c9fe6c8",
+											"id": "d6fbf287-6fad-43e4-9b86-728ad367f8e3",
 											"type": "skill",
 											"name": "Wrestling",
 											"reference": "DFA93",
 											"tags": [
 												"Combat",
+												"Grappling",
 												"Melee Combat",
 												"Weapon"
 											],
 											"difficulty": "dx/a",
-											"points": 24
+											"points": 24,
+											"weapons": [
+												{
+													"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+													"type": "melee_weapon",
+													"damage": {
+														"type": "ctrl",
+														"st": "thr"
+													},
+													"strength": "†",
+													"usage": "Grappling",
+													"reach": "C",
+													"parry": "0",
+													"defaults": [
+														{
+															"type": "skill",
+															"name": "Wrestling"
+														}
+													],
+													"calc": {
+														"damage": "thr ctrl"
+													}
+												}
+											],
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Wrestling"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 1
+													},
+													"amount": 1,
+													"per_die": true
+												},
+												{
+													"type": "weapon_bonus",
+													"selection_type": "weapons_with_required_skill",
+													"name": {
+														"compare": "is",
+														"qualifier": "Wrestling"
+													},
+													"level": {
+														"compare": "at_least",
+														"qualifier": 4
+													},
+													"amount": 1,
+													"per_die": true
+												}
+											]
 										}
 									],
-									"open": true,
 									"name": "   Weapons Skills",
 									"notes": "Take the first if using the Journeyman template. (16 points)\nTake the second if you are using the Master. (24 points)"
 								},
@@ -9500,6 +10088,7 @@
 											]
 										}
 									],
+									"open": true,
 									"name": "  Secondary Weapon Skills",
 									"notes": "distribute two points amongst these skills if using the journeyman template, or four if using the master."
 								},
@@ -9533,6 +10122,74 @@
 									]
 								},
 								{
+									"id": "527a2871-10bd-456f-b911-7f10e8ae2e25",
+									"type": "skill",
+									"name": "Judo",
+									"reference": "DFA92",
+									"notes": "Allows parrying two different attacks per turn, one with each hand.",
+									"tags": [
+										"Combat",
+										"Grappling",
+										"Melee Combat",
+										"Weapon"
+									],
+									"difficulty": "dx/h",
+									"points": 4,
+									"encumbrance_penalty_multiplier": 1,
+									"weapons": [
+										{
+											"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"usage": "Grappling",
+											"reach": "C",
+											"parry": "0",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Judo"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 10
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
+								},
+								{
 									"id": "9b16c357-4356-4a42-a45a-bfe37238086b",
 									"type": "skill",
 									"name": "Immovable Stance",
@@ -9544,8 +10201,19 @@
 									"points": 1,
 									"prereqs": {
 										"type": "prereq_list",
-										"all": true,
+										"all": false,
 										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "wrestling master"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
 											{
 												"type": "trait_prereq",
 												"has": true,
@@ -9558,21 +10226,6 @@
 									}
 								},
 								{
-									"id": "12887b5b-a268-4fa8-a1b4-63f76b450123",
-									"type": "skill",
-									"name": "Judo",
-									"reference": "DFA92",
-									"notes": "Allows parrying two different attacks per turn, one with each hand.",
-									"tags": [
-										"Combat",
-										"Melee Combat",
-										"Weapon"
-									],
-									"difficulty": "dx/h",
-									"points": 4,
-									"encumbrance_penalty_multiplier": 1
-								},
-								{
 									"id": "76cafdb9-9bcd-442d-9ede-43e75f42193b",
 									"type": "skill",
 									"name": "Parry Missile-Weapons",
@@ -9583,7 +10236,35 @@
 										"Weapon"
 									],
 									"difficulty": "dx/h",
-									"points": 1
+									"points": 1,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Trained by a Master"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Wrestling Master"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
 								},
 								{
 									"id": "9578629f-dd37-4d4a-b1e7-21ca8c3a793f",
@@ -9597,8 +10278,19 @@
 									"points": 1,
 									"prereqs": {
 										"type": "prereq_list",
-										"all": true,
+										"all": false,
 										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "wrestling master"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
 											{
 												"type": "trait_prereq",
 												"has": true,
@@ -9615,6 +10307,7 @@
 							"reference": "DTG8"
 						}
 					],
+					"open": true,
 					"name": "Wrestler"
 				}
 			],

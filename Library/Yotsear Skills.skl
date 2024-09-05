@@ -485,7 +485,7 @@
 						"qualifier": 1
 					},
 					"amount": 1,
-					"per_level": true
+					"per_die": true
 				},
 				{
 					"type": "weapon_bonus",
@@ -499,7 +499,7 @@
 						"qualifier": 2
 					},
 					"amount": 1,
-					"per_level": true
+					"per_die": true
 				}
 			]
 		},
@@ -528,7 +528,7 @@
 						"qualifier": 2
 					},
 					"amount": 1,
-					"per_level": true
+					"per_die": true
 				}
 			]
 		},
@@ -1728,8 +1728,19 @@
 			"points": 1,
 			"prereqs": {
 				"type": "prereq_list",
-				"all": true,
+				"all": false,
 				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "wrestling master"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					},
 					{
 						"type": "trait_prereq",
 						"has": true,
@@ -1937,12 +1948,65 @@
 			"notes": "Allows parrying two different attacks per turn, one with each hand.",
 			"tags": [
 				"Combat",
+				"Grappling",
 				"Melee Combat",
 				"Weapon"
 			],
 			"difficulty": "dx/h",
 			"points": 1,
-			"encumbrance_penalty_multiplier": 1
+			"encumbrance_penalty_multiplier": 1,
+			"weapons": [
+				{
+					"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "ctrl",
+						"st": "thr"
+					},
+					"usage": "Grappling",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Judo"
+						}
+					],
+					"calc": {
+						"damage": "thr ctrl"
+					}
+				}
+			],
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Judo"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 10
+					},
+					"amount": 1,
+					"per_die": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Judo"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 4
+					},
+					"amount": 1,
+					"per_die": true
+				}
+			]
 		},
 		{
 			"id": "2e6571c7-4d7a-4e36-aac3-1f9aeee3ff4d",
@@ -1980,7 +2044,7 @@
 						"compare": "at_least"
 					},
 					"amount": 1,
-					"per_level": true
+					"per_die": true
 				},
 				{
 					"type": "weapon_bonus",
@@ -1994,7 +2058,7 @@
 						"qualifier": 1
 					},
 					"amount": 1,
-					"per_level": true
+					"per_die": true
 				}
 			]
 		},
@@ -4366,11 +4430,63 @@
 			"reference": "DFA92",
 			"tags": [
 				"Combat",
+				"Grappling",
 				"Melee Combat",
 				"Weapon"
 			],
 			"difficulty": "dx/a",
-			"points": 1
+			"points": 1,
+			"weapons": [
+				{
+					"id": "f79655e4-daa5-4019-88dd-c0628041fe7b",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "ctrl",
+						"st": "thr"
+					},
+					"usage": "Grappling",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Sumo Wrestling"
+						}
+					],
+					"calc": {
+						"damage": "thr ctrl"
+					}
+				}
+			],
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sumo Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 7
+					},
+					"amount": 1
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Sumo Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					},
+					"amount": 1,
+					"per_die": true
+				}
+			]
 		},
 		{
 			"id": "3dfd66c1-4bb8-49d9-bd98-34ab8dd778bc",
@@ -5693,11 +5809,65 @@
 			"reference": "DFA93",
 			"tags": [
 				"Combat",
+				"Grappling",
 				"Melee Combat",
 				"Weapon"
 			],
 			"difficulty": "dx/a",
-			"points": 1
+			"points": 1,
+			"weapons": [
+				{
+					"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+					"type": "melee_weapon",
+					"damage": {
+						"type": "ctrl",
+						"st": "thr"
+					},
+					"strength": "†",
+					"usage": "Grappling",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "skill",
+							"name": "Wrestling"
+						}
+					],
+					"calc": {
+						"damage": "thr ctrl"
+					}
+				}
+			],
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 1
+					},
+					"amount": 1,
+					"per_die": true
+				},
+				{
+					"type": "weapon_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 4
+					},
+					"amount": 1,
+					"per_die": true
+				}
+			]
 		},
 		{
 			"id": "52e96f9d-49fd-4600-8e4b-9c4e27ee9980",

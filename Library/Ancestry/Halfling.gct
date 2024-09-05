@@ -15,8 +15,8 @@
 					"tags": [
 						"Attribute",
 						"Disadvantage",
-						"Mental",
-						"Hidden"
+						"Hidden",
+						"Mental"
 					],
 					"levels": 1,
 					"points_per_level": -5,
@@ -41,8 +41,8 @@
 					"tags": [
 						"Attribute",
 						"Disadvantage",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 3,
 					"points_per_level": -10,
@@ -67,8 +67,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 2,
 					"points_per_level": 2,
@@ -290,8 +290,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": 20,
@@ -316,8 +316,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": 10,
@@ -350,7 +350,7 @@
 					}
 				},
 				{
-					"id": "0b46c8a4-20b7-4b6d-b88c-2535c73a7370",
+					"id": "8a5244ad-dfe1-434c-8bae-2eedd077752f",
 					"type": "trait",
 					"name": "Natural Attacks",
 					"reference": "DFE38",
@@ -386,7 +386,7 @@
 							"id": "73781dfb-055f-4163-8757-41a065725e54",
 							"type": "melee_weapon",
 							"damage": {
-								"type": "cp",
+								"type": "ctrl",
 								"st": "thr"
 							},
 							"usage": "Grappling",
@@ -398,7 +398,7 @@
 								}
 							],
 							"calc": {
-								"damage": "thr cp"
+								"damage": "thr ctrl"
 							}
 						},
 						{
@@ -476,8 +476,8 @@
 					"type": "trait",
 					"name": "Reduced Size",
 					"tags": [
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 2,
 					"features": [

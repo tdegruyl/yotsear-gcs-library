@@ -178,8 +178,8 @@
 					"tags": [
 						"Attribute",
 						"Disadvantage",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": -5,
@@ -219,8 +219,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": 2,
@@ -260,8 +260,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": 10,
@@ -286,8 +286,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 2,
 					"points_per_level": 10,
@@ -355,7 +355,7 @@
 							"id": "73781dfb-055f-4163-8757-41a065725e54",
 							"type": "melee_weapon",
 							"damage": {
-								"type": "cp",
+								"type": "ctrl",
 								"st": "thr"
 							},
 							"usage": "Grappling",
@@ -367,7 +367,7 @@
 								}
 							],
 							"calc": {
-								"damage": "thr cp"
+								"damage": "thr ctrl"
 							}
 						},
 						{
@@ -447,8 +447,8 @@
 					"reference": "DFA43",
 					"tags": [
 						"Advantage",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"base_points": 5,
 					"weapons": [
@@ -547,8 +547,8 @@
 					"tags": [
 						"Advantage",
 						"Exotic",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"base_points": 1,
 					"weapons": [

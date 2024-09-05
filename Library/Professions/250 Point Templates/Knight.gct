@@ -5017,30 +5017,134 @@
 					"type": "skill_container",
 					"children": [
 						{
-							"id": "1edfc4c6-d1f0-489d-9b56-de5ff26d5fcb",
+							"id": "e2a9327c-803e-4183-a0f2-4bb756118b8a",
 							"type": "skill",
 							"name": "Sumo Wrestling",
 							"reference": "DFA92",
 							"tags": [
 								"Combat",
 								"Melee Combat",
-								"Weapon"
+								"Weapon",
+								"Grappling"
 							],
 							"difficulty": "dx/a",
-							"points": 2
+							"points": 2,
+							"weapons": [
+								{
+									"id": "f79655e4-daa5-4019-88dd-c0628041fe7b",
+									"type": "melee_weapon",
+									"damage": {
+										"type": "ctrl",
+										"st": "thr"
+									},
+									"usage": "Grappling",
+									"reach": "C",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Sumo Wrestling"
+										}
+									],
+									"calc": {
+										"damage": "thr ctrl"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sumo Wrestling"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 7
+									},
+									"amount": 1
+								},
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Sumo Wrestling"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 2
+									},
+									"amount": 1,
+									"per_die": true
+								}
+							]
 						},
 						{
-							"id": "df24ed18-2c42-4ca5-a8bf-a48dcdb94efc",
+							"id": "de79fd34-e393-491b-ae1a-21921e64b409",
 							"type": "skill",
 							"name": "Wrestling",
 							"reference": "DFA93",
 							"tags": [
 								"Combat",
 								"Melee Combat",
-								"Weapon"
+								"Weapon",
+								"Grappling"
 							],
 							"difficulty": "dx/a",
-							"points": 2
+							"points": 2,
+							"weapons": [
+								{
+									"id": "2bd0908f-9657-4336-b12b-55d757b385db",
+									"type": "melee_weapon",
+									"damage": {
+										"type": "ctrl",
+										"st": "thr"
+									},
+									"strength": "†",
+									"usage": "Grappling",
+									"reach": "C",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Wrestling"
+										}
+									],
+									"calc": {
+										"damage": "thr ctrl"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Wrestling"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 1
+									},
+									"amount": 1,
+									"per_die": true
+								},
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_required_skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Wrestling"
+									},
+									"level": {
+										"compare": "at_least",
+										"qualifier": 4
+									},
+									"amount": 1,
+									"per_die": true
+								}
+							]
 						}
 					],
 					"open": true,

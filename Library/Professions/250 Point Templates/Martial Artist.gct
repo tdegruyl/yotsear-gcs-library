@@ -4042,19 +4042,72 @@
 							"type": "skill_container",
 							"children": [
 								{
-									"id": "0379d9af-80ee-4b45-85c0-217bcf5c5902",
+									"id": "96c1f06e-7229-4bb0-9a39-dd8c854566a6",
 									"type": "skill",
 									"name": "Judo",
 									"reference": "DFA92",
 									"notes": "Allows parrying two different attacks per turn, one with each hand.",
 									"tags": [
 										"Combat",
+										"Grappling",
 										"Melee Combat",
 										"Weapon"
 									],
 									"difficulty": "dx/h",
 									"points": 2,
-									"encumbrance_penalty_multiplier": 1
+									"encumbrance_penalty_multiplier": 1,
+									"weapons": [
+										{
+											"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"usage": "Grappling",
+											"reach": "C",
+											"parry": "0",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Judo"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 10
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
 								},
 								{
 									"id": "cf1c6fc5-ff3e-4f88-a7bb-45800d5aa096",
@@ -4469,19 +4522,72 @@
 							"type": "skill_container",
 							"children": [
 								{
-									"id": "feb3a947-888a-4644-b38a-c00f0133cfbf",
+									"id": "148af7a0-a20c-4c4d-a15c-43439aafc520",
 									"type": "skill",
 									"name": "Judo",
 									"reference": "DFA92",
 									"notes": "Allows parrying two different attacks per turn, one with each hand.",
 									"tags": [
 										"Combat",
+										"Grappling",
 										"Melee Combat",
 										"Weapon"
 									],
 									"difficulty": "dx/h",
 									"points": 4,
-									"encumbrance_penalty_multiplier": 1
+									"encumbrance_penalty_multiplier": 1,
+									"weapons": [
+										{
+											"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"usage": "Grappling",
+											"reach": "C",
+											"parry": "0",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Judo"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 10
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
 								},
 								{
 									"id": "fbd06831-cc31-4eed-b27e-e0d9cdea9569",
@@ -4896,19 +5002,72 @@
 							"type": "skill_container",
 							"children": [
 								{
-									"id": "4fd988a3-84fe-4a4a-9f00-5db0e5aaad22",
+									"id": "5824894e-358c-4c29-a557-066668f3fc7e",
 									"type": "skill",
 									"name": "Judo",
 									"reference": "DFA92",
 									"notes": "Allows parrying two different attacks per turn, one with each hand.",
 									"tags": [
 										"Combat",
+										"Grappling",
 										"Melee Combat",
 										"Weapon"
 									],
 									"difficulty": "dx/h",
 									"points": 8,
-									"encumbrance_penalty_multiplier": 1
+									"encumbrance_penalty_multiplier": 1,
+									"weapons": [
+										{
+											"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"usage": "Grappling",
+											"reach": "C",
+											"parry": "0",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Judo"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 10
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
 								},
 								{
 									"id": "677cf97c-000e-4ba2-b2ea-35687c0da001",
@@ -4962,19 +5121,72 @@
 							"type": "skill_container",
 							"children": [
 								{
-									"id": "2aaff703-6028-4aaa-80e7-9ab9398aa0e4",
+									"id": "8d5b9465-542e-49f0-8d7f-7bac433d6a9a",
 									"type": "skill",
 									"name": "Judo",
 									"reference": "DFA92",
 									"notes": "Allows parrying two different attacks per turn, one with each hand.",
 									"tags": [
 										"Combat",
+										"Grappling",
 										"Melee Combat",
 										"Weapon"
 									],
 									"difficulty": "dx/h",
 									"points": 4,
-									"encumbrance_penalty_multiplier": 1
+									"encumbrance_penalty_multiplier": 1,
+									"weapons": [
+										{
+											"id": "990c5cae-d0a3-4237-bbed-7594c3b8e3b0",
+											"type": "melee_weapon",
+											"damage": {
+												"type": "ctrl",
+												"st": "thr"
+											},
+											"usage": "Grappling",
+											"reach": "C",
+											"parry": "0",
+											"defaults": [
+												{
+													"type": "skill",
+													"name": "Judo"
+												}
+											],
+											"calc": {
+												"damage": "thr ctrl"
+											}
+										}
+									],
+									"features": [
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 10
+											},
+											"amount": 1,
+											"per_die": true
+										},
+										{
+											"type": "weapon_bonus",
+											"selection_type": "weapons_with_required_skill",
+											"name": {
+												"compare": "is",
+												"qualifier": "Judo"
+											},
+											"level": {
+												"compare": "at_least",
+												"qualifier": 4
+											},
+											"amount": 1,
+											"per_die": true
+										}
+									]
 								},
 								{
 									"id": "4d1a38e3-d3d8-418d-9434-5c6a2fc4a359",

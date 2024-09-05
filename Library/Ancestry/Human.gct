@@ -266,7 +266,7 @@
 					}
 				},
 				{
-					"id": "e098f8e4-5d1b-45ca-9b88-0929f93e145e",
+					"id": "077eaef5-a913-4b61-a37c-96d279bb4dc5",
 					"type": "trait",
 					"name": "Natural Attacks",
 					"reference": "DFE38",
@@ -302,7 +302,7 @@
 							"id": "73781dfb-055f-4163-8757-41a065725e54",
 							"type": "melee_weapon",
 							"damage": {
-								"type": "cp",
+								"type": "ctrl",
 								"st": "thr"
 							},
 							"usage": "Grappling",
@@ -314,7 +314,7 @@
 								}
 							],
 							"calc": {
-								"damage": "thr cp"
+								"damage": "thr ctrl"
 							}
 						},
 						{

@@ -53,8 +53,8 @@
 					"tags": [
 						"Attribute",
 						"Disadvantage",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": -10,
@@ -82,6 +82,66 @@
 					"base_points": 1,
 					"calc": {
 						"points": 1
+					}
+				},
+				{
+					"id": "22a62b16-523c-467d-a014-81c3cc5eeb0c",
+					"type": "trait",
+					"name": "Elvish",
+					"reference": "DFA51",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "19204a90-93ea-4e95-b18d-9e6648854330",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
 					}
 				},
 				{
@@ -210,66 +270,6 @@
 					}
 				},
 				{
-					"id": "22a62b16-523c-467d-a014-81c3cc5eeb0c",
-					"type": "trait",
-					"name": "Elvish",
-					"reference": "DFA51",
-					"tags": [
-						"Advantage",
-						"Language",
-						"Mental"
-					],
-					"modifiers": [
-						{
-							"id": "f606db72-95c0-450d-ad7f-7b423de10f96",
-							"type": "modifier",
-							"name": "Native",
-							"reference": "B23",
-							"cost": -6,
-							"cost_type": "points"
-						},
-						{
-							"id": "d74bdce8-8392-46ea-af3a-3b3f7f6adddb",
-							"type": "modifier",
-							"name": "Spoken",
-							"reference": "B24",
-							"notes": "None",
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "ea95e1e9-215f-4e77-89f3-a57a697ba951",
-							"type": "modifier",
-							"name": "Spoken",
-							"reference": "B24",
-							"notes": "Native",
-							"cost": 3,
-							"cost_type": "points"
-						},
-						{
-							"id": "19204a90-93ea-4e95-b18d-9e6648854330",
-							"type": "modifier",
-							"name": "Written",
-							"reference": "B24",
-							"notes": "None",
-							"cost_type": "points",
-							"disabled": true
-						},
-						{
-							"id": "458ced2f-a0e3-404b-9708-ad30373ab40e",
-							"type": "modifier",
-							"name": "Written",
-							"reference": "B24",
-							"notes": "Native",
-							"cost": 3,
-							"cost_type": "points"
-						}
-					],
-					"calc": {
-						"points": 0
-					}
-				},
-				{
 					"id": "9a24c332-d868-4980-8c7a-749f106ca21d",
 					"type": "trait",
 					"name": "Increased Basic Move",
@@ -277,8 +277,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": 5,
@@ -303,8 +303,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": 20,
@@ -361,7 +361,7 @@
 					}
 				},
 				{
-					"id": "9a6d62ef-41b8-4980-9946-40aed3ec5a58",
+					"id": "90322007-c74d-4f3c-a7f2-b9f76e66a705",
 					"type": "trait",
 					"name": "Natural Attacks",
 					"reference": "DFE38",
@@ -397,7 +397,7 @@
 							"id": "73781dfb-055f-4163-8757-41a065725e54",
 							"type": "melee_weapon",
 							"damage": {
-								"type": "cp",
+								"type": "ctrl",
 								"st": "thr"
 							},
 							"usage": "Grappling",
@@ -409,7 +409,7 @@
 								}
 							],
 							"calc": {
-								"damage": "thr cp"
+								"damage": "thr ctrl"
 							}
 						},
 						{

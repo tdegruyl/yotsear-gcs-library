@@ -149,8 +149,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"levels": 1,
 					"points_per_level": 10,
@@ -175,8 +175,8 @@
 					"tags": [
 						"Advantage",
 						"Attribute",
-						"Mental",
-						"Hidden"
+						"Hidden",
+						"Mental"
 					],
 					"levels": 1,
 					"points_per_level": 5,
@@ -194,7 +194,7 @@
 					}
 				},
 				{
-					"id": "0851298e-2c61-4303-bb66-f2c2b656b0a2",
+					"id": "bd338ef3-df09-4edd-bbeb-3be3c1ea8470",
 					"type": "trait",
 					"name": "Natural Attacks",
 					"reference": "DFE38",
@@ -230,7 +230,7 @@
 							"id": "73781dfb-055f-4163-8757-41a065725e54",
 							"type": "melee_weapon",
 							"damage": {
-								"type": "cp",
+								"type": "ctrl",
 								"st": "thr"
 							},
 							"usage": "Grappling",
@@ -242,7 +242,7 @@
 								}
 							],
 							"calc": {
-								"damage": "thr cp"
+								"damage": "thr ctrl"
 							}
 						},
 						{
@@ -358,8 +358,8 @@
 					"reference": "DFA43",
 					"tags": [
 						"Advantage",
-						"Physical",
-						"Hidden"
+						"Hidden",
+						"Physical"
 					],
 					"base_points": 5,
 					"weapons": [
@@ -437,8 +437,8 @@
 					"tags": [
 						"Advantage",
 						"Exotic",
-						"Physical",
-						"HIdden"
+						"HIdden",
+						"Physical"
 					],
 					"base_points": 1,
 					"weapons": [

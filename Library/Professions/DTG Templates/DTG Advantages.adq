@@ -373,7 +373,7 @@
 						"qualifier": 1
 					},
 					"amount": 1,
-					"per_level": true
+					"per_die": true
 				},
 				{
 					"type": "weapon_bonus",
@@ -391,7 +391,7 @@
 						"qualifier": 2
 					},
 					"amount": 1,
-					"per_level": true
+					"per_die": true
 				}
 			],
 			"calc": {
@@ -407,6 +407,112 @@
 				"Physical"
 			],
 			"base_points": 10,
+			"features": [
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "contains",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 10
+					},
+					"amount": 1
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "contains",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 9
+					},
+					"amount": 1
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "contains",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 8
+					},
+					"amount": 1
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "contains",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 7
+					},
+					"amount": 1
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "contains",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 6
+					},
+					"amount": 1
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "contains",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 5
+					},
+					"amount": 1
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "contains",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 4
+					},
+					"amount": 1
+				},
+				{
+					"type": "weapon_effective_st_bonus",
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "contains",
+						"qualifier": "Wrestling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 3
+					},
+					"amount": 1
+				}
+			],
 			"calc": {
 				"points": 10
 			}
